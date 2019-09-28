@@ -4,7 +4,8 @@
   "description": "TIEA207 projektin backend",
   "main": "index.js",
   "scripts": {
-    "server": "node ./src/app.js"
+    "start": "node ./src/app.js",
+    "test": "jest --verbose"
   },
   "dependencies": {
     "cors": "^2.8.5",
@@ -19,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/kjoonas1/TIEA207/issues"
   },
-  "homepage": "https://github.com/kjoonas1/TIEA207#readme"
+  "homepage": "https://github.com/kjoonas1/TIEA207#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
 }
