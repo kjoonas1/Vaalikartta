@@ -4,16 +4,12 @@
   "description": "TIEA207 projektin backend",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "start": "node src/app.js",
+    "test": "jest --verbose"
   },
   "dependencies": {
-    "cookie-parser": "~1.4.4",
     "cors": "^2.8.5",
-    "debug": "~2.6.9",
-    "express": "~4.16.1",
-    "http-errors": "~1.6.3",
-    "jade": "~1.11.0",
-    "morgan": "~1.9.1"
+    "express": "~4.16.1"
   },
   "repository": {
     "type": "git",
@@ -24,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/kjoonas1/TIEA207/issues"
   },
-  "homepage": "https://github.com/kjoonas1/TIEA207#readme"
+  "homepage": "https://github.com/kjoonas1/TIEA207#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
 }
