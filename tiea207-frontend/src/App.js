@@ -9,14 +9,12 @@ import { Route, BrowserRouter as Router } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <Container>
-
         <Router>
-        <Navigation />
+          <Navigation />
             <Route exact path="/" component={Home} />
             <Route path="/test" component={TestContent} />
+          <Container />
         </Router>
-      </Container>
     </div>
   );
 }
