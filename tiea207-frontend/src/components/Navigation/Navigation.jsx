@@ -1,8 +1,6 @@
 import React from 'react';
 import { Navbar, Nav, NavItem, Form, FormControl, Button, NavDropdown } from "react-bootstrap";
 import NavbarLink from './NavbarLink';
-import { IndexLinkContainer } from 'react-router-bootstrap'
-
 
 /* 
 Navigation bar that contains links.
@@ -12,23 +10,17 @@ Navigation bar that contains links.
  */
 const Navigation = () => {
     return (
-        <Navbar bg="dark" expand="lg" variant="dark" className="justify-content-between">
-            <Navbar.Brand>
-                <Nav.Link>    
-                    <IndexLinkContainer exact to="/">
-                        <NavItem>TIEA207</NavItem>
-                    </IndexLinkContainer>
-                </Nav.Link>
-            </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="mr-auto">
-                    <NavbarLink name="Home" exact={true} path="/"></NavbarLink>
-                    <NavbarLink name="Test" path="/test"></NavbarLink>
-                </Nav>
-            </Navbar.Collapse>
-        </Navbar>
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="mr-auto">
+            <NavbarLink name="Home" exact={true} path="/"></NavbarLink>
+            <NavbarLink name="Test" path="/test"></NavbarLink> 
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
     );
 }
 
-export default Navigation;
+export default Navigation; 

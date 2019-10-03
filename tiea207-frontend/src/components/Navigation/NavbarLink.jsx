@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Nav, NavItem } from "react-bootstrap";
+import { Nav } from "react-bootstrap";
 import { IndexLinkContainer } from 'react-router-bootstrap'
 
 /*
@@ -9,16 +9,14 @@ content wont be removed from DOM if main site does not use exact to property
 */
 export const NavbarLink = (props) => {
     let navLink = <IndexLinkContainer to={props.path}>
-                    <NavItem>{props.name}</NavItem>
+                    <Nav.Link>{props.name}</Nav.Link>
                 </IndexLinkContainer>;
     if (props.exact) navLink = <IndexLinkContainer exact to={props.path}>
-                                    <NavItem>{props.name}</NavItem>
+                                    <Nav.Link>{props.name}</Nav.Link>
                                 </IndexLinkContainer>;
 return (
     <Fragment>
-        <Nav.Link>
-            { navLink }
-        </Nav.Link>
+        { navLink }
     </Fragment>
     );
 }
