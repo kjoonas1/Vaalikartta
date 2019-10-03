@@ -8,24 +8,19 @@ Item that communicates with DOM using react-router-bootstrap.
 content wont be removed from DOM if main site does not use exact to property
 */
 export const NavbarLink = (props) => {
-return props.exact ? (
+    let navLink = <IndexLinkContainer to={props.path}>
+                    <NavItem>{props.name}</NavItem>
+                </IndexLinkContainer>;
+    if (props.exact) navLink = <IndexLinkContainer exact to={props.path}>
+                                    <NavItem>{props.name}</NavItem>
+                                </IndexLinkContainer>;
+return (
     <Fragment>
         <Nav.Link>
-            <IndexLinkContainer exact to={props.path}>
-                <NavItem>{props.name}</NavItem>
-            </IndexLinkContainer>
+            { navLink }
         </Nav.Link>
     </Fragment>
-    ) : (
-        <Fragment>
-            <Nav.Link>
-                <IndexLinkContainer to={props.path}>
-                    <NavItem>{props.name}</NavItem>
-                </IndexLinkContainer>
-            </Nav.Link>
-        </Fragment>
     );
-    
 }
 
 export default NavbarLink;

@@ -11,7 +11,7 @@ const Home = () => {
     return (
         <Fragment>
             {data.map(({id, content}) => (
-                <li key={shortid.generate()}>{content}</li>
+                <li key={shortid.generate()}>{id + ": " + content}</li>
             ))}
         </Fragment>
     );

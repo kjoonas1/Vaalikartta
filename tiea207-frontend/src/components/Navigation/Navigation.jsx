@@ -24,7 +24,7 @@ const Navigation = () => {
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
                     <NavbarLink name="Home" exact={true} path="/"></NavbarLink>
-                    <NavbarLink name="Test" exact={true} path="/test"></NavbarLink>
+                    <NavbarLink name="Test" path="/test"></NavbarLink>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
