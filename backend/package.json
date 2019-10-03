@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./src/app.js",
-    "test": "jest --verbose"
+    "test": "jest --verbose",
+    "lint": "./node_modules/.bin/eslint ."
   },
   "dependencies": {
     "cors": "^2.8.5",
@@ -22,6 +23,7 @@
   },
   "homepage": "https://github.com/kjoonas1/TIEA207#readme",
   "devDependencies": {
+    "eslint": "^6.5.1",
     "jest": "^24.9.0"
   },
   "jest": {

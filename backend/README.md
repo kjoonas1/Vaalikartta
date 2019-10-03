@@ -1,4 +1,8 @@
 ### `npm start`
-run node server
+Run node server
+
 ### `npm test`
-run node tests
+Run node tests
+
+### `npm run lint`
+Run ESLint on project.
