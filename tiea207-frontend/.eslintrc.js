@@ -13,6 +13,7 @@ module.exports = {
     },
     plugins: ['react'],
     rules: {
+        'react/prop-types': 0,
         indent: ['error', 4],
         'linebreak-style': ['error', 'unix'],
         quotes: ['error', 'double'],
