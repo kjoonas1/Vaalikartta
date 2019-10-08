@@ -1,7 +1,6 @@
-import React, { Fragment } from "react";
-import { useFetch } from '.././hooks/UseFetch'
-import shortid from 'shortid';
-
+import React, { Fragment } from "react"
+import { useFetch } from ".././hooks/UseFetch"
+import shortid from "shortid"
 
 // Komponentti hakee backendistä helloworldin ja näyttää sen selaimessa
 const Home = () => {
@@ -10,11 +9,11 @@ const Home = () => {
 
     return (
         <Fragment>
-            {data.map(({id, content}) => (
+            {data.map(({ id, content }) => (
                 <li key={shortid.generate()}>{id + ": " + content}</li>
             ))}
         </Fragment>
-    );
+    )
 }
 
-export default Home;
+export default Home
