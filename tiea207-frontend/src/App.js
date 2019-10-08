@@ -1,5 +1,5 @@
 import React from "react"
-import "./App.css"
+import "./App.scss"
 import Home from "./components/Home"
 import TestContent from "./components/TestContent"
 import { Container } from "react-bootstrap"
@@ -11,12 +11,12 @@ function App() {
         <div className="App">
             <Router>
                 <Navigation />
-                <Switch>
-                    <Container>
+                <Container>
+                    <Switch>
                         <Route exact path="/" component={Home} />
                         <Route path="/test" component={TestContent} />
-                    </Container>
-                </Switch>
+                    </Switch>
+                </Container>
             </Router>
 
         </div>
