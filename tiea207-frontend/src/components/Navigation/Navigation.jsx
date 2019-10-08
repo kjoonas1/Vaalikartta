@@ -5,10 +5,8 @@ import { IndexLinkContainer } from "react-router-bootstrap"
 
 /* 
 Navigation bar that contains links.
- TODO: collapse when link is clicked. 
- check https://stackoverflow.com/questions/32452695/react-bootstrap-how-to-collapse-menu-when-item-is-selected
- Links are now hard-coded, they could also come with props fromm App.js
- */
+Links are now hard-coded, they could also come with props fromm App.js
+*/
 const Navigation = () => {
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
