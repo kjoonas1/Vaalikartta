@@ -12,10 +12,11 @@ const Home = () => {
             layer.bindPopup(feature.properties.name)
         }
     }
+    
     const res = useFetch("http://localhost:8000/api/maps/cityborders")
 
     if (res.isLoading) {
-        return <div>Loading map res...</div>
+        return <div>Loading map data...</div>
     }
     if (!res.isLoading && res.error === null) {
     return (
