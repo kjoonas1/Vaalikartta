@@ -2,12 +2,12 @@
 import React, { Fragment } from "react"
 import { Map, GeoJSON } from "react-leaflet"
 import { Col, Row } from "react-bootstrap"
-import { useFetch } from "./../hooks/UseFetch"
-import { ReactComponent as Timeline } from '../vuosijana.svg';
+import { useFetch } from "../hooks/UseFetch"
+import { ReactComponent as Timeline } from "../vuosijana.svg"
 import chart from "../chart.png"
 
 
-const Home = () => {
+const Etusivu = () => {
     // Tällä kiinnitetään jokaiseen "featureen" eli kuntaa edustavaan monikulmioon
     // klikattaessa ilmestyvä popup
     const addPopup = (feature, layer) => {
@@ -44,7 +44,7 @@ const Home = () => {
                         </Map>
                     </Col>
                     <Col xs={8}>
-                    <img src={chart} width="100%"/>
+                        <img src={chart} width="100%"/>
                     </Col>
                 </Row>
             </Fragment>
@@ -53,4 +53,4 @@ const Home = () => {
 }
 
 
-export default Home
+export default Etusivu

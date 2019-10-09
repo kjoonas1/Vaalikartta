@@ -1,7 +1,7 @@
 import React from "react"
 import "./App.scss"
-import Home from "./components/Home"
-import TestContent from "./components/TestContent"
+import Etusivu from "./components/Etusivu"
+import Tietoa from "./components/Tietoa"
 import { Container } from "react-bootstrap"
 import Navigation from "./components/Navigation/Navigation"
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom"
@@ -13,12 +13,11 @@ function App() {
                 <Navigation />
                 <Container>
                     <Switch>
-                        <Route exact path="/" component={Home} />
-                        <Route path="/test" component={TestContent} />
+                        <Route exact path="/" component={Etusivu} />
+                        <Route path="/tietoa" component={Tietoa} />
                     </Switch>
                 </Container>
             </Router>
-
         </div>
     )
 }
