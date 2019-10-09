@@ -28,7 +28,7 @@ const Etusivu = () => {
                     <Timeline width="100%" />
                 </Row>
                 <Row>
-                    <Col>
+                    <Col xs={12} xl={4}>
                         <Map center={[65.1, 25.489]} dragging={false} preferCanvas={true} zoom={5}>
                             <GeoJSON
                                 keyFunction={res.data}
@@ -43,7 +43,7 @@ const Etusivu = () => {
                             />
                         </Map>
                     </Col>
-                    <Col xs={8}>
+                    <Col xs={12} xl={8}>
                         <img src={chart} width="100%"/>
                     </Col>
                 </Row>
