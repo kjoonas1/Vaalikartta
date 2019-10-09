@@ -1,9 +1,8 @@
 
 import React from "react"
 import { Map, GeoJSON } from "react-leaflet"
-// Tätyy vielä miettiä, että miten tämä tiedosto saadaan välitettyä frontille
-// Löytyy linkistä: https://raw.githubusercontent.com/tomimick/mapcolorizer/master/data-finland/data/kuntarajat-ok.geojson
-import data from "../kuntarajat-ok.json"
+import { Col, Row } from "react-bootstrap"
+import { useFetch } from "./../hooks/UseFetch"
 
 const Home = () => {
     // Tällä kiinnitetään jokaiseen "featureen" eli kuntaa edustavaan monikulmioon
@@ -13,22 +12,36 @@ const Home = () => {
             layer.bindPopup(feature.properties.name)
         }
     }
+    const res = useFetch("http://localhost:8000/api/maps/cityborders")
 
+    if (res.isLoading) {
+        return <div>Loading map res...</div>
+    }
+    if (!res.isLoading && res.error === null) {
     return (
-        <Map center={[65.1, 25.489]} zoom={5}>
-            <GeoJSON
-                keyFunction={data}
-                data={data}
-                onEachFeature={addPopup}
-                style={() => ({
-                    color: "#4a83ec",
-                    weight: 0.75,
-                    fillColor: "#18447e",
-                    fillOpacity: 1
-                })}
-            />
-        </Map>
+        <Row>
+            <Col>
+                <Map center={[65.1, 25.489]} preferCanvas={true} zoom={5}>
+                    <GeoJSON
+                        keyFunction={res.data}
+                        data={res.data}
+                        onEachFeature={addPopup}
+                        style={() => ({
+                            color: "#4a83ec",
+                            weight: 0.75,
+                            fillColor: "#18447e",
+                            fillOpacity: 1
+                        })}
+                    />
+                </Map>
+            </Col>
+            <Col>
+            Insert some information here
+            </Col>
+        </Row>
     )
+    } else return (<div>Error</div>)
 }
+
 
 export default Home

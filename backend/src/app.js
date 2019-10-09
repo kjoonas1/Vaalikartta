@@ -11,8 +11,15 @@ const message = {
     content: "Hello world"
 }
 
+// Löytyy linkistä: https://raw.githubusercontent.com/tomimick/mapcolorizer/master/res-finland/res/kuntarajat-ok.geojson
+const cityBorders = require("../kuntarajat-ok.json")
+
 app.get("/api/helloworld", (req, res) => {
     res.send(JSON.stringify(message))
+})
+
+app.get("/api/maps/cityborders", (req, res) => {
+    res.send(JSON.stringify(cityBorders))
 })
 
 app.listen(PORT, () => {
