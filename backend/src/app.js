@@ -12,7 +12,9 @@ const message = {
 }
 
 // Löytyy linkistä: https://raw.githubusercontent.com/tomimick/mapcolorizer/master/res-finland/res/kuntarajat-ok.geojson
+
 const cityBorders = require("../kuntarajat-ok.json")
+const stateBorders = require("../maakunnat.json")
 
 app.get("/api/helloworld", (req, res) => {
     res.send(JSON.stringify(message))
@@ -20,6 +22,10 @@ app.get("/api/helloworld", (req, res) => {
 
 app.get("/api/maps/cityborders", (req, res) => {
     res.send(JSON.stringify(cityBorders))
+})
+
+app.get("/api/maps/stateborders", (req, res) => {
+    res.send(JSON.stringify(stateBorders))
 })
 
 app.listen(PORT, () => {
