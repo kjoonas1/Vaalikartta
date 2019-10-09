@@ -13,7 +13,7 @@ const Home = () => {
         }
     }
     
-    const res = useFetch("http://localhost:8000/api/maps/cityborders")
+    const res = useFetch("http://localhost:8000/api/maps/municipalityborders")
     
 
     if (res.isLoading) {
