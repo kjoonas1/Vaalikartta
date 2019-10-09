@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useState, useLayoutEffect } from "react"
 import axios from "axios"
 
 // Toteuttaa get-pyynnöt.
@@ -8,7 +8,7 @@ function useFetch(url) {
     const [error, setError] = useState(null)
     const [isLoading, setIsLoading] = useState(false)
   
-    useEffect(() => {
+    useLayoutEffect(() => {
         const fetchData = async () => {
             setIsLoading(true)
             try {
