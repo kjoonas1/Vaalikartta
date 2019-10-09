@@ -1,9 +1,8 @@
 import React, { Fragment } from "react"
-import { useFetch } from ".././hooks/UseFetch"
 import shortid from "shortid"
-
+import { useFetch } from "../hooks/UseFetch"
 // Komponentti hakee backendistä helloworldin ja näyttää sen selaimessa
-const Home = () => {
+const Tietoa = () => {
     const url = "http://localhost:8000/api/helloworld"
     const res = useFetch(url)
 
@@ -37,4 +36,4 @@ const Home = () => {
     }
 }
 
-export default Home
+export default Tietoa

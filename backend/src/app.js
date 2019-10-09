@@ -1,19 +1,13 @@
 const express = require("express")
 const app = express()
 var cors = require("cors")
+const routes = require("./routes/routes")
 
 app.use(cors())
 
 const PORT = 8000
 
-const message = {
-    id: 1,
-    content: "Hello world"
-}
-
-app.get("/api/helloworld", (req, res) => {
-    res.send(JSON.stringify(message))
-})
+routes(app)
 
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`)

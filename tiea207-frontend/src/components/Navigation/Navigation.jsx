@@ -12,14 +12,14 @@ const Navigation = () => {
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Navbar.Brand>
                 <IndexLinkContainer exact to="/">
-                    <Nav.Link>TIEA207</Nav.Link>
+                    <Nav.Link>Vaalikartta</Nav.Link>
                 </IndexLinkContainer>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">
-                    <NavbarLink name="Home" exact={true} path="/"></NavbarLink>
-                    <NavbarLink name="Test" path="/test"></NavbarLink>
+                    <NavbarLink name="Etusivu" exact={true} path="/"></NavbarLink>
+                    <NavbarLink name="Tietoa" path="/tietoa"></NavbarLink>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

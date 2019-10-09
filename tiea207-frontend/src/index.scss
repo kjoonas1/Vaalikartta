@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+// Tälle koko on pakko määritellä, jotta kartta edes näkyy
+.leaflet-container {
+    height: 600px;
+    background: white;
+}
+
