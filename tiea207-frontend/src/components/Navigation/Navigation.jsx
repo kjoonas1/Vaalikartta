@@ -12,7 +12,7 @@ const Navigation = () => {
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Navbar.Brand>
                 <IndexLinkContainer exact to="/">
-                    <Nav.Link>TIEA207</Nav.Link>
+                    <Nav.Link>Vaalikartta</Nav.Link>
                 </IndexLinkContainer>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
