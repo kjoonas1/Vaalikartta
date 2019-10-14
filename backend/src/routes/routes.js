@@ -14,7 +14,7 @@ module.exports = app => {
     app.get("/api/districts/district", async (req, res) => {
         res.send(
             { district: JSON.stringify(req.query.district), 
-              constituency: "find this from db"
+                constituency: "find this from db"
             })
     })
 }
