@@ -10,4 +10,11 @@ module.exports = app => {
     app.get("/api/maps/provinceborders", async (req, res) => {
         res.send(JSON.stringify(provinceBorders))
     })
+
+    app.get("/api/districts/district", async (req, res) => {
+        res.send(
+            { district: JSON.stringify(req.query.district), 
+              constituency: "find this from db"
+            })
+    })
 }
