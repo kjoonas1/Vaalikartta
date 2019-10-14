@@ -44,7 +44,7 @@ const Etusivu = () => {
                         </Map>
                     </Col>
                     <Col xs={12} xl={8}>
-                        <img src={chart} width="100%"/>
+                        <img src={chart} width="100%" alt="Pylväsdiagrammi"/>
                     </Col>
                 </Row>
             </Fragment>
