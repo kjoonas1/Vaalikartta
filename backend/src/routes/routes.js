@@ -1,4 +1,4 @@
-module.exports = function(app) {
+module.exports = app => {
     // Löytyy linkistä: https://raw.githubusercontent.com/tomimick/mapcolorizer/master/res-finland/res/kuntarajat-ok.geojson
     const municipalityBorders = require("../../kuntarajat-ok.json")
     const provinceBorders = require("../../maakunnat.json")

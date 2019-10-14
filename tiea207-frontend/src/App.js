@@ -6,7 +6,7 @@ import { Container } from "react-bootstrap"
 import Navigation from "./components/Navigation/Navigation"
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom"
 
-function App() {
+const App = () => {
     return (
         <div className="App">
             <Router>
