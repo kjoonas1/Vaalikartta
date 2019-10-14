@@ -4,7 +4,7 @@ import axios from "axios"
 // Toteuttaa get-pyynnöt.
 // Käyttö esim. const res = useFetch("http://localhost:8000/api/helloworld")
 // res.data sisältää datan, res.error virheen, res.isLoading tiedon onko lataus suoritettu.
-const useFetch = (url) => {
+const useFetch = (url, queryParam) => {
     const [data, setData] = useState([])
     const [error, setError] = useState(null)
     const [isLoading, setIsLoading] = useState(false)
@@ -15,7 +15,7 @@ const useFetch = (url) => {
         const fetchData = async () => {
             setIsLoading(true)
             try {
-                const response = await axios.get(url, {signal: abortController.signal})
+                const response = await axios.get(url, {params: queryParam, signal: abortController.signal})
                 if (mounted) {
                     setData(response.data)
                     setIsLoading(false)
@@ -31,7 +31,9 @@ const useFetch = (url) => {
             abortController.abort()
         }
         return cleanup
-    }, [url])
+        // JSON stringify koska muuten looppi on ikuinen. 
+        // Tähän voisi keksiä paremman keinon, esim vertailuoperaatio.
+    }, [url, JSON.stringify(queryParam)]) 
     return { data: [data], error, isLoading }
 }
 export { useFetch }
