@@ -10,4 +10,11 @@ module.exports = app => {
     app.get("/api/maps/provinceborders", async (req, res) => {
         res.send(JSON.stringify(provinceBorders))
     })
+
+    app.get("/api/mongotesti", async (req, res) => {
+        const collection = req.db.collection("leluesimerkki")
+        const items = await collection.find({}).toArray()
+        res.send(items)
+    })
+
 }
