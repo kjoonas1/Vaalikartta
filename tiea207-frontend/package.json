@@ -39,6 +39,7 @@
   },
   "devDependencies": {
     "eslint": "^6.5.1",
+    "eslint-plugin-prefer-arrow": "^1.1.6",
     "eslint-plugin-react": "^7.15.1",
     "jest": "^24.9",
     "jest-transform-stub": "^2.0.0"

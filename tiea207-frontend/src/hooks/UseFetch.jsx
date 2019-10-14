@@ -4,7 +4,7 @@ import axios from "axios"
 // Toteuttaa get-pyynnöt.
 // Käyttö esim. const res = useFetch("http://localhost:8000/api/helloworld")
 // res.data sisältää datan, res.error virheen, res.isLoading tiedon onko lataus suoritettu.
-function useFetch(url) {
+const useFetch = (url) => {
     const [data, setData] = useState([])
     const [error, setError] = useState(null)
     const [isLoading, setIsLoading] = useState(false)

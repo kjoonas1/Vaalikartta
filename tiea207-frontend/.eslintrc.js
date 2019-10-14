@@ -12,8 +12,15 @@ module.exports = {
         ecmaVersion: 2018,
         sourceType: 'module'
     },
-    plugins: ['react'],
+    plugins: ['react', 'prefer-arrow'],
     rules: {
+        "prefer-arrow/prefer-arrow-functions": [
+            "warn",
+            {
+                "disallowPrototype": true,
+                "singleReturnOnly": false,
+                "classPropertiesAllowed": false
+            }],
         'react/prop-types': 0,
         indent: ['error', 4],
         'linebreak-style': ['error', 'unix'],

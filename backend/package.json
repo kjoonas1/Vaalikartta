@@ -24,6 +24,7 @@
   "homepage": "https://github.com/kjoonas1/TIEA207#readme",
   "devDependencies": {
     "eslint": "^6.5.1",
+    "eslint-plugin-prefer-arrow": "^1.1.6",
     "jest": "^24.9.0"
   },
   "jest": {

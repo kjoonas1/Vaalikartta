@@ -7,7 +7,17 @@ module.exports = {
     "parserOptions": {
         "ecmaVersion": 2018
     },
+    "plugins": [
+        "prefer-arrow"
+    ],
     "rules": {
+        "prefer-arrow/prefer-arrow-functions": [
+            "warn",
+            {
+                "disallowPrototype": true,
+                "singleReturnOnly": false,
+                "classPropertiesAllowed": false
+            }],
         "no-console": "off",
         "indent": [
             "error",
