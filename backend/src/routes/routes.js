@@ -1,7 +1,7 @@
 module.exports = app => {
     // Löytyy linkistä: https://raw.githubusercontent.com/tomimick/mapcolorizer/master/res-finland/res/kuntarajat-ok.geojson
-    const municipalityBorders = require("../../kuntarajat-ok.json")
-    const provinceBorders = require("../../maakunnat.json")
+    const municipalityBorders = require("../../dataset/kuntarajat-ok.json")
+    const provinceBorders = require("../../dataset/maakunnat.json")
 
     app.get("/api/maps/municipalityborders", async (req, res) => {
         res.send(JSON.stringify(municipalityBorders))
