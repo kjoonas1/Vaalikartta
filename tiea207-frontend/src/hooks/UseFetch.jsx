@@ -15,7 +15,7 @@ const useFetch = (url, queryParam) => {
         const fetchData = async () => {
             setIsLoading(true)
             try {
-                const response = await axios.get(url, {params: queryParam, signal: abortController.signal})
+                const response = await axios.get(url, {params: queryParam, signal: abortController.signal, timeout: 20000})
                 if (mounted) {
                     setData(response.data)
                     setIsLoading(false)
