@@ -11,23 +11,24 @@ import { AreaContext } from "../Contexts"
 const Etusivu = () => {
 
     const { area, setArea } = useContext(AreaContext)
-    // Tällä kiinnitetään jokaiseen "featureen" eli kuntaa edustavaan monikulmioon
-    // klikattaessa ilmestyvä popup
+    
+    // hoitaa kartan klikkauksen
     const addAreaInfo = (feature, layer) => {
         if (feature.properties && feature.properties.name) {
             layer.on({
                 click: (event) => setArea(event.target.feature.properties.name)
-            });
+            })
         }
     }
     
-      
-    const res = useFetch("http://localhost:8000/api/maps/municipalityborders")
+    const mapData = useFetch("http://localhost:8000/api/maps/municipalityborders")
+    const areaData = useFetch("http://localhost:8000/api/districts/district/", {district: area})
 
-    if (res.isLoading) {
+    console.log(areaData)
+    if (mapData.isLoading) {
         return <div>Loading map data...</div>
     }
-    if (!res.isLoading && res.error === null) {
+    if (!mapData.isLoading && mapData.error === null) {
         return (
             <Fragment>
                 <Row className="timeline">
@@ -37,8 +38,8 @@ const Etusivu = () => {
                     <Col xs={12} xl={4}>
                         <Map center={[65.1, 25.489]} dragging={false} preferCanvas={true}  zoom={5}>
                             <GeoJSON
-                                keyFunction={res.data}
-                                data={res.data}
+                                keyFunction={mapData.data}
+                                data={mapData.data}
                                 onEachFeature={addAreaInfo}
                                 style={() => ({
                                     color: "#4a83ec",
