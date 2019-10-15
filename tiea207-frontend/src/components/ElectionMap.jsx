@@ -1,9 +1,9 @@
-import React, { Fragment, useContext } from "react"
+import React, { useContext } from "react"
 import { Map, GeoJSON } from "react-leaflet"
 import { AreaContext } from "../Contexts"
 
 export const ElectionMap = (props) => {
-    const { area, setArea } = useContext(AreaContext)
+    const { setArea } = useContext(AreaContext)
     // hoitaa kartan klikkauksen
     const addAreaInfo = (feature, layer) => {
         if (feature.properties && feature.properties.name) {

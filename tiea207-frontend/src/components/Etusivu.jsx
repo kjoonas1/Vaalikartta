@@ -2,16 +2,16 @@
 import React, { Fragment, useContext } from "react"
 import { Col, Row } from "react-bootstrap"
 import { useFetch } from "../hooks/UseFetch"
-import { Timeline } from "./Timeline"
+import { Timeline } from "./Timeline"
 import chart from "../chart.png"
 import { AreaContext } from "../Contexts"
 import { ElectionMap } from "./ElectionMap"
 
 const Etusivu = () => {
 
-    const { area, setArea } = useContext(AreaContext)
+    const { area } = useContext(AreaContext)
     const mapData = useFetch("http://localhost:8000/api/maps/municipalityborders")
-    const areaData = useFetch("http://localhost:8000/api/districts/district/", {district: area})
+    // const areaData = useFetch("http://localhost:8000/api/districts/district/", {district: area})
     const years = [1983, 1987, 1991, 1995, 1999, 2003, 2007, 2011, 2015, 2019]
 
     if (mapData.isLoading) 

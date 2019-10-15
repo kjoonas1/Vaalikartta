@@ -5,9 +5,9 @@ import {Link} from "react-router-dom"
 
 export const Timeline = (props) => {
     
-const SVG_WIDTH = 50; // kerroin
+    const SVG_WIDTH = 50 // kerroin
 
-return (
+    return (
         <Col md={{ span: 10, offset: 1 }}>
             <svg key={shortid.generate()} height="10rem" width={"65vw"} display= "block" margin="0, auto">
                 <line key={shortid.generate()} x1="2vw" y1="1rem" x2={"52vw"} y2="1rem" style={ {stroke:"rgb(15,15,15)", strokeWidth:"5"} } />
