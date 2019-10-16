@@ -12,7 +12,7 @@ export const Timeline = (props) => {
 
 
     return (
-        <Col md={{ span: 10, offset: 1 }}>
+        <Col md={{ span: 12 }}>
             <svg key={shortid.generate()} height="10em" viewBox={"0 0 2400 400"} width={"100%"} display= "block" margin="0, auto">
                 <line key={shortid.generate()} x1="10%" y1="1em" x2={"90%"} y2="1em" style={ {stroke:"#404040", strokeWidth:"0.5em"} } />
                 { years.map((year, index) => {
