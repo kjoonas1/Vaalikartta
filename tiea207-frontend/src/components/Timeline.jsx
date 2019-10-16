@@ -13,8 +13,8 @@ export const Timeline = (props) => {
 
     return (
         <Col md={{ span: 12 }}>
-            <svg key={shortid.generate()} height="10em" viewBox={"0 0 2400 400"} width={"100%"} display= "block" margin="0, auto">
-                <line key={shortid.generate()} x1="10%" y1="3em" x2={"90%"} y2="3em" style={ {stroke:"#404040", strokeWidth:"0.5em"} } />
+            <svg key={shortid.generate()} height="14em" viewBox={"0 0 2400 400"} width={"100%"} display= "block" margin="0, auto">
+                <line key={shortid.generate()} x1="10%" y1="6em" x2={"90%"} y2="6em" style={ {stroke:"#404040", strokeWidth:"0.5em"} } />
                 { years.map((year, index) => {
                     const x = (80*(index/(years.length-1)))
                     const lineX = (10 + x).toString()
@@ -22,8 +22,8 @@ export const Timeline = (props) => {
                     return (
                         <Fragment key={shortid.generate()}>
                             <Link key={shortid.generate()} to="/#" onClick={() => { setYear(year)} }>
-                                <line key={shortid.generate()} x1={(lineX) + "%"} y1="3em" x2={(lineX) + "%"} y2="5em" style={ {stroke:"#404040", strokeLinecap:"round", strokeWidth:"0.5em"} } />
-                                <text textAnchor="middle" fontSize="2.5em" key={shortid.generate()} x={lineX+ "%"} y="3em" fill="#404040" fontWeight={bolding}>{year}</text>
+                                <line key={shortid.generate()} x1={(lineX) + "%"} y1="6em" x2={(lineX) + "%"} y2="4em" style={ {stroke:"#404040", strokeLinecap:"round", strokeWidth:"0.5em"} } />
+                                <text textAnchor="middle" fontSize="2.5em" key={shortid.generate()} x={lineX+ "%"} y="1em" fill="#404040" fontWeight={bolding}>{year}</text>
                             </Link>
                         </Fragment>
                     )
@@ -35,8 +35,8 @@ export const Timeline = (props) => {
                     return (
                     <Fragment key={shortid.generate()}>
                         <Link to="/#">
-                            <line key={shortid.generate()} x1={(x) + "%"} y1="2em" x2={(x) + "%"} y2="3em" style={ {stroke:"#404040", strokeLinecap:"round", strokeWidth:"0.25em"} } />
-                            <circle stroke="black" fillOpacity="0.25" strokeWidth="2" fill="#fcb103" cx={x+ "%"} cy="1em" r="1em" ></circle>
+                            <line key={shortid.generate()} x1={(x) + "%"} y1="6em" x2={(x) + "%"} y2="8em" style={ {stroke:"#404040", strokeLinecap:"round", strokeWidth:"0.25em"} } />
+                            <circle stroke="black" fillOpacity="0.25" strokeWidth="2" fill="#fcb103" cx={x+ "%"} cy="9em" r="1em" ></circle>
                         </Link>
                     </Fragment>)
                 })}
