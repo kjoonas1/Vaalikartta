@@ -14,7 +14,20 @@ const Etusivu = () => {
 
     const mapData = useFetch("http://localhost:8000/api/maps/municipalityborders")
     // const areaData = useFetch("http://localhost:8000/api/districts/district/", {district: area})
-    const years = [1983, 1987, 1991, 1995, 1999, 2003, 2007, 2011, 2015, 2019]
+    const timelineData = {
+        years: [1983, 1987, 1991, 1995, 1999, 2003, 2007, 2011, 2015, 2019],
+        events: [
+            {
+                name: "Neuvostoliiton hajoaminen",
+                year: 1991
+            },
+            {
+                name: "Testitesti",
+                year: 2006
+            }
+        ]
+        
+    }
 
     if (mapData.isLoading) 
         return <div>Loading map data...</div>
@@ -23,15 +36,14 @@ const Etusivu = () => {
         return (
             <Fragment>
                 <Row className="timeline">
-                    <Timeline years={years} />
+                    <Timeline data={timelineData} />
                 </Row>
                 <Row>
                     <Col xs={12} xl={4}>
                         <ElectionMap mapData={mapData}/>
                     </Col>
                     <Col xs={12} xl={8}>
-                        <p>{area}</p>
-                        <p>{year}</p>
+                        <p>{area} - {year}</p>
                         <img src={chart} width="100%" alt="Pylväsdiagrammi"/>
                     </Col>
                 </Row>
