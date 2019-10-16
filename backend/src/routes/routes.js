@@ -23,4 +23,7 @@ module.exports = app => {
         const items = await collection.find({}).toArray()
         res.send(items)
     })
+
+    // Tämä vain jotta /favicon.ico hakeminen ei tuota 404
+    app.get('/favicon.ico', (req, res) => res.sendStatus(204));
 }
