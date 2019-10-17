@@ -1,6 +1,7 @@
 const express = require("express")
 const app = express()
 var cors = require("cors")
+const morgan = require("morgan")
 const routes = require("./routes/routes")
 const MongoClient = require("mongodb").MongoClient
 
@@ -18,6 +19,7 @@ MongoClient.connect(databaseUrl, { useNewUrlParser: true, useUnifiedTopology: tr
 })
 
 app.use(cors())
+app.use(morgan("tiny"))
 // Middleware, joka vie Db instanssin jokaisen pyynnön mukana
 app.use((req, res, next) => {
     req.db = mongoClient.db(databaseName)
