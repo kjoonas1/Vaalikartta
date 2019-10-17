@@ -1,5 +1,5 @@
 .container {
-  margin-top: 3rem;
+  margin-top: 1rem;
   text-align: left;
 }
 
@@ -12,5 +12,32 @@
 }
 
 .timeline {
-  margin-bottom: 3rem;
+  margin-bottom: 0rem;
+}
+
+$smallScreenWidth: 95%;
+
+@media (min-width: 1200px) {
+  .container {
+      max-width: 1440px;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .container {
+      max-width: $smallScreenWidth;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+      max-width: $smallScreenWidth;
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+      max-width: $smallScreenWidth;
+  }
 }
