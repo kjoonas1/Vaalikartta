@@ -17,6 +17,9 @@ export const Timeline = (props) => {
     const padding = 10
     const mainLineHeight = "6em"
 
+    const eventYears = []
+    events.map((event) => { return eventYears.push(event.year) })
+
     return (
         <Col md={{ span: 12 }}>
             <svg key={shortid.generate()} height="14em" viewBox={"0 0 2400 400"} width={"100%"} display= "block" margin="0, auto">
@@ -26,7 +29,12 @@ export const Timeline = (props) => {
                     const bolding = contextYear === year ? "bold" : "normal"
                     return (
                         <Fragment key={shortid.generate()}>
-                            <Link key={shortid.generate()} to="/#" onClick={() => { setYear(year)} }>
+                            <Link key={shortid.generate()} to="/#" onClick={() => { 
+                                setYear(year)
+                                // Tällä aktivoidaan event joka on samana vuonna kuin valittu vuosi
+                                //const eventYearIndex = eventYears.indexOf(year)
+                                //eventYearIndex > -1 && setEvent(events[eventYearIndex])
+                                } }>
                                 <line key={shortid.generate()} x1={(lineX) + "%"} y1={mainLineHeight} x2={(lineX) + "%"} y2="4em" style={ {stroke:"#404040", strokeLinecap:"round", strokeWidth:"0.5em"} } />
                                 <text textAnchor="middle" fontSize="2.5em" key={shortid.generate()} x={lineX+ "%"} y="1em" fill="#404040" fontWeight={bolding}>{year}</text>
                             </Link>
@@ -45,7 +53,9 @@ export const Timeline = (props) => {
                     }
                     return (
                         <Fragment key={shortid.generate()}>
-                            <Link to="/#" onClick={() => { setEvent(event)} }>
+                            <Link to="/#" onClick={() => {
+                                isActive ? setEvent(null) : setEvent(event)
+                                } }>
                                 <line key={shortid.generate()} x1={(x) + "%"} y1={mainLineHeight} x2={(x) + "%"} y2="8em" style={ {stroke:eventActiveness.borderColor, strokeLinecap:"round", strokeWidth:"0.25em"} } />
                                 <circle stroke={eventActiveness.borderColor} fillOpacity={eventActiveness.fill} strokeWidth="2" fill="#fcb103" cx={x+ "%"} cy="9em" r={eventActiveness.size} ></circle>
                             </Link>
