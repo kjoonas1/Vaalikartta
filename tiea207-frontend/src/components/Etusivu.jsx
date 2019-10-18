@@ -5,7 +5,8 @@ import { useFetch } from "../hooks/UseFetch"
 import { Timeline } from "./Timeline"
 import chart from "../chart.png"
 import { AreaContext, YearContext } from "../Contexts"
-import { ElectionMap } from "./ElectionMap"
+//import { ElectionMap } from "./ElectionMap"
+import { ConstituencyMap } from "./ConstituencyMap"
 
 const Etusivu = () => {
 
@@ -40,7 +41,8 @@ const Etusivu = () => {
                 </Row>
                 <Row>
                     <Col xs={12} xl={4}>
-                        <ElectionMap mapData={mapData}/>
+                        {/* <ElectionMap map    Data={mapData}/> */ }
+                        <ConstituencyMap height="35em"/>
                     </Col>
                     <Col xs={12} xl={8}>
                         <p>{area} - {year}</p>
