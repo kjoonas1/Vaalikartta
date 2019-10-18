@@ -1,5 +1,5 @@
 
-import React, { Fragment, useContext } from "react"
+import React, { useEffect, Fragment, useContext } from "react"
 import { Col, Row } from "react-bootstrap"
 import { useFetch } from "../hooks/UseFetch"
 import { Timeline } from "./Timeline"
@@ -30,6 +30,22 @@ const Etusivu = () => {
         
     }
 
+    
+    
+    const vaalipiiriKannatus = useFetch(`http://localhost:8000/api/vaalipiirit/kannatus/${area}/${year}`)
+
+    {!vaalipiiriKannatus.error && !vaalipiiriKannatus.isLoading && !vaalipiiriKannatus.isLoading
+        && year && area && 
+        Object.keys(vaalipiiriKannatus.data).map((key, index) => {
+            vaalipiiriKannatus.data[key].map((value, index) => {
+                Object.keys(value).map((key, index) => {
+                    console.log(value[key])
+                })
+            })
+        })
+    }
+    
+    
     if (mapData.isLoading) 
         return <div>Loading map data...</div>
     
@@ -46,7 +62,7 @@ const Etusivu = () => {
                     </Col>
                     <Col xs={12} xl={8}>
                         <p>{area} - {year}</p>
-                        <img src={chart} width="100%" alt="Pylväsdiagrammi"/>
+                        
                     </Col>
                 </Row>
             </Fragment>
