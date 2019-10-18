@@ -21,6 +21,7 @@ const useFetch = (url, queryParam) => {
                     setIsLoading(false)
                 }
             } catch (err) {
+                setIsLoading(false)
                 setError(err)
             }
         }

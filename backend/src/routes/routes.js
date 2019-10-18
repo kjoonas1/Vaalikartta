@@ -18,9 +18,16 @@ module.exports = app => {
             })
     })
 
-    app.get("/api/mongotesti", async (req, res) => {
+    app.get("/api/mongotesti/:id", async (req, res) => {
+        console.log(req.params)
         const collection = req.db.collection("leluesimerkki")
         const items = await collection.find({}).toArray()
         res.send(items)
     })
+    /* Esimerkki tietokannasta hakemiseen
+    app.get("/api/hallitukset/:vuosi", async (req, res) => {
+        const vuosi = req.params.vuosi
+        const hallituksenTiedot = req.db.collection("hallitukset").find({vuosi: 2002}).toArray()
+        res.send(hallituksenTiedot)
+    })*/
 }
