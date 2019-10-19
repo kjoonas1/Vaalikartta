@@ -58,7 +58,9 @@ const Etusivu = () => {
             .sort((a, b) => b.vote - a.vote)
     }
 
-    
+    if (mapData.isLoading) 
+        return <div>Loading map data...</div>
+        
     if (!mapData.isLoading && mapData.error === null) {
         return (
             <Fragment>
