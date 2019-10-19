@@ -1,4 +1,3 @@
-
 import React, { Fragment, useContext } from "react"
 import { Col, Row } from "react-bootstrap"
 import { useFetch } from "../hooks/UseFetch"
@@ -38,31 +37,30 @@ const Etusivu = () => {
 
     const kannatus = {}
     if (vaalipiiriKannatus.data[0][0]) {
-        // Poistetaan kentät joiden value on null tai nolla
-        kannatus.data = Object.filter(vaalipiiriKannatus.data[0][0], a => a !== null && a > 0)
+        // Poistetaan kentät joiden value on null
+        kannatus.data = Object.filter(vaalipiiriKannatus.data[0][0], a => a !== null)
     }
 
-    const removeAttributes = ["Alue", "_id", "Vuosi", "tyyppi", "aluekoodi"]
+    let puolueLuvut = []
+    if (kannatus.data) {
+        // Siivotaan kentät joiden nimi on removeAttributesissa
+        const removeAttributes = ["Alue", "_id", "Vuosi", "tyyppi", "aluekoodi"]
+        removeAttributes.forEach(delAttribute => {
+            delete kannatus.data[delAttribute]
+        })
 
-    const puolueLuvut = {}
-    if (kannatus.data !== undefined) { 
-        // Siivotaan kentät joiden avainarvo on removeAttributesissa
-        puolueLuvut.data = Object.keys(Object.keys(kannatus.data)
-            .filter(key => !removeAttributes.includes(key))
-            .reduce((obj, key) => {
-                obj[key] = kannatus.data[key]
-                return obj
-            }, {}))
-            .map((key) => {
-                return {puolue : key, kannatus: kannatus.data[key]}
+        // Tehdään taulukko, jossa on kukin puolue ja sen kannatus
+        puolueLuvut = Object.keys(kannatus.data)
+            .map(key => {
+                return { name: key, vote: kannatus.data[key] }
             })
-            .sort((a, b) => (a.kannatus < b.kannatus) ? 1 : -1)
+            // Järjestetään äänestysprosentin mukaan laskevaan järjestykseen
+            .sort((a, b) => b.vote - a.vote)
     }
 
-    
     if (mapData.isLoading) 
         return <div>Loading map data...</div>
-    
+        
     if (!mapData.isLoading && mapData.error === null) {
         return (
             <Fragment>
@@ -75,19 +73,20 @@ const Etusivu = () => {
                         <ConstituencyMap height="35em"/>
                     </Col>
                     <Col xs={12} xl={8}>
-                        <p>{area} - {year}</p>
-                        { (puolueLuvut.data !== undefined) &&
-                            Object.keys(puolueLuvut.data)
-                                .map((key) => {
-                                    return <p key={shortid.generate()}>{puolueLuvut.data[key].puolue + " " + puolueLuvut.data[key].kannatus}</p>
-                                })
-                        }
+                        <p> {area} - {year} </p>
+                        {puolueLuvut.length > 0 &&
+                            puolueLuvut.map(party => {
+                                return (
+                                    <p key={shortid.generate()}>
+                                        {party.name + ": " + party.vote}
+                                    </p>
+                                )
+                            })}
                     </Col>
                 </Row>
             </Fragment>
         )
     } else return (<div>Error</div>)
 }
-
 
 export default Etusivu
