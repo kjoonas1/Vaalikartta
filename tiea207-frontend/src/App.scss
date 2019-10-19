@@ -43,10 +43,21 @@ $smallScreenWidth: 95%;
 
 .constituency {
   fill-opacity: 0.5;
+  transition: 0.3s;
 }
 
 .constituency:hover {
   fill-opacity: 1;
   stroke: gray;
-  stroke-width: 2px;
+  stroke-width: 3px;
+}
+
+.event {
+  transition: 0.5s;
+}
+
+.event:hover {
+  fill-opacity: 1;
+  stroke: gray;
+  stroke-width: 1px;
 }

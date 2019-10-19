@@ -58,8 +58,8 @@ export const Timeline = (props) => {
                                 // Pallon uudelleenklikkaus poistaa aktivoinnin
                                 isActive ? setEvent(null) : setEvent(event)
                             }}>
-                                <line key={shortid.generate()} x1={(x) + "%"} y1={mainLineHeight} x2={(x) + "%"} y2="8em" style={ {stroke:eventActiveness.borderColor, strokeLinecap:"round", strokeWidth:"0.25em"} } />
-                                <circle stroke={eventActiveness.borderColor} fillOpacity={eventActiveness.fill} strokeWidth="2" fill="#fcb103" cx={x+ "%"} cy="9em" r={eventActiveness.size} ></circle>
+                                <line className="event" key={shortid.generate()} x1={(x) + "%"} y1={mainLineHeight} x2={(x) + "%"} y2="8em" style={ {stroke:eventActiveness.borderColor, strokeLinecap:"round", strokeWidth:"0.25em"} } />
+                                <circle className="event" stroke={eventActiveness.boconstituencyrderColor} fillOpacity={eventActiveness.fill} strokeWidth="2" fill="#fcb103" cx={x+ "%"} cy="9em" r={eventActiveness.size} ></circle>
                             </Link>
                             {isActive && <text textAnchor="middle" fontSize="1.5em" key={shortid.generate()} y ="8em" x = {x + "%"}>{contextEvent.name}</text> }
                         </Fragment>

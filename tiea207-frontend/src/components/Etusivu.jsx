@@ -7,6 +7,7 @@ import chart from "../chart.png"
 import { AreaContext, YearContext } from "../Contexts"
 //import { ElectionMap } from "./ElectionMap"
 import { ConstituencyMap } from "./ConstituencyMap"
+import shortid from "shortid"
 
 const Etusivu = () => {
 
@@ -27,24 +28,38 @@ const Etusivu = () => {
                 year: 2006
             }
         ]
-        
     }
-
-    
     
     const vaalipiiriKannatus = useFetch(`http://localhost:8000/api/vaalipiirit/kannatus/${area}/${year}`)
-
-    {!vaalipiiriKannatus.error && !vaalipiiriKannatus.isLoading && !vaalipiiriKannatus.isLoading
-        && year && area && 
-        Object.keys(vaalipiiriKannatus.data).map((key, index) => {
-            vaalipiiriKannatus.data[key].map((value, index) => {
-                Object.keys(value).map((key, index) => {
-                    console.log(value[key])
-                })
-            })
-        })
-    }
     
+    Object.filter = (obj, pred) => 
+    Object.keys(obj)
+          .filter(key => pred(obj[key]))
+          .reduce((res, key) => (res[key] = obj[key], res), {});
+
+    const kannatus = {}
+    if (vaalipiiriKannatus.data[0][0]) {
+        // Poistetaan kentät joiden value on null tai nolla
+        kannatus.data = Object.filter(vaalipiiriKannatus.data[0][0], a => a !== null && a > 0)
+    }
+
+    const removeAttributes = ["Alue", "_id", "Vuosi", "tyyppi", "aluekoodi"]
+
+    const puolueLuvut = {}
+    if (kannatus.data !== undefined) { 
+        // Siivotaan kentät joiden avainarvo on removeAttributesissa
+        puolueLuvut.data = Object.keys(Object.keys(kannatus.data)
+        .filter(key => !removeAttributes.includes(key))
+        .reduce((obj, key) => {
+            obj[key] = kannatus.data[key];
+            return obj;
+        }, {}))
+        .map((key) => {
+            return {puolue : key, kannatus: kannatus.data[key]}
+        })
+        .sort((a, b) => (a.kannatus < b.kannatus) ? 1 : -1)
+    }
+
     
     if (mapData.isLoading) 
         return <div>Loading map data...</div>
@@ -62,7 +77,12 @@ const Etusivu = () => {
                     </Col>
                     <Col xs={12} xl={8}>
                         <p>{area} - {year}</p>
-                        
+                        { (puolueLuvut.data !== undefined) &&
+                            Object.keys(puolueLuvut.data)
+                            .map((key) => {
+                                return <p key={shortid.generate()}>{puolueLuvut.data[key].puolue + " " + puolueLuvut.data[key].kannatus}</p>
+                            })
+                        }
                     </Col>
                 </Row>
             </Fragment>
