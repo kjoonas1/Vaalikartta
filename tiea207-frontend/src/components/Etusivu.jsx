@@ -43,17 +43,13 @@ const Etusivu = () => {
 
     let puolueLuvut = []
     if (kannatus.data) {
-        // Siivotaan kentät joiden nimi on removeAttributesissa
+        // Tehdään taulukko, jossa on kukin puolue ja sen kannatus.
+        // Jätetään pois kentät joiden nimi on removeAttributesissa (eivät ole puolueita):
         const removeAttributes = ["Alue", "_id", "Vuosi", "tyyppi", "aluekoodi"]
-        removeAttributes.forEach(delAttribute => {
-            delete kannatus.data[delAttribute]
-        })
-
-        // Tehdään taulukko, jossa on kukin puolue ja sen kannatus
-        puolueLuvut = Object.keys(kannatus.data)
-            .map(key => {
-                return { name: key, vote: kannatus.data[key] }
-            })
+        puolueLuvut = Object.entries(kannatus.data)
+            .reduce((acc, [key, val]) => {
+                return removeAttributes.includes(key) ? acc : [...acc, { name: key, vote: val }]
+            }, [])
             // Järjestetään äänestysprosentin mukaan laskevaan järjestykseen
             .sort((a, b) => b.vote - a.vote)
     }
