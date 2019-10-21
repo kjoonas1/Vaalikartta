@@ -18,8 +18,7 @@ export const Timeline = (props) => {
     const contextEvent = event
     const padding = 10
     const mainLineHeight = "6em"
-    const eventYears = []
-    events.map((event) => { return eventYears.push(event.year) })
+    // const eventYears = events.map((event) => { return event.year })
 
     return (
         <Col md={{ span: 12 }}>

@@ -6,6 +6,7 @@ import { AreaContext, YearContext } from "../Contexts"
 //import { ElectionMap } from "./ElectionMap"
 import { ConstituencyMap } from "./ConstituencyMap"
 import shortid from "shortid"
+import * as objectHelper from "../utils/objectHelper"
 
 const Etusivu = () => {
 
@@ -27,32 +28,17 @@ const Etusivu = () => {
             }
         ]
     }
+
+    console.log(objectHelper.extractArrayOfResponseData({a: "asd", b: "asd"}, ["a"], "name", "vote"))
     
     const vaalipiiriKannatus = useFetch(`http://localhost:8000/api/vaalipiirit/kannatus/${area}/${year}`)
-    
-    Object.filter = (obj, pred) => 
-        Object.keys(obj)
-            .filter(key => pred(obj[key]))
-            .reduce((res, key) => (res[key] = obj[key], res), {})
-
-    const kannatus = {}
-    if (vaalipiiriKannatus.data[0][0]) {
-        // Poistetaan kentät joiden value on null
-        kannatus.data = Object.filter(vaalipiiriKannatus.data[0][0], a => a !== null)
-    }
-
-    let puolueLuvut = []
-    if (kannatus.data) {
-        // Tehdään taulukko, jossa on kukin puolue ja sen kannatus.
-        // Jätetään pois kentät joiden nimi on removeAttributesissa (eivät ole puolueita):
-        const removeAttributes = ["Alue", "_id", "Vuosi", "tyyppi", "aluekoodi"]
-        puolueLuvut = Object.entries(kannatus.data)
-            .reduce((acc, [key, val]) => {
-                return removeAttributes.includes(key) ? acc : [...acc, { name: key, vote: val }]
-            }, [])
-            // Järjestetään äänestysprosentin mukaan laskevaan järjestykseen
-            .sort((a, b) => b.vote - a.vote)
-    }
+    // Tehdään taulukko, jossa on kukin puolue ja sen kannatus.
+    // Jätetään pois kentät joiden nimi on removeAttributesissa (eivät ole puolueita):
+    // Järjestetään äänestysprosentin mukaan laskevaan järjestykseen
+    const removeAttributes = ["Alue", "_id", "Vuosi", "tyyppi", "aluekoodi"]
+    const kannatus = objectHelper.filterFromObject(vaalipiiriKannatus.data[0][0], a => a !== null)
+    const puolueLuvut = objectHelper.extractArrayOfResponseData(kannatus, removeAttributes, "name", "vote")
+        .sort((a, b) => b.vote - a.vote)
 
     if (mapData.isLoading) 
         return <div>Loading map data...</div>
@@ -70,7 +56,7 @@ const Etusivu = () => {
                     </Col>
                     <Col xs={12} xl={8}>
                         <p> {area} - {year} </p>
-                        {puolueLuvut.length > 0 &&
+                        {puolueLuvut !== null && puolueLuvut.length > 0 &&
                             puolueLuvut.map(party => {
                                 return (
                                     <p key={shortid.generate()}>
