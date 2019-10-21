@@ -35,5 +35,5 @@ module.exports = app => {
     })
 
     // Tämä vain jotta /favicon.ico hakeminen ei tuota 404
-    app.get("/favicon.ico", (req, res) => res.sendStatus(204))
+    app.get('/favicon.ico', (req, res) => res.sendStatus(204));
 }
