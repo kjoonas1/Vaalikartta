@@ -12,7 +12,6 @@ const Etusivu = () => {
 
     const { area } = useContext(AreaContext)
     const { year } = useContext(YearContext)
-
     const mapData = useFetch("http://localhost:8000/api/maps/municipalityborders")
     // const areaData = useFetch("http://localhost:8000/api/districts/district/", {district: area})
     const timelineData = {
@@ -28,8 +27,6 @@ const Etusivu = () => {
             }
         ]
     }
-
-    console.log(objectHelper.extractArrayOfResponseData({a: "asd", b: "asd"}, ["a"], "name", "vote"))
     
     const vaalipiiriKannatus = useFetch(`http://localhost:8000/api/vaalipiirit/kannatus/${area}/${year}`)
     // Tehdään taulukko, jossa on kukin puolue ja sen kannatus.

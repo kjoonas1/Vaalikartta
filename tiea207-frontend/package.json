@@ -22,11 +22,11 @@
     "test-pre-commit": "react-scripts test --env=jsdom --watchAll=false",
     "eject": "react-scripts eject",
     "lint": "./node_modules/.bin/eslint . --ext .js --ext .jsx; exit 0",
-    "lint-fix": "./node_modules/.bin/eslint . --ext .js --ext .jsx --fix; exit 0"
+    "lint-fix": "./node_modules/.bin/eslint . --ext .js --ext .jsx --fix"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint && npm run test-pre-commit",
+      "pre-commit": "npm run lint-fix && npm run test-pre-commit",
       "pre-push": "npm run lint"
     }
   },
