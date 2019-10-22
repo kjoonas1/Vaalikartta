@@ -13,7 +13,7 @@
                 },
                 "properties": {
                     "name": "Akaa",
-                    "popupContent": "Akaa<\/b>\n",
+                    "popupContent": "Akaa",
                     "color": "blue"
                 }
             },
@@ -28,7 +28,7 @@
                 },
                 "properties": {
                     "name": "Alaj\u00e4rvi",
-                    "popupContent": "Alaj\u00e4rvi<\/b>\n",
+                    "popupContent": "Alaj\u00e4rvi",
                     "color": "blue"
                 }
             },
@@ -43,7 +43,7 @@
                 },
                 "properties": {
                     "name": "Alavieska",
-                    "popupContent": "Alavieska<\/b>\n",
+                    "popupContent": "Alavieska",
                     "color": "blue"
                 }
             },
@@ -58,7 +58,7 @@
                 },
                 "properties": {
                     "name": "Alavus",
-                    "popupContent": "Alavus<\/b>\n",
+                    "popupContent": "Alavus",
                     "color": "blue"
                 }
             },
@@ -73,7 +73,7 @@
                 },
                 "properties": {
                     "name": "Asikkala",
-                    "popupContent": "Asikkala<\/b>\n",
+                    "popupContent": "Asikkala",
                     "color": "blue"
                 }
             },
@@ -88,7 +88,7 @@
                 },
                 "properties": {
                     "name": "Askola",
-                    "popupContent": "Askola<\/b>\n",
+                    "popupContent": "Askola",
                     "color": "blue"
                 }
             },
@@ -103,7 +103,7 @@
                 },
                 "properties": {
                     "name": "Aura",
-                    "popupContent": "Aura<\/b>\n",
+                    "popupContent": "Aura",
                     "color": "blue"
                 }
             },
@@ -118,7 +118,7 @@
                 },
                 "properties": {
                     "name": "Br\u00e4nd\u00f6",
-                    "popupContent": "Br\u00e4nd\u00f6<\/b>\n",
+                    "popupContent": "Br\u00e4nd\u00f6",
                     "color": "blue"
                 }
             },
@@ -133,7 +133,7 @@
                 },
                 "properties": {
                     "name": "Ecker\u00f6",
-                    "popupContent": "Ecker\u00f6<\/b>\n",
+                    "popupContent": "Ecker\u00f6",
                     "color": "blue"
                 }
             },
@@ -148,7 +148,7 @@
                 },
                 "properties": {
                     "name": "Enonkoski",
-                    "popupContent": "Enonkoski<\/b>\n",
+                    "popupContent": "Enonkoski",
                     "color": "blue"
                 }
             },
@@ -163,7 +163,7 @@
                 },
                 "properties": {
                     "name": "Enonteki\u00f6",
-                    "popupContent": "Enonteki\u00f6<\/b>\n",
+                    "popupContent": "Enonteki\u00f6",
                     "color": "blue"
                 }
             },
@@ -178,7 +178,7 @@
                 },
                 "properties": {
                     "name": "Espoo",
-                    "popupContent": "Espoo<\/b>\n",
+                    "popupContent": "Espoo",
                     "color": "blue"
                 }
             },
@@ -193,7 +193,7 @@
                 },
                 "properties": {
                     "name": "Eura",
-                    "popupContent": "Eura<\/b>\n",
+                    "popupContent": "Eura",
                     "color": "blue"
                 }
             },
@@ -208,7 +208,7 @@
                 },
                 "properties": {
                     "name": "Eurajoki",
-                    "popupContent": "Eurajoki<\/b>\n",
+                    "popupContent": "Eurajoki",
                     "color": "blue"
                 }
             },
@@ -223,7 +223,7 @@
                 },
                 "properties": {
                     "name": "Evij\u00e4rvi",
-                    "popupContent": "Evij\u00e4rvi<\/b>\n",
+                    "popupContent": "Evij\u00e4rvi",
                     "color": "blue"
                 }
             },
@@ -238,7 +238,7 @@
                 },
                 "properties": {
                     "name": "Finstr\u00f6m",
-                    "popupContent": "Finstr\u00f6m<\/b>\n",
+                    "popupContent": "Finstr\u00f6m",
                     "color": "blue"
                 }
             },
@@ -253,7 +253,7 @@
                 },
                 "properties": {
                     "name": "Forssa",
-                    "popupContent": "Forssa<\/b>\n",
+                    "popupContent": "Forssa",
                     "color": "blue"
                 }
             },
@@ -268,7 +268,7 @@
                 },
                 "properties": {
                     "name": "F\u00f6gl\u00f6",
-                    "popupContent": "F\u00f6gl\u00f6<\/b>\n",
+                    "popupContent": "F\u00f6gl\u00f6",
                     "color": "blue"
                 }
             },
@@ -283,7 +283,7 @@
                 },
                 "properties": {
                     "name": "Geta",
-                    "popupContent": "Geta<\/b>\n",
+                    "popupContent": "Geta",
                     "color": "blue"
                 }
             },
@@ -298,7 +298,7 @@
                 },
                 "properties": {
                     "name": "Haapaj\u00e4rvi",
-                    "popupContent": "Haapaj\u00e4rvi<\/b>\n",
+                    "popupContent": "Haapaj\u00e4rvi",
                     "color": "blue"
                 }
             },
@@ -313,7 +313,7 @@
                 },
                 "properties": {
                     "name": "Haapavesi",
-                    "popupContent": "Haapavesi<\/b>\n",
+                    "popupContent": "Haapavesi",
                     "color": "blue"
                 }
             },
@@ -328,7 +328,7 @@
                 },
                 "properties": {
                     "name": "Hailuoto",
-                    "popupContent": "Hailuoto<\/b>\n",
+                    "popupContent": "Hailuoto",
                     "color": "blue"
                 }
             },
@@ -343,7 +343,7 @@
                 },
                 "properties": {
                     "name": "Halsua",
-                    "popupContent": "Halsua<\/b>\n",
+                    "popupContent": "Halsua",
                     "color": "blue"
                 }
             },
@@ -358,7 +358,7 @@
                 },
                 "properties": {
                     "name": "Hamina",
-                    "popupContent": "Hamina<\/b>\n",
+                    "popupContent": "Hamina",
                     "color": "blue"
                 }
             },
@@ -373,7 +373,7 @@
                 },
                 "properties": {
                     "name": "Hammarland",
-                    "popupContent": "Hammarland<\/b>\n",
+                    "popupContent": "Hammarland",
                     "color": "blue"
                 }
             },
@@ -388,7 +388,7 @@
                 },
                 "properties": {
                     "name": "Hankasalmi",
-                    "popupContent": "Hankasalmi<\/b>\n",
+                    "popupContent": "Hankasalmi",
                     "color": "blue"
                 }
             },
@@ -403,7 +403,7 @@
                 },
                 "properties": {
                     "name": "Hanko",
-                    "popupContent": "Hanko<\/b>\n",
+                    "popupContent": "Hanko",
                     "color": "blue"
                 }
             },
@@ -418,7 +418,7 @@
                 },
                 "properties": {
                     "name": "Harjavalta",
-                    "popupContent": "Harjavalta<\/b>\n",
+                    "popupContent": "Harjavalta",
                     "color": "blue"
                 }
             },
@@ -433,7 +433,7 @@
                 },
                 "properties": {
                     "name": "Hartola",
-                    "popupContent": "Hartola<\/b>\n",
+                    "popupContent": "Hartola",
                     "color": "blue"
                 }
             },
@@ -448,7 +448,7 @@
                 },
                 "properties": {
                     "name": "Hattula",
-                    "popupContent": "Hattula<\/b>\n",
+                    "popupContent": "Hattula",
                     "color": "blue"
                 }
             },
@@ -463,7 +463,7 @@
                 },
                 "properties": {
                     "name": "Hausj\u00e4rvi",
-                    "popupContent": "Hausj\u00e4rvi<\/b>\n",
+                    "popupContent": "Hausj\u00e4rvi",
                     "color": "blue"
                 }
             },
@@ -478,7 +478,7 @@
                 },
                 "properties": {
                     "name": "Heinola",
-                    "popupContent": "Heinola<\/b>\n",
+                    "popupContent": "Heinola",
                     "color": "blue"
                 }
             },
@@ -493,7 +493,7 @@
                 },
                 "properties": {
                     "name": "Hein\u00e4vesi",
-                    "popupContent": "Hein\u00e4vesi<\/b>\n",
+                    "popupContent": "Hein\u00e4vesi",
                     "color": "blue"
                 }
             },
@@ -508,7 +508,7 @@
                 },
                 "properties": {
                     "name": "Helsinki",
-                    "popupContent": "Helsinki<\/b>\n",
+                    "popupContent": "Helsinki",
                     "color": "blue"
                 }
             },
@@ -523,7 +523,7 @@
                 },
                 "properties": {
                     "name": "Hirvensalmi",
-                    "popupContent": "Hirvensalmi<\/b>\n",
+                    "popupContent": "Hirvensalmi",
                     "color": "blue"
                 }
             },
@@ -538,7 +538,7 @@
                 },
                 "properties": {
                     "name": "Hollola",
-                    "popupContent": "Hollola<\/b>\n",
+                    "popupContent": "Hollola",
                     "color": "blue"
                 }
             },
@@ -553,7 +553,7 @@
                 },
                 "properties": {
                     "name": "Honkajoki",
-                    "popupContent": "Honkajoki<\/b>\n",
+                    "popupContent": "Honkajoki",
                     "color": "blue"
                 }
             },
@@ -568,7 +568,7 @@
                 },
                 "properties": {
                     "name": "Huittinen",
-                    "popupContent": "Huittinen<\/b>\n",
+                    "popupContent": "Huittinen",
                     "color": "blue"
                 }
             },
@@ -583,7 +583,7 @@
                 },
                 "properties": {
                     "name": "Humppila",
-                    "popupContent": "Humppila<\/b>\n",
+                    "popupContent": "Humppila",
                     "color": "blue"
                 }
             },
@@ -598,7 +598,7 @@
                 },
                 "properties": {
                     "name": "Hyrynsalmi",
-                    "popupContent": "Hyrynsalmi<\/b>\n",
+                    "popupContent": "Hyrynsalmi",
                     "color": "blue"
                 }
             },
@@ -613,7 +613,7 @@
                 },
                 "properties": {
                     "name": "Hyvink\u00e4\u00e4",
-                    "popupContent": "Hyvink\u00e4\u00e4<\/b>\n",
+                    "popupContent": "Hyvink\u00e4\u00e4",
                     "color": "blue"
                 }
             },
@@ -628,7 +628,7 @@
                 },
                 "properties": {
                     "name": "H\u00e4meenkyr\u00f6",
-                    "popupContent": "H\u00e4meenkyr\u00f6<\/b>\n",
+                    "popupContent": "H\u00e4meenkyr\u00f6",
                     "color": "blue"
                 }
             },
@@ -643,7 +643,7 @@
                 },
                 "properties": {
                     "name": "H\u00e4meenlinna",
-                    "popupContent": "H\u00e4meenlinna<\/b>\n",
+                    "popupContent": "H\u00e4meenlinna",
                     "color": "blue"
                 }
             },
@@ -658,7 +658,7 @@
                 },
                 "properties": {
                     "name": "Ii",
-                    "popupContent": "Ii<\/b>\n",
+                    "popupContent": "Ii",
                     "color": "blue"
                 }
             },
@@ -673,7 +673,7 @@
                 },
                 "properties": {
                     "name": "Iisalmi",
-                    "popupContent": "Iisalmi<\/b>\n",
+                    "popupContent": "Iisalmi",
                     "color": "blue"
                 }
             },
@@ -688,7 +688,7 @@
                 },
                 "properties": {
                     "name": "Iitti",
-                    "popupContent": "Iitti<\/b>\n",
+                    "popupContent": "Iitti",
                     "color": "blue"
                 }
             },
@@ -703,7 +703,7 @@
                 },
                 "properties": {
                     "name": "Ikaalinen",
-                    "popupContent": "Ikaalinen<\/b>\n",
+                    "popupContent": "Ikaalinen",
                     "color": "blue"
                 }
             },
@@ -718,7 +718,7 @@
                 },
                 "properties": {
                     "name": "Ilmajoki",
-                    "popupContent": "Ilmajoki<\/b>\n",
+                    "popupContent": "Ilmajoki",
                     "color": "blue"
                 }
             },
@@ -733,7 +733,7 @@
                 },
                 "properties": {
                     "name": "Ilomantsi",
-                    "popupContent": "Ilomantsi<\/b>\n",
+                    "popupContent": "Ilomantsi",
                     "color": "blue"
                 }
             },
@@ -748,7 +748,7 @@
                 },
                 "properties": {
                     "name": "Imatra",
-                    "popupContent": "Imatra<\/b>\n",
+                    "popupContent": "Imatra",
                     "color": "blue"
                 }
             },
@@ -763,7 +763,7 @@
                 },
                 "properties": {
                     "name": "Inari",
-                    "popupContent": "Inari<\/b>\n",
+                    "popupContent": "Inari",
                     "color": "blue"
                 }
             },
@@ -778,7 +778,7 @@
                 },
                 "properties": {
                     "name": "Inkoo",
-                    "popupContent": "Inkoo<\/b>\n",
+                    "popupContent": "Inkoo",
                     "color": "blue"
                 }
             },
@@ -793,7 +793,7 @@
                 },
                 "properties": {
                     "name": "Isojoki",
-                    "popupContent": "Isojoki<\/b>\n",
+                    "popupContent": "Isojoki",
                     "color": "blue"
                 }
             },
@@ -808,7 +808,7 @@
                 },
                 "properties": {
                     "name": "Isokyr\u00f6",
-                    "popupContent": "Isokyr\u00f6<\/b>\n",
+                    "popupContent": "Isokyr\u00f6",
                     "color": "blue"
                 }
             },
@@ -823,7 +823,7 @@
                 },
                 "properties": {
                     "name": "Janakkala",
-                    "popupContent": "Janakkala<\/b>\n",
+                    "popupContent": "Janakkala",
                     "color": "blue"
                 }
             },
@@ -838,7 +838,7 @@
                 },
                 "properties": {
                     "name": "Joensuu",
-                    "popupContent": "Joensuu<\/b>\n",
+                    "popupContent": "Joensuu",
                     "color": "blue"
                 }
             },
@@ -853,7 +853,7 @@
                 },
                 "properties": {
                     "name": "Jokioinen",
-                    "popupContent": "Jokioinen<\/b>\n",
+                    "popupContent": "Jokioinen",
                     "color": "blue"
                 }
             },
@@ -868,7 +868,7 @@
                 },
                 "properties": {
                     "name": "Jomala",
-                    "popupContent": "Jomala<\/b>\n",
+                    "popupContent": "Jomala",
                     "color": "blue"
                 }
             },
@@ -883,7 +883,7 @@
                 },
                 "properties": {
                     "name": "Joroinen",
-                    "popupContent": "Joroinen<\/b>\n",
+                    "popupContent": "Joroinen",
                     "color": "blue"
                 }
             },
@@ -898,7 +898,7 @@
                 },
                 "properties": {
                     "name": "Joutsa",
-                    "popupContent": "Joutsa<\/b>\n",
+                    "popupContent": "Joutsa",
                     "color": "blue"
                 }
             },
@@ -913,7 +913,7 @@
                 },
                 "properties": {
                     "name": "Juuka",
-                    "popupContent": "Juuka<\/b>\n",
+                    "popupContent": "Juuka",
                     "color": "blue"
                 }
             },
@@ -928,7 +928,7 @@
                 },
                 "properties": {
                     "name": "Juupajoki",
-                    "popupContent": "Juupajoki<\/b>\n",
+                    "popupContent": "Juupajoki",
                     "color": "blue"
                 }
             },
@@ -943,7 +943,7 @@
                 },
                 "properties": {
                     "name": "Juva",
-                    "popupContent": "Juva<\/b>\n",
+                    "popupContent": "Juva",
                     "color": "blue"
                 }
             },
@@ -958,7 +958,7 @@
                 },
                 "properties": {
                     "name": "Jyv\u00e4skyl\u00e4",
-                    "popupContent": "Jyv\u00e4skyl\u00e4<\/b>\n",
+                    "popupContent": "Jyv\u00e4skyl\u00e4",
                     "color": "blue"
                 }
             },
@@ -973,7 +973,7 @@
                 },
                 "properties": {
                     "name": "J\u00e4mij\u00e4rvi",
-                    "popupContent": "J\u00e4mij\u00e4rvi<\/b>\n",
+                    "popupContent": "J\u00e4mij\u00e4rvi",
                     "color": "blue"
                 }
             },
@@ -988,7 +988,7 @@
                 },
                 "properties": {
                     "name": "J\u00e4ms\u00e4",
-                    "popupContent": "J\u00e4ms\u00e4<\/b>\n",
+                    "popupContent": "J\u00e4ms\u00e4",
                     "color": "blue"
                 }
             },
@@ -1003,7 +1003,7 @@
                 },
                 "properties": {
                     "name": "J\u00e4rvenp\u00e4\u00e4",
-                    "popupContent": "J\u00e4rvenp\u00e4\u00e4<\/b>\n",
+                    "popupContent": "J\u00e4rvenp\u00e4\u00e4",
                     "color": "blue"
                 }
             },
@@ -1018,7 +1018,7 @@
                 },
                 "properties": {
                     "name": "Kaarina",
-                    "popupContent": "Kaarina<\/b>\n",
+                    "popupContent": "Kaarina",
                     "color": "blue"
                 }
             },
@@ -1033,7 +1033,7 @@
                 },
                 "properties": {
                     "name": "Kaavi",
-                    "popupContent": "Kaavi<\/b>\n",
+                    "popupContent": "Kaavi",
                     "color": "blue"
                 }
             },
@@ -1048,7 +1048,7 @@
                 },
                 "properties": {
                     "name": "Kajaani",
-                    "popupContent": "Kajaani<\/b>\n",
+                    "popupContent": "Kajaani",
                     "color": "blue"
                 }
             },
@@ -1063,7 +1063,7 @@
                 },
                 "properties": {
                     "name": "Kalajoki",
-                    "popupContent": "Kalajoki<\/b>\n",
+                    "popupContent": "Kalajoki",
                     "color": "blue"
                 }
             },
@@ -1078,7 +1078,7 @@
                 },
                 "properties": {
                     "name": "Kangasala",
-                    "popupContent": "Kangasala<\/b>\n",
+                    "popupContent": "Kangasala",
                     "color": "blue"
                 }
             },
@@ -1093,7 +1093,7 @@
                 },
                 "properties": {
                     "name": "Kangasniemi",
-                    "popupContent": "Kangasniemi<\/b>\n",
+                    "popupContent": "Kangasniemi",
                     "color": "blue"
                 }
             },
@@ -1108,7 +1108,7 @@
                 },
                 "properties": {
                     "name": "Kankaanp\u00e4\u00e4",
-                    "popupContent": "Kankaanp\u00e4\u00e4<\/b>\n",
+                    "popupContent": "Kankaanp\u00e4\u00e4",
                     "color": "blue"
                 }
             },
@@ -1123,7 +1123,7 @@
                 },
                 "properties": {
                     "name": "Kannonkoski",
-                    "popupContent": "Kannonkoski<\/b>\n",
+                    "popupContent": "Kannonkoski",
                     "color": "blue"
                 }
             },
@@ -1138,7 +1138,7 @@
                 },
                 "properties": {
                     "name": "Kannus",
-                    "popupContent": "Kannus<\/b>\n",
+                    "popupContent": "Kannus",
                     "color": "blue"
                 }
             },
@@ -1153,7 +1153,7 @@
                 },
                 "properties": {
                     "name": "Karijoki",
-                    "popupContent": "Karijoki<\/b>\n",
+                    "popupContent": "Karijoki",
                     "color": "blue"
                 }
             },
@@ -1168,7 +1168,7 @@
                 },
                 "properties": {
                     "name": "Karkkila",
-                    "popupContent": "Karkkila<\/b>\n",
+                    "popupContent": "Karkkila",
                     "color": "blue"
                 }
             },
@@ -1183,7 +1183,7 @@
                 },
                 "properties": {
                     "name": "Karstula",
-                    "popupContent": "Karstula<\/b>\n",
+                    "popupContent": "Karstula",
                     "color": "blue"
                 }
             },
@@ -1198,7 +1198,7 @@
                 },
                 "properties": {
                     "name": "Karvia",
-                    "popupContent": "Karvia<\/b>\n",
+                    "popupContent": "Karvia",
                     "color": "blue"
                 }
             },
@@ -1213,7 +1213,7 @@
                 },
                 "properties": {
                     "name": "Kaskinen",
-                    "popupContent": "Kaskinen<\/b>\n",
+                    "popupContent": "Kaskinen",
                     "color": "blue"
                 }
             },
@@ -1228,7 +1228,7 @@
                 },
                 "properties": {
                     "name": "Kauhajoki",
-                    "popupContent": "Kauhajoki<\/b>\n",
+                    "popupContent": "Kauhajoki",
                     "color": "blue"
                 }
             },
@@ -1243,7 +1243,7 @@
                 },
                 "properties": {
                     "name": "Kauhava",
-                    "popupContent": "Kauhava<\/b>\n",
+                    "popupContent": "Kauhava",
                     "color": "blue"
                 }
             },
@@ -1258,7 +1258,7 @@
                 },
                 "properties": {
                     "name": "Kauniainen",
-                    "popupContent": "Kauniainen<\/b>\n",
+                    "popupContent": "Kauniainen",
                     "color": "blue"
                 }
             },
@@ -1273,7 +1273,7 @@
                 },
                 "properties": {
                     "name": "Kaustinen",
-                    "popupContent": "Kaustinen<\/b>\n",
+                    "popupContent": "Kaustinen",
                     "color": "blue"
                 }
             },
@@ -1288,7 +1288,7 @@
                 },
                 "properties": {
                     "name": "Keitele",
-                    "popupContent": "Keitele<\/b>\n",
+                    "popupContent": "Keitele",
                     "color": "blue"
                 }
             },
@@ -1303,7 +1303,7 @@
                 },
                 "properties": {
                     "name": "Kemi",
-                    "popupContent": "Kemi<\/b>\n",
+                    "popupContent": "Kemi",
                     "color": "blue"
                 }
             },
@@ -1318,7 +1318,7 @@
                 },
                 "properties": {
                     "name": "Kemij\u00e4rvi",
-                    "popupContent": "Kemij\u00e4rvi<\/b>\n",
+                    "popupContent": "Kemij\u00e4rvi",
                     "color": "blue"
                 }
             },
@@ -1333,7 +1333,7 @@
                 },
                 "properties": {
                     "name": "Keminmaa",
-                    "popupContent": "Keminmaa<\/b>\n",
+                    "popupContent": "Keminmaa",
                     "color": "blue"
                 }
             },
@@ -1348,7 +1348,7 @@
                 },
                 "properties": {
                     "name": "Kemi\u00f6nsaari",
-                    "popupContent": "Kemi\u00f6nsaari<\/b>\n",
+                    "popupContent": "Kemi\u00f6nsaari",
                     "color": "blue"
                 }
             },
@@ -1363,7 +1363,7 @@
                 },
                 "properties": {
                     "name": "Kempele",
-                    "popupContent": "Kempele<\/b>\n",
+                    "popupContent": "Kempele",
                     "color": "blue"
                 }
             },
@@ -1378,7 +1378,7 @@
                 },
                 "properties": {
                     "name": "Kerava",
-                    "popupContent": "Kerava<\/b>\n",
+                    "popupContent": "Kerava",
                     "color": "blue"
                 }
             },
@@ -1393,7 +1393,7 @@
                 },
                 "properties": {
                     "name": "Keuruu",
-                    "popupContent": "Keuruu<\/b>\n",
+                    "popupContent": "Keuruu",
                     "color": "blue"
                 }
             },
@@ -1408,7 +1408,7 @@
                 },
                 "properties": {
                     "name": "Kihni\u00f6",
-                    "popupContent": "Kihni\u00f6<\/b>\n",
+                    "popupContent": "Kihni\u00f6",
                     "color": "blue"
                 }
             },
@@ -1423,7 +1423,7 @@
                 },
                 "properties": {
                     "name": "Kinnula",
-                    "popupContent": "Kinnula<\/b>\n",
+                    "popupContent": "Kinnula",
                     "color": "blue"
                 }
             },
@@ -1438,7 +1438,7 @@
                 },
                 "properties": {
                     "name": "Kirkkonummi",
-                    "popupContent": "Kirkkonummi<\/b>\n",
+                    "popupContent": "Kirkkonummi",
                     "color": "blue"
                 }
             },
@@ -1453,7 +1453,7 @@
                 },
                 "properties": {
                     "name": "Kitee",
-                    "popupContent": "Kitee<\/b>\n",
+                    "popupContent": "Kitee",
                     "color": "blue"
                 }
             },
@@ -1468,7 +1468,7 @@
                 },
                 "properties": {
                     "name": "Kittil\u00e4",
-                    "popupContent": "Kittil\u00e4<\/b>\n",
+                    "popupContent": "Kittil\u00e4",
                     "color": "blue"
                 }
             },
@@ -1483,7 +1483,7 @@
                 },
                 "properties": {
                     "name": "Kiuruvesi",
-                    "popupContent": "Kiuruvesi<\/b>\n",
+                    "popupContent": "Kiuruvesi",
                     "color": "blue"
                 }
             },
@@ -1498,7 +1498,7 @@
                 },
                 "properties": {
                     "name": "Kivij\u00e4rvi",
-                    "popupContent": "Kivij\u00e4rvi<\/b>\n",
+                    "popupContent": "Kivij\u00e4rvi",
                     "color": "blue"
                 }
             },
@@ -1513,7 +1513,7 @@
                 },
                 "properties": {
                     "name": "Kokem\u00e4ki",
-                    "popupContent": "Kokem\u00e4ki<\/b>\n",
+                    "popupContent": "Kokem\u00e4ki",
                     "color": "blue"
                 }
             },
@@ -1528,7 +1528,7 @@
                 },
                 "properties": {
                     "name": "Kokkola",
-                    "popupContent": "Kokkola<\/b>\n",
+                    "popupContent": "Kokkola",
                     "color": "blue"
                 }
             },
@@ -1543,7 +1543,7 @@
                 },
                 "properties": {
                     "name": "Kolari",
-                    "popupContent": "Kolari<\/b>\n",
+                    "popupContent": "Kolari",
                     "color": "blue"
                 }
             },
@@ -1558,7 +1558,7 @@
                 },
                 "properties": {
                     "name": "Konnevesi",
-                    "popupContent": "Konnevesi<\/b>\n",
+                    "popupContent": "Konnevesi",
                     "color": "blue"
                 }
             },
@@ -1573,7 +1573,7 @@
                 },
                 "properties": {
                     "name": "Kontiolahti",
-                    "popupContent": "Kontiolahti<\/b>\n",
+                    "popupContent": "Kontiolahti",
                     "color": "blue"
                 }
             },
@@ -1588,7 +1588,7 @@
                 },
                 "properties": {
                     "name": "Korsn\u00e4s",
-                    "popupContent": "Korsn\u00e4s<\/b>\n",
+                    "popupContent": "Korsn\u00e4s",
                     "color": "blue"
                 }
             },
@@ -1603,7 +1603,7 @@
                 },
                 "properties": {
                     "name": "Koski Tl",
-                    "popupContent": "Koski Tl<\/b>\n",
+                    "popupContent": "Koski Tl",
                     "color": "blue"
                 }
             },
@@ -1618,7 +1618,7 @@
                 },
                 "properties": {
                     "name": "Kotka",
-                    "popupContent": "Kotka<\/b>\n",
+                    "popupContent": "Kotka",
                     "color": "blue"
                 }
             },
@@ -1633,7 +1633,7 @@
                 },
                 "properties": {
                     "name": "Kouvola",
-                    "popupContent": "Kouvola<\/b>\n",
+                    "popupContent": "Kouvola",
                     "color": "blue"
                 }
             },
@@ -1648,7 +1648,7 @@
                 },
                 "properties": {
                     "name": "Kristiinankaupunki",
-                    "popupContent": "Kristiinankaupunki<\/b>\n",
+                    "popupContent": "Kristiinankaupunki",
                     "color": "blue"
                 }
             },
@@ -1663,7 +1663,7 @@
                 },
                 "properties": {
                     "name": "Kruunupyy",
-                    "popupContent": "Kruunupyy<\/b>\n",
+                    "popupContent": "Kruunupyy",
                     "color": "blue"
                 }
             },
@@ -1678,7 +1678,7 @@
                 },
                 "properties": {
                     "name": "Kuhmo",
-                    "popupContent": "Kuhmo<\/b>\n",
+                    "popupContent": "Kuhmo",
                     "color": "blue"
                 }
             },
@@ -1693,7 +1693,7 @@
                 },
                 "properties": {
                     "name": "Kuhmoinen",
-                    "popupContent": "Kuhmoinen<\/b>\n",
+                    "popupContent": "Kuhmoinen",
                     "color": "blue"
                 }
             },
@@ -1708,7 +1708,7 @@
                 },
                 "properties": {
                     "name": "Kumlinge",
-                    "popupContent": "Kumlinge<\/b>\n",
+                    "popupContent": "Kumlinge",
                     "color": "blue"
                 }
             },
@@ -1723,7 +1723,7 @@
                 },
                 "properties": {
                     "name": "Kuopio",
-                    "popupContent": "Kuopio<\/b>\n",
+                    "popupContent": "Kuopio",
                     "color": "blue"
                 }
             },
@@ -1738,7 +1738,7 @@
                 },
                 "properties": {
                     "name": "Kuortane",
-                    "popupContent": "Kuortane<\/b>\n",
+                    "popupContent": "Kuortane",
                     "color": "blue"
                 }
             },
@@ -1753,7 +1753,7 @@
                 },
                 "properties": {
                     "name": "Kurikka",
-                    "popupContent": "Kurikka<\/b>\n",
+                    "popupContent": "Kurikka",
                     "color": "blue"
                 }
             },
@@ -1768,7 +1768,7 @@
                 },
                 "properties": {
                     "name": "Kustavi",
-                    "popupContent": "Kustavi<\/b>\n",
+                    "popupContent": "Kustavi",
                     "color": "blue"
                 }
             },
@@ -1783,7 +1783,7 @@
                 },
                 "properties": {
                     "name": "Kuusamo",
-                    "popupContent": "Kuusamo<\/b>\n",
+                    "popupContent": "Kuusamo",
                     "color": "blue"
                 }
             },
@@ -1798,7 +1798,7 @@
                 },
                 "properties": {
                     "name": "Kyyj\u00e4rvi",
-                    "popupContent": "Kyyj\u00e4rvi<\/b>\n",
+                    "popupContent": "Kyyj\u00e4rvi",
                     "color": "blue"
                 }
             },
@@ -1813,7 +1813,7 @@
                 },
                 "properties": {
                     "name": "K\u00e4rk\u00f6l\u00e4",
-                    "popupContent": "K\u00e4rk\u00f6l\u00e4<\/b>\n",
+                    "popupContent": "K\u00e4rk\u00f6l\u00e4",
                     "color": "blue"
                 }
             },
@@ -1828,7 +1828,7 @@
                 },
                 "properties": {
                     "name": "K\u00e4rs\u00e4m\u00e4ki",
-                    "popupContent": "K\u00e4rs\u00e4m\u00e4ki<\/b>\n",
+                    "popupContent": "K\u00e4rs\u00e4m\u00e4ki",
                     "color": "blue"
                 }
             },
@@ -1843,7 +1843,7 @@
                 },
                 "properties": {
                     "name": "K\u00f6kar",
-                    "popupContent": "K\u00f6kar<\/b>\n",
+                    "popupContent": "K\u00f6kar",
                     "color": "blue"
                 }
             },
@@ -1858,7 +1858,7 @@
                 },
                 "properties": {
                     "name": "Lahti",
-                    "popupContent": "Lahti<\/b>\n",
+                    "popupContent": "Lahti",
                     "color": "blue"
                 }
             },
@@ -1873,7 +1873,7 @@
                 },
                 "properties": {
                     "name": "Laihia",
-                    "popupContent": "Laihia<\/b>\n",
+                    "popupContent": "Laihia",
                     "color": "blue"
                 }
             },
@@ -1888,7 +1888,7 @@
                 },
                 "properties": {
                     "name": "Laitila",
-                    "popupContent": "Laitila<\/b>\n",
+                    "popupContent": "Laitila",
                     "color": "blue"
                 }
             },
@@ -1903,7 +1903,7 @@
                 },
                 "properties": {
                     "name": "Lapinj\u00e4rvi",
-                    "popupContent": "Lapinj\u00e4rvi<\/b>\n",
+                    "popupContent": "Lapinj\u00e4rvi",
                     "color": "blue"
                 }
             },
@@ -1918,7 +1918,7 @@
                 },
                 "properties": {
                     "name": "Lapinlahti",
-                    "popupContent": "Lapinlahti<\/b>\n",
+                    "popupContent": "Lapinlahti",
                     "color": "blue"
                 }
             },
@@ -1933,7 +1933,7 @@
                 },
                 "properties": {
                     "name": "Lappaj\u00e4rvi",
-                    "popupContent": "Lappaj\u00e4rvi<\/b>\n",
+                    "popupContent": "Lappaj\u00e4rvi",
                     "color": "blue"
                 }
             },
@@ -1948,7 +1948,7 @@
                 },
                 "properties": {
                     "name": "Lappeenranta",
-                    "popupContent": "Lappeenranta<\/b>\n",
+                    "popupContent": "Lappeenranta",
                     "color": "blue"
                 }
             },
@@ -1963,7 +1963,7 @@
                 },
                 "properties": {
                     "name": "Lapua",
-                    "popupContent": "Lapua<\/b>\n",
+                    "popupContent": "Lapua",
                     "color": "blue"
                 }
             },
@@ -1978,7 +1978,7 @@
                 },
                 "properties": {
                     "name": "Laukaa",
-                    "popupContent": "Laukaa<\/b>\n",
+                    "popupContent": "Laukaa",
                     "color": "blue"
                 }
             },
@@ -1993,7 +1993,7 @@
                 },
                 "properties": {
                     "name": "Lemi",
-                    "popupContent": "Lemi<\/b>\n",
+                    "popupContent": "Lemi",
                     "color": "blue"
                 }
             },
@@ -2008,7 +2008,7 @@
                 },
                 "properties": {
                     "name": "Lemland",
-                    "popupContent": "Lemland<\/b>\n",
+                    "popupContent": "Lemland",
                     "color": "blue"
                 }
             },
@@ -2023,7 +2023,7 @@
                 },
                 "properties": {
                     "name": "Lemp\u00e4\u00e4l\u00e4",
-                    "popupContent": "Lemp\u00e4\u00e4l\u00e4<\/b>\n",
+                    "popupContent": "Lemp\u00e4\u00e4l\u00e4",
                     "color": "blue"
                 }
             },
@@ -2038,7 +2038,7 @@
                 },
                 "properties": {
                     "name": "Lepp\u00e4virta",
-                    "popupContent": "Lepp\u00e4virta<\/b>\n",
+                    "popupContent": "Lepp\u00e4virta",
                     "color": "blue"
                 }
             },
@@ -2053,7 +2053,7 @@
                 },
                 "properties": {
                     "name": "Lestij\u00e4rvi",
-                    "popupContent": "Lestij\u00e4rvi<\/b>\n",
+                    "popupContent": "Lestij\u00e4rvi",
                     "color": "blue"
                 }
             },
@@ -2068,7 +2068,7 @@
                 },
                 "properties": {
                     "name": "Lieksa",
-                    "popupContent": "Lieksa<\/b>\n",
+                    "popupContent": "Lieksa",
                     "color": "blue"
                 }
             },
@@ -2083,7 +2083,7 @@
                 },
                 "properties": {
                     "name": "Lieto",
-                    "popupContent": "Lieto<\/b>\n",
+                    "popupContent": "Lieto",
                     "color": "blue"
                 }
             },
@@ -2098,7 +2098,7 @@
                 },
                 "properties": {
                     "name": "Liminka",
-                    "popupContent": "Liminka<\/b>\n",
+                    "popupContent": "Liminka",
                     "color": "blue"
                 }
             },
@@ -2113,7 +2113,7 @@
                 },
                 "properties": {
                     "name": "Liperi",
-                    "popupContent": "Liperi<\/b>\n",
+                    "popupContent": "Liperi",
                     "color": "blue"
                 }
             },
@@ -2128,7 +2128,7 @@
                 },
                 "properties": {
                     "name": "Lohja",
-                    "popupContent": "Lohja<\/b>\n",
+                    "popupContent": "Lohja",
                     "color": "blue"
                 }
             },
@@ -2143,7 +2143,7 @@
                 },
                 "properties": {
                     "name": "Loimaa",
-                    "popupContent": "Loimaa<\/b>\n",
+                    "popupContent": "Loimaa",
                     "color": "blue"
                 }
             },
@@ -2158,7 +2158,7 @@
                 },
                 "properties": {
                     "name": "Loppi",
-                    "popupContent": "Loppi<\/b>\n",
+                    "popupContent": "Loppi",
                     "color": "blue"
                 }
             },
@@ -2173,7 +2173,7 @@
                 },
                 "properties": {
                     "name": "Loviisa",
-                    "popupContent": "Loviisa<\/b>\n",
+                    "popupContent": "Loviisa",
                     "color": "blue"
                 }
             },
@@ -2188,7 +2188,7 @@
                 },
                 "properties": {
                     "name": "Luhanka",
-                    "popupContent": "Luhanka<\/b>\n",
+                    "popupContent": "Luhanka",
                     "color": "blue"
                 }
             },
@@ -2203,7 +2203,7 @@
                 },
                 "properties": {
                     "name": "Lumijoki",
-                    "popupContent": "Lumijoki<\/b>\n",
+                    "popupContent": "Lumijoki",
                     "color": "blue"
                 }
             },
@@ -2218,7 +2218,7 @@
                 },
                 "properties": {
                     "name": "Lumparland",
-                    "popupContent": "Lumparland<\/b>\n",
+                    "popupContent": "Lumparland",
                     "color": "blue"
                 }
             },
@@ -2233,7 +2233,7 @@
                 },
                 "properties": {
                     "name": "Luoto",
-                    "popupContent": "Luoto<\/b>\n",
+                    "popupContent": "Luoto",
                     "color": "blue"
                 }
             },
@@ -2248,7 +2248,7 @@
                 },
                 "properties": {
                     "name": "Luum\u00e4ki",
-                    "popupContent": "Luum\u00e4ki<\/b>\n",
+                    "popupContent": "Luum\u00e4ki",
                     "color": "blue"
                 }
             },
@@ -2263,7 +2263,7 @@
                 },
                 "properties": {
                     "name": "Maalahti",
-                    "popupContent": "Maalahti<\/b>\n",
+                    "popupContent": "Maalahti",
                     "color": "blue"
                 }
             },
@@ -2278,7 +2278,7 @@
                 },
                 "properties": {
                     "name": "Maarianhamina",
-                    "popupContent": "Maarianhamina<\/b>\n",
+                    "popupContent": "Maarianhamina",
                     "color": "blue"
                 }
             },
@@ -2293,7 +2293,7 @@
                 },
                 "properties": {
                     "name": "Marttila",
-                    "popupContent": "Marttila<\/b>\n",
+                    "popupContent": "Marttila",
                     "color": "blue"
                 }
             },
@@ -2308,7 +2308,7 @@
                 },
                 "properties": {
                     "name": "Masku",
-                    "popupContent": "Masku<\/b>\n",
+                    "popupContent": "Masku",
                     "color": "blue"
                 }
             },
@@ -2323,7 +2323,7 @@
                 },
                 "properties": {
                     "name": "Merij\u00e4rvi",
-                    "popupContent": "Merij\u00e4rvi<\/b>\n",
+                    "popupContent": "Merij\u00e4rvi",
                     "color": "blue"
                 }
             },
@@ -2338,7 +2338,7 @@
                 },
                 "properties": {
                     "name": "Merikarvia",
-                    "popupContent": "Merikarvia<\/b>\n",
+                    "popupContent": "Merikarvia",
                     "color": "blue"
                 }
             },
@@ -2353,7 +2353,7 @@
                 },
                 "properties": {
                     "name": "Miehikk\u00e4l\u00e4",
-                    "popupContent": "Miehikk\u00e4l\u00e4<\/b>\n",
+                    "popupContent": "Miehikk\u00e4l\u00e4",
                     "color": "blue"
                 }
             },
@@ -2368,7 +2368,7 @@
                 },
                 "properties": {
                     "name": "Mikkeli",
-                    "popupContent": "Mikkeli<\/b>\n",
+                    "popupContent": "Mikkeli",
                     "color": "blue"
                 }
             },
@@ -2383,7 +2383,7 @@
                 },
                 "properties": {
                     "name": "Muhos",
-                    "popupContent": "Muhos<\/b>\n",
+                    "popupContent": "Muhos",
                     "color": "blue"
                 }
             },
@@ -2398,7 +2398,7 @@
                 },
                 "properties": {
                     "name": "Multia",
-                    "popupContent": "Multia<\/b>\n",
+                    "popupContent": "Multia",
                     "color": "blue"
                 }
             },
@@ -2413,7 +2413,7 @@
                 },
                 "properties": {
                     "name": "Muonio",
-                    "popupContent": "Muonio<\/b>\n",
+                    "popupContent": "Muonio",
                     "color": "blue"
                 }
             },
@@ -2428,7 +2428,7 @@
                 },
                 "properties": {
                     "name": "Mustasaari",
-                    "popupContent": "Mustasaari<\/b>\n",
+                    "popupContent": "Mustasaari",
                     "color": "blue"
                 }
             },
@@ -2443,7 +2443,7 @@
                 },
                 "properties": {
                     "name": "Muurame",
-                    "popupContent": "Muurame<\/b>\n",
+                    "popupContent": "Muurame",
                     "color": "blue"
                 }
             },
@@ -2458,7 +2458,7 @@
                 },
                 "properties": {
                     "name": "Myn\u00e4m\u00e4ki",
-                    "popupContent": "Myn\u00e4m\u00e4ki<\/b>\n",
+                    "popupContent": "Myn\u00e4m\u00e4ki",
                     "color": "blue"
                 }
             },
@@ -2473,7 +2473,7 @@
                 },
                 "properties": {
                     "name": "Myrskyl\u00e4",
-                    "popupContent": "Myrskyl\u00e4<\/b>\n",
+                    "popupContent": "Myrskyl\u00e4",
                     "color": "blue"
                 }
             },
@@ -2488,7 +2488,7 @@
                 },
                 "properties": {
                     "name": "M\u00e4nts\u00e4l\u00e4",
-                    "popupContent": "M\u00e4nts\u00e4l\u00e4<\/b>\n",
+                    "popupContent": "M\u00e4nts\u00e4l\u00e4",
                     "color": "blue"
                 }
             },
@@ -2503,7 +2503,7 @@
                 },
                 "properties": {
                     "name": "M\u00e4ntt\u00e4-Vilppula",
-                    "popupContent": "M\u00e4ntt\u00e4-Vilppula<\/b>\n",
+                    "popupContent": "M\u00e4ntt\u00e4-Vilppula",
                     "color": "blue"
                 }
             },
@@ -2518,7 +2518,7 @@
                 },
                 "properties": {
                     "name": "M\u00e4ntyharju",
-                    "popupContent": "M\u00e4ntyharju<\/b>\n",
+                    "popupContent": "M\u00e4ntyharju",
                     "color": "blue"
                 }
             },
@@ -2533,7 +2533,7 @@
                 },
                 "properties": {
                     "name": "Naantali",
-                    "popupContent": "Naantali<\/b>\n",
+                    "popupContent": "Naantali",
                     "color": "blue"
                 }
             },
@@ -2548,7 +2548,7 @@
                 },
                 "properties": {
                     "name": "Nakkila",
-                    "popupContent": "Nakkila<\/b>\n",
+                    "popupContent": "Nakkila",
                     "color": "blue"
                 }
             },
@@ -2563,7 +2563,7 @@
                 },
                 "properties": {
                     "name": "Nivala",
-                    "popupContent": "Nivala<\/b>\n",
+                    "popupContent": "Nivala",
                     "color": "blue"
                 }
             },
@@ -2578,7 +2578,7 @@
                 },
                 "properties": {
                     "name": "Nokia",
-                    "popupContent": "Nokia<\/b>\n",
+                    "popupContent": "Nokia",
                     "color": "blue"
                 }
             },
@@ -2593,7 +2593,7 @@
                 },
                 "properties": {
                     "name": "Nousiainen",
-                    "popupContent": "Nousiainen<\/b>\n",
+                    "popupContent": "Nousiainen",
                     "color": "blue"
                 }
             },
@@ -2608,7 +2608,7 @@
                 },
                 "properties": {
                     "name": "Nurmes",
-                    "popupContent": "Nurmes<\/b>\n",
+                    "popupContent": "Nurmes",
                     "color": "blue"
                 }
             },
@@ -2623,7 +2623,7 @@
                 },
                 "properties": {
                     "name": "Nurmij\u00e4rvi",
-                    "popupContent": "Nurmij\u00e4rvi<\/b>\n",
+                    "popupContent": "Nurmij\u00e4rvi",
                     "color": "blue"
                 }
             },
@@ -2638,7 +2638,7 @@
                 },
                 "properties": {
                     "name": "N\u00e4rpi\u00f6",
-                    "popupContent": "N\u00e4rpi\u00f6<\/b>\n",
+                    "popupContent": "N\u00e4rpi\u00f6",
                     "color": "blue"
                 }
             },
@@ -2653,7 +2653,7 @@
                 },
                 "properties": {
                     "name": "Orimattila",
-                    "popupContent": "Orimattila<\/b>\n",
+                    "popupContent": "Orimattila",
                     "color": "blue"
                 }
             },
@@ -2668,7 +2668,7 @@
                 },
                 "properties": {
                     "name": "Orip\u00e4\u00e4",
-                    "popupContent": "Orip\u00e4\u00e4<\/b>\n",
+                    "popupContent": "Orip\u00e4\u00e4",
                     "color": "blue"
                 }
             },
@@ -2683,7 +2683,7 @@
                 },
                 "properties": {
                     "name": "Orivesi",
-                    "popupContent": "Orivesi<\/b>\n",
+                    "popupContent": "Orivesi",
                     "color": "blue"
                 }
             },
@@ -2698,7 +2698,7 @@
                 },
                 "properties": {
                     "name": "Oulainen",
-                    "popupContent": "Oulainen<\/b>\n",
+                    "popupContent": "Oulainen",
                     "color": "blue"
                 }
             },
@@ -2713,7 +2713,7 @@
                 },
                 "properties": {
                     "name": "Oulu",
-                    "popupContent": "Oulu<\/b>\n",
+                    "popupContent": "Oulu",
                     "color": "blue"
                 }
             },
@@ -2728,7 +2728,7 @@
                 },
                 "properties": {
                     "name": "Outokumpu",
-                    "popupContent": "Outokumpu<\/b>\n",
+                    "popupContent": "Outokumpu",
                     "color": "blue"
                 }
             },
@@ -2743,7 +2743,7 @@
                 },
                 "properties": {
                     "name": "Padasjoki",
-                    "popupContent": "Padasjoki<\/b>\n",
+                    "popupContent": "Padasjoki",
                     "color": "blue"
                 }
             },
@@ -2758,7 +2758,7 @@
                 },
                 "properties": {
                     "name": "Paimio",
-                    "popupContent": "Paimio<\/b>\n",
+                    "popupContent": "Paimio",
                     "color": "blue"
                 }
             },
@@ -2773,7 +2773,7 @@
                 },
                 "properties": {
                     "name": "Paltamo",
-                    "popupContent": "Paltamo<\/b>\n",
+                    "popupContent": "Paltamo",
                     "color": "blue"
                 }
             },
@@ -2788,7 +2788,7 @@
                 },
                 "properties": {
                     "name": "Parainen",
-                    "popupContent": "Parainen<\/b>\n",
+                    "popupContent": "Parainen",
                     "color": "blue"
                 }
             },
@@ -2803,7 +2803,7 @@
                 },
                 "properties": {
                     "name": "Parikkala",
-                    "popupContent": "Parikkala<\/b>\n",
+                    "popupContent": "Parikkala",
                     "color": "blue"
                 }
             },
@@ -2818,7 +2818,7 @@
                 },
                 "properties": {
                     "name": "Parkano",
-                    "popupContent": "Parkano<\/b>\n",
+                    "popupContent": "Parkano",
                     "color": "blue"
                 }
             },
@@ -2833,7 +2833,7 @@
                 },
                 "properties": {
                     "name": "Peders\u00f6ren kunta",
-                    "popupContent": "Peders\u00f6ren kunta<\/b>\n",
+                    "popupContent": "Peders\u00f6ren kunta",
                     "color": "blue"
                 }
             },
@@ -2848,7 +2848,7 @@
                 },
                 "properties": {
                     "name": "Pelkosenniemi",
-                    "popupContent": "Pelkosenniemi<\/b>\n",
+                    "popupContent": "Pelkosenniemi",
                     "color": "blue"
                 }
             },
@@ -2863,7 +2863,7 @@
                 },
                 "properties": {
                     "name": "Pello",
-                    "popupContent": "Pello<\/b>\n",
+                    "popupContent": "Pello",
                     "color": "blue"
                 }
             },
@@ -2878,7 +2878,7 @@
                 },
                 "properties": {
                     "name": "Perho",
-                    "popupContent": "Perho<\/b>\n",
+                    "popupContent": "Perho",
                     "color": "blue"
                 }
             },
@@ -2893,7 +2893,7 @@
                 },
                 "properties": {
                     "name": "Pertunmaa",
-                    "popupContent": "Pertunmaa<\/b>\n",
+                    "popupContent": "Pertunmaa",
                     "color": "blue"
                 }
             },
@@ -2908,7 +2908,7 @@
                 },
                 "properties": {
                     "name": "Pet\u00e4j\u00e4vesi",
-                    "popupContent": "Pet\u00e4j\u00e4vesi<\/b>\n",
+                    "popupContent": "Pet\u00e4j\u00e4vesi",
                     "color": "blue"
                 }
             },
@@ -2923,7 +2923,7 @@
                 },
                 "properties": {
                     "name": "Pieks\u00e4m\u00e4ki",
-                    "popupContent": "Pieks\u00e4m\u00e4ki<\/b>\n",
+                    "popupContent": "Pieks\u00e4m\u00e4ki",
                     "color": "blue"
                 }
             },
@@ -2938,7 +2938,7 @@
                 },
                 "properties": {
                     "name": "Pielavesi",
-                    "popupContent": "Pielavesi<\/b>\n",
+                    "popupContent": "Pielavesi",
                     "color": "blue"
                 }
             },
@@ -2953,7 +2953,7 @@
                 },
                 "properties": {
                     "name": "Pietarsaari",
-                    "popupContent": "Pietarsaari<\/b>\n",
+                    "popupContent": "Pietarsaari",
                     "color": "blue"
                 }
             },
@@ -2968,7 +2968,7 @@
                 },
                 "properties": {
                     "name": "Pihtipudas",
-                    "popupContent": "Pihtipudas<\/b>\n",
+                    "popupContent": "Pihtipudas",
                     "color": "blue"
                 }
             },
@@ -2983,7 +2983,7 @@
                 },
                 "properties": {
                     "name": "Pirkkala",
-                    "popupContent": "Pirkkala<\/b>\n",
+                    "popupContent": "Pirkkala",
                     "color": "blue"
                 }
             },
@@ -2998,7 +2998,7 @@
                 },
                 "properties": {
                     "name": "Polvij\u00e4rvi",
-                    "popupContent": "Polvij\u00e4rvi<\/b>\n",
+                    "popupContent": "Polvij\u00e4rvi",
                     "color": "blue"
                 }
             },
@@ -3013,7 +3013,7 @@
                 },
                 "properties": {
                     "name": "Pomarkku",
-                    "popupContent": "Pomarkku<\/b>\n",
+                    "popupContent": "Pomarkku",
                     "color": "blue"
                 }
             },
@@ -3028,7 +3028,7 @@
                 },
                 "properties": {
                     "name": "Pori",
-                    "popupContent": "Pori<\/b>\n",
+                    "popupContent": "Pori",
                     "color": "blue"
                 }
             },
@@ -3043,7 +3043,7 @@
                 },
                 "properties": {
                     "name": "Pornainen",
-                    "popupContent": "Pornainen<\/b>\n",
+                    "popupContent": "Pornainen",
                     "color": "blue"
                 }
             },
@@ -3058,7 +3058,7 @@
                 },
                 "properties": {
                     "name": "Porvoo",
-                    "popupContent": "Porvoo<\/b>\n",
+                    "popupContent": "Porvoo",
                     "color": "blue"
                 }
             },
@@ -3073,7 +3073,7 @@
                 },
                 "properties": {
                     "name": "Posio",
-                    "popupContent": "Posio<\/b>\n",
+                    "popupContent": "Posio",
                     "color": "blue"
                 }
             },
@@ -3088,7 +3088,7 @@
                 },
                 "properties": {
                     "name": "Pudasj\u00e4rvi",
-                    "popupContent": "Pudasj\u00e4rvi<\/b>\n",
+                    "popupContent": "Pudasj\u00e4rvi",
                     "color": "blue"
                 }
             },
@@ -3103,7 +3103,7 @@
                 },
                 "properties": {
                     "name": "Pukkila",
-                    "popupContent": "Pukkila<\/b>\n",
+                    "popupContent": "Pukkila",
                     "color": "blue"
                 }
             },
@@ -3118,7 +3118,7 @@
                 },
                 "properties": {
                     "name": "Punkalaidun",
-                    "popupContent": "Punkalaidun<\/b>\n",
+                    "popupContent": "Punkalaidun",
                     "color": "blue"
                 }
             },
@@ -3133,7 +3133,7 @@
                 },
                 "properties": {
                     "name": "Puolanka",
-                    "popupContent": "Puolanka<\/b>\n",
+                    "popupContent": "Puolanka",
                     "color": "blue"
                 }
             },
@@ -3148,7 +3148,7 @@
                 },
                 "properties": {
                     "name": "Puumala",
-                    "popupContent": "Puumala<\/b>\n",
+                    "popupContent": "Puumala",
                     "color": "blue"
                 }
             },
@@ -3163,7 +3163,7 @@
                 },
                 "properties": {
                     "name": "Pyht\u00e4\u00e4",
-                    "popupContent": "Pyht\u00e4\u00e4<\/b>\n",
+                    "popupContent": "Pyht\u00e4\u00e4",
                     "color": "blue"
                 }
             },
@@ -3178,7 +3178,7 @@
                 },
                 "properties": {
                     "name": "Pyh\u00e4joki",
-                    "popupContent": "Pyh\u00e4joki<\/b>\n",
+                    "popupContent": "Pyh\u00e4joki",
                     "color": "blue"
                 }
             },
@@ -3193,7 +3193,7 @@
                 },
                 "properties": {
                     "name": "Pyh\u00e4j\u00e4rvi",
-                    "popupContent": "Pyh\u00e4j\u00e4rvi<\/b>\n",
+                    "popupContent": "Pyh\u00e4j\u00e4rvi",
                     "color": "blue"
                 }
             },
@@ -3208,7 +3208,7 @@
                 },
                 "properties": {
                     "name": "Pyh\u00e4nt\u00e4",
-                    "popupContent": "Pyh\u00e4nt\u00e4<\/b>\n",
+                    "popupContent": "Pyh\u00e4nt\u00e4",
                     "color": "blue"
                 }
             },
@@ -3223,7 +3223,7 @@
                 },
                 "properties": {
                     "name": "Pyh\u00e4ranta",
-                    "popupContent": "Pyh\u00e4ranta<\/b>\n",
+                    "popupContent": "Pyh\u00e4ranta",
                     "color": "blue"
                 }
             },
@@ -3238,7 +3238,7 @@
                 },
                 "properties": {
                     "name": "P\u00e4lk\u00e4ne",
-                    "popupContent": "P\u00e4lk\u00e4ne<\/b>\n",
+                    "popupContent": "P\u00e4lk\u00e4ne",
                     "color": "blue"
                 }
             },
@@ -3253,7 +3253,7 @@
                 },
                 "properties": {
                     "name": "P\u00f6yty\u00e4",
-                    "popupContent": "P\u00f6yty\u00e4<\/b>\n",
+                    "popupContent": "P\u00f6yty\u00e4",
                     "color": "blue"
                 }
             },
@@ -3268,7 +3268,7 @@
                 },
                 "properties": {
                     "name": "Raahe",
-                    "popupContent": "Raahe<\/b>\n",
+                    "popupContent": "Raahe",
                     "color": "blue"
                 }
             },
@@ -3283,7 +3283,7 @@
                 },
                 "properties": {
                     "name": "Raasepori",
-                    "popupContent": "Raasepori<\/b>\n",
+                    "popupContent": "Raasepori",
                     "color": "blue"
                 }
             },
@@ -3298,7 +3298,7 @@
                 },
                 "properties": {
                     "name": "Raisio",
-                    "popupContent": "Raisio<\/b>\n",
+                    "popupContent": "Raisio",
                     "color": "blue"
                 }
             },
@@ -3313,7 +3313,7 @@
                 },
                 "properties": {
                     "name": "Rantasalmi",
-                    "popupContent": "Rantasalmi<\/b>\n",
+                    "popupContent": "Rantasalmi",
                     "color": "blue"
                 }
             },
@@ -3328,7 +3328,7 @@
                 },
                 "properties": {
                     "name": "Ranua",
-                    "popupContent": "Ranua<\/b>\n",
+                    "popupContent": "Ranua",
                     "color": "blue"
                 }
             },
@@ -3343,7 +3343,7 @@
                 },
                 "properties": {
                     "name": "Rauma",
-                    "popupContent": "Rauma<\/b>\n",
+                    "popupContent": "Rauma",
                     "color": "blue"
                 }
             },
@@ -3358,7 +3358,7 @@
                 },
                 "properties": {
                     "name": "Rautalampi",
-                    "popupContent": "Rautalampi<\/b>\n",
+                    "popupContent": "Rautalampi",
                     "color": "blue"
                 }
             },
@@ -3373,7 +3373,7 @@
                 },
                 "properties": {
                     "name": "Rautavaara",
-                    "popupContent": "Rautavaara<\/b>\n",
+                    "popupContent": "Rautavaara",
                     "color": "blue"
                 }
             },
@@ -3388,7 +3388,7 @@
                 },
                 "properties": {
                     "name": "Rautj\u00e4rvi",
-                    "popupContent": "Rautj\u00e4rvi<\/b>\n",
+                    "popupContent": "Rautj\u00e4rvi",
                     "color": "blue"
                 }
             },
@@ -3403,7 +3403,7 @@
                 },
                 "properties": {
                     "name": "Reisj\u00e4rvi",
-                    "popupContent": "Reisj\u00e4rvi<\/b>\n",
+                    "popupContent": "Reisj\u00e4rvi",
                     "color": "blue"
                 }
             },
@@ -3418,7 +3418,7 @@
                 },
                 "properties": {
                     "name": "Riihim\u00e4ki",
-                    "popupContent": "Riihim\u00e4ki<\/b>\n",
+                    "popupContent": "Riihim\u00e4ki",
                     "color": "blue"
                 }
             },
@@ -3433,7 +3433,7 @@
                 },
                 "properties": {
                     "name": "Ristij\u00e4rvi",
-                    "popupContent": "Ristij\u00e4rvi<\/b>\n",
+                    "popupContent": "Ristij\u00e4rvi",
                     "color": "blue"
                 }
             },
@@ -3448,7 +3448,7 @@
                 },
                 "properties": {
                     "name": "Rovaniemi",
-                    "popupContent": "Rovaniemi<\/b>\n",
+                    "popupContent": "Rovaniemi",
                     "color": "blue"
                 }
             },
@@ -3463,7 +3463,7 @@
                 },
                 "properties": {
                     "name": "Ruokolahti",
-                    "popupContent": "Ruokolahti<\/b>\n",
+                    "popupContent": "Ruokolahti",
                     "color": "blue"
                 }
             },
@@ -3478,7 +3478,7 @@
                 },
                 "properties": {
                     "name": "Ruovesi",
-                    "popupContent": "Ruovesi<\/b>\n",
+                    "popupContent": "Ruovesi",
                     "color": "blue"
                 }
             },
@@ -3493,7 +3493,7 @@
                 },
                 "properties": {
                     "name": "Rusko",
-                    "popupContent": "Rusko<\/b>\n",
+                    "popupContent": "Rusko",
                     "color": "blue"
                 }
             },
@@ -3508,7 +3508,7 @@
                 },
                 "properties": {
                     "name": "R\u00e4\u00e4kkyl\u00e4",
-                    "popupContent": "R\u00e4\u00e4kkyl\u00e4<\/b>\n",
+                    "popupContent": "R\u00e4\u00e4kkyl\u00e4",
                     "color": "blue"
                 }
             },
@@ -3523,7 +3523,7 @@
                 },
                 "properties": {
                     "name": "Saarij\u00e4rvi",
-                    "popupContent": "Saarij\u00e4rvi<\/b>\n",
+                    "popupContent": "Saarij\u00e4rvi",
                     "color": "blue"
                 }
             },
@@ -3538,7 +3538,7 @@
                 },
                 "properties": {
                     "name": "Salla",
-                    "popupContent": "Salla<\/b>\n",
+                    "popupContent": "Salla",
                     "color": "blue"
                 }
             },
@@ -3553,7 +3553,7 @@
                 },
                 "properties": {
                     "name": "Salo",
-                    "popupContent": "Salo<\/b>\n",
+                    "popupContent": "Salo",
                     "color": "blue"
                 }
             },
@@ -3568,7 +3568,7 @@
                 },
                 "properties": {
                     "name": "Saltvik",
-                    "popupContent": "Saltvik<\/b>\n",
+                    "popupContent": "Saltvik",
                     "color": "blue"
                 }
             },
@@ -3583,7 +3583,7 @@
                 },
                 "properties": {
                     "name": "Sastamala",
-                    "popupContent": "Sastamala<\/b>\n",
+                    "popupContent": "Sastamala",
                     "color": "blue"
                 }
             },
@@ -3598,7 +3598,7 @@
                 },
                 "properties": {
                     "name": "Sauvo",
-                    "popupContent": "Sauvo<\/b>\n",
+                    "popupContent": "Sauvo",
                     "color": "blue"
                 }
             },
@@ -3613,7 +3613,7 @@
                 },
                 "properties": {
                     "name": "Savitaipale",
-                    "popupContent": "Savitaipale<\/b>\n",
+                    "popupContent": "Savitaipale",
                     "color": "blue"
                 }
             },
@@ -3628,7 +3628,7 @@
                 },
                 "properties": {
                     "name": "Savonlinna",
-                    "popupContent": "Savonlinna<\/b>\n",
+                    "popupContent": "Savonlinna",
                     "color": "blue"
                 }
             },
@@ -3643,7 +3643,7 @@
                 },
                 "properties": {
                     "name": "Savukoski",
-                    "popupContent": "Savukoski<\/b>\n",
+                    "popupContent": "Savukoski",
                     "color": "blue"
                 }
             },
@@ -3658,7 +3658,7 @@
                 },
                 "properties": {
                     "name": "Sein\u00e4joki",
-                    "popupContent": "Sein\u00e4joki<\/b>\n",
+                    "popupContent": "Sein\u00e4joki",
                     "color": "blue"
                 }
             },
@@ -3673,7 +3673,7 @@
                 },
                 "properties": {
                     "name": "Sievi",
-                    "popupContent": "Sievi<\/b>\n",
+                    "popupContent": "Sievi",
                     "color": "blue"
                 }
             },
@@ -3688,7 +3688,7 @@
                 },
                 "properties": {
                     "name": "Siikainen",
-                    "popupContent": "Siikainen<\/b>\n",
+                    "popupContent": "Siikainen",
                     "color": "blue"
                 }
             },
@@ -3703,7 +3703,7 @@
                 },
                 "properties": {
                     "name": "Siikajoki",
-                    "popupContent": "Siikajoki<\/b>\n",
+                    "popupContent": "Siikajoki",
                     "color": "blue"
                 }
             },
@@ -3718,7 +3718,7 @@
                 },
                 "properties": {
                     "name": "Siikalatva",
-                    "popupContent": "Siikalatva<\/b>\n",
+                    "popupContent": "Siikalatva",
                     "color": "blue"
                 }
             },
@@ -3733,7 +3733,7 @@
                 },
                 "properties": {
                     "name": "Siilinj\u00e4rvi",
-                    "popupContent": "Siilinj\u00e4rvi<\/b>\n",
+                    "popupContent": "Siilinj\u00e4rvi",
                     "color": "blue"
                 }
             },
@@ -3748,7 +3748,7 @@
                 },
                 "properties": {
                     "name": "Simo",
-                    "popupContent": "Simo<\/b>\n",
+                    "popupContent": "Simo",
                     "color": "blue"
                 }
             },
@@ -3763,7 +3763,7 @@
                 },
                 "properties": {
                     "name": "Sipoo",
-                    "popupContent": "Sipoo<\/b>\n",
+                    "popupContent": "Sipoo",
                     "color": "blue"
                 }
             },
@@ -3778,7 +3778,7 @@
                 },
                 "properties": {
                     "name": "Siuntio",
-                    "popupContent": "Siuntio<\/b>\n",
+                    "popupContent": "Siuntio",
                     "color": "blue"
                 }
             },
@@ -3793,7 +3793,7 @@
                 },
                 "properties": {
                     "name": "Sodankyl\u00e4",
-                    "popupContent": "Sodankyl\u00e4<\/b>\n",
+                    "popupContent": "Sodankyl\u00e4",
                     "color": "blue"
                 }
             },
@@ -3808,7 +3808,7 @@
                 },
                 "properties": {
                     "name": "Soini",
-                    "popupContent": "Soini<\/b>\n",
+                    "popupContent": "Soini",
                     "color": "blue"
                 }
             },
@@ -3823,7 +3823,7 @@
                 },
                 "properties": {
                     "name": "Somero",
-                    "popupContent": "Somero<\/b>\n",
+                    "popupContent": "Somero",
                     "color": "blue"
                 }
             },
@@ -3838,7 +3838,7 @@
                 },
                 "properties": {
                     "name": "Sonkaj\u00e4rvi",
-                    "popupContent": "Sonkaj\u00e4rvi<\/b>\n",
+                    "popupContent": "Sonkaj\u00e4rvi",
                     "color": "blue"
                 }
             },
@@ -3853,7 +3853,7 @@
                 },
                 "properties": {
                     "name": "Sotkamo",
-                    "popupContent": "Sotkamo<\/b>\n",
+                    "popupContent": "Sotkamo",
                     "color": "blue"
                 }
             },
@@ -3868,7 +3868,7 @@
                 },
                 "properties": {
                     "name": "Sottunga",
-                    "popupContent": "Sottunga<\/b>\n",
+                    "popupContent": "Sottunga",
                     "color": "blue"
                 }
             },
@@ -3883,7 +3883,7 @@
                 },
                 "properties": {
                     "name": "Sulkava",
-                    "popupContent": "Sulkava<\/b>\n",
+                    "popupContent": "Sulkava",
                     "color": "blue"
                 }
             },
@@ -3898,7 +3898,7 @@
                 },
                 "properties": {
                     "name": "Sund",
-                    "popupContent": "Sund<\/b>\n",
+                    "popupContent": "Sund",
                     "color": "blue"
                 }
             },
@@ -3913,7 +3913,7 @@
                 },
                 "properties": {
                     "name": "Suomussalmi",
-                    "popupContent": "Suomussalmi<\/b>\n",
+                    "popupContent": "Suomussalmi",
                     "color": "blue"
                 }
             },
@@ -3928,7 +3928,7 @@
                 },
                 "properties": {
                     "name": "Suonenjoki",
-                    "popupContent": "Suonenjoki<\/b>\n",
+                    "popupContent": "Suonenjoki",
                     "color": "blue"
                 }
             },
@@ -3943,7 +3943,7 @@
                 },
                 "properties": {
                     "name": "Sysm\u00e4",
-                    "popupContent": "Sysm\u00e4<\/b>\n",
+                    "popupContent": "Sysm\u00e4",
                     "color": "blue"
                 }
             },
@@ -3958,7 +3958,7 @@
                 },
                 "properties": {
                     "name": "S\u00e4kyl\u00e4",
-                    "popupContent": "S\u00e4kyl\u00e4<\/b>\n",
+                    "popupContent": "S\u00e4kyl\u00e4",
                     "color": "blue"
                 }
             },
@@ -3973,7 +3973,7 @@
                 },
                 "properties": {
                     "name": "Taipalsaari",
-                    "popupContent": "Taipalsaari<\/b>\n",
+                    "popupContent": "Taipalsaari",
                     "color": "blue"
                 }
             },
@@ -3988,7 +3988,7 @@
                 },
                 "properties": {
                     "name": "Taivalkoski",
-                    "popupContent": "Taivalkoski<\/b>\n",
+                    "popupContent": "Taivalkoski",
                     "color": "blue"
                 }
             },
@@ -4003,7 +4003,7 @@
                 },
                 "properties": {
                     "name": "Taivassalo",
-                    "popupContent": "Taivassalo<\/b>\n",
+                    "popupContent": "Taivassalo",
                     "color": "blue"
                 }
             },
@@ -4018,7 +4018,7 @@
                 },
                 "properties": {
                     "name": "Tammela",
-                    "popupContent": "Tammela<\/b>\n",
+                    "popupContent": "Tammela",
                     "color": "blue"
                 }
             },
@@ -4033,7 +4033,7 @@
                 },
                 "properties": {
                     "name": "Tampere",
-                    "popupContent": "Tampere<\/b>\n",
+                    "popupContent": "Tampere",
                     "color": "blue"
                 }
             },
@@ -4048,7 +4048,7 @@
                 },
                 "properties": {
                     "name": "Tervo",
-                    "popupContent": "Tervo<\/b>\n",
+                    "popupContent": "Tervo",
                     "color": "blue"
                 }
             },
@@ -4063,7 +4063,7 @@
                 },
                 "properties": {
                     "name": "Tervola",
-                    "popupContent": "Tervola<\/b>\n",
+                    "popupContent": "Tervola",
                     "color": "blue"
                 }
             },
@@ -4078,7 +4078,7 @@
                 },
                 "properties": {
                     "name": "Teuva",
-                    "popupContent": "Teuva<\/b>\n",
+                    "popupContent": "Teuva",
                     "color": "blue"
                 }
             },
@@ -4093,7 +4093,7 @@
                 },
                 "properties": {
                     "name": "Tohmaj\u00e4rvi",
-                    "popupContent": "Tohmaj\u00e4rvi<\/b>\n",
+                    "popupContent": "Tohmaj\u00e4rvi",
                     "color": "blue"
                 }
             },
@@ -4108,7 +4108,7 @@
                 },
                 "properties": {
                     "name": "Toholampi",
-                    "popupContent": "Toholampi<\/b>\n",
+                    "popupContent": "Toholampi",
                     "color": "blue"
                 }
             },
@@ -4123,7 +4123,7 @@
                 },
                 "properties": {
                     "name": "Toivakka",
-                    "popupContent": "Toivakka<\/b>\n",
+                    "popupContent": "Toivakka",
                     "color": "blue"
                 }
             },
@@ -4138,7 +4138,7 @@
                 },
                 "properties": {
                     "name": "Tornio",
-                    "popupContent": "Tornio<\/b>\n",
+                    "popupContent": "Tornio",
                     "color": "blue"
                 }
             },
@@ -4153,7 +4153,7 @@
                 },
                 "properties": {
                     "name": "Turku",
-                    "popupContent": "Turku<\/b>\n",
+                    "popupContent": "Turku",
                     "color": "blue"
                 }
             },
@@ -4168,7 +4168,7 @@
                 },
                 "properties": {
                     "name": "Tuusniemi",
-                    "popupContent": "Tuusniemi<\/b>\n",
+                    "popupContent": "Tuusniemi",
                     "color": "blue"
                 }
             },
@@ -4183,7 +4183,7 @@
                 },
                 "properties": {
                     "name": "Tuusula",
-                    "popupContent": "Tuusula<\/b>\n",
+                    "popupContent": "Tuusula",
                     "color": "blue"
                 }
             },
@@ -4198,7 +4198,7 @@
                 },
                 "properties": {
                     "name": "Tyrn\u00e4v\u00e4",
-                    "popupContent": "Tyrn\u00e4v\u00e4<\/b>\n",
+                    "popupContent": "Tyrn\u00e4v\u00e4",
                     "color": "blue"
                 }
             },
@@ -4213,7 +4213,7 @@
                 },
                 "properties": {
                     "name": "Ulvila",
-                    "popupContent": "Ulvila<\/b>\n",
+                    "popupContent": "Ulvila",
                     "color": "blue"
                 }
             },
@@ -4228,7 +4228,7 @@
                 },
                 "properties": {
                     "name": "Urjala",
-                    "popupContent": "Urjala<\/b>\n",
+                    "popupContent": "Urjala",
                     "color": "blue"
                 }
             },
@@ -4243,7 +4243,7 @@
                 },
                 "properties": {
                     "name": "Utaj\u00e4rvi",
-                    "popupContent": "Utaj\u00e4rvi<\/b>\n",
+                    "popupContent": "Utaj\u00e4rvi",
                     "color": "blue"
                 }
             },
@@ -4258,7 +4258,7 @@
                 },
                 "properties": {
                     "name": "Utsjoki",
-                    "popupContent": "Utsjoki<\/b>\n",
+                    "popupContent": "Utsjoki",
                     "color": "blue"
                 }
             },
@@ -4273,7 +4273,7 @@
                 },
                 "properties": {
                     "name": "Uurainen",
-                    "popupContent": "Uurainen<\/b>\n",
+                    "popupContent": "Uurainen",
                     "color": "blue"
                 }
             },
@@ -4288,7 +4288,7 @@
                 },
                 "properties": {
                     "name": "Uusikaarlepyy",
-                    "popupContent": "Uusikaarlepyy<\/b>\n",
+                    "popupContent": "Uusikaarlepyy",
                     "color": "blue"
                 }
             },
@@ -4303,7 +4303,7 @@
                 },
                 "properties": {
                     "name": "Uusikaupunki",
-                    "popupContent": "Uusikaupunki<\/b>\n",
+                    "popupContent": "Uusikaupunki",
                     "color": "blue"
                 }
             },
@@ -4318,7 +4318,7 @@
                 },
                 "properties": {
                     "name": "Vaala",
-                    "popupContent": "Vaala<\/b>\n",
+                    "popupContent": "Vaala",
                     "color": "blue"
                 }
             },
@@ -4333,7 +4333,7 @@
                 },
                 "properties": {
                     "name": "Vaasa",
-                    "popupContent": "Vaasa<\/b>\n",
+                    "popupContent": "Vaasa",
                     "color": "blue"
                 }
             },
@@ -4348,7 +4348,7 @@
                 },
                 "properties": {
                     "name": "Valkeakoski",
-                    "popupContent": "Valkeakoski<\/b>\n",
+                    "popupContent": "Valkeakoski",
                     "color": "blue"
                 }
             },
@@ -4363,7 +4363,7 @@
                 },
                 "properties": {
                     "name": "Valtimo",
-                    "popupContent": "Valtimo<\/b>\n",
+                    "popupContent": "Valtimo",
                     "color": "blue"
                 }
             },
@@ -4378,7 +4378,7 @@
                 },
                 "properties": {
                     "name": "Vantaa",
-                    "popupContent": "Vantaa<\/b>\n",
+                    "popupContent": "Vantaa",
                     "color": "blue"
                 }
             },
@@ -4393,7 +4393,7 @@
                 },
                 "properties": {
                     "name": "Varkaus",
-                    "popupContent": "Varkaus<\/b>\n",
+                    "popupContent": "Varkaus",
                     "color": "blue"
                 }
             },
@@ -4408,7 +4408,7 @@
                 },
                 "properties": {
                     "name": "Vehmaa",
-                    "popupContent": "Vehmaa<\/b>\n",
+                    "popupContent": "Vehmaa",
                     "color": "blue"
                 }
             },
@@ -4423,7 +4423,7 @@
                 },
                 "properties": {
                     "name": "Vesanto",
-                    "popupContent": "Vesanto<\/b>\n",
+                    "popupContent": "Vesanto",
                     "color": "blue"
                 }
             },
@@ -4438,7 +4438,7 @@
                 },
                 "properties": {
                     "name": "Vesilahti",
-                    "popupContent": "Vesilahti<\/b>\n",
+                    "popupContent": "Vesilahti",
                     "color": "blue"
                 }
             },
@@ -4453,7 +4453,7 @@
                 },
                 "properties": {
                     "name": "Veteli",
-                    "popupContent": "Veteli<\/b>\n",
+                    "popupContent": "Veteli",
                     "color": "blue"
                 }
             },
@@ -4468,7 +4468,7 @@
                 },
                 "properties": {
                     "name": "Vierem\u00e4",
-                    "popupContent": "Vierem\u00e4<\/b>\n",
+                    "popupContent": "Vierem\u00e4",
                     "color": "blue"
                 }
             },
@@ -4483,7 +4483,7 @@
                 },
                 "properties": {
                     "name": "Vihti",
-                    "popupContent": "Vihti<\/b>\n",
+                    "popupContent": "Vihti",
                     "color": "blue"
                 }
             },
@@ -4498,7 +4498,7 @@
                 },
                 "properties": {
                     "name": "Viitasaari",
-                    "popupContent": "Viitasaari<\/b>\n",
+                    "popupContent": "Viitasaari",
                     "color": "blue"
                 }
             },
@@ -4513,7 +4513,7 @@
                 },
                 "properties": {
                     "name": "Vimpeli",
-                    "popupContent": "Vimpeli<\/b>\n",
+                    "popupContent": "Vimpeli",
                     "color": "blue"
                 }
             },
@@ -4528,7 +4528,7 @@
                 },
                 "properties": {
                     "name": "Virolahti",
-                    "popupContent": "Virolahti<\/b>\n",
+                    "popupContent": "Virolahti",
                     "color": "blue"
                 }
             },
@@ -4543,7 +4543,7 @@
                 },
                 "properties": {
                     "name": "Virrat",
-                    "popupContent": "Virrat<\/b>\n",
+                    "popupContent": "Virrat",
                     "color": "blue"
                 }
             },
@@ -4558,7 +4558,7 @@
                 },
                 "properties": {
                     "name": "V\u00e5rd\u00f6",
-                    "popupContent": "V\u00e5rd\u00f6<\/b>\n",
+                    "popupContent": "V\u00e5rd\u00f6",
                     "color": "blue"
                 }
             },
@@ -4573,7 +4573,7 @@
                 },
                 "properties": {
                     "name": "V\u00f6yri",
-                    "popupContent": "V\u00f6yri<\/b>\n",
+                    "popupContent": "V\u00f6yri",
                     "color": "blue"
                 }
             },
@@ -4588,7 +4588,7 @@
                 },
                 "properties": {
                     "name": "Ylitornio",
-                    "popupContent": "Ylitornio<\/b>\n",
+                    "popupContent": "Ylitornio",
                     "color": "blue"
                 }
             },
@@ -4603,7 +4603,7 @@
                 },
                 "properties": {
                     "name": "Ylivieska",
-                    "popupContent": "Ylivieska<\/b>\n",
+                    "popupContent": "Ylivieska",
                     "color": "blue"
                 }
             },
@@ -4618,7 +4618,7 @@
                 },
                 "properties": {
                     "name": "Yl\u00f6j\u00e4rvi",
-                    "popupContent": "Yl\u00f6j\u00e4rvi<\/b>\n",
+                    "popupContent": "Yl\u00f6j\u00e4rvi",
                     "color": "blue"
                 }
             },
@@ -4633,7 +4633,7 @@
                 },
                 "properties": {
                     "name": "Yp\u00e4j\u00e4",
-                    "popupContent": "Yp\u00e4j\u00e4<\/b>\n",
+                    "popupContent": "Yp\u00e4j\u00e4",
                     "color": "blue"
                 }
             },
@@ -4648,7 +4648,7 @@
                 },
                 "properties": {
                     "name": "\u00c4ht\u00e4ri",
-                    "popupContent": "\u00c4ht\u00e4ri<\/b>\n",
+                    "popupContent": "\u00c4ht\u00e4ri",
                     "color": "blue"
                 }
             },
@@ -4663,7 +4663,7 @@
                 },
                 "properties": {
                     "name": "\u00c4\u00e4nekoski",
-                    "popupContent": "\u00c4\u00e4nekoski<\/b>\n",
+                    "popupContent": "\u00c4\u00e4nekoski",
                     "color": "blue"
                 }
             },
@@ -4678,7 +4678,7 @@
                 },
                 "properties": {
                     "name": "Ahlainen",
-                    "popupContent": "Ahlainen<\/b>\n",
+                    "popupContent": "Ahlainen",
                     "color": "blue"
                 }
             },
@@ -4693,7 +4693,7 @@
                 },
                 "properties": {
                     "name": "Aitolahti",
-                    "popupContent": "Aitolahti<\/b>\n",
+                    "popupContent": "Aitolahti",
                     "color": "blue"
                 }
             },
@@ -4708,7 +4708,7 @@
                 },
                 "properties": {
                     "name": "Akaa",
-                    "popupContent": "Akaa<\/b>\n",
+                    "popupContent": "Akaa",
                     "color": "blue"
                 }
             },
@@ -4723,7 +4723,7 @@
                 },
                 "properties": {
                     "name": "Alah\u00e4rm\u00e4",
-                    "popupContent": "Alah\u00e4rm\u00e4<\/b>\n",
+                    "popupContent": "Alah\u00e4rm\u00e4",
                     "color": "blue"
                 }
             },
@@ -4738,7 +4738,7 @@
                 },
                 "properties": {
                     "name": "Alastaro",
-                    "popupContent": "Alastaro<\/b>\n",
+                    "popupContent": "Alastaro",
                     "color": "blue"
                 }
             },
@@ -4753,7 +4753,7 @@
                 },
                 "properties": {
                     "name": "Alatornio",
-                    "popupContent": "Alatornio<\/b>\n",
+                    "popupContent": "Alatornio",
                     "color": "blue"
                 }
             },
@@ -4768,7 +4768,7 @@
                 },
                 "properties": {
                     "name": "Alaveteli",
-                    "popupContent": "Alaveteli<\/b>\n",
+                    "popupContent": "Alaveteli",
                     "color": "blue"
                 }
             },
@@ -4783,7 +4783,7 @@
                 },
                 "properties": {
                     "name": "Angelniemi",
-                    "popupContent": "Angelniemi<\/b>\n",
+                    "popupContent": "Angelniemi",
                     "color": "blue"
                 }
             },
@@ -4798,7 +4798,7 @@
                 },
                 "properties": {
                     "name": "Anjala",
-                    "popupContent": "Anjala<\/b>\n",
+                    "popupContent": "Anjala",
                     "color": "blue"
                 }
             },
@@ -4813,7 +4813,7 @@
                 },
                 "properties": {
                     "name": "Anjalankoski",
-                    "popupContent": "Anjalankoski<\/b>\n",
+                    "popupContent": "Anjalankoski",
                     "color": "blue"
                 }
             },
@@ -4828,7 +4828,7 @@
                 },
                 "properties": {
                     "name": "Anttola",
-                    "popupContent": "Anttola<\/b>\n",
+                    "popupContent": "Anttola",
                     "color": "blue"
                 }
             },
@@ -4843,7 +4843,7 @@
                 },
                 "properties": {
                     "name": "Artj\u00e4rvi",
-                    "popupContent": "Artj\u00e4rvi<\/b>\n",
+                    "popupContent": "Artj\u00e4rvi",
                     "color": "blue"
                 }
             },
@@ -4858,7 +4858,7 @@
                 },
                 "properties": {
                     "name": "Askainen",
-                    "popupContent": "Askainen<\/b>\n",
+                    "popupContent": "Askainen",
                     "color": "blue"
                 }
             },
@@ -4873,7 +4873,7 @@
                 },
                 "properties": {
                     "name": "Berg\u00f6",
-                    "popupContent": "Berg\u00f6<\/b>\n",
+                    "popupContent": "Berg\u00f6",
                     "color": "blue"
                 }
             },
@@ -4888,7 +4888,7 @@
                 },
                 "properties": {
                     "name": "Bj\u00f6rk\u00f6by",
-                    "popupContent": "Bj\u00f6rk\u00f6by<\/b>\n",
+                    "popupContent": "Bj\u00f6rk\u00f6by",
                     "color": "blue"
                 }
             },
@@ -4903,7 +4903,7 @@
                 },
                 "properties": {
                     "name": "Bromarv",
-                    "popupContent": "Bromarv<\/b>\n",
+                    "popupContent": "Bromarv",
                     "color": "blue"
                 }
             },
@@ -4918,7 +4918,7 @@
                 },
                 "properties": {
                     "name": "Degerby",
-                    "popupContent": "Degerby<\/b>\n",
+                    "popupContent": "Degerby",
                     "color": "blue"
                 }
             },
@@ -4933,7 +4933,7 @@
                 },
                 "properties": {
                     "name": "Dragsfj\u00e4rd",
-                    "popupContent": "Dragsfj\u00e4rd<\/b>\n",
+                    "popupContent": "Dragsfj\u00e4rd",
                     "color": "blue"
                 }
             },
@@ -4948,7 +4948,7 @@
                 },
                 "properties": {
                     "name": "Elim\u00e4ki",
-                    "popupContent": "Elim\u00e4ki<\/b>\n",
+                    "popupContent": "Elim\u00e4ki",
                     "color": "blue"
                 }
             },
@@ -4963,7 +4963,7 @@
                 },
                 "properties": {
                     "name": "Eno",
-                    "popupContent": "Eno<\/b>\n",
+                    "popupContent": "Eno",
                     "color": "blue"
                 }
             },
@@ -4978,7 +4978,7 @@
                 },
                 "properties": {
                     "name": "Er\u00e4j\u00e4rvi",
-                    "popupContent": "Er\u00e4j\u00e4rvi<\/b>\n",
+                    "popupContent": "Er\u00e4j\u00e4rvi",
                     "color": "blue"
                 }
             },
@@ -4993,7 +4993,7 @@
                 },
                 "properties": {
                     "name": "Haaga",
-                    "popupContent": "Haaga<\/b>\n",
+                    "popupContent": "Haaga",
                     "color": "blue"
                 }
             },
@@ -5008,7 +5008,7 @@
                 },
                 "properties": {
                     "name": "Haapasaari",
-                    "popupContent": "Haapasaari<\/b>\n",
+                    "popupContent": "Haapasaari",
                     "color": "blue"
                 }
             },
@@ -5023,7 +5023,7 @@
                 },
                 "properties": {
                     "name": "Halikko",
-                    "popupContent": "Halikko<\/b>\n",
+                    "popupContent": "Halikko",
                     "color": "blue"
                 }
             },
@@ -5038,7 +5038,7 @@
                 },
                 "properties": {
                     "name": "Hauho",
-                    "popupContent": "Hauho<\/b>\n",
+                    "popupContent": "Hauho",
                     "color": "blue"
                 }
             },
@@ -5053,7 +5053,7 @@
                 },
                 "properties": {
                     "name": "Haukipudas",
-                    "popupContent": "Haukipudas<\/b>\n",
+                    "popupContent": "Haukipudas",
                     "color": "blue"
                 }
             },
@@ -5068,7 +5068,7 @@
                 },
                 "properties": {
                     "name": "Haukivuori",
-                    "popupContent": "Haukivuori<\/b>\n",
+                    "popupContent": "Haukivuori",
                     "color": "blue"
                 }
             },
@@ -5083,7 +5083,7 @@
                 },
                 "properties": {
                     "name": "Heinolan maalaiskunta",
-                    "popupContent": "Heinolan maalaiskunta<\/b>\n",
+                    "popupContent": "Heinolan maalaiskunta",
                     "color": "blue"
                 }
             },
@@ -5098,7 +5098,7 @@
                 },
                 "properties": {
                     "name": "Hiittinen",
-                    "popupContent": "Hiittinen<\/b>\n",
+                    "popupContent": "Hiittinen",
                     "color": "blue"
                 }
             },
@@ -5113,7 +5113,7 @@
                 },
                 "properties": {
                     "name": "Himanka",
-                    "popupContent": "Himanka<\/b>\n",
+                    "popupContent": "Himanka",
                     "color": "blue"
                 }
             },
@@ -5128,7 +5128,7 @@
                 },
                 "properties": {
                     "name": "Hinnerjoki",
-                    "popupContent": "Hinnerjoki<\/b>\n",
+                    "popupContent": "Hinnerjoki",
                     "color": "blue"
                 }
             },
@@ -5143,7 +5143,7 @@
                 },
                 "properties": {
                     "name": "Honkilahti",
-                    "popupContent": "Honkilahti<\/b>\n",
+                    "popupContent": "Honkilahti",
                     "color": "blue"
                 }
             },
@@ -5158,7 +5158,7 @@
                 },
                 "properties": {
                     "name": "Houtskari",
-                    "popupContent": "Houtskari<\/b>\n",
+                    "popupContent": "Houtskari",
                     "color": "blue"
                 }
             },
@@ -5173,7 +5173,7 @@
                 },
                 "properties": {
                     "name": "Huopalahti",
-                    "popupContent": "Huopalahti<\/b>\n",
+                    "popupContent": "Huopalahti",
                     "color": "blue"
                 }
             },
@@ -5188,7 +5188,7 @@
                 },
                 "properties": {
                     "name": "Hyvink\u00e4\u00e4n maalaiskunta",
-                    "popupContent": "Hyvink\u00e4\u00e4n maalaiskunta<\/b>\n",
+                    "popupContent": "Hyvink\u00e4\u00e4n maalaiskunta",
                     "color": "blue"
                 }
             },
@@ -5203,7 +5203,7 @@
                 },
                 "properties": {
                     "name": "H\u00e4meenkoski",
-                    "popupContent": "H\u00e4meenkoski<\/b>\n",
+                    "popupContent": "H\u00e4meenkoski",
                     "color": "blue"
                 }
             },
@@ -5218,7 +5218,7 @@
                 },
                 "properties": {
                     "name": "H\u00e4meenlinnan maalaiskunta",
-                    "popupContent": "H\u00e4meenlinnan maalaiskunta<\/b>\n",
+                    "popupContent": "H\u00e4meenlinnan maalaiskunta",
                     "color": "blue"
                 }
             },
@@ -5233,7 +5233,7 @@
                 },
                 "properties": {
                     "name": "Iisalmen maalaiskunta",
-                    "popupContent": "Iisalmen maalaiskunta<\/b>\n",
+                    "popupContent": "Iisalmen maalaiskunta",
                     "color": "blue"
                 }
             },
@@ -5248,7 +5248,7 @@
                 },
                 "properties": {
                     "name": "Ikaalisten maalaiskunta",
-                    "popupContent": "Ikaalisten maalaiskunta<\/b>\n",
+                    "popupContent": "Ikaalisten maalaiskunta",
                     "color": "blue"
                 }
             },
@@ -5263,7 +5263,7 @@
                 },
                 "properties": {
                     "name": "Ini\u00f6",
-                    "popupContent": "Ini\u00f6<\/b>\n",
+                    "popupContent": "Ini\u00f6",
                     "color": "blue"
                 }
             },
@@ -5278,7 +5278,7 @@
                 },
                 "properties": {
                     "name": "Jaala",
-                    "popupContent": "Jaala<\/b>\n",
+                    "popupContent": "Jaala",
                     "color": "blue"
                 }
             },
@@ -5293,7 +5293,7 @@
                 },
                 "properties": {
                     "name": "Jalasj\u00e4rvi",
-                    "popupContent": "Jalasj\u00e4rvi<\/b>\n",
+                    "popupContent": "Jalasj\u00e4rvi",
                     "color": "blue"
                 }
             },
@@ -5308,7 +5308,7 @@
                 },
                 "properties": {
                     "name": "Jepua",
-                    "popupContent": "Jepua<\/b>\n",
+                    "popupContent": "Jepua",
                     "color": "blue"
                 }
             },
@@ -5323,7 +5323,7 @@
                 },
                 "properties": {
                     "name": "Joutseno",
-                    "popupContent": "Joutseno<\/b>\n",
+                    "popupContent": "Joutseno",
                     "color": "blue"
                 }
             },
@@ -5338,7 +5338,7 @@
                 },
                 "properties": {
                     "name": "Juankoski",
-                    "popupContent": "Juankoski<\/b>\n",
+                    "popupContent": "Juankoski",
                     "color": "blue"
                 }
             },
@@ -5353,7 +5353,7 @@
                 },
                 "properties": {
                     "name": "Jurva",
-                    "popupContent": "Jurva<\/b>\n",
+                    "popupContent": "Jurva",
                     "color": "blue"
                 }
             },
@@ -5368,7 +5368,7 @@
                 },
                 "properties": {
                     "name": "Jyv\u00e4skyl\u00e4n maalaiskunta",
-                    "popupContent": "Jyv\u00e4skyl\u00e4n maalaiskunta<\/b>\n",
+                    "popupContent": "Jyv\u00e4skyl\u00e4n maalaiskunta",
                     "color": "blue"
                 }
             },
@@ -5383,7 +5383,7 @@
                 },
                 "properties": {
                     "name": "J\u00e4ms\u00e4nkoski",
-                    "popupContent": "J\u00e4ms\u00e4nkoski<\/b>\n",
+                    "popupContent": "J\u00e4ms\u00e4nkoski",
                     "color": "blue"
                 }
             },
@@ -5398,7 +5398,7 @@
                 },
                 "properties": {
                     "name": "J\u00e4ppil\u00e4",
-                    "popupContent": "J\u00e4ppil\u00e4<\/b>\n",
+                    "popupContent": "J\u00e4ppil\u00e4",
                     "color": "blue"
                 }
             },
@@ -5413,7 +5413,7 @@
                 },
                 "properties": {
                     "name": "Kaarlela",
-                    "popupContent": "Kaarlela<\/b>\n",
+                    "popupContent": "Kaarlela",
                     "color": "blue"
                 }
             },
@@ -5428,7 +5428,7 @@
                 },
                 "properties": {
                     "name": "Kajaanin maalaiskunta",
-                    "popupContent": "Kajaanin maalaiskunta<\/b>\n",
+                    "popupContent": "Kajaanin maalaiskunta",
                     "color": "blue"
                 }
             },
@@ -5443,7 +5443,7 @@
                 },
                 "properties": {
                     "name": "Kakskerta",
-                    "popupContent": "Kakskerta<\/b>\n",
+                    "popupContent": "Kakskerta",
                     "color": "blue"
                 }
             },
@@ -5458,7 +5458,7 @@
                 },
                 "properties": {
                     "name": "Kalanti",
-                    "popupContent": "Kalanti<\/b>\n",
+                    "popupContent": "Kalanti",
                     "color": "blue"
                 }
             },
@@ -5473,7 +5473,7 @@
                 },
                 "properties": {
                     "name": "Kalvola",
-                    "popupContent": "Kalvola<\/b>\n",
+                    "popupContent": "Kalvola",
                     "color": "blue"
                 }
             },
@@ -5488,7 +5488,7 @@
                 },
                 "properties": {
                     "name": "Kangaslampi",
-                    "popupContent": "Kangaslampi<\/b>\n",
+                    "popupContent": "Kangaslampi",
                     "color": "blue"
                 }
             },
@@ -5503,7 +5503,7 @@
                 },
                 "properties": {
                     "name": "Karhula",
-                    "popupContent": "Karhula<\/b>\n",
+                    "popupContent": "Karhula",
                     "color": "blue"
                 }
             },
@@ -5518,7 +5518,7 @@
                 },
                 "properties": {
                     "name": "Karinainen",
-                    "popupContent": "Karinainen<\/b>\n",
+                    "popupContent": "Karinainen",
                     "color": "blue"
                 }
             },
@@ -5533,7 +5533,7 @@
                 },
                 "properties": {
                     "name": "Karjaa",
-                    "popupContent": "Karjaa<\/b>\n",
+                    "popupContent": "Karjaa",
                     "color": "blue"
                 }
             },
@@ -5548,7 +5548,7 @@
                 },
                 "properties": {
                     "name": "Karjaan maalaiskunta",
-                    "popupContent": "Karjaan maalaiskunta<\/b>\n",
+                    "popupContent": "Karjaan maalaiskunta",
                     "color": "blue"
                 }
             },
@@ -5563,7 +5563,7 @@
                 },
                 "properties": {
                     "name": "Karjala",
-                    "popupContent": "Karjala<\/b>\n",
+                    "popupContent": "Karjala",
                     "color": "blue"
                 }
             },
@@ -5578,7 +5578,7 @@
                 },
                 "properties": {
                     "name": "Karjalohja",
-                    "popupContent": "Karjalohja<\/b>\n",
+                    "popupContent": "Karjalohja",
                     "color": "blue"
                 }
             },
@@ -5593,7 +5593,7 @@
                 },
                 "properties": {
                     "name": "Karkku",
-                    "popupContent": "Karkku<\/b>\n",
+                    "popupContent": "Karkku",
                     "color": "blue"
                 }
             },
@@ -5608,7 +5608,7 @@
                 },
                 "properties": {
                     "name": "Karttula",
-                    "popupContent": "Karttula<\/b>\n",
+                    "popupContent": "Karttula",
                     "color": "blue"
                 }
             },
@@ -5623,7 +5623,7 @@
                 },
                 "properties": {
                     "name": "Karuna",
-                    "popupContent": "Karuna<\/b>\n",
+                    "popupContent": "Karuna",
                     "color": "blue"
                 }
             },
@@ -5638,7 +5638,7 @@
                 },
                 "properties": {
                     "name": "Karunki",
-                    "popupContent": "Karunki<\/b>\n",
+                    "popupContent": "Karunki",
                     "color": "blue"
                 }
             },
@@ -5653,7 +5653,7 @@
                 },
                 "properties": {
                     "name": "Kauvatsa",
-                    "popupContent": "Kauvatsa<\/b>\n",
+                    "popupContent": "Kauvatsa",
                     "color": "blue"
                 }
             },
@@ -5668,7 +5668,7 @@
                 },
                 "properties": {
                     "name": "Keiky\u00e4",
-                    "popupContent": "Keiky\u00e4<\/b>\n",
+                    "popupContent": "Keiky\u00e4",
                     "color": "blue"
                 }
             },
@@ -5683,7 +5683,7 @@
                 },
                 "properties": {
                     "name": "Kemij\u00e4rven maalaiskunta",
-                    "popupContent": "Kemij\u00e4rven maalaiskunta<\/b>\n",
+                    "popupContent": "Kemij\u00e4rven maalaiskunta",
                     "color": "blue"
                 }
             },
@@ -5698,7 +5698,7 @@
                 },
                 "properties": {
                     "name": "Kemi\u00f6",
-                    "popupContent": "Kemi\u00f6<\/b>\n",
+                    "popupContent": "Kemi\u00f6",
                     "color": "blue"
                 }
             },
@@ -5713,7 +5713,7 @@
                 },
                 "properties": {
                     "name": "Kerim\u00e4ki",
-                    "popupContent": "Kerim\u00e4ki<\/b>\n",
+                    "popupContent": "Kerim\u00e4ki",
                     "color": "blue"
                 }
             },
@@ -5728,7 +5728,7 @@
                 },
                 "properties": {
                     "name": "Kestil\u00e4",
-                    "popupContent": "Kestil\u00e4<\/b>\n",
+                    "popupContent": "Kestil\u00e4",
                     "color": "blue"
                 }
             },
@@ -5743,7 +5743,7 @@
                 },
                 "properties": {
                     "name": "Kes\u00e4lahti",
-                    "popupContent": "Kes\u00e4lahti<\/b>\n",
+                    "popupContent": "Kes\u00e4lahti",
                     "color": "blue"
                 }
             },
@@ -5758,7 +5758,7 @@
                 },
                 "properties": {
                     "name": "Kiihtelysvaara",
-                    "popupContent": "Kiihtelysvaara<\/b>\n",
+                    "popupContent": "Kiihtelysvaara",
                     "color": "blue"
                 }
             },
@@ -5773,7 +5773,7 @@
                 },
                 "properties": {
                     "name": "Kiikala",
-                    "popupContent": "Kiikala<\/b>\n",
+                    "popupContent": "Kiikala",
                     "color": "blue"
                 }
             },
@@ -5788,7 +5788,7 @@
                 },
                 "properties": {
                     "name": "Kiikka",
-                    "popupContent": "Kiikka<\/b>\n",
+                    "popupContent": "Kiikka",
                     "color": "blue"
                 }
             },
@@ -5803,7 +5803,7 @@
                 },
                 "properties": {
                     "name": "Kiikoinen",
-                    "popupContent": "Kiikoinen<\/b>\n",
+                    "popupContent": "Kiikoinen",
                     "color": "blue"
                 }
             },
@@ -5818,7 +5818,7 @@
                 },
                 "properties": {
                     "name": "Kiiminki",
-                    "popupContent": "Kiiminki<\/b>\n",
+                    "popupContent": "Kiiminki",
                     "color": "blue"
                 }
             },
@@ -5833,7 +5833,7 @@
                 },
                 "properties": {
                     "name": "Kisko",
-                    "popupContent": "Kisko<\/b>\n",
+                    "popupContent": "Kisko",
                     "color": "blue"
                 }
             },
@@ -5848,7 +5848,7 @@
                 },
                 "properties": {
                     "name": "Kiukainen",
-                    "popupContent": "Kiukainen<\/b>\n",
+                    "popupContent": "Kiukainen",
                     "color": "blue"
                 }
             },
@@ -5863,7 +5863,7 @@
                 },
                 "properties": {
                     "name": "Kodisjoki",
-                    "popupContent": "Kodisjoki<\/b>\n",
+                    "popupContent": "Kodisjoki",
                     "color": "blue"
                 }
             },
@@ -5878,7 +5878,7 @@
                 },
                 "properties": {
                     "name": "Koij\u00e4rvi",
-                    "popupContent": "Koij\u00e4rvi<\/b>\n",
+                    "popupContent": "Koij\u00e4rvi",
                     "color": "blue"
                 }
             },
@@ -5893,7 +5893,7 @@
                 },
                 "properties": {
                     "name": "Koivulahti",
-                    "popupContent": "Koivulahti<\/b>\n",
+                    "popupContent": "Koivulahti",
                     "color": "blue"
                 }
             },
@@ -5908,7 +5908,7 @@
                 },
                 "properties": {
                     "name": "Konginkangas",
-                    "popupContent": "Konginkangas<\/b>\n",
+                    "popupContent": "Konginkangas",
                     "color": "blue"
                 }
             },
@@ -5923,7 +5923,7 @@
                 },
                 "properties": {
                     "name": "Korpilahti",
-                    "popupContent": "Korpilahti<\/b>\n",
+                    "popupContent": "Korpilahti",
                     "color": "blue"
                 }
             },
@@ -5938,7 +5938,7 @@
                 },
                 "properties": {
                     "name": "Korppoo",
-                    "popupContent": "Korppoo<\/b>\n",
+                    "popupContent": "Korppoo",
                     "color": "blue"
                 }
             },
@@ -5953,7 +5953,7 @@
                 },
                 "properties": {
                     "name": "Kortesj\u00e4rvi",
-                    "popupContent": "Kortesj\u00e4rvi<\/b>\n",
+                    "popupContent": "Kortesj\u00e4rvi",
                     "color": "blue"
                 }
             },
@@ -5968,7 +5968,7 @@
                 },
                 "properties": {
                     "name": "Koskenp\u00e4\u00e4",
-                    "popupContent": "Koskenp\u00e4\u00e4<\/b>\n",
+                    "popupContent": "Koskenp\u00e4\u00e4",
                     "color": "blue"
                 }
             },
@@ -5983,7 +5983,7 @@
                 },
                 "properties": {
                     "name": "Kuhmalahti",
-                    "popupContent": "Kuhmalahti<\/b>\n",
+                    "popupContent": "Kuhmalahti",
                     "color": "blue"
                 }
             },
@@ -5998,7 +5998,7 @@
                 },
                 "properties": {
                     "name": "Kuivaniemi",
-                    "popupContent": "Kuivaniemi<\/b>\n",
+                    "popupContent": "Kuivaniemi",
                     "color": "blue"
                 }
             },
@@ -6013,7 +6013,7 @@
                 },
                 "properties": {
                     "name": "Kullaa",
-                    "popupContent": "Kullaa<\/b>\n",
+                    "popupContent": "Kullaa",
                     "color": "blue"
                 }
             },
@@ -6028,7 +6028,7 @@
                 },
                 "properties": {
                     "name": "Kulosaari",
-                    "popupContent": "Kulosaari<\/b>\n",
+                    "popupContent": "Kulosaari",
                     "color": "blue"
                 }
             },
@@ -6043,7 +6043,7 @@
                 },
                 "properties": {
                     "name": "Kuopion maalaiskunta",
-                    "popupContent": "Kuopion maalaiskunta<\/b>\n",
+                    "popupContent": "Kuopion maalaiskunta",
                     "color": "blue"
                 }
             },
@@ -6058,7 +6058,7 @@
                 },
                 "properties": {
                     "name": "Kuorevesi",
-                    "popupContent": "Kuorevesi<\/b>\n",
+                    "popupContent": "Kuorevesi",
                     "color": "blue"
                 }
             },
@@ -6073,7 +6073,7 @@
                 },
                 "properties": {
                     "name": "Kuru",
-                    "popupContent": "Kuru<\/b>\n",
+                    "popupContent": "Kuru",
                     "color": "blue"
                 }
             },
@@ -6088,7 +6088,7 @@
                 },
                 "properties": {
                     "name": "Kuusankoski",
-                    "popupContent": "Kuusankoski<\/b>\n",
+                    "popupContent": "Kuusankoski",
                     "color": "blue"
                 }
             },
@@ -6103,7 +6103,7 @@
                 },
                 "properties": {
                     "name": "Kuusisto",
-                    "popupContent": "Kuusisto<\/b>\n",
+                    "popupContent": "Kuusisto",
                     "color": "blue"
                 }
             },
@@ -6118,7 +6118,7 @@
                 },
                 "properties": {
                     "name": "Kuusjoki",
-                    "popupContent": "Kuusjoki<\/b>\n",
+                    "popupContent": "Kuusjoki",
                     "color": "blue"
                 }
             },
@@ -6133,7 +6133,7 @@
                 },
                 "properties": {
                     "name": "Kylm\u00e4koski",
-                    "popupContent": "Kylm\u00e4koski<\/b>\n",
+                    "popupContent": "Kylm\u00e4koski",
                     "color": "blue"
                 }
             },
@@ -6148,7 +6148,7 @@
                 },
                 "properties": {
                     "name": "Kymi",
-                    "popupContent": "Kymi<\/b>\n",
+                    "popupContent": "Kymi",
                     "color": "blue"
                 }
             },
@@ -6163,7 +6163,7 @@
                 },
                 "properties": {
                     "name": "K\u00e4lvi\u00e4",
-                    "popupContent": "K\u00e4lvi\u00e4<\/b>\n",
+                    "popupContent": "K\u00e4lvi\u00e4",
                     "color": "blue"
                 }
             },
@@ -6178,7 +6178,7 @@
                 },
                 "properties": {
                     "name": "K\u00f6yli\u00f6",
-                    "popupContent": "K\u00f6yli\u00f6<\/b>\n",
+                    "popupContent": "K\u00f6yli\u00f6",
                     "color": "blue"
                 }
             },
@@ -6193,7 +6193,7 @@
                 },
                 "properties": {
                     "name": "Lammi",
-                    "popupContent": "Lammi<\/b>\n",
+                    "popupContent": "Lammi",
                     "color": "blue"
                 }
             },
@@ -6208,7 +6208,7 @@
                 },
                 "properties": {
                     "name": "Lappee",
-                    "popupContent": "Lappee<\/b>\n",
+                    "popupContent": "Lappee",
                     "color": "blue"
                 }
             },
@@ -6223,7 +6223,7 @@
                 },
                 "properties": {
                     "name": "Lappi",
-                    "popupContent": "Lappi<\/b>\n",
+                    "popupContent": "Lappi",
                     "color": "blue"
                 }
             },
@@ -6238,7 +6238,7 @@
                 },
                 "properties": {
                     "name": "Lapv\u00e4\u00e4rtti",
-                    "popupContent": "Lapv\u00e4\u00e4rtti<\/b>\n",
+                    "popupContent": "Lapv\u00e4\u00e4rtti",
                     "color": "blue"
                 }
             },
@@ -6253,7 +6253,7 @@
                 },
                 "properties": {
                     "name": "Lauritsala",
-                    "popupContent": "Lauritsala<\/b>\n",
+                    "popupContent": "Lauritsala",
                     "color": "blue"
                 }
             },
@@ -6268,7 +6268,7 @@
                 },
                 "properties": {
                     "name": "Lavia",
-                    "popupContent": "Lavia<\/b>\n",
+                    "popupContent": "Lavia",
                     "color": "blue"
                 }
             },
@@ -6283,7 +6283,7 @@
                 },
                 "properties": {
                     "name": "Lehtim\u00e4ki",
-                    "popupContent": "Lehtim\u00e4ki<\/b>\n",
+                    "popupContent": "Lehtim\u00e4ki",
                     "color": "blue"
                 }
             },
@@ -6298,7 +6298,7 @@
                 },
                 "properties": {
                     "name": "Leivonm\u00e4ki",
-                    "popupContent": "Leivonm\u00e4ki<\/b>\n",
+                    "popupContent": "Leivonm\u00e4ki",
                     "color": "blue"
                 }
             },
@@ -6313,7 +6313,7 @@
                 },
                 "properties": {
                     "name": "Lemu",
-                    "popupContent": "Lemu<\/b>\n",
+                    "popupContent": "Lemu",
                     "color": "blue"
                 }
             },
@@ -6328,7 +6328,7 @@
                 },
                 "properties": {
                     "name": "Liljendal",
-                    "popupContent": "Liljendal<\/b>\n",
+                    "popupContent": "Liljendal",
                     "color": "blue"
                 }
             },
@@ -6343,7 +6343,7 @@
                 },
                 "properties": {
                     "name": "Lohjan kunta",
-                    "popupContent": "Lohjan kunta<\/b>\n",
+                    "popupContent": "Lohjan kunta",
                     "color": "blue"
                 }
             },
@@ -6358,7 +6358,7 @@
                 },
                 "properties": {
                     "name": "Lohtaja",
-                    "popupContent": "Lohtaja<\/b>\n",
+                    "popupContent": "Lohtaja",
                     "color": "blue"
                 }
             },
@@ -6373,7 +6373,7 @@
                 },
                 "properties": {
                     "name": "Loimaan kunta",
-                    "popupContent": "Loimaan kunta<\/b>\n",
+                    "popupContent": "Loimaan kunta",
                     "color": "blue"
                 }
             },
@@ -6388,7 +6388,7 @@
                 },
                 "properties": {
                     "name": "Lokalahti",
-                    "popupContent": "Lokalahti<\/b>\n",
+                    "popupContent": "Lokalahti",
                     "color": "blue"
                 }
             },
@@ -6403,7 +6403,7 @@
                 },
                 "properties": {
                     "name": "Luopioinen",
-                    "popupContent": "Luopioinen<\/b>\n",
+                    "popupContent": "Luopioinen",
                     "color": "blue"
                 }
             },
@@ -6418,7 +6418,7 @@
                 },
                 "properties": {
                     "name": "Luvia",
-                    "popupContent": "Luvia<\/b>\n",
+                    "popupContent": "Luvia",
                     "color": "blue"
                 }
             },
@@ -6433,7 +6433,7 @@
                 },
                 "properties": {
                     "name": "L\u00e4ngelm\u00e4ki",
-                    "popupContent": "L\u00e4ngelm\u00e4ki<\/b>\n",
+                    "popupContent": "L\u00e4ngelm\u00e4ki",
                     "color": "blue"
                 }
             },
@@ -6448,7 +6448,7 @@
                 },
                 "properties": {
                     "name": "Maaninka",
-                    "popupContent": "Maaninka<\/b>\n",
+                    "popupContent": "Maaninka",
                     "color": "blue"
                 }
             },
@@ -6463,7 +6463,7 @@
                 },
                 "properties": {
                     "name": "Maaria",
-                    "popupContent": "Maaria<\/b>\n",
+                    "popupContent": "Maaria",
                     "color": "blue"
                 }
             },
@@ -6478,7 +6478,7 @@
                 },
                 "properties": {
                     "name": "Maksamaa",
-                    "popupContent": "Maksamaa<\/b>\n",
+                    "popupContent": "Maksamaa",
                     "color": "blue"
                 }
             },
@@ -6493,7 +6493,7 @@
                 },
                 "properties": {
                     "name": "Mellil\u00e4",
-                    "popupContent": "Mellil\u00e4<\/b>\n",
+                    "popupContent": "Mellil\u00e4",
                     "color": "blue"
                 }
             },
@@ -6508,7 +6508,7 @@
                 },
                 "properties": {
                     "name": "Merimasku",
-                    "popupContent": "Merimasku<\/b>\n",
+                    "popupContent": "Merimasku",
                     "color": "blue"
                 }
             },
@@ -6523,7 +6523,7 @@
                 },
                 "properties": {
                     "name": "Messukyl\u00e4",
-                    "popupContent": "Messukyl\u00e4<\/b>\n",
+                    "popupContent": "Messukyl\u00e4",
                     "color": "blue"
                 }
             },
@@ -6538,7 +6538,7 @@
                 },
                 "properties": {
                     "name": "Mets\u00e4maa",
-                    "popupContent": "Mets\u00e4maa<\/b>\n",
+                    "popupContent": "Mets\u00e4maa",
                     "color": "blue"
                 }
             },
@@ -6553,7 +6553,7 @@
                 },
                 "properties": {
                     "name": "Mietoinen",
-                    "popupContent": "Mietoinen<\/b>\n",
+                    "popupContent": "Mietoinen",
                     "color": "blue"
                 }
             },
@@ -6568,7 +6568,7 @@
                 },
                 "properties": {
                     "name": "Mikkelin maalaiskunta",
-                    "popupContent": "Mikkelin maalaiskunta<\/b>\n",
+                    "popupContent": "Mikkelin maalaiskunta",
                     "color": "blue"
                 }
             },
@@ -6583,7 +6583,7 @@
                 },
                 "properties": {
                     "name": "Mouhij\u00e4rvi",
-                    "popupContent": "Mouhij\u00e4rvi<\/b>\n",
+                    "popupContent": "Mouhij\u00e4rvi",
                     "color": "blue"
                 }
             },
@@ -6598,7 +6598,7 @@
                 },
                 "properties": {
                     "name": "Munsala",
-                    "popupContent": "Munsala<\/b>\n",
+                    "popupContent": "Munsala",
                     "color": "blue"
                 }
             },
@@ -6613,7 +6613,7 @@
                 },
                 "properties": {
                     "name": "Muurla",
-                    "popupContent": "Muurla<\/b>\n",
+                    "popupContent": "Muurla",
                     "color": "blue"
                 }
             },
@@ -6628,7 +6628,7 @@
                 },
                 "properties": {
                     "name": "Muuruvesi",
-                    "popupContent": "Muuruvesi<\/b>\n",
+                    "popupContent": "Muuruvesi",
                     "color": "blue"
                 }
             },
@@ -6643,7 +6643,7 @@
                 },
                 "properties": {
                     "name": "M\u00e4ntt\u00e4",
-                    "popupContent": "M\u00e4ntt\u00e4<\/b>\n",
+                    "popupContent": "M\u00e4ntt\u00e4",
                     "color": "blue"
                 }
             },
@@ -6658,7 +6658,7 @@
                 },
                 "properties": {
                     "name": "Naantalin maalaiskunta",
-                    "popupContent": "Naantalin maalaiskunta<\/b>\n",
+                    "popupContent": "Naantalin maalaiskunta",
                     "color": "blue"
                 }
             },
@@ -6673,7 +6673,7 @@
                 },
                 "properties": {
                     "name": "Nastola",
-                    "popupContent": "Nastola<\/b>\n",
+                    "popupContent": "Nastola",
                     "color": "blue"
                 }
             },
@@ -6688,7 +6688,7 @@
                 },
                 "properties": {
                     "name": "Nauvo",
-                    "popupContent": "Nauvo<\/b>\n",
+                    "popupContent": "Nauvo",
                     "color": "blue"
                 }
             },
@@ -6703,7 +6703,7 @@
                 },
                 "properties": {
                     "name": "Nilsi\u00e4",
-                    "popupContent": "Nilsi\u00e4<\/b>\n",
+                    "popupContent": "Nilsi\u00e4",
                     "color": "blue"
                 }
             },
@@ -6718,7 +6718,7 @@
                 },
                 "properties": {
                     "name": "Noormarkku",
-                    "popupContent": "Noormarkku<\/b>\n",
+                    "popupContent": "Noormarkku",
                     "color": "blue"
                 }
             },
@@ -6733,7 +6733,7 @@
                 },
                 "properties": {
                     "name": "Nuijamaa",
-                    "popupContent": "Nuijamaa<\/b>\n",
+                    "popupContent": "Nuijamaa",
                     "color": "blue"
                 }
             },
@@ -6748,7 +6748,7 @@
                 },
                 "properties": {
                     "name": "Nummi",
-                    "popupContent": "Nummi<\/b>\n",
+                    "popupContent": "Nummi",
                     "color": "blue"
                 }
             },
@@ -6763,7 +6763,7 @@
                 },
                 "properties": {
                     "name": "Nurmeksen maalaiskunta",
-                    "popupContent": "Nurmeksen maalaiskunta<\/b>\n",
+                    "popupContent": "Nurmeksen maalaiskunta",
                     "color": "blue"
                 }
             },
@@ -6778,7 +6778,7 @@
                 },
                 "properties": {
                     "name": "Nurmo",
-                    "popupContent": "Nurmo<\/b>\n",
+                    "popupContent": "Nurmo",
                     "color": "blue"
                 }
             },
@@ -6793,7 +6793,7 @@
                 },
                 "properties": {
                     "name": "Oravainen",
-                    "popupContent": "Oravainen<\/b>\n",
+                    "popupContent": "Oravainen",
                     "color": "blue"
                 }
             },
@@ -6808,7 +6808,7 @@
                 },
                 "properties": {
                     "name": "Oulujoki",
-                    "popupContent": "Oulujoki<\/b>\n",
+                    "popupContent": "Oulujoki",
                     "color": "blue"
                 }
             },
@@ -6823,7 +6823,7 @@
                 },
                 "properties": {
                     "name": "Oulunkyl\u00e4",
-                    "popupContent": "Oulunkyl\u00e4<\/b>\n",
+                    "popupContent": "Oulunkyl\u00e4",
                     "color": "blue"
                 }
             },
@@ -6838,7 +6838,7 @@
                 },
                 "properties": {
                     "name": "Oulunsalo",
-                    "popupContent": "Oulunsalo<\/b>\n",
+                    "popupContent": "Oulunsalo",
                     "color": "blue"
                 }
             },
@@ -6853,7 +6853,7 @@
                 },
                 "properties": {
                     "name": "Paattinen",
-                    "popupContent": "Paattinen<\/b>\n",
+                    "popupContent": "Paattinen",
                     "color": "blue"
                 }
             },
@@ -6868,7 +6868,7 @@
                 },
                 "properties": {
                     "name": "Paavola",
-                    "popupContent": "Paavola<\/b>\n",
+                    "popupContent": "Paavola",
                     "color": "blue"
                 }
             },
@@ -6883,7 +6883,7 @@
                 },
                 "properties": {
                     "name": "Paraisten maalaiskunta",
-                    "popupContent": "Paraisten maalaiskunta<\/b>\n",
+                    "popupContent": "Paraisten maalaiskunta",
                     "color": "blue"
                 }
             },
@@ -6898,7 +6898,7 @@
                 },
                 "properties": {
                     "name": "Pattijoki",
-                    "popupContent": "Pattijoki<\/b>\n",
+                    "popupContent": "Pattijoki",
                     "color": "blue"
                 }
             },
@@ -6913,7 +6913,7 @@
                 },
                 "properties": {
                     "name": "Pernaja",
-                    "popupContent": "Pernaja<\/b>\n",
+                    "popupContent": "Pernaja",
                     "color": "blue"
                 }
             },
@@ -6928,7 +6928,7 @@
                 },
                 "properties": {
                     "name": "Perni\u00f6",
-                    "popupContent": "Perni\u00f6<\/b>\n",
+                    "popupContent": "Perni\u00f6",
                     "color": "blue"
                 }
             },
@@ -6943,7 +6943,7 @@
                 },
                 "properties": {
                     "name": "Pertteli",
-                    "popupContent": "Pertteli<\/b>\n",
+                    "popupContent": "Pertteli",
                     "color": "blue"
                 }
             },
@@ -6958,7 +6958,7 @@
                 },
                 "properties": {
                     "name": "Per\u00e4sein\u00e4joki",
-                    "popupContent": "Per\u00e4sein\u00e4joki<\/b>\n",
+                    "popupContent": "Per\u00e4sein\u00e4joki",
                     "color": "blue"
                 }
             },
@@ -6973,7 +6973,7 @@
                 },
                 "properties": {
                     "name": "Petolahti",
-                    "popupContent": "Petolahti<\/b>\n",
+                    "popupContent": "Petolahti",
                     "color": "blue"
                 }
             },
@@ -6988,7 +6988,7 @@
                 },
                 "properties": {
                     "name": "Pieks\u00e4m\u00e4en maalaiskunta",
-                    "popupContent": "Pieks\u00e4m\u00e4en maalaiskunta<\/b>\n",
+                    "popupContent": "Pieks\u00e4m\u00e4en maalaiskunta",
                     "color": "blue"
                 }
             },
@@ -7003,7 +7003,7 @@
                 },
                 "properties": {
                     "name": "Pielisensuu",
-                    "popupContent": "Pielisensuu<\/b>\n",
+                    "popupContent": "Pielisensuu",
                     "color": "blue"
                 }
             },
@@ -7018,7 +7018,7 @@
                 },
                 "properties": {
                     "name": "Pielisj\u00e4rvi",
-                    "popupContent": "Pielisj\u00e4rvi<\/b>\n",
+                    "popupContent": "Pielisj\u00e4rvi",
                     "color": "blue"
                 }
             },
@@ -7033,7 +7033,7 @@
                 },
                 "properties": {
                     "name": "Pihlajavesi",
-                    "popupContent": "Pihlajavesi<\/b>\n",
+                    "popupContent": "Pihlajavesi",
                     "color": "blue"
                 }
             },
@@ -7048,7 +7048,7 @@
                 },
                 "properties": {
                     "name": "Piikki\u00f6",
-                    "popupContent": "Piikki\u00f6<\/b>\n",
+                    "popupContent": "Piikki\u00f6",
                     "color": "blue"
                 }
             },
@@ -7063,7 +7063,7 @@
                 },
                 "properties": {
                     "name": "Piippola",
-                    "popupContent": "Piippola<\/b>\n",
+                    "popupContent": "Piippola",
                     "color": "blue"
                 }
             },
@@ -7078,7 +7078,7 @@
                 },
                 "properties": {
                     "name": "Pirttikyl\u00e4",
-                    "popupContent": "Pirttikyl\u00e4<\/b>\n",
+                    "popupContent": "Pirttikyl\u00e4",
                     "color": "blue"
                 }
             },
@@ -7093,7 +7093,7 @@
                 },
                 "properties": {
                     "name": "Pohja",
-                    "popupContent": "Pohja<\/b>\n",
+                    "popupContent": "Pohja",
                     "color": "blue"
                 }
             },
@@ -7108,7 +7108,7 @@
                 },
                 "properties": {
                     "name": "Pohjaslahti",
-                    "popupContent": "Pohjaslahti<\/b>\n",
+                    "popupContent": "Pohjaslahti",
                     "color": "blue"
                 }
             },
@@ -7123,7 +7123,7 @@
                 },
                 "properties": {
                     "name": "Porin maalaiskunta",
-                    "popupContent": "Porin maalaiskunta<\/b>\n",
+                    "popupContent": "Porin maalaiskunta",
                     "color": "blue"
                 }
             },
@@ -7138,7 +7138,7 @@
                 },
                 "properties": {
                     "name": "Porvoon maalaiskunta",
-                    "popupContent": "Porvoon maalaiskunta<\/b>\n",
+                    "popupContent": "Porvoon maalaiskunta",
                     "color": "blue"
                 }
             },
@@ -7153,7 +7153,7 @@
                 },
                 "properties": {
                     "name": "Pulkkila",
-                    "popupContent": "Pulkkila<\/b>\n",
+                    "popupContent": "Pulkkila",
                     "color": "blue"
                 }
             },
@@ -7168,7 +7168,7 @@
                 },
                 "properties": {
                     "name": "Punkaharju",
-                    "popupContent": "Punkaharju<\/b>\n",
+                    "popupContent": "Punkaharju",
                     "color": "blue"
                 }
             },
@@ -7183,7 +7183,7 @@
                 },
                 "properties": {
                     "name": "Purmo",
-                    "popupContent": "Purmo<\/b>\n",
+                    "popupContent": "Purmo",
                     "color": "blue"
                 }
             },
@@ -7198,7 +7198,7 @@
                 },
                 "properties": {
                     "name": "Pusula",
-                    "popupContent": "Pusula<\/b>\n",
+                    "popupContent": "Pusula",
                     "color": "blue"
                 }
             },
@@ -7213,7 +7213,7 @@
                 },
                 "properties": {
                     "name": "Pyh\u00e4j\u00e4rvi Ul",
-                    "popupContent": "Pyh\u00e4j\u00e4rvi Ul<\/b>\n",
+                    "popupContent": "Pyh\u00e4j\u00e4rvi Ul",
                     "color": "blue"
                 }
             },
@@ -7228,7 +7228,7 @@
                 },
                 "properties": {
                     "name": "Pyh\u00e4maa",
-                    "popupContent": "Pyh\u00e4maa<\/b>\n",
+                    "popupContent": "Pyh\u00e4maa",
                     "color": "blue"
                 }
             },
@@ -7243,7 +7243,7 @@
                 },
                 "properties": {
                     "name": "Pyh\u00e4selk\u00e4",
-                    "popupContent": "Pyh\u00e4selk\u00e4<\/b>\n",
+                    "popupContent": "Pyh\u00e4selk\u00e4",
                     "color": "blue"
                 }
             },
@@ -7258,7 +7258,7 @@
                 },
                 "properties": {
                     "name": "Pylk\u00f6nm\u00e4ki",
-                    "popupContent": "Pylk\u00f6nm\u00e4ki<\/b>\n",
+                    "popupContent": "Pylk\u00f6nm\u00e4ki",
                     "color": "blue"
                 }
             },
@@ -7273,7 +7273,7 @@
                 },
                 "properties": {
                     "name": "Raippaluoto",
-                    "popupContent": "Raippaluoto<\/b>\n",
+                    "popupContent": "Raippaluoto",
                     "color": "blue"
                 }
             },
@@ -7288,7 +7288,7 @@
                 },
                 "properties": {
                     "name": "Rantsila",
-                    "popupContent": "Rantsila<\/b>\n",
+                    "popupContent": "Rantsila",
                     "color": "blue"
                 }
             },
@@ -7303,7 +7303,7 @@
                 },
                 "properties": {
                     "name": "Rauman maalaiskunta",
-                    "popupContent": "Rauman maalaiskunta<\/b>\n",
+                    "popupContent": "Rauman maalaiskunta",
                     "color": "blue"
                 }
             },
@@ -7318,7 +7318,7 @@
                 },
                 "properties": {
                     "name": "Rautio",
-                    "popupContent": "Rautio<\/b>\n",
+                    "popupContent": "Rautio",
                     "color": "blue"
                 }
             },
@@ -7333,7 +7333,7 @@
                 },
                 "properties": {
                     "name": "Renko",
-                    "popupContent": "Renko<\/b>\n",
+                    "popupContent": "Renko",
                     "color": "blue"
                 }
             },
@@ -7348,7 +7348,7 @@
                 },
                 "properties": {
                     "name": "Revonlahti",
-                    "popupContent": "Revonlahti<\/b>\n",
+                    "popupContent": "Revonlahti",
                     "color": "blue"
                 }
             },
@@ -7363,7 +7363,7 @@
                 },
                 "properties": {
                     "name": "Riistavesi",
-                    "popupContent": "Riistavesi<\/b>\n",
+                    "popupContent": "Riistavesi",
                     "color": "blue"
                 }
             },
@@ -7378,7 +7378,7 @@
                 },
                 "properties": {
                     "name": "Ristiina",
-                    "popupContent": "Ristiina<\/b>\n",
+                    "popupContent": "Ristiina",
                     "color": "blue"
                 }
             },
@@ -7393,7 +7393,7 @@
                 },
                 "properties": {
                     "name": "Rovaniemen maalaiskunta",
-                    "popupContent": "Rovaniemen maalaiskunta<\/b>\n",
+                    "popupContent": "Rovaniemen maalaiskunta",
                     "color": "blue"
                 }
             },
@@ -7408,7 +7408,7 @@
                 },
                 "properties": {
                     "name": "Ruotsinpyht\u00e4\u00e4",
-                    "popupContent": "Ruotsinpyht\u00e4\u00e4<\/b>\n",
+                    "popupContent": "Ruotsinpyht\u00e4\u00e4",
                     "color": "blue"
                 }
             },
@@ -7423,7 +7423,7 @@
                 },
                 "properties": {
                     "name": "Ruukki",
-                    "popupContent": "Ruukki<\/b>\n",
+                    "popupContent": "Ruukki",
                     "color": "blue"
                 }
             },
@@ -7438,7 +7438,7 @@
                 },
                 "properties": {
                     "name": "Rym\u00e4ttyl\u00e4",
-                    "popupContent": "Rym\u00e4ttyl\u00e4<\/b>\n",
+                    "popupContent": "Rym\u00e4ttyl\u00e4",
                     "color": "blue"
                 }
             },
@@ -7453,7 +7453,7 @@
                 },
                 "properties": {
                     "name": "Saari",
-                    "popupContent": "Saari<\/b>\n",
+                    "popupContent": "Saari",
                     "color": "blue"
                 }
             },
@@ -7468,7 +7468,7 @@
                 },
                 "properties": {
                     "name": "Sahalahti",
-                    "popupContent": "Sahalahti<\/b>\n",
+                    "popupContent": "Sahalahti",
                     "color": "blue"
                 }
             },
@@ -7483,7 +7483,7 @@
                 },
                 "properties": {
                     "name": "Saloinen",
-                    "popupContent": "Saloinen<\/b>\n",
+                    "popupContent": "Saloinen",
                     "color": "blue"
                 }
             },
@@ -7498,7 +7498,7 @@
                 },
                 "properties": {
                     "name": "Sammatti",
-                    "popupContent": "Sammatti<\/b>\n",
+                    "popupContent": "Sammatti",
                     "color": "blue"
                 }
             },
@@ -7513,7 +7513,7 @@
                 },
                 "properties": {
                     "name": "Savonranta",
-                    "popupContent": "Savonranta<\/b>\n",
+                    "popupContent": "Savonranta",
                     "color": "blue"
                 }
             },
@@ -7528,7 +7528,7 @@
                 },
                 "properties": {
                     "name": "Sein\u00e4joen maalaiskunta",
-                    "popupContent": "Sein\u00e4joen maalaiskunta<\/b>\n",
+                    "popupContent": "Sein\u00e4joen maalaiskunta",
                     "color": "blue"
                 }
             },
@@ -7543,7 +7543,7 @@
                 },
                 "properties": {
                     "name": "Siipyy",
-                    "popupContent": "Siipyy<\/b>\n",
+                    "popupContent": "Siipyy",
                     "color": "blue"
                 }
             },
@@ -7558,7 +7558,7 @@
                 },
                 "properties": {
                     "name": "Simpele",
-                    "popupContent": "Simpele<\/b>\n",
+                    "popupContent": "Simpele",
                     "color": "blue"
                 }
             },
@@ -7573,7 +7573,7 @@
                 },
                 "properties": {
                     "name": "Sippola",
-                    "popupContent": "Sippola<\/b>\n",
+                    "popupContent": "Sippola",
                     "color": "blue"
                 }
             },
@@ -7588,7 +7588,7 @@
                 },
                 "properties": {
                     "name": "Snappertuna",
-                    "popupContent": "Snappertuna<\/b>\n",
+                    "popupContent": "Snappertuna",
                     "color": "blue"
                 }
             },
@@ -7603,7 +7603,7 @@
                 },
                 "properties": {
                     "name": "Somerniemi",
-                    "popupContent": "Somerniemi<\/b>\n",
+                    "popupContent": "Somerniemi",
                     "color": "blue"
                 }
             },
@@ -7618,7 +7618,7 @@
                 },
                 "properties": {
                     "name": "Sulva",
-                    "popupContent": "Sulva<\/b>\n",
+                    "popupContent": "Sulva",
                     "color": "blue"
                 }
             },
@@ -7633,7 +7633,7 @@
                 },
                 "properties": {
                     "name": "Sumiainen",
-                    "popupContent": "Sumiainen<\/b>\n",
+                    "popupContent": "Sumiainen",
                     "color": "blue"
                 }
             },
@@ -7648,7 +7648,7 @@
                 },
                 "properties": {
                     "name": "Suodenniemi",
-                    "popupContent": "Suodenniemi<\/b>\n",
+                    "popupContent": "Suodenniemi",
                     "color": "blue"
                 }
             },
@@ -7663,7 +7663,7 @@
                 },
                 "properties": {
                     "name": "Suolahti",
-                    "popupContent": "Suolahti<\/b>\n",
+                    "popupContent": "Suolahti",
                     "color": "blue"
                 }
             },
@@ -7678,7 +7678,7 @@
                 },
                 "properties": {
                     "name": "Suomenniemi",
-                    "popupContent": "Suomenniemi<\/b>\n",
+                    "popupContent": "Suomenniemi",
                     "color": "blue"
                 }
             },
@@ -7693,7 +7693,7 @@
                 },
                 "properties": {
                     "name": "Suomusj\u00e4rvi",
-                    "popupContent": "Suomusj\u00e4rvi<\/b>\n",
+                    "popupContent": "Suomusj\u00e4rvi",
                     "color": "blue"
                 }
             },
@@ -7708,7 +7708,7 @@
                 },
                 "properties": {
                     "name": "Suoniemi",
-                    "popupContent": "Suoniemi<\/b>\n",
+                    "popupContent": "Suoniemi",
                     "color": "blue"
                 }
             },
@@ -7723,7 +7723,7 @@
                 },
                 "properties": {
                     "name": "S\u00e4rkisalo",
-                    "popupContent": "S\u00e4rkisalo<\/b>\n",
+                    "popupContent": "S\u00e4rkisalo",
                     "color": "blue"
                 }
             },
@@ -7738,7 +7738,7 @@
                 },
                 "properties": {
                     "name": "S\u00e4yneinen",
-                    "popupContent": "S\u00e4yneinen<\/b>\n",
+                    "popupContent": "S\u00e4yneinen",
                     "color": "blue"
                 }
             },
@@ -7753,7 +7753,7 @@
                 },
                 "properties": {
                     "name": "S\u00e4yn\u00e4tsalo",
-                    "popupContent": "S\u00e4yn\u00e4tsalo<\/b>\n",
+                    "popupContent": "S\u00e4yn\u00e4tsalo",
                     "color": "blue"
                 }
             },
@@ -7768,7 +7768,7 @@
                 },
                 "properties": {
                     "name": "S\u00e4\u00e4ksm\u00e4ki",
-                    "popupContent": "S\u00e4\u00e4ksm\u00e4ki<\/b>\n",
+                    "popupContent": "S\u00e4\u00e4ksm\u00e4ki",
                     "color": "blue"
                 }
             },
@@ -7783,7 +7783,7 @@
                 },
                 "properties": {
                     "name": "S\u00e4\u00e4minki",
-                    "popupContent": "S\u00e4\u00e4minki<\/b>\n",
+                    "popupContent": "S\u00e4\u00e4minki",
                     "color": "blue"
                 }
             },
@@ -7798,7 +7798,7 @@
                 },
                 "properties": {
                     "name": "Tammisaaren maalaiskunta",
-                    "popupContent": "Tammisaaren maalaiskunta<\/b>\n",
+                    "popupContent": "Tammisaaren maalaiskunta",
                     "color": "blue"
                 }
             },
@@ -7813,7 +7813,7 @@
                 },
                 "properties": {
                     "name": "Tammisaari",
-                    "popupContent": "Tammisaari<\/b>\n",
+                    "popupContent": "Tammisaari",
                     "color": "blue"
                 }
             },
@@ -7828,7 +7828,7 @@
                 },
                 "properties": {
                     "name": "Tarvasjoki",
-                    "popupContent": "Tarvasjoki<\/b>\n",
+                    "popupContent": "Tarvasjoki",
                     "color": "blue"
                 }
             },
@@ -7843,7 +7843,7 @@
                 },
                 "properties": {
                     "name": "Teerij\u00e4rvi",
-                    "popupContent": "Teerij\u00e4rvi<\/b>\n",
+                    "popupContent": "Teerij\u00e4rvi",
                     "color": "blue"
                 }
             },
@@ -7858,7 +7858,7 @@
                 },
                 "properties": {
                     "name": "Teisko",
-                    "popupContent": "Teisko<\/b>\n",
+                    "popupContent": "Teisko",
                     "color": "blue"
                 }
             },
@@ -7873,7 +7873,7 @@
                 },
                 "properties": {
                     "name": "Temmes",
-                    "popupContent": "Temmes<\/b>\n",
+                    "popupContent": "Temmes",
                     "color": "blue"
                 }
             },
@@ -7888,7 +7888,7 @@
                 },
                 "properties": {
                     "name": "Tenhola",
-                    "popupContent": "Tenhola<\/b>\n",
+                    "popupContent": "Tenhola",
                     "color": "blue"
                 }
             },
@@ -7903,7 +7903,7 @@
                 },
                 "properties": {
                     "name": "Tiukka",
-                    "popupContent": "Tiukka<\/b>\n",
+                    "popupContent": "Tiukka",
                     "color": "blue"
                 }
             },
@@ -7918,7 +7918,7 @@
                 },
                 "properties": {
                     "name": "Toijala",
-                    "popupContent": "Toijala<\/b>\n",
+                    "popupContent": "Toijala",
                     "color": "blue"
                 }
             },
@@ -7933,7 +7933,7 @@
                 },
                 "properties": {
                     "name": "Tottij\u00e4rvi",
-                    "popupContent": "Tottij\u00e4rvi<\/b>\n",
+                    "popupContent": "Tottij\u00e4rvi",
                     "color": "blue"
                 }
             },
@@ -7948,7 +7948,7 @@
                 },
                 "properties": {
                     "name": "Tuulos",
-                    "popupContent": "Tuulos<\/b>\n",
+                    "popupContent": "Tuulos",
                     "color": "blue"
                 }
             },
@@ -7963,7 +7963,7 @@
                 },
                 "properties": {
                     "name": "Tuupovaara",
-                    "popupContent": "Tuupovaara<\/b>\n",
+                    "popupContent": "Tuupovaara",
                     "color": "blue"
                 }
             },
@@ -7978,7 +7978,7 @@
                 },
                 "properties": {
                     "name": "Tyrv\u00e4nt\u00f6",
-                    "popupContent": "Tyrv\u00e4nt\u00f6<\/b>\n",
+                    "popupContent": "Tyrv\u00e4nt\u00f6",
                     "color": "blue"
                 }
             },
@@ -7993,7 +7993,7 @@
                 },
                 "properties": {
                     "name": "Tyrv\u00e4\u00e4",
-                    "popupContent": "Tyrv\u00e4\u00e4<\/b>\n",
+                    "popupContent": "Tyrv\u00e4\u00e4",
                     "color": "blue"
                 }
             },
@@ -8008,7 +8008,7 @@
                 },
                 "properties": {
                     "name": "T\u00f6ys\u00e4",
-                    "popupContent": "T\u00f6ys\u00e4<\/b>\n",
+                    "popupContent": "T\u00f6ys\u00e4",
                     "color": "blue"
                 }
             },
@@ -8023,7 +8023,7 @@
                 },
                 "properties": {
                     "name": "Ullava",
-                    "popupContent": "Ullava<\/b>\n",
+                    "popupContent": "Ullava",
                     "color": "blue"
                 }
             },
@@ -8038,7 +8038,7 @@
                 },
                 "properties": {
                     "name": "Uskela",
-                    "popupContent": "Uskela<\/b>\n",
+                    "popupContent": "Uskela",
                     "color": "blue"
                 }
             },
@@ -8053,7 +8053,7 @@
                 },
                 "properties": {
                     "name": "Uudenkaarlepyyn maalaiskunta",
-                    "popupContent": "Uudenkaarlepyyn maalaiskunta<\/b>\n",
+                    "popupContent": "Uudenkaarlepyyn maalaiskunta",
                     "color": "blue"
                 }
             },
@@ -8068,7 +8068,7 @@
                 },
                 "properties": {
                     "name": "Uudenkaupungin maalaiskunta",
-                    "popupContent": "Uudenkaupungin maalaiskunta<\/b>\n",
+                    "popupContent": "Uudenkaupungin maalaiskunta",
                     "color": "blue"
                 }
             },
@@ -8083,7 +8083,7 @@
                 },
                 "properties": {
                     "name": "Uukuniemi",
-                    "popupContent": "Uukuniemi<\/b>\n",
+                    "popupContent": "Uukuniemi",
                     "color": "blue"
                 }
             },
@@ -8098,7 +8098,7 @@
                 },
                 "properties": {
                     "name": "Vahto",
-                    "popupContent": "Vahto<\/b>\n",
+                    "popupContent": "Vahto",
                     "color": "blue"
                 }
             },
@@ -8113,7 +8113,7 @@
                 },
                 "properties": {
                     "name": "Valkeala",
-                    "popupContent": "Valkeala<\/b>\n",
+                    "popupContent": "Valkeala",
                     "color": "blue"
                 }
             },
@@ -8128,7 +8128,7 @@
                 },
                 "properties": {
                     "name": "Vammala",
-                    "popupContent": "Vammala<\/b>\n",
+                    "popupContent": "Vammala",
                     "color": "blue"
                 }
             },
@@ -8143,7 +8143,7 @@
                 },
                 "properties": {
                     "name": "Vampula",
-                    "popupContent": "Vampula<\/b>\n",
+                    "popupContent": "Vampula",
                     "color": "blue"
                 }
             },
@@ -8158,7 +8158,7 @@
                 },
                 "properties": {
                     "name": "Vanaja",
-                    "popupContent": "Vanaja<\/b>\n",
+                    "popupContent": "Vanaja",
                     "color": "blue"
                 }
             },
@@ -8173,7 +8173,7 @@
                 },
                 "properties": {
                     "name": "Varpaisj\u00e4rvi",
-                    "popupContent": "Varpaisj\u00e4rvi<\/b>\n",
+                    "popupContent": "Varpaisj\u00e4rvi",
                     "color": "blue"
                 }
             },
@@ -8188,7 +8188,7 @@
                 },
                 "properties": {
                     "name": "Vehkalahti",
-                    "popupContent": "Vehkalahti<\/b>\n",
+                    "popupContent": "Vehkalahti",
                     "color": "blue"
                 }
             },
@@ -8203,7 +8203,7 @@
                 },
                 "properties": {
                     "name": "Vehmersalmi",
-                    "popupContent": "Vehmersalmi<\/b>\n",
+                    "popupContent": "Vehmersalmi",
                     "color": "blue"
                 }
             },
@@ -8218,7 +8218,7 @@
                 },
                 "properties": {
                     "name": "Velkua",
-                    "popupContent": "Velkua<\/b>\n",
+                    "popupContent": "Velkua",
                     "color": "blue"
                 }
             },
@@ -8233,7 +8233,7 @@
                 },
                 "properties": {
                     "name": "Vihanti",
-                    "popupContent": "Vihanti<\/b>\n",
+                    "popupContent": "Vihanti",
                     "color": "blue"
                 }
             },
@@ -8248,7 +8248,7 @@
                 },
                 "properties": {
                     "name": "Viiala",
-                    "popupContent": "Viiala<\/b>\n",
+                    "popupContent": "Viiala",
                     "color": "blue"
                 }
             },
@@ -8263,7 +8263,7 @@
                 },
                 "properties": {
                     "name": "Viljakkala",
-                    "popupContent": "Viljakkala<\/b>\n",
+                    "popupContent": "Viljakkala",
                     "color": "blue"
                 }
             },
@@ -8278,7 +8278,7 @@
                 },
                 "properties": {
                     "name": "Vilppula",
-                    "popupContent": "Vilppula<\/b>\n",
+                    "popupContent": "Vilppula",
                     "color": "blue"
                 }
             },
@@ -8293,7 +8293,7 @@
                 },
                 "properties": {
                     "name": "Virtasalmi",
-                    "popupContent": "Virtasalmi<\/b>\n",
+                    "popupContent": "Virtasalmi",
                     "color": "blue"
                 }
             },
@@ -8308,7 +8308,7 @@
                 },
                 "properties": {
                     "name": "Vuolijoki",
-                    "popupContent": "Vuolijoki<\/b>\n",
+                    "popupContent": "Vuolijoki",
                     "color": "blue"
                 }
             },
@@ -8323,7 +8323,7 @@
                 },
                 "properties": {
                     "name": "V\u00e4h\u00e4kyr\u00f6",
-                    "popupContent": "V\u00e4h\u00e4kyr\u00f6<\/b>\n",
+                    "popupContent": "V\u00e4h\u00e4kyr\u00f6",
                     "color": "blue"
                 }
             },
@@ -8338,7 +8338,7 @@
                 },
                 "properties": {
                     "name": "V\u00e4rtsil\u00e4",
-                    "popupContent": "V\u00e4rtsil\u00e4<\/b>\n",
+                    "popupContent": "V\u00e4rtsil\u00e4",
                     "color": "blue"
                 }
             },
@@ -8353,7 +8353,7 @@
                 },
                 "properties": {
                     "name": "V\u00e4stanfj\u00e4rd",
-                    "popupContent": "V\u00e4stanfj\u00e4rd<\/b>\n",
+                    "popupContent": "V\u00e4stanfj\u00e4rd",
                     "color": "blue"
                 }
             },
@@ -8368,7 +8368,7 @@
                 },
                 "properties": {
                     "name": "Ylih\u00e4rm\u00e4",
-                    "popupContent": "Ylih\u00e4rm\u00e4<\/b>\n",
+                    "popupContent": "Ylih\u00e4rm\u00e4",
                     "color": "blue"
                 }
             },
@@ -8383,7 +8383,7 @@
                 },
                 "properties": {
                     "name": "Yli-Ii",
-                    "popupContent": "Yli-Ii<\/b>\n",
+                    "popupContent": "Yli-Ii",
                     "color": "blue"
                 }
             },
@@ -8398,7 +8398,7 @@
                 },
                 "properties": {
                     "name": "Ylikiiminki",
-                    "popupContent": "Ylikiiminki<\/b>\n",
+                    "popupContent": "Ylikiiminki",
                     "color": "blue"
                 }
             },
@@ -8413,7 +8413,7 @@
                 },
                 "properties": {
                     "name": "Ylimarkku",
-                    "popupContent": "Ylimarkku<\/b>\n",
+                    "popupContent": "Ylimarkku",
                     "color": "blue"
                 }
             },
@@ -8428,7 +8428,7 @@
                 },
                 "properties": {
                     "name": "Ylistaro",
-                    "popupContent": "Ylistaro<\/b>\n",
+                    "popupContent": "Ylistaro",
                     "color": "blue"
                 }
             },
@@ -8443,7 +8443,7 @@
                 },
                 "properties": {
                     "name": "Yl\u00e4maa",
-                    "popupContent": "Yl\u00e4maa<\/b>\n",
+                    "popupContent": "Yl\u00e4maa",
                     "color": "blue"
                 }
             },
@@ -8458,7 +8458,7 @@
                 },
                 "properties": {
                     "name": "Yl\u00e4ne",
-                    "popupContent": "Yl\u00e4ne<\/b>\n",
+                    "popupContent": "Yl\u00e4ne",
                     "color": "blue"
                 }
             },
@@ -8473,7 +8473,7 @@
                 },
                 "properties": {
                     "name": "\u00c4ets\u00e4",
-                    "popupContent": "\u00c4ets\u00e4<\/b>\n",
+                    "popupContent": "\u00c4ets\u00e4",
                     "color": "blue"
                 }
             },
@@ -8488,7 +8488,7 @@
                 },
                 "properties": {
                     "name": "\u00c4ht\u00e4v\u00e4",
-                    "popupContent": "\u00c4ht\u00e4v\u00e4<\/b>\n",
+                    "popupContent": "\u00c4ht\u00e4v\u00e4",
                     "color": "blue"
                 }
             },
@@ -8503,7 +8503,7 @@
                 },
                 "properties": {
                     "name": "\u00c4\u00e4nekosken maalaiskunta",
-                    "popupContent": "\u00c4\u00e4nekosken maalaiskunta<\/b>\n",
+                    "popupContent": "\u00c4\u00e4nekosken maalaiskunta",
                     "color": "blue"
                 }
             },
@@ -8518,7 +8518,7 @@
                 },
                 "properties": {
                     "name": "\u00d6ja",
-                    "popupContent": "\u00d6ja<\/b>\n",
+                    "popupContent": "\u00d6ja",
                     "color": "blue"
                 }
             },
@@ -8533,7 +8533,7 @@
                 },
                 "properties": {
                     "name": "Antrea",
-                    "popupContent": "Antrea<\/b>\n",
+                    "popupContent": "Antrea",
                     "color": "blue"
                 }
             },
@@ -8548,7 +8548,7 @@
                 },
                 "properties": {
                     "name": "Harlu",
-                    "popupContent": "Harlu<\/b>\n",
+                    "popupContent": "Harlu",
                     "color": "blue"
                 }
             },
@@ -8563,7 +8563,7 @@
                 },
                 "properties": {
                     "name": "Heinjoki",
-                    "popupContent": "Heinjoki<\/b>\n",
+                    "popupContent": "Heinjoki",
                     "color": "blue"
                 }
             },
@@ -8578,7 +8578,7 @@
                 },
                 "properties": {
                     "name": "Hiitola",
-                    "popupContent": "Hiitola<\/b>\n",
+                    "popupContent": "Hiitola",
                     "color": "blue"
                 }
             },
@@ -8593,7 +8593,7 @@
                 },
                 "properties": {
                     "name": "Impilahti",
-                    "popupContent": "Impilahti<\/b>\n",
+                    "popupContent": "Impilahti",
                     "color": "blue"
                 }
             },
@@ -8608,7 +8608,7 @@
                 },
                 "properties": {
                     "name": "Jaakkima",
-                    "popupContent": "Jaakkima<\/b>\n",
+                    "popupContent": "Jaakkima",
                     "color": "blue"
                 }
             },
@@ -8623,7 +8623,7 @@
                 },
                 "properties": {
                     "name": "Johannes",
-                    "popupContent": "Johannes<\/b>\n",
+                    "popupContent": "Johannes",
                     "color": "blue"
                 }
             },
@@ -8638,7 +8638,7 @@
                 },
                 "properties": {
                     "name": "J\u00e4\u00e4ski",
-                    "popupContent": "J\u00e4\u00e4ski<\/b>\n",
+                    "popupContent": "J\u00e4\u00e4ski",
                     "color": "blue"
                 }
             },
@@ -8653,7 +8653,7 @@
                 },
                 "properties": {
                     "name": "Kannelj\u00e4rvi",
-                    "popupContent": "Kannelj\u00e4rvi<\/b>\n",
+                    "popupContent": "Kannelj\u00e4rvi",
                     "color": "blue"
                 }
             },
@@ -8668,7 +8668,7 @@
                 },
                 "properties": {
                     "name": "Kaukola",
-                    "popupContent": "Kaukola<\/b>\n",
+                    "popupContent": "Kaukola",
                     "color": "blue"
                 }
             },
@@ -8683,7 +8683,7 @@
                 },
                 "properties": {
                     "name": "Kirvu",
-                    "popupContent": "Kirvu<\/b>\n",
+                    "popupContent": "Kirvu",
                     "color": "blue"
                 }
             },
@@ -8698,7 +8698,7 @@
                 },
                 "properties": {
                     "name": "Kivennapa",
-                    "popupContent": "Kivennapa<\/b>\n",
+                    "popupContent": "Kivennapa",
                     "color": "blue"
                 }
             },
@@ -8713,7 +8713,7 @@
                 },
                 "properties": {
                     "name": "Koivisto",
-                    "popupContent": "Koivisto<\/b>\n",
+                    "popupContent": "Koivisto",
                     "color": "blue"
                 }
             },
@@ -8728,7 +8728,7 @@
                 },
                 "properties": {
                     "name": "Koiviston maalaiskunta",
-                    "popupContent": "Koiviston maalaiskunta<\/b>\n",
+                    "popupContent": "Koiviston maalaiskunta",
                     "color": "blue"
                 }
             },
@@ -8743,7 +8743,7 @@
                 },
                 "properties": {
                     "name": "Korpiselk\u00e4",
-                    "popupContent": "Korpiselk\u00e4<\/b>\n",
+                    "popupContent": "Korpiselk\u00e4",
                     "color": "blue"
                 }
             },
@@ -8758,7 +8758,7 @@
                 },
                 "properties": {
                     "name": "Kuolemaj\u00e4rvi",
-                    "popupContent": "Kuolemaj\u00e4rvi<\/b>\n",
+                    "popupContent": "Kuolemaj\u00e4rvi",
                     "color": "blue"
                 }
             },
@@ -8773,7 +8773,7 @@
                 },
                 "properties": {
                     "name": "Kurkijoki",
-                    "popupContent": "Kurkijoki<\/b>\n",
+                    "popupContent": "Kurkijoki",
                     "color": "blue"
                 }
             },
@@ -8788,7 +8788,7 @@
                 },
                 "properties": {
                     "name": "Kyyr\u00f6l\u00e4",
-                    "popupContent": "Kyyr\u00f6l\u00e4<\/b>\n",
+                    "popupContent": "Kyyr\u00f6l\u00e4",
                     "color": "blue"
                 }
             },
@@ -8803,7 +8803,7 @@
                 },
                 "properties": {
                     "name": "K\u00e4kisalmen maalaiskunta",
-                    "popupContent": "K\u00e4kisalmen maalaiskunta<\/b>\n",
+                    "popupContent": "K\u00e4kisalmen maalaiskunta",
                     "color": "blue"
                 }
             },
@@ -8818,7 +8818,7 @@
                 },
                 "properties": {
                     "name": "K\u00e4kisalmi",
-                    "popupContent": "K\u00e4kisalmi<\/b>\n",
+                    "popupContent": "K\u00e4kisalmi",
                     "color": "blue"
                 }
             },
@@ -8833,7 +8833,7 @@
                 },
                 "properties": {
                     "name": "Lahdenpohja",
-                    "popupContent": "Lahdenpohja<\/b>\n",
+                    "popupContent": "Lahdenpohja",
                     "color": "blue"
                 }
             },
@@ -8848,7 +8848,7 @@
                 },
                 "properties": {
                     "name": "Lavansaari",
-                    "popupContent": "Lavansaari<\/b>\n",
+                    "popupContent": "Lavansaari",
                     "color": "blue"
                 }
             },
@@ -8863,7 +8863,7 @@
                 },
                 "properties": {
                     "name": "Lumivaara",
-                    "popupContent": "Lumivaara<\/b>\n",
+                    "popupContent": "Lumivaara",
                     "color": "blue"
                 }
             },
@@ -8878,7 +8878,7 @@
                 },
                 "properties": {
                     "name": "Mets\u00e4pirtti",
-                    "popupContent": "Mets\u00e4pirtti<\/b>\n",
+                    "popupContent": "Mets\u00e4pirtti",
                     "color": "blue"
                 }
             },
@@ -8893,7 +8893,7 @@
                 },
                 "properties": {
                     "name": "Muolaa",
-                    "popupContent": "Muolaa<\/b>\n",
+                    "popupContent": "Muolaa",
                     "color": "blue"
                 }
             },
@@ -8908,7 +8908,7 @@
                 },
                 "properties": {
                     "name": "Petsamo",
-                    "popupContent": "Petsamo<\/b>\n",
+                    "popupContent": "Petsamo",
                     "color": "blue"
                 }
             },
@@ -8923,7 +8923,7 @@
                 },
                 "properties": {
                     "name": "Pyh\u00e4j\u00e4rvi Vpl",
-                    "popupContent": "Pyh\u00e4j\u00e4rvi Vpl<\/b>\n",
+                    "popupContent": "Pyh\u00e4j\u00e4rvi Vpl",
                     "color": "blue"
                 }
             },
@@ -8938,7 +8938,7 @@
                 },
                 "properties": {
                     "name": "P\u00e4lkj\u00e4rvi",
-                    "popupContent": "P\u00e4lkj\u00e4rvi<\/b>\n",
+                    "popupContent": "P\u00e4lkj\u00e4rvi",
                     "color": "blue"
                 }
             },
@@ -8953,7 +8953,7 @@
                 },
                 "properties": {
                     "name": "Rautu",
-                    "popupContent": "Rautu<\/b>\n",
+                    "popupContent": "Rautu",
                     "color": "blue"
                 }
             },
@@ -8968,7 +8968,7 @@
                 },
                 "properties": {
                     "name": "Ruskeala",
-                    "popupContent": "Ruskeala<\/b>\n",
+                    "popupContent": "Ruskeala",
                     "color": "blue"
                 }
             },
@@ -8983,7 +8983,7 @@
                 },
                 "properties": {
                     "name": "R\u00e4is\u00e4l\u00e4",
-                    "popupContent": "R\u00e4is\u00e4l\u00e4<\/b>\n",
+                    "popupContent": "R\u00e4is\u00e4l\u00e4",
                     "color": "blue"
                 }
             },
@@ -8998,7 +8998,7 @@
                 },
                 "properties": {
                     "name": "Sakkola",
-                    "popupContent": "Sakkola<\/b>\n",
+                    "popupContent": "Sakkola",
                     "color": "blue"
                 }
             },
@@ -9013,7 +9013,7 @@
                 },
                 "properties": {
                     "name": "Salmi",
-                    "popupContent": "Salmi<\/b>\n",
+                    "popupContent": "Salmi",
                     "color": "blue"
                 }
             },
@@ -9028,7 +9028,7 @@
                 },
                 "properties": {
                     "name": "Seiskari",
-                    "popupContent": "Seiskari<\/b>\n",
+                    "popupContent": "Seiskari",
                     "color": "blue"
                 }
             },
@@ -9043,7 +9043,7 @@
                 },
                 "properties": {
                     "name": "Soanlahti",
-                    "popupContent": "Soanlahti<\/b>\n",
+                    "popupContent": "Soanlahti",
                     "color": "blue"
                 }
             },
@@ -9058,7 +9058,7 @@
                 },
                 "properties": {
                     "name": "Sortavala",
-                    "popupContent": "Sortavala<\/b>\n",
+                    "popupContent": "Sortavala",
                     "color": "blue"
                 }
             },
@@ -9073,7 +9073,7 @@
                 },
                 "properties": {
                     "name": "Sortavalan maalaiskunta",
-                    "popupContent": "Sortavalan maalaiskunta<\/b>\n",
+                    "popupContent": "Sortavalan maalaiskunta",
                     "color": "blue"
                 }
             },
@@ -9088,7 +9088,7 @@
                 },
                 "properties": {
                     "name": "Suistamo",
-                    "popupContent": "Suistamo<\/b>\n",
+                    "popupContent": "Suistamo",
                     "color": "blue"
                 }
             },
@@ -9103,7 +9103,7 @@
                 },
                 "properties": {
                     "name": "Suoj\u00e4rvi",
-                    "popupContent": "Suoj\u00e4rvi<\/b>\n",
+                    "popupContent": "Suoj\u00e4rvi",
                     "color": "blue"
                 }
             },
@@ -9118,7 +9118,7 @@
                 },
                 "properties": {
                     "name": "Suursaari",
-                    "popupContent": "Suursaari<\/b>\n",
+                    "popupContent": "Suursaari",
                     "color": "blue"
                 }
             },
@@ -9133,7 +9133,7 @@
                 },
                 "properties": {
                     "name": "S\u00e4kkij\u00e4rvi",
-                    "popupContent": "S\u00e4kkij\u00e4rvi<\/b>\n",
+                    "popupContent": "S\u00e4kkij\u00e4rvi",
                     "color": "blue"
                 }
             },
@@ -9148,7 +9148,7 @@
                 },
                 "properties": {
                     "name": "Terijoki",
-                    "popupContent": "Terijoki<\/b>\n",
+                    "popupContent": "Terijoki",
                     "color": "blue"
                 }
             },
@@ -9163,7 +9163,7 @@
                 },
                 "properties": {
                     "name": "Tyt\u00e4rsaari",
-                    "popupContent": "Tyt\u00e4rsaari<\/b>\n",
+                    "popupContent": "Tyt\u00e4rsaari",
                     "color": "blue"
                 }
             },
@@ -9178,7 +9178,7 @@
                 },
                 "properties": {
                     "name": "Uusikirkko",
-                    "popupContent": "Uusikirkko<\/b>\n",
+                    "popupContent": "Uusikirkko",
                     "color": "blue"
                 }
             },
@@ -9193,7 +9193,7 @@
                 },
                 "properties": {
                     "name": "Vahviala",
-                    "popupContent": "Vahviala<\/b>\n",
+                    "popupContent": "Vahviala",
                     "color": "blue"
                 }
             },
@@ -9208,7 +9208,7 @@
                 },
                 "properties": {
                     "name": "Valkj\u00e4rvi",
-                    "popupContent": "Valkj\u00e4rvi<\/b>\n",
+                    "popupContent": "Valkj\u00e4rvi",
                     "color": "blue"
                 }
             },
@@ -9223,7 +9223,7 @@
                 },
                 "properties": {
                     "name": "Viipuri",
-                    "popupContent": "Viipuri<\/b>\n",
+                    "popupContent": "Viipuri",
                     "color": "blue"
                 }
             },
@@ -9238,7 +9238,7 @@
                 },
                 "properties": {
                     "name": "Viipurin maalaiskunta",
-                    "popupContent": "Viipurin maalaiskunta<\/b>\n",
+                    "popupContent": "Viipurin maalaiskunta",
                     "color": "blue"
                 }
             },
@@ -9253,7 +9253,7 @@
                 },
                 "properties": {
                     "name": "Vuoksela",
-                    "popupContent": "Vuoksela<\/b>\n",
+                    "popupContent": "Vuoksela",
                     "color": "blue"
                 }
             },
@@ -9268,7 +9268,7 @@
                 },
                 "properties": {
                     "name": "Vuoksenranta",
-                    "popupContent": "Vuoksenranta<\/b>\n",
+                    "popupContent": "Vuoksenranta",
                     "color": "blue"
                 }
             },
@@ -9283,7 +9283,7 @@
                 },
                 "properties": {
                     "name": "\u00c4yr\u00e4p\u00e4\u00e4",
-                    "popupContent": "\u00c4yr\u00e4p\u00e4\u00e4<\/b>\n",
+                    "popupContent": "\u00c4yr\u00e4p\u00e4\u00e4",
                     "color": "blue"
                 }
             }
