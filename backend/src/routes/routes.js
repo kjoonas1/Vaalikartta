@@ -54,9 +54,7 @@ module.exports = app => {
         const koordinaatit = await kokoelma.find({"properties.name": { $in: kuntienNimet }}).toArray()
         const geoJSONKoordinaatit = { type: "FeatureCollection",
                                         features: koordinaatit }
-        res.send(geoJSONKoordinaatit)
-
-        
+        res.send(geoJSONKoordinaatit) 
     })
 
     // Tämä vain jotta /favicon.ico hakeminen ei tuota 404
