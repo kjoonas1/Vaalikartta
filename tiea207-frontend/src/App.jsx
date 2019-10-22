@@ -10,6 +10,7 @@ import { AreaContext, YearContext, EventContext } from "./Contexts"
 const App = () => {
     const [area, setArea] = useState(null)
     const areaProviderValue = useMemo(() => ({ area, setArea }), [area, setArea]) // Optimointi  kontekstin käytölle
+    // <AreaContext.Provider value={area, setArea}> <--- ilman optimointia
     const [year, setYear] = useState(null)
     const yearProviderValue = useMemo(() => ({ year, setYear }), [year, setYear])
     const [event, setEvent] = useState(null)

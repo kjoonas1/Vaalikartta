@@ -23,7 +23,6 @@ $smallScreenWidth: 95%;
   }
 }
 
-
 @media (min-width: 992px) {
   .container {
       max-width: $smallScreenWidth;
@@ -40,4 +39,25 @@ $smallScreenWidth: 95%;
   .container {
       max-width: $smallScreenWidth;
   }
+}
+
+.constituency {
+  fill-opacity: 0.5;
+}
+
+.constituency:hover {
+  fill-opacity: 1;
+  stroke: gray;
+  stroke-width: 3px;
+  transition: 0.5s;
+}
+
+.event {
+  transition: 0.5s;
+}
+
+.event:hover {
+  fill-opacity: 1;
+  stroke: gray;
+  stroke-width: 1px;
 }

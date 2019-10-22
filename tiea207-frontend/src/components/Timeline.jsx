@@ -12,13 +12,13 @@ export const Timeline = (props) => {
     const years = props.data.years
     const events = props.data.events
 
+    year === null && setYear(years[years.length-1])
+
     const contextYear = year
     const contextEvent = event
     const padding = 10
     const mainLineHeight = "6em"
-
-    const eventYears = []
-    events.map((event) => { return eventYears.push(event.year) })
+    // const eventYears = events.map((event) => { return event.year })
 
     return (
         <Col md={{ span: 12 }}>
@@ -34,7 +34,7 @@ export const Timeline = (props) => {
                                 // Tällä aktivoidaan event joka on samana vuonna kuin valittu vuosi
                                 //const eventYearIndex = eventYears.indexOf(year)
                                 //eventYearIndex > -1 && setEvent(events[eventYearIndex])
-                                } }>
+                            }}>
                                 <line key={shortid.generate()} x1={(lineX) + "%"} y1={mainLineHeight} x2={(lineX) + "%"} y2="4em" style={ {stroke:"#404040", strokeLinecap:"round", strokeWidth:"0.5em"} } />
                                 <text textAnchor="middle" fontSize="2.5em" key={shortid.generate()} x={lineX+ "%"} y="1em" fill="#404040" fontWeight={bolding}>{year}</text>
                             </Link>
@@ -54,11 +54,13 @@ export const Timeline = (props) => {
                     return (
                         <Fragment key={shortid.generate()}>
                             <Link to="/#" onClick={() => {
+                                // Pallon uudelleenklikkaus poistaa aktivoinnin
                                 isActive ? setEvent(null) : setEvent(event)
-                                } }>
-                                <line key={shortid.generate()} x1={(x) + "%"} y1={mainLineHeight} x2={(x) + "%"} y2="8em" style={ {stroke:eventActiveness.borderColor, strokeLinecap:"round", strokeWidth:"0.25em"} } />
-                                <circle stroke={eventActiveness.borderColor} fillOpacity={eventActiveness.fill} strokeWidth="2" fill="#fcb103" cx={x+ "%"} cy="9em" r={eventActiveness.size} ></circle>
+                            }}>
+                                <line className="event" key={shortid.generate()} x1={(x) + "%"} y1={mainLineHeight} x2={(x) + "%"} y2="8em" style={ {stroke:eventActiveness.borderColor, strokeLinecap:"round", strokeWidth:"0.25em"} } />
+                                <circle className="event" stroke={eventActiveness.boconstituencyrderColor} fillOpacity={eventActiveness.fill} strokeWidth="2" fill="#fcb103" cx={x+ "%"} cy="9em" r={eventActiveness.size} ></circle>
                             </Link>
+                            {isActive && <text textAnchor="middle" fontSize="1.5em" key={shortid.generate()} y ="8em" x = {x + "%"}>{contextEvent.name}</text> }
                         </Fragment>
                     )
                 })}

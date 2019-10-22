@@ -18,12 +18,22 @@ module.exports = app => {
             })
     })
 
-    app.get("/api/mongotesti", async (req, res) => {
+    app.get("/api/mongotesti/:id", async (req, res) => {
+        console.log(req.params)
         const collection = req.db.collection("leluesimerkki")
         const items = await collection.find({}).toArray()
         res.send(items)
     })
 
+    app.get("/api/vaalipiirit/kannatus/:vaalipiiri/:vuosi", async (req, res) => {
+        console.log(req.params)
+        const vaalipiiri=req.params.vaalipiiri
+        const vuosi=parseInt(req.params.vuosi)
+        const collection = req.db.collection("kannatusprosentit-vaalipiireittäin")
+        const items = await collection.find({Alue: vaalipiiri, Vuosi: vuosi}).toArray()
+        res.send(items)
+    })
+
     // Tämä vain jotta /favicon.ico hakeminen ei tuota 404
-    app.get('/favicon.ico', (req, res) => res.sendStatus(204));
+    app.get("/favicon.ico", (req, res) => res.sendStatus(204))
 }

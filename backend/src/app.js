@@ -1,13 +1,13 @@
 const express = require("express")
 const app = express()
-var cors = require("cors")
+const cors = require("cors")
 const morgan = require("morgan")
 const routes = require("./routes/routes")
 const MongoClient = require("mongodb").MongoClient
 
 // Käyttäjällä vaalikartta on vain lukuoikeus tietokantaan
 const databaseUrl = `mongodb+srv://vaalikartta:${process.env.PASSWD}@klusteri-asaca.mongodb.net/test?retryWrites=true&w=majority`
-const databaseName = "testidb"
+const databaseName = "vaalikartta"
 
 var mongoClient = null
 MongoClient.connect(databaseUrl, { useNewUrlParser: true, useUnifiedTopology: true }).then(client => {
