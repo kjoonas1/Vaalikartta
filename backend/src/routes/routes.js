@@ -34,6 +34,15 @@ module.exports = app => {
         res.send(items)
     })
 
+    app.get("/api/kunnat/kannatus/:kunta/:vuosi", async (req, res) => {
+        console.log(req.params)
+        const kunta=req.params.kunta
+        const vuosi=parseInt(req.params.vuosi)
+        const collection = req.db.collection("kannatusprosentit-kunnittain")
+        const items = await collection.find({Alue: kunta, Vuosi: vuosi}).toArray()
+        res.send(items)
+    })
+
     // Tämä vain jotta /favicon.ico hakeminen ei tuota 404
     app.get("/favicon.ico", (req, res) => res.sendStatus(204))
 }
