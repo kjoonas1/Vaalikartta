@@ -1,0 +1,114 @@
+[
+ {
+   "Hallitus": "62. Sorsa III",
+   "Alku": "19.2.1982",
+   "Loppu": "6.5.1983",
+   "Hallituspäivät": 442,
+   "Pääministerin puolue": "SDP",
+   "ID": 1
+ },
+ {
+   "Hallitus": "63. Sorsa IV",
+   "Alku": "6.5.1983",
+   "Loppu": "30.4.1987",
+   "Hallituspäivät": 1456,
+   "Pääministerin puolue": "SDP",
+   "ID": 2
+ },
+ {
+   "Hallitus": "64. Holkeri",
+   "Alku": "30.4.1987",
+   "Loppu": "26.4.1991",
+   "Hallituspäivät": 1458,
+   "Pääministerin puolue": "Kokoomus",
+   "ID": 3
+ },
+ {
+   "Hallitus": "65. Aho",
+   "Alku": "26.4.1991",
+   "Loppu": "13.4.1995",
+   "Hallituspäivät": 1449,
+   "Pääministerin puolue": "Keskusta",
+   "ID": 4
+ },
+ {
+   "Hallitus": "66. Lipponen",
+   "Alku": "13.4.1995",
+   "Loppu": "15.4.1999",
+   "Hallituspäivät": 1464,
+   "Pääministerin puolue": "SDP",
+   "ID": 5
+ },
+ {
+   "Hallitus": "67. Lipponen II",
+   "Alku": "15.4.1999",
+   "Loppu": "17.4.2003",
+   "Hallituspäivät": 1464,
+   "Pääministerin puolue": "SDP",
+   "ID": 6
+ },
+ {
+   "Hallitus": "68. Jäätteenmäki",
+   "Alku": "17.4.2003",
+   "Loppu": "24.6.2003",
+   "Hallituspäivät": 69,
+   "Pääministerin puolue": "Keskusta",
+   "ID": 7
+ },
+ {
+   "Hallitus": "69. Vanhanen",
+   "Alku": "24.6.2003",
+   "Loppu": "19.4.2007",
+   "Hallituspäivät": 1396,
+   "Pääministerin puolue": "Keskusta",
+   "ID": 8
+ },
+ {
+   "Hallitus": "70. Vanhanen II",
+   "Alku": "19.4.2007",
+   "Loppu": "22.6.2010",
+   "Hallituspäivät": 1161,
+   "Pääministerin puolue": "Keskusta",
+   "ID": 9
+ },
+ {
+   "Hallitus": "71. Kiviniemi",
+   "Alku": "22.6.2010",
+   "Loppu": "22.6.2011",
+   "Hallituspäivät": 366,
+   "Pääministerin puolue": "Keskusta",
+   "ID": 10
+ },
+ {
+   "Hallitus": "72. Katainen",
+   "Alku": "22.6.2011",
+   "Loppu": "24.6.2014",
+   "Hallituspäivät": 1099,
+   "Pääministerin puolue": "Kokoomus",
+   "ID": 11
+ },
+ {
+   "Hallitus": "73. Stubb",
+   "Alku": "24.6.2014",
+   "Loppu": "29.5.2015",
+   "Hallituspäivät": 340,
+   "Pääministerin puolue": "Kokoomus",
+   "ID": 12
+ },
+ {
+   "Hallitus": "74. Sipilä",
+   "Alku": "29.5.2015",
+   "Loppu": "6.6.2019",
+   "Hallituspäivät": 1470,
+   "Pääministerin puolue": "Keskusta",
+   "ID": 13
+ },
+ {
+   "Hallitus": "75. Rinne",
+   "Alku": "6.6.2019",
+   "Loppu": "",
+   "Hallituspäivät": 134,
+   "Pääministerin puolue": "SDP",
+   "ID": 14
+ }
+]
