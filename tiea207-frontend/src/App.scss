@@ -59,6 +59,10 @@ $smallScreenWidth: 95%;
   stroke-width: 1px;
 }
 
+.chart {
+  transition: 1.5s; 
+}
+
 @keyframes opacity-change {
   0% {
     fill-opacity: 0.2;
