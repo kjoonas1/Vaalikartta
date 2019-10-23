@@ -1,15 +1,14 @@
 import React, { useContext } from "react"
-import {Link} from "react-router-dom"
-import {AreaContext, YearContext} from "../Contexts"
-import {uudetVaalipiirit, vanhatVaalipiirit} from "./SVGMapParts"
+import { AreaContext, YearContext } from "../Contexts"
+import { uudetVaalipiirit, vanhatVaalipiirit } from "./SVGMapParts"
+import { Link } from "react-router-dom"
 
 export const ConstituencyMap = (props) => {
     const { setArea } = useContext(AreaContext)
     const { year } = useContext(YearContext)
 
-    const constituencyMap = (year) => {
-        return (year > 2015) ? uudetVaalipiirit : vanhatVaalipiirit
-    }
+    const constituencyMap = (year) => (year > 2011) ? uudetVaalipiirit : vanhatVaalipiirit
+
     const _map = constituencyMap(year)
 
     return (

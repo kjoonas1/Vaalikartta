@@ -7,12 +7,13 @@ import { AreaContext, YearContext } from "../Contexts"
 import { ConstituencyMap } from "./ConstituencyMap"
 import shortid from "shortid"
 import * as objectHelper from "../utils/objectHelper"
+import * as MapParts from "./SVGMapParts"
 
 const Etusivu = () => {
 
-    const { area } = useContext(AreaContext)
+    const { area, setArea } = useContext(AreaContext)
     const { year } = useContext(YearContext)
-    const mapData = useFetch("http://localhost:8000/api/maps/municipalityborders")
+    // const mapData = useFetch("http://localhost:8000/api/maps/municipalityborders")
     // const areaData = useFetch("http://localhost:8000/api/districts/district/", {district: area})
     const timelineData = {
         years: [1983, 1987, 1991, 1995, 1999, 2003, 2007, 2011, 2015, 2019],
@@ -27,20 +28,26 @@ const Etusivu = () => {
             }
         ]
     }
-    
+
+    const uudetVaalipiirit = (MapParts.uudetVaalipiirit.map((key) => key.name))
+    const vanhatVaalipiirit = (MapParts.vanhatVaalipiirit.map((key) => key.name))
+
     const vaalipiiriKannatus = useFetch(`http://localhost:8000/api/vaalipiirit/kannatus/${area}/${year}`)
     // Tehdään taulukko, jossa on kukin puolue ja sen kannatus.
     // Jätetään pois kentät joiden nimi on removeAttributesissa (eivät ole puolueita):
     // Järjestetään äänestysprosentin mukaan laskevaan järjestykseen
-    const removeAttributes = ["Alue", "_id", "Vuosi", "tyyppi", "aluekoodi"]
-    const kannatus = objectHelper.filterFromObject(vaalipiiriKannatus.data[0][0], a => a !== null)
-    const puolueLuvut = objectHelper.extractArrayOfResponseData(kannatus, removeAttributes, "name", "vote")
-        .sort((a, b) => b.vote - a.vote)
 
-    if (mapData.isLoading) 
-        return <div>Loading map data...</div>
-        
-    if (!mapData.isLoading && mapData.error === null) {
+
+    if (vaalipiiriKannatus.error === null) {
+        const removeAttributes = ["Alue", "_id", "Vuosi", "tyyppi", "aluekoodi"]
+        const kannatus = objectHelper.filterFromObject(vaalipiiriKannatus.data[0], a => a !== null)
+        const puolueLuvut = objectHelper.extractArrayOfResponseData(kannatus, removeAttributes, "name", "vote")
+            .sort((a, b) => b.vote - a.vote)
+
+        if (year > 2011 && vanhatVaalipiirit.includes(area) && !uudetVaalipiirit.includes(area)) setArea(null)
+        if (year <= 2011 && !vanhatVaalipiirit.includes(area) && uudetVaalipiirit.includes(area)) setArea(null)
+
+
         return (
             <Fragment>
                 <Row className="timeline">
@@ -52,6 +59,7 @@ const Etusivu = () => {
                         <ConstituencyMap height="35em"/>
                     </Col>
                     <Col xs={12} xl={8}>
+                        {area === null && <p>Aluetta ei valittu</p>}
                         <p> {area} - {year} </p>
                         {puolueLuvut !== null && puolueLuvut.length > 0 &&
                             puolueLuvut.map(party => {
@@ -65,7 +73,7 @@ const Etusivu = () => {
                 </Row>
             </Fragment>
         )
-    } else return (<div>Error</div>)
+    } if (vaalipiiriKannatus.error) return (<div>Error</div>)
 }
 
 export default Etusivu

@@ -15,7 +15,7 @@ const useFetch = (url) => {
         const fetchData = async () => {
             setIsLoading(true)
             try {
-                const response = await axios.get(url, {signal: abortController.signal, timeout: 20000})
+                const response = await axios.get(url, {signal: abortController.signal, timeout: 20000 })
                 if (mounted) {
                     setData(response.data)
                     setIsLoading(false)
@@ -32,9 +32,7 @@ const useFetch = (url) => {
             abortController.abort()
         }
         return cleanup
-        // JSON stringify koska muuten looppi on ikuinen. 
-        // Tähän voisi keksiä paremman keinon, esim vertailuoperaatio.
     }, [url]) 
-    return { data: [data], error, isLoading }
+    return { data, error, isLoading }
 }
 export { useFetch }
