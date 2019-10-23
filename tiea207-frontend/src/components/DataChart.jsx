@@ -36,7 +36,7 @@ export const DataChart = (props) => {
     const prevDataWithHeaders = usePrevious(dataWithHeaders);
     return (<>
             {data.length > 0 && <Chart
-                width={'600px'}
+                width={"100%"}
                 height={'600px'}
                 chartType="BarChart"
                 loader={<div>Loading Chart</div>}
@@ -47,9 +47,10 @@ export const DataChart = (props) => {
                         duration: 1000,
                         easing: 'out',
                         startup: true,
-                      },    
+                    }, 
                     bar: { groupWidth: '80%' },
                     legend: { position: 'none' },
+                    hAxis: { viewWindow: { min: 0, max: 100 } }
                 }}
                 controls={[
                     {

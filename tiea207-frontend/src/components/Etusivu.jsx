@@ -56,6 +56,7 @@ const Etusivu = () => {
                         <ConstituencyMap height="35em"/>
                     </Col>
                     <Col xs={12} xl={8}>
+                        {area === null && <p>Valitse alue kartalta</p>}
                         <DataChart luvut={luvut}/>
                     </Col>
                 </Row>
