@@ -5,9 +5,9 @@ import { Timeline } from "./Timeline"
 import { AreaContext, YearContext } from "../Contexts"
 //import { ElectionMap } from "./ElectionMap"
 import { ConstituencyMap } from "./ConstituencyMap"
-import shortid from "shortid"
 import * as objectHelper from "../utils/objectHelper"
 import * as MapParts from "./SVGMapParts"
+import {DataChart} from "./DataChart"
 
 const Etusivu = () => {
 
@@ -42,10 +42,16 @@ const Etusivu = () => {
         const removeAttributes = ["Alue", "_id", "Vuosi", "tyyppi", "aluekoodi"]
         const kannatus = objectHelper.filterFromObject(vaalipiiriKannatus.data[0], a => a !== null)
         const puolueLuvut = objectHelper.extractArrayOfResponseData(kannatus, removeAttributes, "name", "vote")
-            .sort((a, b) => b.vote - a.vote)
+            .sort((a, b) => b.vote - a.vote )
 
         if (year > 2011 && vanhatVaalipiirit.includes(area) && !uudetVaalipiirit.includes(area)) setArea(null)
         if (year <= 2011 && !vanhatVaalipiirit.includes(area) && uudetVaalipiirit.includes(area)) setArea(null)
+
+        const luvut = puolueLuvut.map((party) => {
+            return (
+                { name: party.name, vote: party.vote }
+            )
+        })
 
 
         return (
@@ -61,14 +67,7 @@ const Etusivu = () => {
                     <Col xs={12} xl={8}>
                         {area === null && <p>Aluetta ei valittu</p>}
                         <p> {area} - {year} </p>
-                        {puolueLuvut !== null && puolueLuvut.length > 0 &&
-                            puolueLuvut.map(party => {
-                                return (
-                                    <p key={shortid.generate()}>
-                                        {party.name + ": " + party.vote}
-                                    </p>
-                                )
-                            })}
+                        <DataChart luvut={luvut}/>
                     </Col>
                 </Row>
             </Fragment>
