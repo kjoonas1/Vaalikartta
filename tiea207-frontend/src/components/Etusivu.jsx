@@ -49,7 +49,7 @@ const Etusivu = () => {
 
         const luvut = puolueLuvut.map((party) => {
             return (
-                { name: party.name, vote: party.vote }
+                { name: party.name, vote: party.vote}
             )
         })
 
@@ -65,8 +65,7 @@ const Etusivu = () => {
                         <ConstituencyMap height="35em"/>
                     </Col>
                     <Col xs={12} xl={8}>
-                        {area === null && <p>Aluetta ei valittu</p>}
-                        <p> {area} - {year} </p>
+
                         <DataChart luvut={luvut}/>
                     </Col>
                 </Row>
