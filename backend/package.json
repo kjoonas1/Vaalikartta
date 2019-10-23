@@ -4,10 +4,11 @@
   "description": "TIEA207 projektin backend",
   "main": "index.js",
   "scripts": {
-    "start": "node ./src/app.js",
+    "start": "node ./src/index.js",
     "test": "jest --verbose",
     "lint": "./node_modules/.bin/eslint .",
-    "lint-fix": "./node_modules/.bin/eslint . --fix"
+    "lint-fix": "./node_modules/.bin/eslint . --fix",
+    "nodemon": "./node_modules/.bin/nodemon ./src/index.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
@@ -29,7 +30,9 @@
     "eslint": "^6.5.1",
     "eslint-plugin-prefer-arrow": "^1.1.6",
     "husky": "^3.0.9",
-    "jest": "^24.9.0"
+    "jest": "^24.9.0",
+    "nodemon": "^1.19.4",
+    "supertest": "^4.0.2"
   },
   "husky": {
     "hooks": {
