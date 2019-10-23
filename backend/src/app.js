@@ -5,6 +5,9 @@ const morgan = require("morgan")
 const MongoClient = require("mongodb").MongoClient
 const router = require("./routes/routes")
 
+if (process.env.TEST)
+    console.log = () => { } // Otetaan loggaus pois käytöstä jottei sotke testejä
+
 // Käyttäjällä vaalikartta on vain lukuoikeus tietokantaan
 const databaseUrl = `mongodb+srv://vaalikartta:${process.env.PASSWD}@klusteri-asaca.mongodb.net/test?retryWrites=true&w=majority`
 const databaseName = "vaalikartta"
@@ -19,17 +22,24 @@ MongoClient.connect(databaseUrl, { useNewUrlParser: true, useUnifiedTopology: tr
 })
 
 app.use(cors())
-app.use(morgan("tiny"))
-app.use("/", router)
+// app.use(morgan("tiny"))
 // Middleware, joka vie Db instanssin jokaisen pyynnön mukana
 app.use((req, res, next) => {
     req.db = mongoClient.db(databaseName)
     next()
 })
 
+// Tämä vain jotta /favicon.ico hakeminen ei tuota 404
+app.use("/api", router)
+app.get("/favicon.ico", (req, res) => res.sendStatus(204))
+
 process.on("exit", () => {
+    app.onExit()
+})
+
+app.onExit = () => {
     if (mongoClient)
         mongoClient.close()
-})
+}
 
 module.exports = app
