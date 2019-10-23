@@ -52,6 +52,11 @@ $smallScreenWidth: 95%;
   transition: 0.5s;
 }
 
+.map-part-active {
+  fill-opacity: 0.75;
+  transition: cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.75s;
+}
+
 .event {
   transition: 0.5s;
 }

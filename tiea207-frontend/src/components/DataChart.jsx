@@ -9,7 +9,7 @@ export const DataChart = (props) => {
     const bars =  Object.keys(props.luvut).map((key) => {
         return <Bar 
                     key={key} 
-                    fill="#8884d8" 
+                    fill={props.luvut[key].fill} 
                     label={props.luvut[key].name} 
                     name={props.luvut[key].name} 
                     animationDuration={3200}
