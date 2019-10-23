@@ -43,6 +43,20 @@ module.exports = app => {
         res.send(items)
     })
 
+    app.get("/api/kunnat/koordinaatit/:vuosi", async (req, res) => {
+        console.log(req.params)
+        const vuosi = parseInt(req.params.vuosi)
+        const collection = req.db.collection("kannatusprosentit-kunnittain")
+        // kunta collection vuosien mukaan
+        const kunnat = await collection.find({Vuosi: vuosi}, {projection: {Alue: 1}}).toArray()
+        const kuntienNimet = kunnat.map(kunta => kunta.Alue)
+        const kokoelma = req.db.collection("kuntien-koordinaatit")
+        const koordinaatit = await kokoelma.find({"properties.name": { $in: kuntienNimet }}).toArray()
+        const geoJSONKoordinaatit = { type: "FeatureCollection",
+                                        features: koordinaatit }
+        res.send(geoJSONKoordinaatit) 
+    })
+
     // Tämä vain jotta /favicon.ico hakeminen ei tuota 404
     app.get("/favicon.ico", (req, res) => res.sendStatus(204))
 }
