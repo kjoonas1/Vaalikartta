@@ -1,6 +1,6 @@
 import React, { useContext } from "react"
 import { AreaContext, YearContext } from "../Contexts"
-import { uudetVaalipiirit, vanhatVaalipiirit } from "./SVGMapParts"
+import { uudetVaalipiirit, vanhatVaalipiirit } from "../dataset/SVGMapParts"
 import { Link } from "react-router-dom"
 
 export const ConstituencyMap = (props) => {
