@@ -23,16 +23,16 @@ export const DataChart = (props) => {
 
 
  
-    const data = Object.keys(props.luvut).map((key) => {
+    const data = Object.keys(props.luvut)
+    .map((key) => {
         const fillColor = props.luvut[key].fill
         const label = props.luvut[key].name
         const value = props.luvut[key].vote
         return [label, value, fillColor]
     })
+    
 
-
-
-    const dataWithHeaders = [["Puolue", "Kannatusprosentti", { role: 'style' }]].concat(data)
+    const dataWithHeaders = [["Puolue", "Kannatusprosentti", { role: 'style' }]].concat(data.slice(0,11))
     const prevDataWithHeaders = usePrevious(dataWithHeaders);
     return (<>
             {data.length > 0 && <Chart
@@ -47,10 +47,21 @@ export const DataChart = (props) => {
                         duration: 1000,
                         easing: 'out',
                         startup: true,
-                      },           
+                      },    
                     bar: { groupWidth: '80%' },
                     legend: { position: 'none' },
                 }}
+                controls={[
+                    {
+                      controlType: "NumberRangeFilter",
+                      options: {
+                        filterColumnLabel: 'Kannatusprosentti',
+                      },
+                      controlWrapperParams: {
+                        state: { lowValue: 0, highValue: 100 },
+                      },
+                    }]}
+        
                 rootProps={{ 'data-testid': '1' }}
                 />}
         </>
