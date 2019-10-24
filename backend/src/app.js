@@ -15,27 +15,29 @@ process.on("exit", () => {
     app.onExit()
 })
 
-MongoClient.connect(databaseUrl, { useNewUrlParser: true, useUnifiedTopology: true }).then(client => {
-    app.mongoClient = client
-    console.log("Connected to database")
+const createApp = new Promise((resolve, reject) => {
+    MongoClient.connect(databaseUrl, { useNewUrlParser: true, useUnifiedTopology: true }).then(client => {
+        app.mongoClient = client
+        console.log("Connected to database")
 
-    app.use(cors())
-    app.use(morgan("tiny"))
-    // Middleware, joka vie Db instanssin jokaisen pyynnön mukana
-    app.use((req, res, next) => {
-        console.log("app.mongoClient: ", app.mongoClient)
-        console.log("db: ", req.db)
-        req.db = app.mongoClient.db(databaseName)
-        next()
+        app.use(cors())
+        app.use(morgan("tiny"))
+        // Middleware, joka vie Db instanssin jokaisen pyynnön mukana
+        app.use((req, res, next) => {
+            req.db = app.mongoClient.db(databaseName)
+            next()
+        })
+
+        app.use("/api", router)
+        // Tämä vain jotta /favicon.ico hakeminen ei tuota 404
+        app.get("/favicon.ico", (req, res) => res.sendStatus(204))
+        app.get("/", (req, res) => res.send("Hello"))
+        resolve(app)
+    }).catch(err => {
+        console.log("Error connecting to database", err)
+        process.exit(1)
+        reject()
     })
-
-    app.use("/api", router)
-    // Tämä vain jotta /favicon.ico hakeminen ei tuota 404
-    app.get("/favicon.ico", (req, res) => res.sendStatus(204))
-    app.get("/", (req, res) => res.send("Hello"))
-}).catch(err => {
-    console.log("Error connecting to database", err)
-    process.exit(1)
 })
 
 app.onExit = () => {
@@ -43,4 +45,6 @@ app.onExit = () => {
         app.mongoClient.close()
 }
 
-module.exports = app
+module.exports = {
+    createApp: createApp
+}

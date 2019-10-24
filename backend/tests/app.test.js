@@ -5,14 +5,11 @@ const express = require("express")
 
 let server
 let request
-let expApp
-beforeAll(done => {
-    expApp = express()
-    expApp.get("/", (res, req) => req.send(200))
-    server = http.createServer(app)
+beforeAll(async done => {
+    const appInstance = await app.createApp
+    server = http.createServer(appInstance)
     server.listen(done)
     request = supertest(server)
-    
 })
 
 afterAll(done => {
@@ -22,11 +19,12 @@ afterAll(done => {
 test("sup", async (done) => {
 
     const res = await request.get("/")
-    // console.log(res)
     expect(res.status).toBe(200)
+    done()
 })
 
 test("2", async done => {
     const res = await request.get("/api/vaalipiirit/kannatus/Lapin vaalipiiri/2011")
     expect(res.status).toBe(200)
+    done()
 })
