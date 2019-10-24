@@ -13,7 +13,7 @@ export const colors = [
     { name: "KP", color: "#00569F" },
     { name: "FP", color: "#E94786" /* Virallista väriä ei löytynyt, tämä wikipediasta */ },
     { name: "LIBE", color: "#F39501" },
-    { name: "SKP", color: "DA2301" },
+    { name: "SKP", color: "#DA2301" },
     { name: "EOP", color: "#fbbb01" },
     { name: "PP", color: "#660099" },
     { name: "IP", color: "#017BC4" },
@@ -29,7 +29,7 @@ export const colors = [
     { name: "SIK", color: "gray" }, //mikä ihme puolue tää on
     { name: "SKS", color: "darkblue" },
     { name: "KIPU", color: "#6bb2aa" },
-    { name: "REM", color: "FFD600" },
+    { name: "REM", color: "#FFD600" },
     { name: "LLP", color: "#78e8fe" },
     { name: "SEP", color: "gray" }, //ei löytynyt
     { name: "POP", color: "#214055" },
