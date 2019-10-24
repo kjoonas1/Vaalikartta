@@ -1,14 +1,13 @@
-import React, { Fragment, useContext } from "react"
+import React, { Fragment, useContext, useMemo } from "react"
 import { Col, Row } from "react-bootstrap"
 import { useFetch } from "../hooks/UseFetch"
 import { Timeline } from "./Timeline"
 import { AreaContext, YearContext } from "../Contexts"
-//import { ElectionMap } from "./ElectionMap"
 import { ConstituencyMap } from "./ConstituencyMap"
 import * as objectHelper from "../utils/objectHelper"
 import * as MapParts from "../dataset/SVGMapParts"
 import {DataChart} from "./DataChart"
-import {colors} from "../dataset/partyColors"
+import * as colors from "../dataset/partyColors.json"
 import {timelineData} from "../dataset/timelineData"
 
 const Etusivu = () => {
@@ -18,6 +17,7 @@ const Etusivu = () => {
 
     const uudetVaalipiirit = (MapParts.uudetVaalipiirit.map((key) => key.name))
     const vanhatVaalipiirit = (MapParts.vanhatVaalipiirit.map((key) => key.name))
+    const colorArray = useMemo(() => (colors), [colors] )
 
     const vaalipiiriKannatus = useFetch(`http://localhost:8000/api/vaalipiirit/kannatus/${area}/${year}`)
     // Tehdään taulukko, jossa on kukin puolue ja sen kannatus.
@@ -32,19 +32,16 @@ const Etusivu = () => {
         else if (year <= 2011 && !vanhatVaalipiirit.includes(area) && uudetVaalipiirit.includes(area)) setArea(null)
 
         
-        const luvut = puolueLuvut.map((party) => {
-            const puolue = colors.find(col => col.name.toUpperCase() === party.name.toUpperCase())
+        const chartData = puolueLuvut.map((party) => {
+            const puolue = colorArray.default.find(col => col.name.toUpperCase() === party.name.toUpperCase())
             const color = () => { 
-                if (puolue && puolue.color) return puolue.color
-                else return "#bdbdbd" 
+                return (puolue && puolue.color) ? puolue.color : "#bdbdbd"
             }
-
             return (
                 {  fill: color(),  name: party.name, vote: party.vote}
             )
         })
-
-
+        
         return (
             <Fragment>
                 <Row className="timeline">
@@ -57,7 +54,7 @@ const Etusivu = () => {
                     </Col>
                     <Col xs={12} xl={8}>
                         {area === null && <p>Valitse alue kartalta</p>}
-                        <DataChart luvut={luvut}/>
+                        <DataChart luvut={chartData}/>
                     </Col>
                 </Row>
                 <Row>
