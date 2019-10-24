@@ -1,0 +1,3666 @@
+[
+    {
+        "Ministeri": "Sorsa, Taisto Kalevi",
+        "Nimitetty": "19.2.1982",
+        "Eronnut": "6.5.1983",
+        "Puolue": "SDP",
+        "Rooli": "Pääministeri",
+        "ID": 1
+    },
+    {
+        "Ministeri": "Pekkala, Ahti Antti Johannes",
+        "Nimitetty": "19.2.1982",
+        "Eronnut": "6.5.1983",
+        "Puolue": "Keskusta",
+        "Rooli": "Pääministerin sijainen",
+        "ID": 1
+    },
+    {
+        "Ministeri": "Jokela, Mikko Eljas Eenokki",
+        "Nimitetty": "19.2.1982",
+        "Eronnut": "6.5.1983",
+        "Puolue": "Keskusta",
+        "Rooli": "Ministeri valtioneuvoston kansliassa",
+        "ID": 1
+    },
+    {
+        "Ministeri": "Stenbäck, Pär Olav Mikael",
+        "Nimitetty": "19.2.1982",
+        "Eronnut": "6.5.1983",
+        "Puolue": "RKP",
+        "Rooli": "Ulkoasiainministeri",
+        "ID": 1
+    },
+    {
+        "Ministeri": "Taxell, Lars Evald Christoffer",
+        "Nimitetty": "19.2.1982",
+        "Eronnut": "6.5.1983",
+        "Puolue": "RKP",
+        "Rooli": "Oikeusministeri",
+        "ID": 1
+    },
+    {
+        "Ministeri": "Ahde, Matti Allan",
+        "Nimitetty": "19.2.1982",
+        "Eronnut": "6.5.1983",
+        "Puolue": "SDP",
+        "Rooli": "Sisäasiainministeri",
+        "ID": 1
+    },
+    {
+        "Ministeri": "Jokela, Mikko Eljas Eenokki",
+        "Nimitetty": "19.2.1982",
+        "Eronnut": "6.5.1983",
+        "Puolue": "Keskusta",
+        "Rooli": "Ministeri sisäasiainministeriössä",
+        "ID": 1
+    },
+    {
+        "Ministeri": "Saukkonen, Veikko Antti Juhani",
+        "Nimitetty": "19.2.1982",
+        "Eronnut": "6.5.1983",
+        "Puolue": "Keskusta",
+        "Rooli": "Puolustusministeri",
+        "ID": 1
+    },
+    {
+        "Ministeri": "Pekkala, Ahti Antti Johannes",
+        "Nimitetty": "19.2.1982",
+        "Eronnut": "6.5.1983",
+        "Puolue": "Keskusta",
+        "Rooli": "Valtiovarainministeri",
+        "ID": 1
+    },
+    {
+        "Ministeri": "Forsman, Mauno Veikko",
+        "Nimitetty": "19.2.1982",
+        "Eronnut": "15.9.1982",
+        "Puolue": "SDP",
+        "Rooli": "Ministeri valtiovarainministeriössä",
+        "ID": 1
+    },
+    {
+        "Ministeri": "Laine, Jermu Tapani",
+        "Nimitetty": "15.9.1982",
+        "Eronnut": "6.5.1983",
+        "Puolue": "SDP",
+        "Rooli": "Ministeri valtiovarainministeriössä",
+        "ID": 1
+    },
+    {
+        "Ministeri": "Rekola, Esko Johannes",
+        "Nimitetty": "19.2.1982",
+        "Eronnut": "31.12.1982",
+        "Puolue": "ammatti/virkamies",
+        "Rooli": "Ministeri ulkoasiainministeriössä",
+        "ID": 1
+    },
+    {
+        "Ministeri": "Berner, Arne Morten",
+        "Nimitetty": "31.12.1982",
+        "Eronnut": "6.5.1983",
+        "Puolue": "Liberaalinen kansanpuolue",
+        "Rooli": "Ministeri ulkoasiainministeriössä",
+        "ID": 1
+    },
+    {
+        "Ministeri": "Kivistö, Kalevi Johannes",
+        "Nimitetty": "19.2.1982",
+        "Eronnut": "31.12.1982",
+        "Puolue": "SKDL",
+        "Rooli": "Opetusministeri",
+        "ID": 1
+    },
+    {
+        "Ministeri": "Suonio, Kaarina Elisabet",
+        "Nimitetty": "31.12.1982",
+        "Eronnut": "6.5.1983",
+        "Puolue": "SDP",
+        "Rooli": "Opetusministeri",
+        "ID": 1
+    },
+    {
+        "Ministeri": "Suonio, Kaarina Elisabet",
+        "Nimitetty": "19.2.1982",
+        "Eronnut": "31.12.1982",
+        "Puolue": "SDP",
+        "Rooli": "Ministeri opetusministeriössä",
+        "ID": 1
+    },
+    {
+        "Ministeri": "Salo, Arvo Jaakko Henrik",
+        "Nimitetty": "31.12.1982",
+        "Eronnut": "6.5.1983",
+        "Puolue": "SDP",
+        "Rooli": "Ministeri opetusministeriössä",
+        "ID": 1
+    },
+    {
+        "Ministeri": "Tähkämaa, Taisto Toivo Johannes",
+        "Nimitetty": "19.2.1982",
+        "Eronnut": "6.5.1983",
+        "Puolue": "Keskusta",
+        "Rooli": "Maa- ja metsätalousministeri",
+        "ID": 1
+    },
+    {
+        "Ministeri": "Wahlström, Jarmo Johannes",
+        "Nimitetty": "19.2.1982",
+        "Eronnut": "31.12.1982",
+        "Puolue": "SKDL",
+        "Rooli": "Ministeri maa- ja metsätalousministeriössä",
+        "ID": 1
+    },
+    {
+        "Ministeri": "Wahlström, Jarmo Johannes",
+        "Nimitetty": "19.2.1982",
+        "Eronnut": "31.12.1982",
+        "Puolue": "SKDL",
+        "Rooli": "Liikenneministeri",
+        "ID": 1
+    },
+    {
+        "Ministeri": "Breilin, Reino Volmar",
+        "Nimitetty": "31.12.1982",
+        "Eronnut": "6.5.1983",
+        "Puolue": "SDP",
+        "Rooli": "Liikenneministeri",
+        "ID": 1
+    },
+    {
+        "Ministeri": "Ollila, Esko Juhani",
+        "Nimitetty": "19.2.1982",
+        "Eronnut": "6.5.1983",
+        "Puolue": "Keskusta",
+        "Rooli": "Kauppa- ja teollisuusministeri",
+        "ID": 1
+    },
+    {
+        "Ministeri": "Ahde, Matti Allan",
+        "Nimitetty": "19.2.1982",
+        "Eronnut": "6.5.1983",
+        "Puolue": "SDP",
+        "Rooli": "Ministeri kauppa- ja teollisuusministeriössä",
+        "ID": 1
+    },
+    {
+        "Ministeri": "Rekola, Esko Johannes",
+        "Nimitetty": "19.2.1982",
+        "Eronnut": "31.12.1982",
+        "Puolue": "ammatti/virkamies",
+        "Rooli": "Ministeri kauppa- ja teollisuusministeriössä",
+        "ID": 1
+    },
+    {
+        "Ministeri": "Berner, Arne Morten",
+        "Nimitetty": "31.12.1982",
+        "Eronnut": "6.5.1983",
+        "Puolue": "Liberaalinen kansanpuolue",
+        "Rooli": "Ministeri kauppa- ja teollisuusministeriössä",
+        "ID": 1
+    },
+    {
+        "Ministeri": "Söderman, Jacob-Magnus",
+        "Nimitetty": "19.2.1982",
+        "Eronnut": "30.6.1982",
+        "Puolue": "SDP",
+        "Rooli": "Sosiaali- ja terveysministeri",
+        "ID": 1
+    },
+    {
+        "Ministeri": "Taipale, Vappu Tuulikki",
+        "Nimitetty": "1.7.1982",
+        "Eronnut": "6.5.1983",
+        "Puolue": "SDP",
+        "Rooli": "Sosiaali- ja terveysministeri",
+        "ID": 1
+    },
+    {
+        "Ministeri": "Ahde, Matti Allan",
+        "Nimitetty": "19.2.1982",
+        "Eronnut": "6.5.1983",
+        "Puolue": "SDP",
+        "Rooli": "Ministeri sosiaali- ja terveysministeriössä",
+        "ID": 1
+    },
+    {
+        "Ministeri": "Väänänen, Helmi Marjatta",
+        "Nimitetty": "19.2.1982",
+        "Eronnut": "6.5.1983",
+        "Puolue": "Keskusta",
+        "Rooli": "Ministeri sosiaali- ja terveysministeriössä",
+        "ID": 1
+    },
+    {
+        "Ministeri": "Kajanoja, Jouko",
+        "Nimitetty": "19.2.1982",
+        "Eronnut": "31.12.1982",
+        "Puolue": "SKDL",
+        "Rooli": "Työvoimaministeri",
+        "ID": 1
+    },
+    {
+        "Ministeri": "Helle, Veikko Kullervo",
+        "Nimitetty": "31.12.1982",
+        "Eronnut": "6.5.1983",
+        "Puolue": "SDP",
+        "Rooli": "Työvoimaministeri",
+        "ID": 1
+    },
+    {
+        "Ministeri": "Sorsa, Taisto Kalevi",
+        "Nimitetty": "6.5.1983",
+        "Eronnut": "30.4.1987",
+        "Puolue": "SDP",
+        "Rooli": "Pääministeri",
+        "ID": 2
+    },
+    {
+        "Ministeri": "Väyrynen, Paavo Matti",
+        "Nimitetty": "6.5.1983",
+        "Eronnut": "30.4.1987",
+        "Puolue": "Keskusta",
+        "Rooli": "Pääministerin sijainen",
+        "ID": 2
+    },
+    {
+        "Ministeri": "Yläjärvi, Toivo Juhani",
+        "Nimitetty": "6.5.1983",
+        "Eronnut": "29.2.1984",
+        "Puolue": "Keskusta",
+        "Rooli": "Ministeri valtioneuvoston kansliassa",
+        "ID": 2
+    },
+    {
+        "Ministeri": "Väyrynen, Paavo Matti",
+        "Nimitetty": "6.5.1983",
+        "Eronnut": "30.4.1987",
+        "Puolue": "Keskusta",
+        "Rooli": "Ulkoasiainministeri",
+        "ID": 2
+    },
+    {
+        "Ministeri": "Laine, Jermu Tapani",
+        "Nimitetty": "6.5.1983",
+        "Eronnut": "30.4.1987",
+        "Puolue": "SDP",
+        "Rooli": "Ministeri ulkoasiainministeriössä",
+        "ID": 2
+    },
+    {
+        "Ministeri": "Taxell, Lars Evald Christoffer",
+        "Nimitetty": "6.5.1983",
+        "Eronnut": "30.4.1987",
+        "Puolue": "RKP",
+        "Rooli": "Oikeusministeri",
+        "ID": 2
+    },
+    {
+        "Ministeri": "Ahde, Matti Allan",
+        "Nimitetty": "6.5.1983",
+        "Eronnut": "30.9.1983",
+        "Puolue": "SDP",
+        "Rooli": "Sisäasiainministeri",
+        "ID": 2
+    },
+    {
+        "Ministeri": "Luttinen, Vilho Matti",
+        "Nimitetty": "1.10.1983",
+        "Eronnut": "30.11.1984",
+        "Puolue": "SDP",
+        "Rooli": "Sisäasiainministeri",
+        "ID": 2
+    },
+    {
+        "Ministeri": "Raatikainen, Kaisa",
+        "Nimitetty": "1.12.1984",
+        "Eronnut": "30.4.1987",
+        "Puolue": "SDP",
+        "Rooli": "Sisäasiainministeri",
+        "ID": 2
+    },
+    {
+        "Ministeri": "Luttinen, Vilho Matti",
+        "Nimitetty": "6.5.1983",
+        "Eronnut": "30.9.1983",
+        "Puolue": "SDP",
+        "Rooli": "Ministeri sisäasiainministeriössä",
+        "ID": 2
+    },
+    {
+        "Ministeri": "Yläjärvi, Toivo Juhani",
+        "Nimitetty": "1.3.1984",
+        "Eronnut": "30.4.1987",
+        "Puolue": "Keskusta",
+        "Rooli": "Ministeri sisäasiainministeriössä",
+        "ID": 2
+    },
+    {
+        "Ministeri": "Pihlajamäki, Veikko Jaakko Uolevi",
+        "Nimitetty": "6.5.1983",
+        "Eronnut": "30.4.1987",
+        "Puolue": "Keskusta",
+        "Rooli": "Puolustusministeri",
+        "ID": 2
+    },
+    {
+        "Ministeri": "Pekkala, Ahti Antti Johannes",
+        "Nimitetty": "6.5.1983",
+        "Eronnut": "31.1.1986",
+        "Puolue": "Keskusta",
+        "Rooli": "Valtiovarainministeri",
+        "ID": 2
+    },
+    {
+        "Ministeri": "Ollila, Esko Juhani",
+        "Nimitetty": "1.2.1986",
+        "Eronnut": "30.4.1987",
+        "Puolue": "Keskusta",
+        "Rooli": "Valtiovarainministeri",
+        "ID": 2
+    },
+    {
+        "Ministeri": "Vennamo, Pekka Veikko",
+        "Nimitetty": "6.5.1983",
+        "Eronnut": "30.4.1987",
+        "Puolue": "SMP",
+        "Rooli": "Ministeri valtiovarainministeriössä",
+        "ID": 2
+    },
+    {
+        "Ministeri": "Suonio, Kaarina Elisabet",
+        "Nimitetty": "6.5.1983",
+        "Eronnut": "31.5.1986",
+        "Puolue": "SDP",
+        "Rooli": "Opetusministeri",
+        "ID": 2
+    },
+    {
+        "Ministeri": "Ala-Kapee, Pirjo Anneli",
+        "Nimitetty": "1.6.1986",
+        "Eronnut": "30.4.1987",
+        "Puolue": "SDP",
+        "Rooli": "Opetusministeri",
+        "ID": 2
+    },
+    {
+        "Ministeri": "Björkstrand, Hilding Gustav Mattias",
+        "Nimitetty": "6.5.1983",
+        "Eronnut": "30.4.1987",
+        "Puolue": "RKP",
+        "Rooli": "Ministeri opetusministeriössä",
+        "ID": 2
+    },
+    {
+        "Ministeri": "Yläjärvi, Toivo Juhani",
+        "Nimitetty": "6.5.1983",
+        "Eronnut": "30.4.1987",
+        "Puolue": "Keskusta",
+        "Rooli": "Maa- ja metsätalousministeri",
+        "ID": 2
+    },
+    {
+        "Ministeri": "Ahde, Matti Allan",
+        "Nimitetty": "6.5.1983",
+        "Eronnut": "30.9.1983",
+        "Puolue": "SDP",
+        "Rooli": "Ministeri maa- ja metsätalousministeriössä",
+        "ID": 2
+    },
+    {
+        "Ministeri": "Puhakka, Matti Juhani",
+        "Nimitetty": "6.5.1983",
+        "Eronnut": "30.11.1984",
+        "Puolue": "SDP",
+        "Rooli": "Liikenneministeri",
+        "ID": 2
+    },
+    {
+        "Ministeri": "Luttinen, Vilho Matti",
+        "Nimitetty": "1.12.1984",
+        "Eronnut": "30.4.1987",
+        "Puolue": "SDP",
+        "Rooli": "Liikenneministeri",
+        "ID": 2
+    },
+    {
+        "Ministeri": "Lindblom, Seppo Olavi",
+        "Nimitetty": "6.5.1983",
+        "Eronnut": "30.4.1987",
+        "Puolue": "SDP",
+        "Rooli": "Kauppa- ja teollisuusministeri",
+        "ID": 2
+    },
+    {
+        "Ministeri": "Ahde, Matti Allan",
+        "Nimitetty": "6.5.1983",
+        "Eronnut": "30.9.1983",
+        "Puolue": "SDP",
+        "Rooli": "Ministeri kauppa- ja teollisuusministeriössä",
+        "ID": 2
+    },
+    {
+        "Ministeri": "Laine, Jermu Tapani",
+        "Nimitetty": "6.5.1983",
+        "Eronnut": "30.4.1987",
+        "Puolue": "SDP",
+        "Rooli": "Ministeri kauppa- ja teollisuusministeriössä",
+        "ID": 2
+    },
+    {
+        "Ministeri": "Kuuskoski, Eeva Maija Kaarina",
+        "Nimitetty": "6.5.1983",
+        "Eronnut": "30.4.1987",
+        "Puolue": "Keskusta",
+        "Rooli": "Sosiaali- ja terveysministeri",
+        "ID": 2
+    },
+    {
+        "Ministeri": "Ahde, Matti Allan",
+        "Nimitetty": "6.5.1983",
+        "Eronnut": "30.4.1987",
+        "Puolue": "SDP",
+        "Rooli": "Ministeri sosiaali- ja terveysministeriössä",
+        "ID": 2
+    },
+    {
+        "Ministeri": "Taipale, Vappu Tuulikki",
+        "Nimitetty": "6.5.1983",
+        "Eronnut": "30.11.1984",
+        "Puolue": "SDP",
+        "Rooli": "Ministeri sosiaali- ja terveysministeriössä",
+        "ID": 2
+    },
+    {
+        "Ministeri": "Puhakka, Matti Juhani",
+        "Nimitetty": "1.12.1984",
+        "Eronnut": "30.4.1987",
+        "Puolue": "SDP",
+        "Rooli": "Ministeri sosiaali- ja terveysministeriössä",
+        "ID": 2
+    },
+    {
+        "Ministeri": "Leppänen, Urpo Olavi",
+        "Nimitetty": "6.5.1983",
+        "Eronnut": "30.4.1987",
+        "Puolue": "SMP",
+        "Rooli": "Työvoimaministeri",
+        "ID": 2
+    },
+    {
+        "Ministeri": "Ahde, Matti Allan",
+        "Nimitetty": "1.10.1983",
+        "Eronnut": "30.4.1987",
+        "Puolue": "SDP",
+        "Rooli": "Ympäristöministeri",
+        "ID": 2
+    },
+      {
+        "Ministeri": "Holkeri, Harri Hermanni",
+        "Nimitetty": "30.4.1987",
+        "Eronnut": "26.4.1991",
+        "Puolue": "Kokoomus",
+        "Rooli": "Pääministeri",
+        "ID": 3
+      },
+      {
+        "Ministeri": "Sorsa, Taisto Kalevi",
+        "Nimitetty": "30.4.1987",
+        "Eronnut": "31.1.1989",
+        "Puolue": "SDP",
+        "Rooli": "Pääministerin sijainen",
+        "ID": 3
+      },
+      {
+        "Ministeri": "Paasio, Pertti Kullervo",
+        "Nimitetty": "1.2.1989",
+        "Eronnut": "26.4.1991",
+        "Puolue": "SDP",
+        "Rooli": "Pääministerin sijainen",
+        "ID": 3
+      },
+      {
+        "Ministeri": "Kanerva, Ilkka Armas Mikael",
+        "Nimitetty": "30.4.1987",
+        "Eronnut": "28.8.1990",
+        "Puolue": "Kokoomus",
+        "Rooli": "Ministeri valtioneuvoston kansliassa",
+        "ID": 3
+      },
+      {
+        "Ministeri": "Sorsa, Taisto Kalevi",
+        "Nimitetty": "30.4.1987",
+        "Eronnut": "31.1.1989",
+        "Puolue": "SDP",
+        "Rooli": "Ulkoasiainministeri",
+        "ID": 3
+      },
+      {
+        "Ministeri": "Paasio, Pertti Kullervo",
+        "Nimitetty": "1.2.1989",
+        "Eronnut": "26.4.1991",
+        "Puolue": "SDP",
+        "Rooli": "Ulkoasiainministeri",
+        "ID": 3
+      },
+      {
+        "Ministeri": "Salolainen, Pertti Edvard",
+        "Nimitetty": "30.4.1987",
+        "Eronnut": "26.4.1991",
+        "Puolue": "Kokoomus",
+        "Rooli": "Ministeri ulkoasiainministeriössä",
+        "ID": 3
+      },
+      {
+        "Ministeri": "Suominen, Ilkka Olavi",
+        "Nimitetty": "30.4.1987",
+        "Eronnut": "26.4.1991",
+        "Puolue": "Kokoomus",
+        "Rooli": "Ministeri ulkoasiainministeriössä",
+        "ID": 3
+      },
+      {
+        "Ministeri": "Louekoski, Matti Kalevi",
+        "Nimitetty": "30.4.1987",
+        "Eronnut": "28.2.1990",
+        "Puolue": "SDP",
+        "Rooli": "Oikeusministeri",
+        "ID": 3
+      },
+      {
+        "Ministeri": "Halonen, Tarja Kaarina",
+        "Nimitetty": "1.3.1990",
+        "Eronnut": "26.4.1991",
+        "Puolue": "SDP",
+        "Rooli": "Oikeusministeri",
+        "ID": 3
+      },
+      {
+        "Ministeri": "Rantanen, Jarmo Heikki Kullervo",
+        "Nimitetty": "30.4.1987",
+        "Eronnut": "26.4.1991",
+        "Puolue": "SDP",
+        "Rooli": "Sisäasiainministeri",
+        "ID": 3
+      },
+      {
+        "Ministeri": "Liikanen, Erkki Antero",
+        "Nimitetty": "8.5.1987",
+        "Eronnut": "28.2.1990",
+        "Puolue": "SDP",
+        "Rooli": "Ministeri sisäasiainministeriössä",
+        "ID": 3
+      },
+      {
+        "Ministeri": "Puhakka, Matti Juhani",
+        "Nimitetty": "1.3.1990",
+        "Eronnut": "26.4.1991",
+        "Puolue": "SDP",
+        "Rooli": "Ministeri sisäasiainministeriössä",
+        "ID": 3
+      },
+      {
+        "Ministeri": "Norrback, Johan Ole",
+        "Nimitetty": "30.4.1987",
+        "Eronnut": "13.6.1990",
+        "Puolue": "RKP",
+        "Rooli": "Puolustusministeri",
+        "ID": 3
+      },
+      {
+        "Ministeri": "Rehn, Märta Elisabeth",
+        "Nimitetty": "13.6.1990",
+        "Eronnut": "26.4.1991",
+        "Puolue": "RKP",
+        "Rooli": "Puolustusministeri",
+        "ID": 3
+      },
+      {
+        "Ministeri": "Liikanen, Erkki Antero",
+        "Nimitetty": "30.4.1987",
+        "Eronnut": "28.2.1990",
+        "Puolue": "SDP",
+        "Rooli": "Valtiovarainministeri",
+        "ID": 3
+      },
+      {
+        "Ministeri": "Louekoski, Matti Kalevi",
+        "Nimitetty": "1.3.1990",
+        "Eronnut": "26.4.1991",
+        "Puolue": "SDP",
+        "Rooli": "Valtiovarainministeri",
+        "ID": 3
+      },
+      {
+        "Ministeri": "Puolanne, Ulla Kaija",
+        "Nimitetty": "30.4.1987",
+        "Eronnut": "26.4.1991",
+        "Puolue": "Kokoomus",
+        "Rooli": "Ministeri valtiovarainministeriössä",
+        "ID": 3
+      },
+      {
+        "Ministeri": "Kanerva, Ilkka Armas Mikael",
+        "Nimitetty": "3.2.1989",
+        "Eronnut": "26.4.1991",
+        "Puolue": "Kokoomus",
+        "Rooli": "Ministeri valtiovarainministeriössä",
+        "ID": 3
+      },
+      {
+        "Ministeri": "Taxell, Lars Evald Christoffer",
+        "Nimitetty": "30.4.1987",
+        "Eronnut": "13.6.1990",
+        "Puolue": "RKP",
+        "Rooli": "Opetusministeri",
+        "ID": 3
+      },
+      {
+        "Ministeri": "Norrback, Johan Ole",
+        "Nimitetty": "13.6.1990",
+        "Eronnut": "26.4.1991",
+        "Puolue": "RKP",
+        "Rooli": "Opetusministeri",
+        "ID": 3
+      },
+      {
+        "Ministeri": "Kasurinen, Anna-Liisa",
+        "Nimitetty": "30.4.1987",
+        "Eronnut": "26.4.1991",
+        "Puolue": "SDP",
+        "Rooli": "Ministeri opetusministeriössä",
+        "ID": 3
+      },
+      {
+        "Ministeri": "Pohjala, Toivo Topias",
+        "Nimitetty": "30.4.1987",
+        "Eronnut": "26.4.1991",
+        "Puolue": "Kokoomus",
+        "Rooli": "Maa- ja metsätalousministeri",
+        "ID": 3
+      },
+      {
+        "Ministeri": "Norrback, Johan Ole",
+        "Nimitetty": "30.4.1987",
+        "Eronnut": "26.4.1991",
+        "Puolue": "RKP",
+        "Rooli": "Ministeri maa- ja metsätalousministeriössä",
+        "ID": 3
+      },
+      {
+        "Ministeri": "Vennamo, Pekka Veikko",
+        "Nimitetty": "30.4.1987",
+        "Eronnut": "30.9.1989",
+        "Puolue": "SMP",
+        "Rooli": "Liikenneministeri",
+        "ID": 3
+      },
+      {
+        "Ministeri": "Vistbacka, Raimo Viljam",
+        "Nimitetty": "1.10.1989",
+        "Eronnut": "28.8.1990",
+        "Puolue": "SMP",
+        "Rooli": "Liikenneministeri",
+        "ID": 3
+      },
+      {
+        "Ministeri": "Kanerva, Ilkka Armas Mikael",
+        "Nimitetty": "28.8.1990",
+        "Eronnut": "26.4.1991",
+        "Puolue": "Kokoomus",
+        "Rooli": "Liikenneministeri",
+        "ID": 3
+      },
+      {
+        "Ministeri": "Kasurinen, Anna-Liisa",
+        "Nimitetty": "28.8.1990",
+        "Eronnut": "26.4.1991",
+        "Puolue": "SDP",
+        "Rooli": "Ministeri liikenneministeriössä",
+        "ID": 3
+      },
+      {
+        "Ministeri": "Suominen, Ilkka Olavi",
+        "Nimitetty": "30.4.1987",
+        "Eronnut": "26.4.1991",
+        "Puolue": "Kokoomus",
+        "Rooli": "Kauppa- ja teollisuusministeri",
+        "ID": 3
+      },
+      {
+        "Ministeri": "Salolainen, Pertti Edvard",
+        "Nimitetty": "30.4.1987",
+        "Eronnut": "26.4.1991",
+        "Puolue": "Kokoomus",
+        "Rooli": "Ministeri kauppa- ja teollisuusministeriössä",
+        "ID": 3
+      },
+      {
+        "Ministeri": "Vennamo, Pekka Veikko",
+        "Nimitetty": "30.4.1987",
+        "Eronnut": "1.9.1989",
+        "Puolue": "SMP",
+        "Rooli": "Ministeri kauppa- ja teollisuusministeriössä",
+        "ID": 3
+      },
+      {
+        "Ministeri": "Pesola, Anja Helena",
+        "Nimitetty": "30.4.1987",
+        "Eronnut": "31.12.1989",
+        "Puolue": "Kokoomus",
+        "Rooli": "Sosiaali- ja terveysministeri",
+        "ID": 3
+      },
+      {
+        "Ministeri": "Miettinen, Mauri Kalevi",
+        "Nimitetty": "1.1.1990",
+        "Eronnut": "26.4.1991",
+        "Puolue": "Kokoomus",
+        "Rooli": "Sosiaali- ja terveysministeri",
+        "ID": 3
+      },
+      {
+        "Ministeri": "Halonen, Tarja Kaarina",
+        "Nimitetty": "30.4.1987",
+        "Eronnut": "28.2.1990",
+        "Puolue": "SDP",
+        "Rooli": "Ministeri sosiaali- ja terveysministeriössä",
+        "ID": 3
+      },
+      {
+        "Ministeri": "Puhakka, Matti Juhani",
+        "Nimitetty": "30.4.1987",
+        "Eronnut": "31.5.1989",
+        "Puolue": "SDP",
+        "Rooli": "Ministeri sosiaali- ja terveysministeriössä",
+        "ID": 3
+      },
+      {
+        "Ministeri": "Hämäläinen, Tuulikki Katriina",
+        "Nimitetty": "1.3.1990",
+        "Eronnut": "26.4.1991",
+        "Puolue": "SDP",
+        "Rooli": "Ministeri sosiaali- ja terveysministeriössä",
+        "ID": 3
+      },
+      {
+        "Ministeri": "Puhakka, Matti Juhani",
+        "Nimitetty": "30.4.1987",
+        "Eronnut": "31.5.1989",
+        "Puolue": "SDP",
+        "Rooli": "Työvoimaministeri",
+        "ID": 3
+      },
+      {
+        "Ministeri": "Puhakka, Matti Juhani",
+        "Nimitetty": "1.6.1989",
+        "Eronnut": "26.4.1991",
+        "Puolue": "SDP",
+        "Rooli": "Työministeri",
+        "ID": 3
+      },
+      {
+        "Ministeri": "Bärlund, Kaj-Ole Johannes",
+        "Nimitetty": "30.4.1987",
+        "Eronnut": "26.4.1991",
+        "Puolue": "SDP",
+        "Rooli": "Ympäristöministeri",
+        "ID": 3
+      },
+      {
+        "Ministeri": "Aho, Esko Tapani",
+        "Nimitetty": "26.4.1991",
+        "Eronnut": "13.4.1995",
+        "Puolue": "Keskusta",
+        "Rooli": "Pääministeri",
+        "ID": 4
+      },
+      {
+        "Ministeri": "Kanerva, Ilkka Armas Mikael",
+        "Nimitetty": "26.4.1991",
+        "Eronnut": "23.8.1991",
+        "Puolue": "Kokoomus",
+        "Rooli": "Pääministerin sijainen",
+        "ID": 4
+      },
+      {
+        "Ministeri": "Salolainen, Pertti Edvard",
+        "Nimitetty": "23.8.1991",
+        "Eronnut": "13.4.1995",
+        "Puolue": "Kokoomus",
+        "Rooli": "Pääministerin sijainen",
+        "ID": 4
+      },
+      {
+        "Ministeri": "Väyrynen, Paavo Matti",
+        "Nimitetty": "26.4.1991",
+        "Eronnut": "5.5.1993",
+        "Puolue": "Keskusta",
+        "Rooli": "Ulkoasiainministeri",
+        "ID": 4
+      },
+      {
+        "Ministeri": "Haavisto, Heikki Johannes",
+        "Nimitetty": "5.5.1993",
+        "Eronnut": "3.2.1995",
+        "Puolue": "Keskusta",
+        "Rooli": "Ulkoasiainministeri",
+        "ID": 4
+      },
+      {
+        "Ministeri": "Rantanen, Paavo Ilmari",
+        "Nimitetty": "3.2.1995",
+        "Eronnut": "13.4.1995",
+        "Puolue": "ammatti/virkamies",
+        "Rooli": "Ulkoasiainministeri",
+        "ID": 4
+      },
+      {
+        "Ministeri": "Kankaanniemi, Toimi Olavi",
+        "Nimitetty": "26.4.1991",
+        "Eronnut": "28.6.1994",
+        "Puolue": "Kristillinen liitto",
+        "Rooli": "Ministeri ulkoasiainministeriössä",
+        "ID": 4
+      },
+      {
+        "Ministeri": "Salolainen, Pertti Edvard",
+        "Nimitetty": "26.4.1991",
+        "Eronnut": "13.4.1995",
+        "Puolue": "Kokoomus",
+        "Rooli": "Ministeri ulkoasiainministeriössä",
+        "ID": 4
+      },
+      {
+        "Ministeri": "Juhantalo, Kauko Johannes",
+        "Nimitetty": "3.5.1991",
+        "Eronnut": "3.8.1992",
+        "Puolue": "Keskusta",
+        "Rooli": "Ministeri ulkoasiainministeriössä",
+        "ID": 4
+      },
+      {
+        "Ministeri": "Tuomisto, Pekka Juhani Konstantin",
+        "Nimitetty": "3.8.1992",
+        "Eronnut": "1.8.1993",
+        "Puolue": "Keskusta",
+        "Rooli": "Ministeri ulkoasiainministeriössä",
+        "ID": 4
+      },
+      {
+        "Ministeri": "Kääriäinen, Seppo Arimo",
+        "Nimitetty": "1.8.1993",
+        "Eronnut": "13.4.1995",
+        "Puolue": "Keskusta",
+        "Rooli": "Ministeri ulkoasiainministeriössä",
+        "ID": 4
+      },
+      {
+        "Ministeri": "Pokka, Pirkko Hannele",
+        "Nimitetty": "26.4.1991",
+        "Eronnut": "30.4.1994",
+        "Puolue": "Keskusta",
+        "Rooli": "Oikeusministeri",
+        "ID": 4
+      },
+      {
+        "Ministeri": "Jäätteenmäki, Anneli Tuulikki",
+        "Nimitetty": "1.5.1994",
+        "Eronnut": "13.4.1995",
+        "Puolue": "Keskusta",
+        "Rooli": "Oikeusministeri",
+        "ID": 4
+      },
+      {
+        "Ministeri": "Pekkarinen, Reijo Mauri Matias",
+        "Nimitetty": "26.4.1991",
+        "Eronnut": "13.4.1995",
+        "Puolue": "Keskusta",
+        "Rooli": "Sisäasiainministeri",
+        "ID": 4
+      },
+      {
+        "Ministeri": "Rehn, Märta Elisabeth",
+        "Nimitetty": "26.4.1991",
+        "Eronnut": "1.1.1995",
+        "Puolue": "RKP",
+        "Rooli": "Puolustusministeri",
+        "ID": 4
+      },
+      {
+        "Ministeri": "Enestam, Jan-Erik",
+        "Nimitetty": "2.1.1995",
+        "Eronnut": "13.4.1995",
+        "Puolue": "RKP",
+        "Rooli": "Puolustusministeri",
+        "ID": 4
+      },
+      {
+        "Ministeri": "Viinanen, Iiro Tahvo Juhani",
+        "Nimitetty": "26.4.1991",
+        "Eronnut": "13.4.1995",
+        "Puolue": "Kokoomus",
+        "Rooli": "Valtiovarainministeri",
+        "ID": 4
+      },
+      {
+        "Ministeri": "Kanerva, Ilkka Armas Mikael",
+        "Nimitetty": "26.4.1991",
+        "Eronnut": "13.4.1995",
+        "Puolue": "Kokoomus",
+        "Rooli": "Ministeri valtiovarainministeriössä",
+        "ID": 4
+      },
+      {
+        "Ministeri": "Uosukainen, Riitta Maria",
+        "Nimitetty": "26.4.1991",
+        "Eronnut": "11.2.1994",
+        "Puolue": "Kokoomus",
+        "Rooli": "Opetusministeri",
+        "ID": 4
+      },
+      {
+        "Ministeri": "Heinonen, Olli-Pekka",
+        "Nimitetty": "11.2.1994",
+        "Eronnut": "13.4.1995",
+        "Puolue": "Kokoomus",
+        "Rooli": "Opetusministeri",
+        "ID": 4
+      },
+      {
+        "Ministeri": "Isohookana-Asunmaa, Tytti Maria",
+        "Nimitetty": "26.4.1991",
+        "Eronnut": "13.4.1995",
+        "Puolue": "Keskusta",
+        "Rooli": "Ministeri opetusministeriössä",
+        "ID": 4
+      },
+      {
+        "Ministeri": "Pura, Martti Heikki",
+        "Nimitetty": "26.4.1991",
+        "Eronnut": "12.4.1994",
+        "Puolue": "Keskusta",
+        "Rooli": "Maa- ja metsätalousministeri",
+        "ID": 4
+      },
+      {
+        "Ministeri": "Pesälä, Veijo Mikko",
+        "Nimitetty": "12.4.1994",
+        "Eronnut": "13.4.1995",
+        "Puolue": "Keskusta",
+        "Rooli": "Maa- ja metsätalousministeri",
+        "ID": 4
+      },
+      {
+        "Ministeri": "Norrback, Johan Ole",
+        "Nimitetty": "26.4.1991",
+        "Eronnut": "13.4.1995",
+        "Puolue": "RKP",
+        "Rooli": "Liikenneministeri",
+        "ID": 4
+      },
+      {
+        "Ministeri": "Juhantalo, Kauko Johannes",
+        "Nimitetty": "26.4.1991",
+        "Eronnut": "3.8.1992",
+        "Puolue": "Keskusta",
+        "Rooli": "Kauppa- ja teollisuusministeri",
+        "ID": 4
+      },
+      {
+        "Ministeri": "Tuomisto, Pekka Juhani Konstantin",
+        "Nimitetty": "3.8.1992",
+        "Eronnut": "1.8.1993",
+        "Puolue": "Keskusta",
+        "Rooli": "Kauppa- ja teollisuusministeri",
+        "ID": 4
+      },
+      {
+        "Ministeri": "Kääriäinen, Seppo Arimo",
+        "Nimitetty": "1.8.1993",
+        "Eronnut": "13.4.1995",
+        "Puolue": "Keskusta",
+        "Rooli": "Kauppa- ja teollisuusministeri",
+        "ID": 4
+      },
+      {
+        "Ministeri": "Salolainen, Pertti Edvard",
+        "Nimitetty": "26.4.1991",
+        "Eronnut": "13.4.1995",
+        "Puolue": "Kokoomus",
+        "Rooli": "Ministeri kauppa- ja teollisuusministeriössä",
+        "ID": 4
+      },
+      {
+        "Ministeri": "Kuuskoski, Eeva Maija Kaarina",
+        "Nimitetty": "26.4.1991",
+        "Eronnut": "24.4.1992",
+        "Puolue": "Keskusta",
+        "Rooli": "Sosiaali- ja terveysministeri",
+        "ID": 4
+      },
+      {
+        "Ministeri": "Huuhtanen, Jorma Kalevi",
+        "Nimitetty": "24.4.1992",
+        "Eronnut": "13.4.1995",
+        "Puolue": "Keskusta",
+        "Rooli": "Sosiaali- ja terveysministeri",
+        "ID": 4
+      },
+      {
+        "Ministeri": "Kankaanniemi, Toimi Olavi",
+        "Nimitetty": "26.4.1991",
+        "Eronnut": "28.6.1994",
+        "Puolue": "Kristillinen liitto",
+        "Rooli": "Ministeri sosiaali- ja terveysministeriössä",
+        "ID": 4
+      },
+      {
+        "Ministeri": "Pokka, Pirkko Hannele",
+        "Nimitetty": "3.5.1991",
+        "Eronnut": "17.5.1991",
+        "Puolue": "Keskusta",
+        "Rooli": "Ministeri sosiaali- ja terveysministeriössä",
+        "ID": 4
+      },
+      {
+        "Ministeri": "Rehn, Märta Elisabeth",
+        "Nimitetty": "17.5.1991",
+        "Eronnut": "1.1.1995",
+        "Puolue": "RKP",
+        "Rooli": "Ministeri sosiaali- ja terveysministeriössä",
+        "ID": 4
+      },
+      {
+        "Ministeri": "Enestam, Jan-Erik",
+        "Nimitetty": "2.1.1995",
+        "Eronnut": "13.4.1995",
+        "Puolue": "RKP",
+        "Rooli": "Ministeri sosiaali- ja terveysministeriössä",
+        "ID": 4
+      },
+      {
+        "Ministeri": "Kanerva, Ilkka Armas Mikael",
+        "Nimitetty": "26.4.1991",
+        "Eronnut": "13.4.1995",
+        "Puolue": "Kokoomus",
+        "Rooli": "Työministeri",
+        "ID": 4
+      },
+      {
+        "Ministeri": "Pietikäinen, Sirpa Maria",
+        "Nimitetty": "26.4.1991",
+        "Eronnut": "13.4.1995",
+        "Puolue": "Kokoomus",
+        "Rooli": "Ympäristöministeri",
+        "ID": 4
+      },
+      {
+        "Ministeri": "Rusanen, Pirjo Maija",
+        "Nimitetty": "26.4.1991",
+        "Eronnut": "2.1.1995",
+        "Puolue": "Kokoomus",
+        "Rooli": "Ministeri ympäristöministeriössä",
+        "ID": 4
+      },
+      {
+        "Ministeri": "Taina, Anneli Kristiina",
+        "Nimitetty": "2.1.1995",
+        "Eronnut": "13.4.1995",
+        "Puolue": "Kokoomus",
+        "Rooli": "Ministeri ympäristöministeriössä",
+        "ID": 4
+      },
+      {
+        "Ministeri": "Lipponen, Paavo Tapio",
+        "Nimitetty": "13.4.1995",
+        "Eronnut": "15.4.1999",
+        "Puolue": "SDP",
+        "Rooli": "Pääministeri",
+        "ID": 5
+      },
+      {
+        "Ministeri": "Niinistö, Sauli Väinämö",
+        "Nimitetty": "13.4.1995",
+        "Eronnut": "15.4.1999",
+        "Puolue": "Kokoomus",
+        "Rooli": "Pääministerin sijainen",
+        "ID": 5
+      },
+      {
+        "Ministeri": "Alho, Arja Inkeri",
+        "Nimitetty": "13.4.1995",
+        "Eronnut": "9.10.1997",
+        "Puolue": "SDP",
+        "Rooli": "Ministeri valtioneuvoston kansliassa",
+        "ID": 5
+      },
+      {
+        "Ministeri": "Norrback, Johan Ole",
+        "Nimitetty": "13.4.1995",
+        "Eronnut": "15.4.1999",
+        "Puolue": "RKP",
+        "Rooli": "Ministeri valtioneuvoston kansliassa",
+        "ID": 5
+      },
+      {
+        "Ministeri": "Skinnari, Jouko Juhani",
+        "Nimitetty": "9.10.1997",
+        "Eronnut": "15.4.1999",
+        "Puolue": "SDP",
+        "Rooli": "Ministeri valtioneuvoston kansliassa",
+        "ID": 5
+      },
+      {
+        "Ministeri": "Halonen, Tarja Kaarina",
+        "Nimitetty": "13.4.1995",
+        "Eronnut": "15.4.1999",
+        "Puolue": "SDP",
+        "Rooli": "Ulkoasiainministeri",
+        "ID": 5
+      },
+      {
+        "Ministeri": "Haavisto, Pekka Olavi",
+        "Nimitetty": "13.4.1995",
+        "Eronnut": "15.4.1999",
+        "Puolue": "Vihreät",
+        "Rooli": "Ministeri ulkoasiainministeriössä",
+        "ID": 5
+      },
+      {
+        "Ministeri": "Norrback, Johan Ole",
+        "Nimitetty": "13.4.1995",
+        "Eronnut": "15.4.1999",
+        "Puolue": "RKP",
+        "Rooli": "Ministeri ulkoasiainministeriössä",
+        "ID": 5
+      },
+      {
+        "Ministeri": "Niinistö, Sauli Väinämö",
+        "Nimitetty": "13.4.1995",
+        "Eronnut": "2.2.1996",
+        "Puolue": "Kokoomus",
+        "Rooli": "Oikeusministeri",
+        "ID": 5
+      },
+      {
+        "Ministeri": "Häkämies, Kari Pekka",
+        "Nimitetty": "2.2.1996",
+        "Eronnut": "13.3.1998",
+        "Puolue": "Kokoomus",
+        "Rooli": "Oikeusministeri",
+        "ID": 5
+      },
+      {
+        "Ministeri": "Järventaus, Jussi Arvi",
+        "Nimitetty": "13.3.1998",
+        "Eronnut": "15.4.1999",
+        "Puolue": "Kokoomus",
+        "Rooli": "Oikeusministeri",
+        "ID": 5
+      },
+      {
+        "Ministeri": "Enestam, Jan-Erik",
+        "Nimitetty": "13.4.1995",
+        "Eronnut": "15.4.1999",
+        "Puolue": "RKP",
+        "Rooli": "Sisäasiainministeri",
+        "ID": 5
+      },
+      {
+        "Ministeri": "Backman, Jouni Ensio",
+        "Nimitetty": "13.4.1995",
+        "Eronnut": "15.4.1999",
+        "Puolue": "SDP",
+        "Rooli": "Ministeri sisäasiainministeriössä",
+        "ID": 5
+      },
+      {
+        "Ministeri": "Taina, Anneli Kristiina",
+        "Nimitetty": "13.4.1995",
+        "Eronnut": "15.4.1999",
+        "Puolue": "Kokoomus",
+        "Rooli": "Puolustusministeri",
+        "ID": 5
+      },
+      {
+        "Ministeri": "Viinanen, Iiro Tahvo Juhani",
+        "Nimitetty": "13.4.1995",
+        "Eronnut": "2.2.1996",
+        "Puolue": "Kokoomus",
+        "Rooli": "Valtiovarainministeri",
+        "ID": 5
+      },
+      {
+        "Ministeri": "Niinistö, Sauli Väinämö",
+        "Nimitetty": "2.2.1996",
+        "Eronnut": "15.4.1999",
+        "Puolue": "Kokoomus",
+        "Rooli": "Valtiovarainministeri",
+        "ID": 5
+      },
+      {
+        "Ministeri": "Alho, Arja Inkeri",
+        "Nimitetty": "13.4.1995",
+        "Eronnut": "9.10.1997",
+        "Puolue": "SDP",
+        "Rooli": "Ministeri valtiovarainministeriössä",
+        "ID": 5
+      },
+      {
+        "Ministeri": "Backman, Jouni Ensio",
+        "Nimitetty": "13.4.1995",
+        "Eronnut": "15.4.1999",
+        "Puolue": "SDP",
+        "Rooli": "Ministeri valtiovarainministeriössä",
+        "ID": 5
+      },
+      {
+        "Ministeri": "Skinnari, Jouko Juhani",
+        "Nimitetty": "9.10.1997",
+        "Eronnut": "15.4.1999",
+        "Puolue": "SDP",
+        "Rooli": "Ministeri valtiovarainministeriössä",
+        "ID": 5
+      },
+      {
+        "Ministeri": "Heinonen, Olli-Pekka",
+        "Nimitetty": "13.4.1995",
+        "Eronnut": "15.4.1999",
+        "Puolue": "Kokoomus",
+        "Rooli": "Opetusministeri",
+        "ID": 5
+      },
+      {
+        "Ministeri": "Andersson, Claes Johan Rudolf",
+        "Nimitetty": "13.4.1995",
+        "Eronnut": "4.9.1998",
+        "Puolue": "Vasemmistoliitto",
+        "Rooli": "Ministeri opetusministeriössä",
+        "ID": 5
+      },
+      {
+        "Ministeri": "Siimes, Suvi-Anne",
+        "Nimitetty": "4.9.1998",
+        "Eronnut": "15.4.1999",
+        "Puolue": "Vasemmistoliitto",
+        "Rooli": "Ministeri opetusministeriössä",
+        "ID": 5
+      },
+      {
+        "Ministeri": "Hemilä, Matti Kalevi",
+        "Nimitetty": "13.4.1995",
+        "Eronnut": "15.4.1999",
+        "Puolue": "ammatti/virkamies",
+        "Rooli": "Maa- ja metsätalousministeri",
+        "ID": 5
+      },
+      {
+        "Ministeri": "Linnainmaa, Tuula Maj-Lis",
+        "Nimitetty": "13.4.1995",
+        "Eronnut": "1.4.1997",
+        "Puolue": "Kokoomus",
+        "Rooli": "Liikenneministeri",
+        "ID": 5
+      },
+      {
+        "Ministeri": "Aura, Matti Ilmari",
+        "Nimitetty": "2.4.1997",
+        "Eronnut": "15.1.1999",
+        "Puolue": "Kokoomus",
+        "Rooli": "Liikenneministeri",
+        "ID": 5
+      },
+      {
+        "Ministeri": "Sasi, Kimmo Kalevi Immeri",
+        "Nimitetty": "15.1.1999",
+        "Eronnut": "15.4.1999",
+        "Puolue": "Kokoomus",
+        "Rooli": "Liikenneministeri",
+        "ID": 5
+      },
+      {
+        "Ministeri": "Kalliomäki, Antti Tapani",
+        "Nimitetty": "13.4.1995",
+        "Eronnut": "15.4.1999",
+        "Puolue": "SDP",
+        "Rooli": "Kauppa- ja teollisuusministeri",
+        "ID": 5
+      },
+      {
+        "Ministeri": "Norrback, Johan Ole",
+        "Nimitetty": "13.4.1995",
+        "Eronnut": "15.4.1999",
+        "Puolue": "RKP",
+        "Rooli": "Ministeri kauppa- ja teollisuusministeriössä",
+        "ID": 5
+      },
+      {
+        "Ministeri": "Mönkäre, Taru Sinikka",
+        "Nimitetty": "13.4.1995",
+        "Eronnut": "15.4.1999",
+        "Puolue": "SDP",
+        "Rooli": "Sosiaali- ja terveysministeri",
+        "ID": 5
+      },
+      {
+        "Ministeri": "Huttu-Juntunen, Terttu Aulikki",
+        "Nimitetty": "13.4.1995",
+        "Eronnut": "15.4.1999",
+        "Puolue": "Vasemmistoliitto",
+        "Rooli": "Ministeri sosiaali- ja terveysministeriössä",
+        "ID": 5
+      },
+      {
+        "Ministeri": "Alho, Arja Inkeri",
+        "Nimitetty": "28.4.1995",
+        "Eronnut": "9.10.1997",
+        "Puolue": "SDP",
+        "Rooli": "Ministeri sosiaali- ja terveysministeriössä",
+        "ID": 5
+      },
+      {
+        "Ministeri": "Skinnari, Jouko Juhani",
+        "Nimitetty": "9.10.1997",
+        "Eronnut": "15.4.1999",
+        "Puolue": "SDP",
+        "Rooli": "Ministeri sosiaali- ja terveysministeriössä",
+        "ID": 5
+      },
+      {
+        "Ministeri": "Jaakonsaari, Liisa Anneli",
+        "Nimitetty": "13.4.1995",
+        "Eronnut": "15.4.1999",
+        "Puolue": "SDP",
+        "Rooli": "Työministeri",
+        "ID": 5
+      },
+      {
+        "Ministeri": "Huttu-Juntunen, Terttu Aulikki",
+        "Nimitetty": "13.4.1995",
+        "Eronnut": "31.3.1997",
+        "Puolue": "Vasemmistoliitto",
+        "Rooli": "Ministeri työministeriössä",
+        "ID": 5
+      },
+      {
+        "Ministeri": "Haavisto, Pekka Olavi",
+        "Nimitetty": "13.4.1995",
+        "Eronnut": "15.4.1999",
+        "Puolue": "Vihreät",
+        "Rooli": "Ympäristöministeri",
+        "ID": 5
+      },
+      {
+        "Ministeri": "Mönkäre, Taru Sinikka",
+        "Nimitetty": "13.4.1995",
+        "Eronnut": "15.4.1999",
+        "Puolue": "SDP",
+        "Rooli": "Ministeri ympäristöministeriössä",
+        "ID": 5
+      },
+      {
+        "Ministeri": "Lipponen, Paavo Tapio",
+        "Nimitetty": "15.4.1999",
+        "Eronnut": "17.4.2003",
+        "Puolue": "SDP",
+        "Rooli": "Pääministeri",
+        "ID": 6
+      },
+      {
+        "Ministeri": "Niinistö, Sauli Väinämö",
+        "Nimitetty": "15.4.1999",
+        "Eronnut": "30.8.2001",
+        "Puolue": "Kokoomus",
+        "Rooli": "Pääministerin sijainen",
+        "ID": 6
+      },
+      {
+        "Ministeri": "Itälä, Ville Heimo Antero",
+        "Nimitetty": "31.8.2001",
+        "Eronnut": "17.4.2003",
+        "Puolue": "Kokoomus",
+        "Rooli": "Pääministerin sijainen",
+        "ID": 6
+      },
+      {
+        "Ministeri": "Sasi, Kimmo Kalevi Immeri",
+        "Nimitetty": "1.7.2000",
+        "Eronnut": "4.1.2002",
+        "Puolue": "Kokoomus",
+        "Rooli": "Ministeri valtioneuvoston kansliassa",
+        "ID": 6
+      },
+      {
+        "Ministeri": "Vilén, Jari Pekka Olavi",
+        "Nimitetty": "4.1.2002",
+        "Eronnut": "17.4.2003",
+        "Puolue": "Kokoomus",
+        "Rooli": "Ministeri valtioneuvoston kansliassa",
+        "ID": 6
+      },
+      {
+        "Ministeri": "Halonen, Tarja Kaarina",
+        "Nimitetty": "15.4.1999",
+        "Eronnut": "25.2.2000",
+        "Puolue": "SDP",
+        "Rooli": "Ulkoasiainministeri",
+        "ID": 6
+      },
+      {
+        "Ministeri": "Tuomioja, Erkki Sakari",
+        "Nimitetty": "25.2.2000",
+        "Eronnut": "17.4.2003",
+        "Puolue": "SDP",
+        "Rooli": "Ulkoasiainministeri",
+        "ID": 6
+      },
+      {
+        "Ministeri": "Sasi, Kimmo Kalevi Immeri",
+        "Nimitetty": "15.4.1999",
+        "Eronnut": "4.1.2002",
+        "Puolue": "Kokoomus",
+        "Rooli": "Ulkomaankauppaministeri",
+        "ID": 6
+      },
+      {
+        "Ministeri": "Vilén, Jari Pekka Olavi",
+        "Nimitetty": "4.1.2002",
+        "Eronnut": "17.4.2003",
+        "Puolue": "Kokoomus",
+        "Rooli": "Ulkomaankauppaministeri",
+        "ID": 6
+      },
+      {
+        "Ministeri": "Enestam, Jan-Erik",
+        "Nimitetty": "15.4.1999",
+        "Eronnut": "17.4.2003",
+        "Puolue": "RKP",
+        "Rooli": "Ministeri ulkoasiainministeriössä",
+        "ID": 6
+      },
+      {
+        "Ministeri": "Hassi, Satu Maijastiina",
+        "Nimitetty": "15.4.1999",
+        "Eronnut": "31.5.2002",
+        "Puolue": "Vihreät",
+        "Rooli": "Ministeri ulkoasiainministeriössä",
+        "ID": 6
+      },
+      {
+        "Ministeri": "Siimes, Suvi-Anne",
+        "Nimitetty": "31.5.2002",
+        "Eronnut": "17.4.2003",
+        "Puolue": "Vasemmistoliitto",
+        "Rooli": "Ministeri ulkoasiainministeriössä",
+        "ID": 6
+      },
+      {
+        "Ministeri": "Koskinen, Hannu Erkki Johannes",
+        "Nimitetty": "15.4.1999",
+        "Eronnut": "17.4.2003",
+        "Puolue": "SDP",
+        "Rooli": "Oikeusministeri",
+        "ID": 6
+      },
+      {
+        "Ministeri": "Häkämies, Kari Pekka",
+        "Nimitetty": "15.4.1999",
+        "Eronnut": "1.9.2000",
+        "Puolue": "Kokoomus",
+        "Rooli": "Sisäasiainministeri",
+        "ID": 6
+      },
+      {
+        "Ministeri": "Itälä, Ville Heimo Antero",
+        "Nimitetty": "1.9.2000",
+        "Eronnut": "17.4.2003",
+        "Puolue": "Kokoomus",
+        "Rooli": "Sisäasiainministeri",
+        "ID": 6
+      },
+      {
+        "Ministeri": "Korhonen, Martti Allan",
+        "Nimitetty": "15.4.1999",
+        "Eronnut": "17.4.2003",
+        "Puolue": "Vasemmistoliitto",
+        "Rooli": "Alue- ja kuntaministeri",
+        "ID": 6
+      },
+      {
+        "Ministeri": "Enestam, Jan-Erik",
+        "Nimitetty": "15.4.1999",
+        "Eronnut": "17.4.2003",
+        "Puolue": "RKP",
+        "Rooli": "Puolustusministeri",
+        "ID": 6
+      },
+      {
+        "Ministeri": "Niinistö, Sauli Väinämö",
+        "Nimitetty": "15.4.1999",
+        "Eronnut": "17.4.2003",
+        "Puolue": "Kokoomus",
+        "Rooli": "Valtionvarainministeri",
+        "ID": 6
+      },
+      {
+        "Ministeri": "Siimes, Suvi-Anne",
+        "Nimitetty": "15.4.1999",
+        "Eronnut": "17.4.2003",
+        "Puolue": "Vasemmistoliitto",
+        "Rooli": "Ministeri valtiovarainministeriössä",
+        "ID": 6
+      },
+      {
+        "Ministeri": "Rask, Maija-Liisa",
+        "Nimitetty": "15.4.1999",
+        "Eronnut": "17.4.2003",
+        "Puolue": "SDP",
+        "Rooli": "Opetusministeri",
+        "ID": 6
+      },
+      {
+        "Ministeri": "Lindén, Suvi Helmi Tellervo",
+        "Nimitetty": "15.4.1999",
+        "Eronnut": "5.6.2002",
+        "Puolue": "Kokoomus",
+        "Rooli": "Kulttuuriministeri",
+        "ID": 6
+      },
+      {
+        "Ministeri": "Dromberg, Ritva Kaarina",
+        "Nimitetty": "5.6.2002",
+        "Eronnut": "17.4.2003",
+        "Puolue": "Kokoomus",
+        "Rooli": "Kulttuuriministeri",
+        "ID": 6
+      },
+      {
+        "Ministeri": "Hemilä, Matti Kalevi",
+        "Nimitetty": "15.4.1999",
+        "Eronnut": "1.2.2002",
+        "Puolue": "ammatti/virkamies",
+        "Rooli": "Maa- ja metsätalousministeri",
+        "ID": 6
+      },
+      {
+        "Ministeri": "Tammilehto, Raimo Kauko Juhani",
+        "Nimitetty": "1.2.2002",
+        "Eronnut": "31.5.2002",
+        "Puolue": "ammatti/virkamies",
+        "Rooli": "Maa- ja metsätalousministeri",
+        "ID": 6
+      },
+      {
+        "Ministeri": "Koskinen, Jari Antero",
+        "Nimitetty": "31.5.2002",
+        "Eronnut": "17.4.2003",
+        "Puolue": "Kokoomus",
+        "Rooli": "Maa- ja metsätalousministeri",
+        "ID": 6
+      },
+      {
+        "Ministeri": "Heinonen, Olli-Pekka",
+        "Nimitetty": "15.4.1999",
+        "Eronnut": "1.9.2000",
+        "Puolue": "Kokoomus",
+        "Rooli": "Liikenneministeri",
+        "ID": 6
+      },
+      {
+        "Ministeri": "Heinonen, Olli-Pekka",
+        "Nimitetty": "1.9.2000",
+        "Eronnut": "4.1.2002",
+        "Puolue": "Kokoomus",
+        "Rooli": "Liikenne- ja viestintäministeri",
+        "ID": 6
+      },
+      {
+        "Ministeri": "Sasi, Kimmo Kalevi Immeri",
+        "Nimitetty": "4.1.2002",
+        "Eronnut": "17.4.2003",
+        "Puolue": "Kokoomus",
+        "Rooli": "Liikenne- ja viestintäministeri",
+        "ID": 6
+      },
+      {
+        "Ministeri": "Tuomioja, Erkki Sakari",
+        "Nimitetty": "15.4.1999",
+        "Eronnut": "25.2.2000",
+        "Puolue": "SDP",
+        "Rooli": "Kauppa- ja teollisuusministeri",
+        "ID": 6
+      },
+      {
+        "Ministeri": "Mönkäre, Taru Sinikka",
+        "Nimitetty": "25.2.2000",
+        "Eronnut": "17.4.2003",
+        "Puolue": "SDP",
+        "Rooli": "Kauppa- ja teollisuusministeri",
+        "ID": 6
+      },
+      {
+        "Ministeri": "Sasi, Kimmo Kalevi Immeri",
+        "Nimitetty": "15.4.1999",
+        "Eronnut": "4.1.2002",
+        "Puolue": "Kokoomus",
+        "Rooli": "Ministeri kauppa- ja teollisuusministeriössä",
+        "ID": 6
+      },
+      {
+        "Ministeri": "Vilén, Jari Pekka Olavi",
+        "Nimitetty": "4.1.2002",
+        "Eronnut": "17.4.2003",
+        "Puolue": "Kokoomus",
+        "Rooli": "Ministeri kauppa- ja teollisuusministeriössä",
+        "ID": 6
+      },
+      {
+        "Ministeri": "Perho, Maija Riitta",
+        "Nimitetty": "15.4.1999",
+        "Eronnut": "17.4.2003",
+        "Puolue": "Kokoomus",
+        "Rooli": "Sosiaali- ja terveysministeri",
+        "ID": 6
+      },
+      {
+        "Ministeri": "Biaudet, Eva Rita Katarina",
+        "Nimitetty": "15.4.1999",
+        "Eronnut": "14.4.2000",
+        "Puolue": "RKP",
+        "Rooli": "Peruspalveluministeri",
+        "ID": 6
+      },
+      {
+        "Ministeri": "Soininvaara, Osmo Heikki Kristian",
+        "Nimitetty": "14.4.2000",
+        "Eronnut": "19.4.2002",
+        "Puolue": "Vihreät",
+        "Rooli": "Peruspalveluministeri",
+        "ID": 6
+      },
+      {
+        "Ministeri": "Biaudet, Eva Rita Katarina",
+        "Nimitetty": "19.4.2002",
+        "Eronnut": "17.4.2003",
+        "Puolue": "RKP",
+        "Rooli": "Peruspalveluministeri",
+        "ID": 6
+      },
+      {
+        "Ministeri": "Mönkäre, Taru Sinikka",
+        "Nimitetty": "15.4.1999",
+        "Eronnut": "25.2.2000",
+        "Puolue": "SDP",
+        "Rooli": "Työministeri",
+        "ID": 6
+      },
+      {
+        "Ministeri": "Filatov, Tarja Katarina",
+        "Nimitetty": "25.2.2000",
+        "Eronnut": "17.4.2003",
+        "Puolue": "SDP",
+        "Rooli": "Työministeri",
+        "ID": 6
+      },
+      {
+        "Ministeri": "Hassi, Satu Maijastiina",
+        "Nimitetty": "15.4.1999",
+        "Eronnut": "31.5.2002",
+        "Puolue": "Vihreät",
+        "Rooli": "Ympäristöministeri",
+        "ID": 6
+      },
+      {
+        "Ministeri": "Backman, Jouni Ensio",
+        "Nimitetty": "31.5.2002",
+        "Eronnut": "17.4.2003",
+        "Puolue": "SDP",
+        "Rooli": "Ympäristöministeri",
+        "ID": 6
+      },
+      {
+        "Ministeri": "Siimes, Suvi-Anne",
+        "Nimitetty": "15.4.1999",
+        "Eronnut": "17.4.2003",
+        "Puolue": "Vasemmistoliitto",
+        "Rooli": "Ministeri ympäristöministeriössä",
+        "ID": 6
+      },
+      {
+        "Ministeri": "Jäätteenmäki, Anneli Tuulikki",
+        "Nimitetty": "17.4.2003",
+        "Eronnut": "24.6.2003",
+        "Puolue": "Keskusta",
+        "Rooli": "Pääministeri",
+        "ID": 7
+      },
+      {
+        "Ministeri": "Kalliomäki, Antti Tapani",
+        "Nimitetty": "17.4.2003",
+        "Eronnut": "24.6.2003",
+        "Puolue": "SDP",
+        "Rooli": "Pääministerin sijainen",
+        "ID": 7
+      },
+      {
+        "Ministeri": "Lehtomäki, Paula Ilona",
+        "Nimitetty": "17.4.2003",
+        "Eronnut": "24.6.2003",
+        "Puolue": "Keskusta",
+        "Rooli": "Ministeri valtioneuvoston kansliassa",
+        "ID": 7
+      },
+      {
+        "Ministeri": "Tuomioja, Erkki Sakari",
+        "Nimitetty": "17.4.2003",
+        "Eronnut": "24.6.2003",
+        "Puolue": "SDP",
+        "Rooli": "Ulkoasiainministeri",
+        "ID": 7
+      },
+      {
+        "Ministeri": "Lehtomäki, Paula Ilona",
+        "Nimitetty": "17.4.2003",
+        "Eronnut": "24.6.2003",
+        "Puolue": "Keskusta",
+        "Rooli": "Ulkomaankauppa- ja kehitysministeri",
+        "ID": 7
+      },
+      {
+        "Ministeri": "Enestam, Jan-Erik",
+        "Nimitetty": "17.4.2003",
+        "Eronnut": "24.6.2003",
+        "Puolue": "RKP",
+        "Rooli": "Ministeri ulkoasiainministeriössä",
+        "ID": 7
+      },
+      {
+        "Ministeri": "Koskinen, Hannu Erkki Johannes",
+        "Nimitetty": "17.4.2003",
+        "Eronnut": "24.6.2003",
+        "Puolue": "SDP",
+        "Rooli": "Oikeusministeri",
+        "ID": 7
+      },
+      {
+        "Ministeri": "Rajamäki, Kari Juhani",
+        "Nimitetty": "17.4.2003",
+        "Eronnut": "24.6.2003",
+        "Puolue": "SDP",
+        "Rooli": "Sisäasiainministeri",
+        "ID": 7
+      },
+      {
+        "Ministeri": "Manninen, Hannes",
+        "Nimitetty": "17.4.2003",
+        "Eronnut": "24.6.2003",
+        "Puolue": "Keskusta",
+        "Rooli": "Alue- ja kuntaministeri",
+        "ID": 7
+      },
+      {
+        "Ministeri": "Vanhanen, Matti Taneli",
+        "Nimitetty": "17.4.2003",
+        "Eronnut": "24.6.2003",
+        "Puolue": "Keskusta",
+        "Rooli": "Puolustusministeri",
+        "ID": 7
+      },
+      {
+        "Ministeri": "Kalliomäki, Antti Tapani",
+        "Nimitetty": "17.4.2003",
+        "Eronnut": "24.6.2003",
+        "Puolue": "SDP",
+        "Rooli": "Valtiovarainministeri",
+        "ID": 7
+      },
+      {
+        "Ministeri": "Wideroos, Cecilia Ulla-Maj",
+        "Nimitetty": "17.4.2003",
+        "Eronnut": "24.6.2003",
+        "Puolue": "RKP",
+        "Rooli": "Toinen valtiovarainministeri",
+        "ID": 7
+      },
+      {
+        "Ministeri": "Haatainen, Tuula Irmeli",
+        "Nimitetty": "17.4.2003",
+        "Eronnut": "24.6.2003",
+        "Puolue": "SDP",
+        "Rooli": "Opetusministeri",
+        "ID": 7
+      },
+      {
+        "Ministeri": "Saarela, Tanja Tellervo",
+        "Nimitetty": "17.4.2003",
+        "Eronnut": "24.6.2003",
+        "Puolue": "Keskusta",
+        "Rooli": "Kulttuuriministeri",
+        "ID": 7
+      },
+      {
+        "Ministeri": "Korkeaoja, Juha Sakari",
+        "Nimitetty": "17.4.2003",
+        "Eronnut": "24.6.2003",
+        "Puolue": "Keskusta",
+        "Rooli": "Maa- ja metsätalousministeri",
+        "ID": 7
+      },
+      {
+        "Ministeri": "Luhtanen, Leena Marjatta",
+        "Nimitetty": "17.4.2003",
+        "Eronnut": "24.6.2003",
+        "Puolue": "SDP",
+        "Rooli": "Liikenne- ja viestintäministeri",
+        "ID": 7
+      },
+      {
+        "Ministeri": "Pekkarinen, Reijo Mauri Matias",
+        "Nimitetty": "17.4.2003",
+        "Eronnut": "24.6.2003",
+        "Puolue": "Keskusta",
+        "Rooli": "Kauppa- ja teollisuusministeri",
+        "ID": 7
+      },
+      {
+        "Ministeri": "Lehtomäki, Paula Ilona",
+        "Nimitetty": "17.4.2003",
+        "Eronnut": "24.6.2003",
+        "Puolue": "Keskusta",
+        "Rooli": "Ministeri kauppa- ja teollisuusministeriössä",
+        "ID": 7
+      },
+      {
+        "Ministeri": "Mönkäre, Taru Sinikka",
+        "Nimitetty": "17.4.2003",
+        "Eronnut": "24.6.2003",
+        "Puolue": "SDP",
+        "Rooli": "Sosiaali- ja terveysministeri",
+        "ID": 7
+      },
+      {
+        "Ministeri": "Hyssälä, Liisa Marja",
+        "Nimitetty": "17.4.2003",
+        "Eronnut": "24.6.2003",
+        "Puolue": "Keskusta",
+        "Rooli": "Peruspalveluministeri",
+        "ID": 7
+      },
+      {
+        "Ministeri": "Filatov, Tarja Katarina",
+        "Nimitetty": "17.4.2003",
+        "Eronnut": "24.6.2003",
+        "Puolue": "SDP",
+        "Rooli": "Työministeri",
+        "ID": 7
+      },
+      {
+        "Ministeri": "Enestam, Jan-Erik",
+        "Nimitetty": "17.4.2003",
+        "Eronnut": "24.6.2003",
+        "Puolue": "RKP",
+        "Rooli": "Ympäristöministeri",
+        "ID": 7
+      },
+      {
+        "Ministeri": "Manninen, Hannes",
+        "Nimitetty": "17.4.2003",
+        "Eronnut": "24.6.2003",
+        "Puolue": "Keskusta",
+        "Rooli": "Ministeri ympäristöministeriössä",
+        "ID": 7
+      },
+      {
+        "Ministeri": "Vanhanen, Matti Taneli",
+        "Nimitetty": "24.6.2003",
+        "Eronnut": "19.4.2007",
+        "Puolue": "Keskusta",
+        "Rooli": "Pääministeri",
+        "ID": 8
+      },
+      {
+        "Ministeri": "Kalliomäki, Antti Tapani",
+        "Nimitetty": "24.6.2003",
+        "Eronnut": "23.9.2005",
+        "Puolue": "SDP",
+        "Rooli": "Pääministerin sijainen",
+        "ID": 8
+      },
+      {
+        "Ministeri": "Heinäluoma, Eero Olavi",
+        "Nimitetty": "23.9.2005",
+        "Eronnut": "19.4.2007",
+        "Puolue": "SDP",
+        "Rooli": "Pääministerin sijainen",
+        "ID": 8
+      },
+      {
+        "Ministeri": "Lehtomäki, Paula Ilona",
+        "Nimitetty": "24.6.2003",
+        "Eronnut": "2.9.2005",
+        "Puolue": "Keskusta",
+        "Rooli": "Ministeri valtioneuvoston kansliassa",
+        "ID": 8
+      },
+      {
+        "Ministeri": "Kiviniemi, Mari Johanna",
+        "Nimitetty": "2.9.2005",
+        "Eronnut": "3.3.2006",
+        "Puolue": "Keskusta",
+        "Rooli": "Ministeri valtioneuvoston kansliassa",
+        "ID": 8
+      },
+      {
+        "Ministeri": "Lehtomäki, Paula Ilona",
+        "Nimitetty": "3.3.2006",
+        "Eronnut": "19.4.2007",
+        "Puolue": "Keskusta",
+        "Rooli": "Ministeri valtioneuvoston kansliassa",
+        "ID": 8
+      },
+      {
+        "Ministeri": "Tuomioja, Erkki Sakari",
+        "Nimitetty": "24.6.2003",
+        "Eronnut": "19.4.2007",
+        "Puolue": "SDP",
+        "Rooli": "Ulkoasiainministeri",
+        "ID": 8
+      },
+      {
+        "Ministeri": "Lehtomäki, Paula Ilona",
+        "Nimitetty": "24.6.2003",
+        "Eronnut": "2.9.2005",
+        "Puolue": "Keskusta",
+        "Rooli": "Ulkomaankauppa- ja kehitysministeri",
+        "ID": 8
+      },
+      {
+        "Ministeri": "Kiviniemi, Mari Johanna",
+        "Nimitetty": "2.9.2005",
+        "Eronnut": "3.3.2006",
+        "Puolue": "Keskusta",
+        "Rooli": "Ulkomaankauppa- ja kehitysministeri",
+        "ID": 8
+      },
+      {
+        "Ministeri": "Lehtomäki, Paula Ilona",
+        "Nimitetty": "3.3.2006",
+        "Eronnut": "19.4.2007",
+        "Puolue": "Keskusta",
+        "Rooli": "Ulkomaankauppa ja kehitysministeri",
+        "ID": 8
+      },
+      {
+        "Ministeri": "Enestam, Jan-Erik",
+        "Nimitetty": "24.6.2003",
+        "Eronnut": "31.12.2006",
+        "Puolue": "RKP",
+        "Rooli": "Ministeri ulkoasiainministeriössä",
+        "ID": 8
+      },
+      {
+        "Ministeri": "Wallin, Stefan Erik",
+        "Nimitetty": "1.1.2007",
+        "Eronnut": "19.4.2007",
+        "Puolue": "RKP",
+        "Rooli": "Ministeri ulkoasiainministeriössä",
+        "ID": 8
+      },
+      {
+        "Ministeri": "Koskinen, Hannu Erkki Johannes",
+        "Nimitetty": "24.6.2003",
+        "Eronnut": "23.9.2005",
+        "Puolue": "SDP",
+        "Rooli": "Oikeusministeri",
+        "ID": 8
+      },
+      {
+        "Ministeri": "Luhtanen, Leena Marjatta",
+        "Nimitetty": "23.9.2005",
+        "Eronnut": "19.4.2007",
+        "Puolue": "SDP",
+        "Rooli": "Oikeusministeri",
+        "ID": 8
+      },
+      {
+        "Ministeri": "Rajamäki, Kari Juhani",
+        "Nimitetty": "24.6.2003",
+        "Eronnut": "19.4.2007",
+        "Puolue": "SDP",
+        "Rooli": "Sisäasiainministeri",
+        "ID": 8
+      },
+      {
+        "Ministeri": "Manninen, Hannes",
+        "Nimitetty": "24.6.2003",
+        "Eronnut": "19.4.2007",
+        "Puolue": "Keskusta",
+        "Rooli": "Alue- ja kuntaministeri",
+        "ID": 8
+      },
+      {
+        "Ministeri": "Kääriäinen, Seppo Arimo",
+        "Nimitetty": "24.6.2003",
+        "Eronnut": "19.4.2007",
+        "Puolue": "Keskusta",
+        "Rooli": "Puolustusministeri",
+        "ID": 8
+      },
+      {
+        "Ministeri": "Kalliomäki, Antti Tapani",
+        "Nimitetty": "24.6.2003",
+        "Eronnut": "23.9.2005",
+        "Puolue": "SDP",
+        "Rooli": "Valtiovarainministeri",
+        "ID": 8
+      },
+      {
+        "Ministeri": "Heinäluoma, Eero Olavi",
+        "Nimitetty": "23.9.2005",
+        "Eronnut": "19.4.2007",
+        "Puolue": "SDP",
+        "Rooli": "Valtiovarainministeri",
+        "ID": 8
+      },
+      {
+        "Ministeri": "Wideroos, Cecilia Ulla-Maj",
+        "Nimitetty": "24.6.2003",
+        "Eronnut": "19.4.2007",
+        "Puolue": "RKP",
+        "Rooli": "Toinen valtiovarainministeri",
+        "ID": 8
+      },
+      {
+        "Ministeri": "Haatainen, Tuula Irmeli",
+        "Nimitetty": "24.6.2003",
+        "Eronnut": "23.9.2005",
+        "Puolue": "SDP",
+        "Rooli": "Opetusministeri",
+        "ID": 8
+      },
+      {
+        "Ministeri": "Kalliomäki, Antti Tapani",
+        "Nimitetty": "23.9.2005",
+        "Eronnut": "19.4.2007",
+        "Puolue": "SDP",
+        "Rooli": "Opetusministeri",
+        "ID": 8
+      },
+      {
+        "Ministeri": "Saarela, Tanja Tellervo",
+        "Nimitetty": "24.6.2003",
+        "Eronnut": "19.4.2007",
+        "Puolue": "Keskusta",
+        "Rooli": "Kulttuuriministeri",
+        "ID": 8
+      },
+      {
+        "Ministeri": "Korkeaoja, Juha Sakari",
+        "Nimitetty": "24.6.2003",
+        "Eronnut": "19.4.2007",
+        "Puolue": "Keskusta",
+        "Rooli": "Maa- ja metsätalousministeri",
+        "ID": 8
+      },
+      {
+        "Ministeri": "Luhtanen, Leena Marjatta",
+        "Nimitetty": "24.6.2003",
+        "Eronnut": "23.9.2005",
+        "Puolue": "SDP",
+        "Rooli": "Liikenne- ja viestintäministeri",
+        "ID": 8
+      },
+      {
+        "Ministeri": "Huovinen, Krista Anri Susanna",
+        "Nimitetty": "23.9.2005",
+        "Eronnut": "19.4.2007",
+        "Puolue": "SDP",
+        "Rooli": "Liikenne- ja viestintäministeri",
+        "ID": 8
+      },
+      {
+        "Ministeri": "Pekkarinen, Reijo Mauri Matias",
+        "Nimitetty": "24.6.2003",
+        "Eronnut": "19.4.2007",
+        "Puolue": "Keskusta",
+        "Rooli": "Kauppa- ja teollisuusministeri",
+        "ID": 8
+      },
+      {
+        "Ministeri": "Mönkäre, Taru Sinikka",
+        "Nimitetty": "24.6.2003",
+        "Eronnut": "23.9.2005",
+        "Puolue": "SDP",
+        "Rooli": "Sosiaali- ja terveysministeri",
+        "ID": 8
+      },
+      {
+        "Ministeri": "Haatainen, Tuula Irmeli",
+        "Nimitetty": "23.9.2005",
+        "Eronnut": "19.4.2007",
+        "Puolue": "SDP",
+        "Rooli": "Sosiaali- ja terveysministeri",
+        "ID": 8
+      },
+      {
+        "Ministeri": "Hyssälä, Liisa Marja",
+        "Nimitetty": "24.6.2003",
+        "Eronnut": "19.4.2007",
+        "Puolue": "Keskusta",
+        "Rooli": "Peruspalveluministeri",
+        "ID": 8
+      },
+      {
+        "Ministeri": "Filatov, Tarja Katarina",
+        "Nimitetty": "24.6.2003",
+        "Eronnut": "19.4.2007",
+        "Puolue": "SDP",
+        "Rooli": "Työministeri",
+        "ID": 8
+      },
+      {
+        "Ministeri": "Enestam, Jan-Erik",
+        "Nimitetty": "24.6.2003",
+        "Eronnut": "31.12.2006",
+        "Puolue": "RKP",
+        "Rooli": "Ympäristöministeri",
+        "ID": 8
+      },
+      {
+        "Ministeri": "Wallin, Stefan Erik",
+        "Nimitetty": "1.1.2007",
+        "Eronnut": "19.4.2007",
+        "Puolue": "RKP",
+        "Rooli": "Ympäristöministeri",
+        "ID": 8
+      },
+      {
+        "Ministeri": "Manninen, Hannes",
+        "Nimitetty": "24.6.2003",
+        "Eronnut": "19.4.2007",
+        "Puolue": "Keskusta",
+        "Rooli": "Ministeri ympäristöministeriössä",
+        "ID": 8
+      },
+      {
+        "Ministeri": "Vanhanen, Matti Taneli",
+        "Nimitetty": "19.4.2007",
+        "Eronnut": "22.6.2010",
+        "Puolue": "Keskusta",
+        "Rooli": "Pääministeri",
+        "ID": 9
+      },
+      {
+        "Ministeri": "Katainen, Jyrki Tapani",
+        "Nimitetty": "19.4.2007",
+        "Eronnut": "22.6.2010",
+        "Puolue": "Kokoomus",
+        "Rooli": "Pääministerin sijainen",
+        "ID": 9
+      },
+      {
+        "Ministeri": "Thors, Astrid Gunilla Margareta",
+        "Nimitetty": "19.4.2007",
+        "Eronnut": "22.6.2010",
+        "Puolue": "RKP",
+        "Rooli": "Ministeri valtioneuvoston kansliassa",
+        "ID": 9
+      },
+      {
+        "Ministeri": "Häkämies, Jyri Jukka",
+        "Nimitetty": "1.5.2007",
+        "Eronnut": "22.6.2010",
+        "Puolue": "Kokoomus",
+        "Rooli": "Ministeri valtioneuvoston kansliassa",
+        "ID": 9
+      },
+      {
+        "Ministeri": "Vapaavuori, Jan Pellervo",
+        "Nimitetty": "30.3.2010",
+        "Eronnut": "22.6.2010",
+        "Puolue": "Kokoomus",
+        "Rooli": "Ministeri valtioneuvoston kansliassa",
+        "ID": 9
+      },
+      {
+        "Ministeri": "Kanerva, Ilkka Armas Mikael",
+        "Nimitetty": "19.4.2007",
+        "Eronnut": "4.4.2008",
+        "Puolue": "Kokoomus",
+        "Rooli": "Ulkoasiainministeri",
+        "ID": 9
+      },
+      {
+        "Ministeri": "Stubb, Cai-Göran Alexander",
+        "Nimitetty": "4.4.2008",
+        "Eronnut": "22.6.2010",
+        "Puolue": "Kokoomus",
+        "Rooli": "Ulkoasiainministeri",
+        "ID": 9
+      },
+      {
+        "Ministeri": "Väyrynen, Paavo Matti",
+        "Nimitetty": "19.4.2007",
+        "Eronnut": "22.6.2010",
+        "Puolue": "Keskusta",
+        "Rooli": "Ulkomankauppa- ja kehitysministeri",
+        "ID": 9
+      },
+      {
+        "Ministeri": "Vapaavuori, Jan Pellervo",
+        "Nimitetty": "1.6.2007",
+        "Eronnut": "22.6.2010",
+        "Puolue": "Kokoomus",
+        "Rooli": "Ministeri ulkoasiainministeriössä",
+        "ID": 9
+      },
+      {
+        "Ministeri": "Brax, Tuija Kaarina",
+        "Nimitetty": "19.4.2007",
+        "Eronnut": "22.6.2010",
+        "Puolue": "Vihreät",
+        "Rooli": "Oikeusministeri",
+        "ID": 9
+      },
+      {
+        "Ministeri": "Thors, Astrid Gunilla Margareta",
+        "Nimitetty": "19.4.2007",
+        "Eronnut": "22.6.2010",
+        "Puolue": "RKP",
+        "Rooli": "Ministeri oikeusministeriössä",
+        "ID": 9
+      },
+      {
+        "Ministeri": "Holmlund, Anne Elisabeth",
+        "Nimitetty": "19.4.2007",
+        "Eronnut": "22.6.2010",
+        "Puolue": "Kokoomus",
+        "Rooli": "Sisäasiainministeri",
+        "ID": 9
+      },
+      {
+        "Ministeri": "Thors, Astrid Gunilla Margareta",
+        "Nimitetty": "19.4.2007",
+        "Eronnut": "22.6.2010",
+        "Puolue": "RKP",
+        "Rooli": "Maahanmuutto- ja eurooppaministeri",
+        "ID": 9
+      },
+      {
+        "Ministeri": "Kiviniemi, Mari Johanna",
+        "Nimitetty": "19.4.2007",
+        "Eronnut": "1.1.2008",
+        "Puolue": "Keskusta",
+        "Rooli": "Ministeri sisäasiainministeriössä",
+        "ID": 9
+      },
+      {
+        "Ministeri": "Pekkarinen, Reijo Mauri Matias",
+        "Nimitetty": "19.4.2007",
+        "Eronnut": "1.1.2008",
+        "Puolue": "Keskusta",
+        "Rooli": "Ministeri sisäasiainministeriössä",
+        "ID": 9
+      },
+      {
+        "Ministeri": "Häkämies, Jyri Jukka",
+        "Nimitetty": "19.4.2007",
+        "Eronnut": "22.6.2010",
+        "Puolue": "Kokoomus",
+        "Rooli": "Puolustusministeri",
+        "ID": 9
+      },
+      {
+        "Ministeri": "Katainen, Jyrki Tapani",
+        "Nimitetty": "19.4.2007",
+        "Eronnut": "22.6.2010",
+        "Puolue": "Kokoomus",
+        "Rooli": "Valtiovarainministeri",
+        "ID": 9
+      },
+      {
+        "Ministeri": "Kiviniemi, Mari Johanna",
+        "Nimitetty": "19.4.2007",
+        "Eronnut": "22.6.2010",
+        "Puolue": "Keskusta",
+        "Rooli": "Hallinto- ja kuntaministeri",
+        "ID": 9
+      },
+      {
+        "Ministeri": "Sarkomaa, Sari Johanna",
+        "Nimitetty": "19.4.2007",
+        "Eronnut": "19.12.2008",
+        "Puolue": "Kokoomus",
+        "Rooli": "Opetusministeri",
+        "ID": 9
+      },
+      {
+        "Ministeri": "Virkkunen, Henna Maria",
+        "Nimitetty": "19.12.2008",
+        "Eronnut": "1.5.2010",
+        "Puolue": "Kokoomus",
+        "Rooli": "Opetusministeri",
+        "ID": 9
+      },
+      {
+        "Ministeri": "Virkkunen, Henna Maria",
+        "Nimitetty": "1.5.2010",
+        "Eronnut": "22.6.2010",
+        "Puolue": "Kokoomus",
+        "Rooli": "Opetusministeri",
+        "ID": 9
+      },
+      {
+        "Ministeri": "Wallin, Stefan Erik",
+        "Nimitetty": "19.4.2007",
+        "Eronnut": "1.5.2010",
+        "Puolue": "RKP",
+        "Rooli": "Kulttuuri- ja urheiluministeri",
+        "ID": 9
+      },
+      {
+        "Ministeri": "Wallin, Stefan Erik",
+        "Nimitetty": "1.5.2010",
+        "Eronnut": "22.6.2010",
+        "Puolue": "RKP",
+        "Rooli": "Kulttuuri- ja urheiluministeri",
+        "ID": 9
+      },
+      {
+        "Ministeri": "Anttila, Sirkka-Liisa",
+        "Nimitetty": "19.4.2007",
+        "Eronnut": "22.6.2010",
+        "Puolue": "Keskusta",
+        "Rooli": "Maa- ja metsätalousministeri",
+        "ID": 9
+      },
+      {
+        "Ministeri": "Vehviläinen, Anu Helena",
+        "Nimitetty": "19.4.2007",
+        "Eronnut": "22.6.2010",
+        "Puolue": "Keskusta",
+        "Rooli": "Liikenneministeri",
+        "ID": 9
+      },
+      {
+        "Ministeri": "Lindén, Suvi Helmi Tellervo",
+        "Nimitetty": "19.4.2007",
+        "Eronnut": "22.6.2010",
+        "Puolue": "Kokoomus",
+        "Rooli": "Viestintäministeri",
+        "ID": 9
+      },
+      {
+        "Ministeri": "Pekkarinen, Reijo Mauri Matias",
+        "Nimitetty": "19.4.2007",
+        "Eronnut": "1.1.2008",
+        "Puolue": "Keskusta",
+        "Rooli": "Kauppa- ja teollisuusministeri",
+        "ID": 9
+      },
+      {
+        "Ministeri": "Pekkarinen, Reijo Mauri Matias",
+        "Nimitetty": "1.1.2008",
+        "Eronnut": "22.6.2010",
+        "Puolue": "Keskusta",
+        "Rooli": "Elinkeinoministeri",
+        "ID": 9
+      },
+      {
+        "Ministeri": "Hyssälä, Liisa Marja",
+        "Nimitetty": "19.4.2007",
+        "Eronnut": "24.5.2010",
+        "Puolue": "Keskusta",
+        "Rooli": "Sosiaali- ja terveysministeri",
+        "ID": 9
+      },
+      {
+        "Ministeri": "Rehula, Juha Tapani",
+        "Nimitetty": "24.5.2010",
+        "Eronnut": "22.6.2010",
+        "Puolue": "Keskusta",
+        "Rooli": "Sosiaali- ja terveysministeri",
+        "ID": 9
+      },
+      {
+        "Ministeri": "Risikko, Paula Sinikka",
+        "Nimitetty": "19.4.2007",
+        "Eronnut": "22.6.2010",
+        "Puolue": "Kokoomus",
+        "Rooli": "Peruspalveluministeri",
+        "ID": 9
+      },
+      {
+        "Ministeri": "Wallin, Stefan Erik",
+        "Nimitetty": "19.4.2007",
+        "Eronnut": "22.6.2010",
+        "Puolue": "RKP",
+        "Rooli": "Ministeri sosiaali- ja terveysministeriössä",
+        "ID": 9
+      },
+      {
+        "Ministeri": "Cronberg, Tarja Anneli",
+        "Nimitetty": "19.4.2007",
+        "Eronnut": "1.1.2008",
+        "Puolue": "Vihreät",
+        "Rooli": "Työministeri",
+        "ID": 9
+      },
+      {
+        "Ministeri": "Cronberg, Tarja Anneli",
+        "Nimitetty": "1.1.2008",
+        "Eronnut": "26.6.2009",
+        "Puolue": "Vihreät",
+        "Rooli": "Työministeri",
+        "ID": 9
+      },
+      {
+        "Ministeri": "Sinnemäki, Anni Milja Maaria",
+        "Nimitetty": "26.6.2009",
+        "Eronnut": "22.6.2010",
+        "Puolue": "Vihreät",
+        "Rooli": "Työministeri",
+        "ID": 9
+      },
+      {
+        "Ministeri": "Hyssälä, Liisa Marja",
+        "Nimitetty": "19.4.2007",
+        "Eronnut": "1.1.2008",
+        "Puolue": "Keskusta",
+        "Rooli": "Ministeri työministeriössä",
+        "ID": 9
+      },
+      {
+        "Ministeri": "Thors, Astrid Gunilla Margareta",
+        "Nimitetty": "19.4.2007",
+        "Eronnut": "1.1.2008",
+        "Puolue": "RKP",
+        "Rooli": "Ministeri työministeriössä",
+        "ID": 9
+      },
+      {
+        "Ministeri": "Lehtomäki, Paula Ilona",
+        "Nimitetty": "19.4.2007",
+        "Eronnut": "28.9.2007",
+        "Puolue": "Keskusta",
+        "Rooli": "Ympäristöministeri",
+        "ID": 9
+      },
+      {
+        "Ministeri": "Tiilikainen, Kimmo Kalevi",
+        "Nimitetty": "28.9.2007",
+        "Eronnut": "11.4.2008",
+        "Puolue": "Keskusta",
+        "Rooli": "Ympäristöministeri",
+        "ID": 9
+      },
+      {
+        "Ministeri": "Lehtomäki, Paula Ilona",
+        "Nimitetty": "11.4.2008",
+        "Eronnut": "22.6.2010",
+        "Puolue": "Keskusta",
+        "Rooli": "Ympäristöministeri",
+        "ID": 9
+      },
+      {
+        "Ministeri": "Vapaavuori, Jan Pellervo",
+        "Nimitetty": "19.4.2007",
+        "Eronnut": "22.6.2010",
+        "Puolue": "Kokoomus",
+        "Rooli": "Asuntoministeri",
+        "ID": 9
+      },
+      {
+        "Ministeri": "Risikko, Paula Sinikka",
+        "Nimitetty": "19.4.2007",
+        "Eronnut": "1.1.2008",
+        "Puolue": "Kokoomus",
+        "Rooli": "Ministeri ympäristöministeriössä",
+        "ID": 9
+      },
+      {
+        "Ministeri": "Kiviniemi, Mari Johanna",
+        "Nimitetty": "22.6.2010",
+        "Eronnut": "22.6.2011",
+        "Puolue": "Keskusta",
+        "Rooli": "Pääministeri",
+        "ID": 10
+      },
+      {
+        "Ministeri": "Katainen, Jyrki Tapani",
+        "Nimitetty": "22.6.2010",
+        "Eronnut": "22.6.2011",
+        "Puolue": "Kokoomus",
+        "Rooli": "Pääministerin sijainen",
+        "ID": 10
+      },
+      {
+        "Ministeri": "Häkämies, Jyri Jukka",
+        "Nimitetty": "22.6.2010",
+        "Eronnut": "22.6.2011",
+        "Puolue": "Kokoomus",
+        "Rooli": "Ministeri valtioneuvoston kansliassa",
+        "ID": 10
+      },
+      {
+        "Ministeri": "Thors, Astrid Gunilla Margareta",
+        "Nimitetty": "22.6.2010",
+        "Eronnut": "22.6.2011",
+        "Puolue": "RKP",
+        "Rooli": "Ministeri valtioneuvoston kansliassa",
+        "ID": 10
+      },
+      {
+        "Ministeri": "Vapaavuori, Jan Pellervo",
+        "Nimitetty": "22.6.2010",
+        "Eronnut": "22.6.2011",
+        "Puolue": "Kokoomus",
+        "Rooli": "Ministeri valtioneuvoston kansliassa",
+        "ID": 10
+      },
+      {
+        "Ministeri": "Stubb, Cai-Göran Alexander",
+        "Nimitetty": "22.6.2010",
+        "Eronnut": "22.6.2011",
+        "Puolue": "Kokoomus",
+        "Rooli": "Ulkoasiainministeri",
+        "ID": 10
+      },
+      {
+        "Ministeri": "Väyrynen, Paavo Matti",
+        "Nimitetty": "22.6.2010",
+        "Eronnut": "22.6.2011",
+        "Puolue": "Keskusta",
+        "Rooli": "Ulkomaankauppa- ja kehitysministeri",
+        "ID": 10
+      },
+      {
+        "Ministeri": "Vapaavuori, Jan Pellervo",
+        "Nimitetty": "22.6.2010",
+        "Eronnut": "22.6.2011",
+        "Puolue": "Kokoomus",
+        "Rooli": "Ministeri ulkoasiainministeriössä",
+        "ID": 10
+      },
+      {
+        "Ministeri": "Brax, Tuija Kaarina",
+        "Nimitetty": "22.6.2010",
+        "Eronnut": "22.6.2011",
+        "Puolue": "Vihreät",
+        "Rooli": "Oikeusministeri",
+        "ID": 10
+      },
+      {
+        "Ministeri": "Thors, Astrid Gunilla Margareta",
+        "Nimitetty": "22.6.2010",
+        "Eronnut": "22.6.2011",
+        "Puolue": "RKP",
+        "Rooli": "Ministeri oikeusministeriössä",
+        "ID": 10
+      },
+      {
+        "Ministeri": "Holmlund, Anne Elisabeth",
+        "Nimitetty": "22.6.2010",
+        "Eronnut": "22.6.2011",
+        "Puolue": "Kokoomus",
+        "Rooli": "Sisäasiainministeri",
+        "ID": 10
+      },
+      {
+        "Ministeri": "Thors, Astrid Gunilla Margareta",
+        "Nimitetty": "22.6.2010",
+        "Eronnut": "22.6.2011",
+        "Puolue": "RKP",
+        "Rooli": "Maahanmuutto- ja eurooppaministeri",
+        "ID": 10
+      },
+      {
+        "Ministeri": "Häkämies, Jyri Jukka",
+        "Nimitetty": "22.6.2010",
+        "Eronnut": "22.6.2011",
+        "Puolue": "Kokoomus",
+        "Rooli": "Puolustusministeri",
+        "ID": 10
+      },
+      {
+        "Ministeri": "Katainen, Jyrki Tapani",
+        "Nimitetty": "22.6.2010",
+        "Eronnut": "22.6.2011",
+        "Puolue": "Kokoomus",
+        "Rooli": "Valtiovarainministeri",
+        "ID": 10
+      },
+      {
+        "Ministeri": "Tölli, Tapani Olavi",
+        "Nimitetty": "22.6.2010",
+        "Eronnut": "22.6.2011",
+        "Puolue": "Keskusta",
+        "Rooli": "Hallinto- ja kuntaministeri",
+        "ID": 10
+      },
+      {
+        "Ministeri": "Virkkunen, Henna Maria",
+        "Nimitetty": "22.6.2010",
+        "Eronnut": "22.6.2011",
+        "Puolue": "Kokoomus",
+        "Rooli": "Opetusministeri",
+        "ID": 10
+      },
+      {
+        "Ministeri": "Wallin, Stefan Erik",
+        "Nimitetty": "22.6.2010",
+        "Eronnut": "22.6.2011",
+        "Puolue": "RKP",
+        "Rooli": "Kulttuuri- ja urheiluministeri",
+        "ID": 10
+      },
+      {
+        "Ministeri": "Anttila, Sirkka-Liisa",
+        "Nimitetty": "22.6.2010",
+        "Eronnut": "22.6.2011",
+        "Puolue": "Keskusta",
+        "Rooli": "Maa- ja metsätalousministeri",
+        "ID": 10
+      },
+      {
+        "Ministeri": "Vehviläinen, Anu Helena",
+        "Nimitetty": "22.6.2010",
+        "Eronnut": "22.6.2011",
+        "Puolue": "Keskusta",
+        "Rooli": "Liikenneministeri",
+        "ID": 10
+      },
+      {
+        "Ministeri": "Lindén, Suvi Helmi Tellervo",
+        "Nimitetty": "22.6.2010",
+        "Eronnut": "22.6.2011",
+        "Puolue": "Kokoomus",
+        "Rooli": "Viestintäministeri",
+        "ID": 10
+      },
+      {
+        "Ministeri": "Pekkarinen, Reijo Mauri Matias",
+        "Nimitetty": "22.6.2010",
+        "Eronnut": "22.6.2011",
+        "Puolue": "Keskusta",
+        "Rooli": "Elinkeinoministeri",
+        "ID": 10
+      },
+      {
+        "Ministeri": "Sinnemäki, Anni Milja Maaria",
+        "Nimitetty": "22.6.2010",
+        "Eronnut": "22.6.2011",
+        "Puolue": "Vihreät",
+        "Rooli": "Työministeri",
+        "ID": 10
+      },
+      {
+        "Ministeri": "Rehula, Juha Tapani",
+        "Nimitetty": "22.6.2010",
+        "Eronnut": "22.6.2011",
+        "Puolue": "Keskusta",
+        "Rooli": "Sosiaali- ja terveysministeri",
+        "ID": 10
+      },
+      {
+        "Ministeri": "Risikko, Paula Sinikka",
+        "Nimitetty": "22.6.2010",
+        "Eronnut": "22.6.2011",
+        "Puolue": "Kokoomus",
+        "Rooli": "Peruspalveluministeri",
+        "ID": 10
+      },
+      {
+        "Ministeri": "Wallin, Stefan Erik",
+        "Nimitetty": "22.6.2010",
+        "Eronnut": "22.6.2011",
+        "Puolue": "RKP",
+        "Rooli": "Ministeri sosiaali- ja terveysministeriössä",
+        "ID": 10
+      },
+      {
+        "Ministeri": "Lehtomäki, Paula Ilona",
+        "Nimitetty": "22.6.2010",
+        "Eronnut": "22.6.2011",
+        "Puolue": "Keskusta",
+        "Rooli": "Ympäristöministeri",
+        "ID": 10
+      },
+      {
+        "Ministeri": "Vapaavuori, Jan Pellervo",
+        "Nimitetty": "22.6.2010",
+        "Eronnut": "22.6.2011",
+        "Puolue": "Kokoomus",
+        "Rooli": "Asuntoministeri",
+        "ID": 10
+      },
+      {
+        "Ministeri": "Katainen, Jyrki Tapani",
+        "Nimitetty": "22.6.2011",
+        "Eronnut": "24.6.2014",
+        "Puolue": "Kokoomus",
+        "Rooli": "Pääministeri",
+        "ID": 11
+      },
+      {
+        "Ministeri": "Urpilainen, Jutta Pauliina",
+        "Nimitetty": "22.6.2011",
+        "Eronnut": "6.6.2014",
+        "Puolue": "SDP",
+        "Rooli": "Pääministerin sijainen",
+        "ID": 11
+      },
+      {
+        "Ministeri": "Rinne, Antti Juhani",
+        "Nimitetty": "6.6.2014",
+        "Eronnut": "24.6.2014",
+        "Puolue": "SDP",
+        "Rooli": "Pääministerin sijainen",
+        "ID": 11
+      },
+      {
+        "Ministeri": "Tuomioja, Erkki Sakari",
+        "Nimitetty": "22.6.2011",
+        "Eronnut": "24.6.2014",
+        "Puolue": "SDP",
+        "Rooli": "Ulkoasiainministeri",
+        "ID": 11
+      },
+      {
+        "Ministeri": "Stubb, Cai-Göran Alexander",
+        "Nimitetty": "22.6.2011",
+        "Eronnut": "24.6.2014",
+        "Puolue": "Kokoomus",
+        "Rooli": "Eurooppa- ja ulkomaankauppaministeri",
+        "ID": 11
+      },
+      {
+        "Ministeri": "Hautala, Heidi Anneli",
+        "Nimitetty": "22.6.2011",
+        "Eronnut": "17.10.2013",
+        "Puolue": "Vihreät",
+        "Rooli": "Kehitysministeri",
+        "ID": 11
+      },
+      {
+        "Ministeri": "Haavisto, Pekka Olavi",
+        "Nimitetty": "17.10.2013",
+        "Eronnut": "24.6.2014",
+        "Puolue": "Vihreät",
+        "Rooli": "Kehitysministeri",
+        "ID": 11
+      },
+      {
+        "Ministeri": "Henriksson, Anna-Maja Kristina",
+        "Nimitetty": "22.6.2011",
+        "Eronnut": "24.6.2014",
+        "Puolue": "RKP",
+        "Rooli": "Oikeusministeri",
+        "ID": 11
+      },
+      {
+        "Ministeri": "Räsänen, Päivi Maria",
+        "Nimitetty": "22.6.2011",
+        "Eronnut": "1.1.2014",
+        "Puolue": "Kristillisdemokraatit",
+        "Rooli": "Sisäasiainministeri",
+        "ID": 11
+      },
+      {
+        "Ministeri": "Räsänen, Päivi Maria",
+        "Nimitetty": "1.1.2014",
+        "Eronnut": "24.6.2014",
+        "Puolue": "Kristillisdemokraatit",
+        "Rooli": "Sisäministeri",
+        "ID": 11
+      },
+      {
+        "Ministeri": "Wallin, Stefan Erik",
+        "Nimitetty": "22.6.2011",
+        "Eronnut": "5.7.2012",
+        "Puolue": "RKP",
+        "Rooli": "Puolustusministeri",
+        "ID": 11
+      },
+      {
+        "Ministeri": "Haglund, Carl Christoffer",
+        "Nimitetty": "5.7.2012",
+        "Eronnut": "24.6.2014",
+        "Puolue": "RKP",
+        "Rooli": "Puolustusministeri",
+        "ID": 11
+      },
+      {
+        "Ministeri": "Rinne, Antti Juhani",
+        "Nimitetty": "6.6.2014",
+        "Eronnut": "24.6.2014",
+        "Puolue": "SDP",
+        "Rooli": "Valtiovarainministeri",
+        "ID": 11
+      },
+      {
+        "Ministeri": "Urpilainen, Jutta Pauliina",
+        "Nimitetty": "22.6.2011",
+        "Eronnut": "6.6.2014",
+        "Puolue": "SDP",
+        "Rooli": "Valtiovarainministeri",
+        "ID": 11
+      },
+      {
+        "Ministeri": "Virkkunen, Henna Maria",
+        "Nimitetty": "22.6.2011",
+        "Eronnut": "4.4.2014",
+        "Puolue": "Kokoomus",
+        "Rooli": "Hallinto- ja kuntaministeri",
+        "ID": 11
+      },
+      {
+        "Ministeri": "Kiuru, Krista Katriina",
+        "Nimitetty": "4.4.2014",
+        "Eronnut": "24.6.2014",
+        "Puolue": "SDP",
+        "Rooli": "Opetus- ja viestintäministeri",
+        "ID": 11
+      },
+      {
+        "Ministeri": "Arhinmäki, Paavo Erkki",
+        "Nimitetty": "22.6.2011",
+        "Eronnut": "4.4.2014",
+        "Puolue": "Vasemmistoliitto",
+        "Rooli": "Kulttuuri- ja urheiluministeri",
+        "ID": 11
+      },
+      {
+        "Ministeri": "Gustafsson, Jukka Tapani",
+        "Nimitetty": "22.6.2011",
+        "Eronnut": "24.5.2013",
+        "Puolue": "SDP",
+        "Rooli": "Opetusministeri",
+        "ID": 11
+      },
+      {
+        "Ministeri": "Kiuru, Krista Katriina",
+        "Nimitetty": "24.5.2013",
+        "Eronnut": "4.4.2014",
+        "Puolue": "SDP",
+        "Rooli": "Opetusministeri",
+        "ID": 11
+      },
+      {
+        "Ministeri": "Koskinen, Jari Antero",
+        "Nimitetty": "22.6.2011",
+        "Eronnut": "24.6.2014",
+        "Puolue": "Kokoomus",
+        "Rooli": "Maa- ja metsätalousministeri",
+        "ID": 11
+      },
+      {
+        "Ministeri": "Virkkunen, Henna Maria",
+        "Nimitetty": "4.4.2014",
+        "Eronnut": "24.6.2014",
+        "Puolue": "Kokoomus",
+        "Rooli": "Liikenne- ja kuntaministeri",
+        "ID": 11
+      },
+      {
+        "Ministeri": "Kyllönen, Merja Sinikka",
+        "Nimitetty": "22.6.2011",
+        "Eronnut": "4.4.2014",
+        "Puolue": "Vasemmistoliitto",
+        "Rooli": "Liikenneministeri",
+        "ID": 11
+      },
+      {
+        "Ministeri": "Häkämies, Jyri Jukka",
+        "Nimitetty": "22.6.2011",
+        "Eronnut": "16.11.2012",
+        "Puolue": "Kokoomus",
+        "Rooli": "Elinkeinoministeri",
+        "ID": 11
+      },
+      {
+        "Ministeri": "Vapaavuori, Jan Pellervo",
+        "Nimitetty": "16.11.2012",
+        "Eronnut": "24.6.2014",
+        "Puolue": "Kokoomus",
+        "Rooli": "Elinkeinoministeri",
+        "ID": 11
+      },
+      {
+        "Ministeri": "Ihalainen, Lauri Armas",
+        "Nimitetty": "22.6.2011",
+        "Eronnut": "24.6.2014",
+        "Puolue": "SDP",
+        "Rooli": "Työministeri",
+        "ID": 11
+      },
+      {
+        "Ministeri": "Risikko, Paula Sinikka",
+        "Nimitetty": "22.6.2011",
+        "Eronnut": "24.6.2014",
+        "Puolue": "Kokoomus",
+        "Rooli": "Sosiaali- ja terveysministeri",
+        "ID": 11
+      },
+      {
+        "Ministeri": "Guzenina-Richardson, Maria",
+        "Nimitetty": "22.6.2011",
+        "Eronnut": "24.5.2013",
+        "Puolue": "SDP",
+        "Rooli": "Peruspalveluministeri",
+        "ID": 11
+      },
+      {
+        "Ministeri": "Huovinen, Krista Anri Susanna",
+        "Nimitetty": "24.5.2013",
+        "Eronnut": "24.6.2014",
+        "Puolue": "SDP",
+        "Rooli": "Peruspalveluministeri",
+        "ID": 11
+      },
+      {
+        "Ministeri": "Niinistö, Ville Matti",
+        "Nimitetty": "22.6.2011",
+        "Eronnut": "24.6.2014",
+        "Puolue": "Vihreät",
+        "Rooli": "Ympäristöministeri",
+        "ID": 11
+      },
+      {
+        "Ministeri": "Viitanen, Pia-Liisa",
+        "Nimitetty": "4.4.2014",
+        "Eronnut": "24.6.2014",
+        "Puolue": "SDP",
+        "Rooli": "Kulttuuri- ja asuntoministeri",
+        "ID": 11
+      },
+      {
+        "Ministeri": "Kiuru, Krista Katriina",
+        "Nimitetty": "22.6.2011",
+        "Eronnut": "24.5.2013",
+        "Puolue": "SDP",
+        "Rooli": "Asunto- ja viestintäministeri",
+        "ID": 11
+      },
+      {
+        "Ministeri": "Viitanen, Pia-Liisa",
+        "Nimitetty": "24.5.2013",
+        "Eronnut": "4.4.2014",
+        "Puolue": "SDP",
+        "Rooli": "Asunto- ja viestintäministeri",
+        "ID": 11
+      },
+      {
+        "Ministeri": "Stubb, Cai-Göran Alexander",
+        "Nimitetty": "24.6.2014",
+        "Eronnut": "29.5.2015",
+        "Puolue": "Kokoomus",
+        "Rooli": "Pääministeri",
+        "ID": 12
+      },
+      {
+        "Ministeri": "Rinne, Antti Juhani",
+        "Nimitetty": "24.6.2014",
+        "Eronnut": "29.5.2015",
+        "Puolue": "SDP",
+        "Rooli": "Pääministerin sijainen",
+        "ID": 12
+      },
+      {
+        "Ministeri": "Paatero, Sirpa Hannele",
+        "Nimitetty": "26.9.2014",
+        "Eronnut": "29.5.2015",
+        "Puolue": "SDP",
+        "Rooli": "Kehitysministeri",
+        "ID": 12
+      },
+      {
+        "Ministeri": "Haavisto, Pekka Olavi",
+        "Nimitetty": "24.6.2014",
+        "Eronnut": "26.9.2014",
+        "Puolue": "Vihreät",
+        "Rooli": "Kehitysministeri",
+        "ID": 12
+      },
+      {
+        "Ministeri": "Tuomioja, Erkki Sakari",
+        "Nimitetty": "24.6.2014",
+        "Eronnut": "29.5.2015",
+        "Puolue": "SDP",
+        "Rooli": "Ulkoasiainministeri",
+        "ID": 12
+      },
+      {
+        "Ministeri": "Toivakka, Lenita Anneli",
+        "Nimitetty": "24.6.2014",
+        "Eronnut": "29.5.2015",
+        "Puolue": "Kokoomus",
+        "Rooli": "Eurooppa- ja ulkomaankauppaministeri",
+        "ID": 12
+      },
+      {
+        "Ministeri": "Henriksson, Anna-Maja Kristina",
+        "Nimitetty": "24.6.2014",
+        "Eronnut": "29.5.2015",
+        "Puolue": "RKP",
+        "Rooli": "Oikeusministeri",
+        "ID": 12
+      },
+      {
+        "Ministeri": "Räsänen, Päivi Maria",
+        "Nimitetty": "24.6.2014",
+        "Eronnut": "29.5.2015",
+        "Puolue": "Kristillisdemokraatit",
+        "Rooli": "Sisäministeri",
+        "ID": 12
+      },
+      {
+        "Ministeri": "Räsänen, Päivi Maria",
+        "Nimitetty": "26.9.2014",
+        "Eronnut": "29.5.2015",
+        "Puolue": "Kristillisdemokraatit",
+        "Rooli": "Sisäministeri",
+        "ID": 12
+      },
+      {
+        "Ministeri": "Haglund, Carl Christoffer",
+        "Nimitetty": "24.6.2014",
+        "Eronnut": "29.5.2015",
+        "Puolue": "RKP",
+        "Rooli": "Puolustusministeri",
+        "ID": 12
+      },
+      {
+        "Ministeri": "Haglund, Carl Christoffer",
+        "Nimitetty": "26.9.2014",
+        "Eronnut": "29.5.2015",
+        "Puolue": "RKP",
+        "Rooli": "Puolustusministeri",
+        "ID": 12
+      },
+      {
+        "Ministeri": "Rinne, Antti Juhani",
+        "Nimitetty": "24.6.2014",
+        "Eronnut": "29.5.2015",
+        "Puolue": "SDP",
+        "Rooli": "Valtiovarainministeri",
+        "ID": 12
+      },
+      {
+        "Ministeri": "Kiuru, Krista Katriina",
+        "Nimitetty": "24.6.2014",
+        "Eronnut": "29.5.2015",
+        "Puolue": "SDP",
+        "Rooli": "Opetus- ja viestintäministeri",
+        "ID": 12
+      },
+      {
+        "Ministeri": "Orpo, Antti Petteri",
+        "Nimitetty": "24.6.2014",
+        "Eronnut": "29.5.2015",
+        "Puolue": "Kokoomus",
+        "Rooli": "Maa- ja metsätalousministeri",
+        "ID": 12
+      },
+      {
+        "Ministeri": "Risikko, Paula Sinikka",
+        "Nimitetty": "24.6.2014",
+        "Eronnut": "29.5.2015",
+        "Puolue": "Kokoomus",
+        "Rooli": "Liikenne- ja kuntaministeri",
+        "ID": 12
+      },
+      {
+        "Ministeri": "Vapaavuori, Jan Pellervo",
+        "Nimitetty": "24.6.2014",
+        "Eronnut": "29.5.2015",
+        "Puolue": "Kokoomus",
+        "Rooli": "Elinkeinoministeri",
+        "ID": 12
+      },
+      {
+        "Ministeri": "Vapaavuori, Jan Pellervo",
+        "Nimitetty": "24.6.2014",
+        "Eronnut": "26.9.2014",
+        "Puolue": "Kokoomus",
+        "Rooli": "Elinkeinoministeri",
+        "ID": 12
+      },
+      {
+        "Ministeri": "Ihalainen, Lauri Armas",
+        "Nimitetty": "24.6.2014",
+        "Eronnut": "29.5.2015",
+        "Puolue": "SDP",
+        "Rooli": "Työministeri",
+        "ID": 12
+      },
+      {
+        "Ministeri": "Räty, Laura Kaarina",
+        "Nimitetty": "24.6.2014",
+        "Eronnut": "29.5.2015",
+        "Puolue": "Kokoomus",
+        "Rooli": "Sosiaali- ja terveysministeri",
+        "ID": 12
+      },
+      {
+        "Ministeri": "Huovinen, Krista Anri Susanna",
+        "Nimitetty": "24.6.2014",
+        "Eronnut": "29.5.2015",
+        "Puolue": "SDP",
+        "Rooli": "Peruspalveluministeri",
+        "ID": 12
+      },
+      {
+        "Ministeri": "Niinistö, Ville Matti",
+        "Nimitetty": "24.6.2014",
+        "Eronnut": "26.9.2014",
+        "Puolue": "Vihreät",
+        "Rooli": "Ympäristöministeri",
+        "ID": 12
+      },
+      {
+        "Ministeri": "Grahn-Laasonen, Sanni Kaisa",
+        "Nimitetty": "26.9.2014",
+        "Eronnut": "29.5.2015",
+        "Puolue": "Kokoomus",
+        "Rooli": "Ympäristöministeri",
+        "ID": 12
+      },
+      {
+        "Ministeri": "Viitanen, Pia-Liisa",
+        "Nimitetty": "24.6.2014",
+        "Eronnut": "29.5.2015",
+        "Puolue": "SDP",
+        "Rooli": "Kulttuuri- ja asuntoministeri",
+        "ID": 12
+      },
+      {
+        "Ministeri": "Sipilä, Juha Petri",
+        "Nimitetty": "29.5.2015",
+        "Eronnut": "6.6.2019",
+        "Puolue": "Keskusta",
+        "Rooli": "Pääministeri",
+        "ID": 13
+      },
+      {
+        "Ministeri": "Soini, Timo Juhani",
+        "Nimitetty": "29.5.2015",
+        "Eronnut": "28.6.2017",
+        "Puolue": "Perussuomalaiset",
+        "Rooli": "Pääministerin sijainen",
+        "ID": 13
+      },
+      {
+        "Ministeri": "Orpo, Antti Petteri",
+        "Nimitetty": "28.6.2017",
+        "Eronnut": "6.6.2019",
+        "Puolue": "Kokoomus",
+        "Rooli": "Pääministerin sijainen",
+        "ID": 13
+      },
+      {
+        "Ministeri": "Soini, Timo Juhani",
+        "Nimitetty": "1.1.2018",
+        "Eronnut": "6.6.2019",
+        "Puolue": "Sininen tulevaisuus (e. Sininen eduskuntaryhmä)",
+        "Rooli": "Ulkoministeri",
+        "ID": 13
+      },
+      {
+        "Ministeri": "Soini, Timo Juhani",
+        "Nimitetty": "29.5.2015",
+        "Eronnut": "13.6.2017",
+        "Puolue": "Perussuomalaiset",
+        "Rooli": "Ulkoasiainministeri",
+        "ID": 13
+      },
+      {
+        "Ministeri": "Soini, Timo Juhani",
+        "Nimitetty": "13.6.2017",
+        "Eronnut": "1.1.2018",
+        "Puolue": "Sininen tulevaisuus (e. Sininen eduskuntaryhmä)",
+        "Rooli": "Ulkoasiainministeri",
+        "ID": 13
+      },
+      {
+        "Ministeri": "Toivakka, Lenita Anneli",
+        "Nimitetty": "29.5.2015",
+        "Eronnut": "22.6.2016",
+        "Puolue": "Kokoomus",
+        "Rooli": "Ulkomaankauppa- ja kehitysministeri",
+        "ID": 13
+      },
+      {
+        "Ministeri": "Mykkänen, Kai Aslak",
+        "Nimitetty": "22.6.2016",
+        "Eronnut": "12.2.2018",
+        "Puolue": "Kokoomus",
+        "Rooli": "Ulkomaankauppa- ja kehitysministeri",
+        "ID": 13
+      },
+      {
+        "Ministeri": "Virolainen, Anne-Mari",
+        "Nimitetty": "12.2.2018",
+        "Eronnut": "6.6.2019",
+        "Puolue": "Kokoomus",
+        "Rooli": "Ulkomaankauppa- ja kehitysministeri",
+        "ID": 13
+      },
+      {
+        "Ministeri": "Häkkänen, Antti",
+        "Nimitetty": "5.5.2017",
+        "Eronnut": "6.6.2019",
+        "Puolue": "Kokoomus",
+        "Rooli": "Oikeusministeri",
+        "ID": 13
+      },
+      {
+        "Ministeri": "Terho, Sampo Johannes",
+        "Nimitetty": "5.5.2017",
+        "Eronnut": "13.6.2017",
+        "Puolue": "Perussuomalaiset",
+        "Rooli": "Eurooppa-, kulttuuri- ja urheiluministeri",
+        "ID": 13
+      },
+      {
+        "Ministeri": "Terho, Sampo Johannes",
+        "Nimitetty": "13.6.2017",
+        "Eronnut": "6.6.2019",
+        "Puolue": "Sininen tulevaisuus (e. Sininen eduskuntaryhmä)",
+        "Rooli": "Eurooppa-, kulttuuri- ja urheiluministeri",
+        "ID": 13
+      },
+      {
+        "Ministeri": "Lindström, Jari Tapani",
+        "Nimitetty": "29.5.2015",
+        "Eronnut": "5.5.2017",
+        "Puolue": "Perussuomalaiset",
+        "Rooli": "Oikeus- ja työministeri",
+        "ID": 13
+      },
+      {
+        "Ministeri": "Orpo, Antti Petteri",
+        "Nimitetty": "29.5.2015",
+        "Eronnut": "22.6.2016",
+        "Puolue": "Kokoomus",
+        "Rooli": "Sisäministeri",
+        "ID": 13
+      },
+      {
+        "Ministeri": "Risikko, Paula Sinikka",
+        "Nimitetty": "22.6.2016",
+        "Eronnut": "5.2.2018",
+        "Puolue": "Kokoomus",
+        "Rooli": "Sisäministeri",
+        "ID": 13
+      },
+      {
+        "Ministeri": "Mykkänen, Kai Aslak",
+        "Nimitetty": "12.2.2018",
+        "Eronnut": "6.6.2019",
+        "Puolue": "Kokoomus",
+        "Rooli": "Sisäministeri",
+        "ID": 13
+      },
+      {
+        "Ministeri": "Niinistö, Jussi Lauri Juhani",
+        "Nimitetty": "29.5.2015",
+        "Eronnut": "13.6.2017",
+        "Puolue": "Perussuomalaiset",
+        "Rooli": "Puolustusministeri",
+        "ID": 13
+      },
+      {
+        "Ministeri": "Niinistö, Jussi Lauri Juhani",
+        "Nimitetty": "13.6.2017",
+        "Eronnut": "6.6.2019",
+        "Puolue": "Sininen tulevaisuus (e. Sininen eduskuntaryhmä)",
+        "Rooli": "Puolustusministeri",
+        "ID": 13
+      },
+      {
+        "Ministeri": "Stubb, Cai-Göran Alexander",
+        "Nimitetty": "29.5.2015",
+        "Eronnut": "22.6.2016",
+        "Puolue": "Kokoomus",
+        "Rooli": "Valtiovarainministeri",
+        "ID": 13
+      },
+      {
+        "Ministeri": "Orpo, Antti Petteri",
+        "Nimitetty": "22.6.2016",
+        "Eronnut": "6.6.2019",
+        "Puolue": "Kokoomus",
+        "Rooli": "Valtiovarainministeri",
+        "ID": 13
+      },
+      {
+        "Ministeri": "Vehviläinen, Anu Helena",
+        "Nimitetty": "29.5.2019",
+        "Eronnut": "6.6.2019",
+        "Puolue": "Keskusta",
+        "Rooli": "Kunta- ja liikenneministeri",
+        "ID": 13
+      },
+      {
+        "Ministeri": "Vehviläinen, Anu Helena",
+        "Nimitetty": "29.5.2015",
+        "Eronnut": "29.5.2019",
+        "Puolue": "Keskusta",
+        "Rooli": "Kunta- ja uudistusministeri",
+        "ID": 13
+      },
+      {
+        "Ministeri": "Grahn-Laasonen, Sanni Kaisa",
+        "Nimitetty": "5.5.2017",
+        "Eronnut": "6.6.2019",
+        "Puolue": "Kokoomus",
+        "Rooli": "Opetusministeri",
+        "ID": 13
+      },
+      {
+        "Ministeri": "Grahn-Laasonen, Sanni Kaisa",
+        "Nimitetty": "29.5.2015",
+        "Eronnut": "5.5.2017",
+        "Puolue": "Kokoomus",
+        "Rooli": "Opetus- ja kulttuuriministeri",
+        "ID": 13
+      },
+      {
+        "Ministeri": "Leppä, Jari Juhani",
+        "Nimitetty": "5.5.2017",
+        "Eronnut": "6.6.2019",
+        "Puolue": "Keskusta",
+        "Rooli": "Maa- ja metsätalousministeri",
+        "ID": 13
+      },
+      {
+        "Ministeri": "Berner, Anne",
+        "Nimitetty": "29.5.2015",
+        "Eronnut": "29.5.2019",
+        "Puolue": "Keskusta",
+        "Rooli": "Liikenne- ja viestintäministeri",
+        "ID": 13
+      },
+      {
+        "Ministeri": "Berner, Anne",
+        "Nimitetty": "12.6.2015",
+        "Eronnut": "29.5.2019",
+        "Puolue": "Keskusta",
+        "Rooli": "Liikenne- ja viestintäministeri",
+        "ID": 13
+      },
+      {
+        "Ministeri": "Tiilikainen, Kimmo Kalevi",
+        "Nimitetty": "29.5.2015",
+        "Eronnut": "5.5.2017",
+        "Puolue": "Keskusta",
+        "Rooli": "Maatalous- ja ympäristöministeri",
+        "ID": 13
+      },
+      {
+        "Ministeri": "Rehn, Olli",
+        "Nimitetty": "29.5.2015",
+        "Eronnut": "29.12.2016",
+        "Puolue": "Keskusta",
+        "Rooli": "Elinkeinoministeri",
+        "ID": 13
+      },
+      {
+        "Ministeri": "Lintilä, Mika Tapani",
+        "Nimitetty": "29.12.2016",
+        "Eronnut": "6.6.2019",
+        "Puolue": "Keskusta",
+        "Rooli": "Elinkeinoministeri",
+        "ID": 13
+      },
+      {
+        "Ministeri": "Lintilä, Mika Tapani",
+        "Nimitetty": "5.5.2017",
+        "Eronnut": "6.6.2019",
+        "Puolue": "Keskusta",
+        "Rooli": "Elinkeinoministeri",
+        "ID": 13
+      },
+      {
+        "Ministeri": "Lindström, Jari Tapani",
+        "Nimitetty": "5.5.2017",
+        "Eronnut": "13.6.2017",
+        "Puolue": "Perussuomalaiset",
+        "Rooli": "Työministeri",
+        "ID": 13
+      },
+      {
+        "Ministeri": "Lindström, Jari Tapani",
+        "Nimitetty": "13.6.2017",
+        "Eronnut": "6.6.2019",
+        "Puolue": "Sininen tulevaisuus (e. Sininen eduskuntaryhmä)",
+        "Rooli": "Työministeri",
+        "ID": 13
+      },
+      {
+        "Ministeri": "Mäntylä, Hanna Katariina",
+        "Nimitetty": "29.5.2015",
+        "Eronnut": "25.8.2016",
+        "Puolue": "Perussuomalaiset",
+        "Rooli": "Sosiaali- ja terveysministeri",
+        "ID": 13
+      },
+      {
+        "Ministeri": "Mattila, Pirkko Anneli",
+        "Nimitetty": "25.8.2016",
+        "Eronnut": "13.6.2017",
+        "Puolue": "Perussuomalaiset",
+        "Rooli": "Sosiaali- ja terveysministeri",
+        "ID": 13
+      },
+      {
+        "Ministeri": "Mattila, Pirkko Anneli",
+        "Nimitetty": "13.6.2017",
+        "Eronnut": "6.6.2019",
+        "Puolue": "Sininen tulevaisuus (e. Sininen eduskuntaryhmä)",
+        "Rooli": "Sosiaali- ja terveysministeri",
+        "ID": 13
+      },
+      {
+        "Ministeri": "Rehula, Juha Tapani",
+        "Nimitetty": "29.5.2015",
+        "Eronnut": "10.7.2017",
+        "Puolue": "Keskusta",
+        "Rooli": "Perhe- ja peruspalveluministeri",
+        "ID": 13
+      },
+      {
+        "Ministeri": "Saarikko, Annika",
+        "Nimitetty": "10.7.2017",
+        "Eronnut": "6.6.2019",
+        "Puolue": "Keskusta",
+        "Rooli": "Perhe- ja peruspalveluministeri",
+        "ID": 13
+      },
+      {
+        "Ministeri": "Tiilikainen, Kimmo Kalevi",
+        "Nimitetty": "5.5.2017",
+        "Eronnut": "6.6.2019",
+        "Puolue": "Keskusta",
+        "Rooli": "Asunto-, energia- ja ympäristöministeri",
+        "ID": 13
+      },
+      {
+        "Ministeri": "Rinne, Antti Juhani",
+        "Nimitetty": "6.6.2019",
+        "Eronnut": "",
+        "Puolue": "SDP",
+        "Rooli": "Pääministeri",
+        "ID": 14
+      },
+      {
+        "Ministeri": "Lintilä, Mika Tapani",
+        "Nimitetty": "6.6.2019",
+        "Eronnut": "12.9.2019",
+        "Puolue": "Keskusta",
+        "Rooli": "Pääministerin sijainen",
+        "ID": 14
+      },
+      {
+        "Ministeri": "Kulmuni, Katri",
+        "Nimitetty": "12.9.2019",
+        "Eronnut": "",
+        "Puolue": "Keskusta",
+        "Rooli": "Pääministerin sijainen",
+        "ID": 14
+      },
+      {
+        "Ministeri": "Tuppurainen, Tytti Johanna",
+        "Nimitetty": "6.6.2019",
+        "Eronnut": "",
+        "Puolue": "SDP",
+        "Rooli": "Eurooppaministeri",
+        "ID": 14
+      },
+      {
+        "Ministeri": "Haavisto, Pekka Olavi",
+        "Nimitetty": "6.6.2019",
+        "Eronnut": "",
+        "Puolue": "Vihreät",
+        "Rooli": "Ulkoministeri",
+        "ID": 14
+      },
+      {
+        "Ministeri": "Skinnari, Ville Tapio",
+        "Nimitetty": "6.6.2019",
+        "Eronnut": "",
+        "Puolue": "SDP",
+        "Rooli": "Kehitysyhteistyö- ja ulkomaankauppaministeri",
+        "ID": 14
+      },
+      {
+        "Ministeri": "Henriksson, Anna-Maja Kristina",
+        "Nimitetty": "6.6.2019",
+        "Eronnut": "",
+        "Puolue": "RKP",
+        "Rooli": "Oikeusministeri",
+        "ID": 14
+      },
+      {
+        "Ministeri": "Blomqvist, Thomas Jörn Ingmar",
+        "Nimitetty": "6.6.2019",
+        "Eronnut": "",
+        "Puolue": "RKP",
+        "Rooli": "Pohjoismaisen yhteistyön ja tasa-arvon ministeri",
+        "ID": 14
+      },
+      {
+        "Ministeri": "Ohisalo, Maria",
+        "Nimitetty": "6.6.2019",
+        "Eronnut": "",
+        "Puolue": "Vihreät",
+        "Rooli": "Sisäministeri",
+        "ID": 14
+      },
+      {
+        "Ministeri": "Kaikkonen, Antti Samuli",
+        "Nimitetty": "6.6.2019",
+        "Eronnut": "",
+        "Puolue": "Keskusta",
+        "Rooli": "Puolustusministeri",
+        "ID": 14
+      },
+      {
+        "Ministeri": "Lintilä, Mika Tapani",
+        "Nimitetty": "6.6.2019",
+        "Eronnut": "",
+        "Puolue": "Keskusta",
+        "Rooli": "Valtiovarainministeri",
+        "ID": 14
+      },
+      {
+        "Ministeri": "Andersson, Li Sigrid",
+        "Nimitetty": "6.6.2019",
+        "Eronnut": "",
+        "Puolue": "Vasemmistoliitto",
+        "Rooli": "Opetusministeri",
+        "ID": 14
+      },
+      {
+        "Ministeri": "Paatero, Sirpa Hannele",
+        "Nimitetty": "6.6.2019",
+        "Eronnut": "",
+        "Puolue": "SDP",
+        "Rooli": "Kunta- ja omistajaohjausministeri",
+        "ID": 14
+      },
+      {
+        "Ministeri": "Saarikko, Annika",
+        "Nimitetty": "6.6.2019",
+        "Eronnut": "9.8.2019",
+        "Puolue": "Keskusta",
+        "Rooli": "Tiede- ja kulttuuriministeri",
+        "ID": 14
+      },
+      {
+        "Ministeri": "Kosonen, Hanna",
+        "Nimitetty": "9.8.2019",
+        "Eronnut": "",
+        "Puolue": "Keskusta",
+        "Rooli": "Tiede- ja kulttuuriministeri",
+        "ID": 14
+      },
+      {
+        "Ministeri": "Leppä, Jari Juhani",
+        "Nimitetty": "6.6.2019",
+        "Eronnut": "",
+        "Puolue": "Keskusta",
+        "Rooli": "Maa- ja metsätalousministeri",
+        "ID": 14
+      },
+      {
+        "Ministeri": "Marin, Sanna Mirella",
+        "Nimitetty": "6.6.2019",
+        "Eronnut": "",
+        "Puolue": "SDP",
+        "Rooli": "Liikenne- ja viestintäministeri",
+        "ID": 14
+      },
+      {
+        "Ministeri": "Kulmuni, Katri",
+        "Nimitetty": "6.6.2019",
+        "Eronnut": "",
+        "Puolue": "Keskusta",
+        "Rooli": "Elinkeinoministeri",
+        "ID": 14
+      },
+      {
+        "Ministeri": "Harakka, Timo Olavi",
+        "Nimitetty": "6.6.2019",
+        "Eronnut": "",
+        "Puolue": "SDP",
+        "Rooli": "Työministeri",
+        "ID": 14
+      },
+      {
+        "Ministeri": "Pekonen, Aino-Kaisa Ilona",
+        "Nimitetty": "6.6.2019",
+        "Eronnut": "",
+        "Puolue": "Vasemmistoliitto",
+        "Rooli": "Sosiaali- ja terveysministeri",
+        "ID": 14
+      },
+      {
+        "Ministeri": "Kiuru, Krista Katriina",
+        "Nimitetty": "6.6.2019",
+        "Eronnut": "",
+        "Puolue": "SDP",
+        "Rooli": "Perhe- ja peruspalveluministeri",
+        "ID": 14
+      },
+      {
+        "Ministeri": "Mikkonen, Krista Johanna",
+        "Nimitetty": "6.6.2019",
+        "Eronnut": "",
+        "Puolue": "Vihreät",
+        "Rooli": "Ympäristö- ja ilmastoministeri",
+        "ID": 14
+      }
+]
