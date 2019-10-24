@@ -13,10 +13,10 @@ export const colors = [
     { name: "FP", color: "#E94786" /* Virallista väriä ei löytynyt, tämä wikipediasta */ },
     { name: "LIBE", color: "#F39501" },
     { name: "SKP", color: "red" /* Virallista ei löytynyt */ },
-    { name: "EOP", color: "" },
-    { name: "PP", color: "" },
-    { name: "IP", color: "" },
-    { name: "SKE", color: "" },
+    { name: "EOP", color: "#fbbb01" },
+    { name: "PP", color: "#512483" },
+    { name: "IP", color: "#017BC4" },
+    { name: "SKE", color: "#023681" },
     { name: "KTP", color: "" },
     { name: "STP", color: "" },
     { name: "KA", color: "" },
@@ -31,7 +31,7 @@ export const colors = [
     { name: "REM", color: "" },
     { name: "LLP", color: "" },
     { name: "SEP", color: "" },
-    { name: "POP", color: "" },
+    { name: "POP", color: "#214055" },
     { name: "Muu puolue", color: "silver" },
     { name: "Muut", color: "gray" }
 ]

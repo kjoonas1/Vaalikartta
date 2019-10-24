@@ -17,7 +17,7 @@ export const DataChart = props => {
 
     const dataWithHeaders = [
         ["Puolue", "Kannatusprosentti", { role: "style" }]
-    ].concat(data.slice(0, 11))
+    ].concat(data.slice(0, 20))
 
     return (
         <>
