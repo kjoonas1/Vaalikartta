@@ -5,8 +5,8 @@ const morgan = require("morgan")
 const MongoClient = require("mongodb").MongoClient
 const router = require("./routes/routes")
 
-// if (process.env.TEST)
-//     console.log = () => { } // Otetaan loggaus pois käytöstä jottei sotke testejä
+if (process.env.TEST)
+    console.log = () => { } // Otetaan loggaus pois käytöstä jottei sotke testejä
 
 // Käyttäjällä vaalikartta on vain lukuoikeus tietokantaan
 const databaseUrl = `mongodb+srv://vaalikartta:${process.env.PASSWD}@klusteri-asaca.mongodb.net/test?retryWrites=true&w=majority`
@@ -15,6 +15,8 @@ process.on("exit", () => {
     app.onExit()
 })
 
+// Tehdään promisena, jotta kutsuvassa koodissa voidaan sitten varmistua siitä, että yhteys tietokantaan on
+// saatu
 const createApp = new Promise((resolve, reject) => {
     MongoClient.connect(databaseUrl, { useNewUrlParser: true, useUnifiedTopology: true }).then(client => {
         app.mongoClient = client
@@ -31,8 +33,7 @@ const createApp = new Promise((resolve, reject) => {
         app.use("/api", router)
         // Tämä vain jotta /favicon.ico hakeminen ei tuota 404
         app.get("/favicon.ico", (req, res) => res.sendStatus(204))
-        app.get("/", (req, res) => res.send("Hello"))
-        resolve(app)
+        resolve(app) // app valmis käyttöön
     }).catch(err => {
         console.log("Error connecting to database", err)
         process.exit(1)

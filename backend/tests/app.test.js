@@ -1,13 +1,12 @@
 const supertest = require("supertest")
-const app = require("../src/app")
+const { createApp } = require("../src/app")
 const http = require("http")
-const express = require("express")
 
 let server
 let request
 beforeAll(async done => {
-    const appInstance = await app.createApp
-    server = http.createServer(appInstance)
+    const app = await createApp
+    server = http.createServer(app)
     server.listen(done)
     request = supertest(server)
 })
@@ -16,15 +15,41 @@ afterAll(done => {
     server.close(done)
 })
 
-test("sup", async (done) => {
+describe("Vaalipiirien kannatus", () => {
+    const vaalipiirit = "/api/vaalipiirit/kannatus"
+    test("saadaan tiedot, jos niitä on", done => {
+        request.get(`${vaalipiirit}/Lapin vaalipiiri/2011`)
+            .expect(200)
+            .expect("Content-Type", /application\/json/)
+            .expect("Content-Length", "487")
+            .end(done)
+    })
 
-    const res = await request.get("/")
-    expect(res.status).toBe(200)
-    done()
+    test("Olemattomien vaalipiirien tapauksessa palautetaan tyhjä taulukko", done => {
+        request.get(`${vaalipiirit}/Kouvostoliiton vaalipiiri/2019`)
+            .expect("Content-Type", /application\/json/)
+            .expect("Content-Length", "2")
+            .end(done)
+    })
 })
 
-test("2", async done => {
-    const res = await request.get("/api/vaalipiirit/kannatus/Lapin vaalipiiri/2011")
-    expect(res.status).toBe(200)
-    done()
+describe("Kuntien kannatus", () => {
+    const kunnat = "/api/kunnat/kannatus"
+    test("saadaan tiedot, jos olemassa", done => {
+        request.get(`${kunnat}/Polvijärvi/1987`)
+            .expect(200)
+            .expect("Content-Type", /application\/json/)
+            .expect("Content-Length", "484")
+            .end(done)
+    })
+})
+
+describe("Kuntien koordinaatit", () => {
+    test("Vaalivuodelta saadaan koordinaatit", done => {
+        request.get("/api/kunnat/koordinaatit/1991")
+            .expect(200)
+            .expect("Content-Type", /application\/json/)
+            .expect("Content-Length", "88696")
+            .end(done)
+    })
 })
