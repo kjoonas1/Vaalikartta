@@ -37,7 +37,7 @@ const Etusivu = () => {
             const color = () => { 
                 if (puolue && puolue.color) return puolue.color
                 else return "#bdbdbd" 
-            };
+            }
 
             return (
                 {  fill: color(),  name: party.name, vote: party.vote}
@@ -58,6 +58,11 @@ const Etusivu = () => {
                     <Col xs={12} xl={8}>
                         {area === null && <p>Valitse alue kartalta</p>}
                         <DataChart luvut={luvut}/>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col xs={12} xl={12} className="footer">
+                        
                     </Col>
                 </Row>
             </Fragment>

@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from "react"
-import "./App.scss"
+import "./styles/App.scss"
 import Etusivu from "./components/Etusivu"
 import Tietoa from "./components/Tietoa"
 import { Container } from "react-bootstrap"

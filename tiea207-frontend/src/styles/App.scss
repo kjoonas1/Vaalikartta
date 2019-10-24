@@ -1,0 +1,46 @@
+.container {
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.navbar-brand a {
+  color: white !important;
+}
+  
+.navbar-brand a:hover {
+  color: #5289ff !important;
+}
+
+.footer {
+  background-color: #343a40;
+}
+
+$smallScreenWidth: 95%;
+
+@media (min-width: 1200px) {
+  .container {
+      max-width: 1440px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+      max-width: $smallScreenWidth;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+      max-width: $smallScreenWidth;
+  }
+  .constituency-map {
+      padding-bottom: 5em;
+
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+      max-width: $smallScreenWidth;
+  }
+}

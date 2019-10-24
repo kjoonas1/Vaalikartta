@@ -2,6 +2,7 @@ import React, { useContext } from "react"
 import { AreaContext, YearContext } from "../Contexts"
 import { uudetVaalipiirit, vanhatVaalipiirit } from "../dataset/SVGMapParts"
 import { Link } from "react-router-dom"
+import "../styles/Constituency.scss"
 
 export const ConstituencyMap = (props) => {
     const { area, setArea } = useContext(AreaContext)
@@ -11,7 +12,7 @@ export const ConstituencyMap = (props) => {
     const _map = mapType(year)
 
     return (
-        <div >
+        <div className="constituency-map">
             <svg style={{ width:"100%", maxHeight:props.height }} version="1.1" viewBox="0 0 158.07 277.62" xmlns="http://www.w3.org/2000/svg">
                 <g transform="translate(-21.222 -12.752)">
                     { Object.keys(_map).map((key, index) => {

@@ -1,0 +1,43 @@
+.constituency {
+    fill-opacity: 0.5;
+}
+  
+.constituency:hover {
+    fill-opacity: 1;
+    stroke: gray;
+    stroke-width: 3px;
+    transition: 0.5s;
+}
+
+.map-part-active {
+    fill-opacity: 1;
+    animation: opacity-change 1.5s;
+    stroke: silver;
+    stroke-width: 1px;
+}
+  
+@keyframes opacity-change {
+    0% {
+      fill-opacity: 0.2;
+      stroke-width: 3px;
+  
+    }
+    20% {
+      fill-opacity: 0.3;
+      stroke: gray;
+      stroke-width: 2px;
+    }
+    40% {
+      fill-opacity: 0.6;
+      stroke: gray;
+      stroke-width: 1px;
+    }
+    60% {
+      fill-opacity: 0.8;
+      stroke: silver;
+      stroke-width: 1px;
+    }
+    100% {
+      fill-opacity: 1;
+    }
+}
