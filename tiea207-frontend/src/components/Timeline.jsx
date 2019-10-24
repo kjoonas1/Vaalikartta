@@ -3,7 +3,7 @@ import { Col } from "react-bootstrap"
 import shortid from "shortid"
 import {Link} from "react-router-dom"
 import { YearContext, EventContext } from "../Contexts"
-
+import "../styles/Timeline.scss"
 export const Timeline = (props) => {
     
     const { year, setYear } = useContext(YearContext)

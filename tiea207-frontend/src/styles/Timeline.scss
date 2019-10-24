@@ -1,0 +1,13 @@
+.timeline {
+    margin-bottom: 0rem;
+}
+
+.event {
+    transition: 0.5s;
+}
+  
+.event:hover {
+    fill-opacity: 1;
+    stroke: gray;
+    stroke-width: 1px;
+}

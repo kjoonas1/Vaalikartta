@@ -11,8 +11,8 @@
   color: #5289ff !important;
 }
 
-.timeline {
-  margin-bottom: 0rem;
+.footer {
+  background-color: #343a40;
 }
 
 $smallScreenWidth: 95%;
@@ -33,31 +33,14 @@ $smallScreenWidth: 95%;
   .container {
       max-width: $smallScreenWidth;
   }
+  .constituency-map {
+      padding-bottom: 5em;
+
+  }
 }
 
 @media (min-width: 576px) {
   .container {
       max-width: $smallScreenWidth;
   }
-}
-
-.constituency {
-  fill-opacity: 0.5;
-}
-
-.constituency:hover {
-  fill-opacity: 1;
-  stroke: gray;
-  stroke-width: 3px;
-  transition: 0.5s;
-}
-
-.event {
-  transition: 0.5s;
-}
-
-.event:hover {
-  fill-opacity: 1;
-  stroke: gray;
-  stroke-width: 1px;
 }
