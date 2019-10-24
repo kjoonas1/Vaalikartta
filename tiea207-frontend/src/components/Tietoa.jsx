@@ -28,7 +28,7 @@ const Tietoa = () => {
     if (!res.isLoading && res.error === null) {
         return (
             <Fragment>
-                {res.data.map(({id, content}) => (
+                {res.data.map(({ id, content }) => (
                     <li key={shortid.generate()}>{id + ": " + content}</li>
                 ))}
             </Fragment>

@@ -1,5 +1,4 @@
 import React, { useContext } from "react"
-//import {BarChart, CartesianGrid, XAxis, Tooltip, YAxis, Legend, Bar} from "recharts"
 import { AreaContext, YearContext } from "../Contexts"
 import { Chart } from "react-google-charts"
 import "../styles/DataChart.scss"
@@ -15,9 +14,44 @@ export const DataChart = props => {
         return [label, value, fillColor]
     })
 
-    const dataWithHeaders = [
-        ["Puolue", "Kannatusprosentti", { role: "style" }]
-    ].concat(data.slice(0, 11))
+    // 1% tai alle saaneet puolueet sijoitetaan omaan listaansa ja yli 1% saaneet omaansa
+    const allValues = Object.entries(data)
+        /*eslint no-unused-vars: ["error", { "args": "none" }]*/
+        .reduce(([small, big], [_, [puolue, kannatus, vari]]) => 
+            kannatus > 1 ? [small,[...big, [puolue, kannatus, vari]]] : [[...small, kannatus], big], [[], []])
+
+    // Yhdistetään yli 1% kannatuksen saaneet ja pienemmät niin, että pienemmät yhdistetään yhdeksi luvuksi pienpuolueiden alle.
+    const reconstructedData = allValues[1].concat([["Pienpuolueet", allValues[0].reduce((a, b) => a + b, 0), "#ff0000"]])
+        .sort((a, b) => b[1] - a[1]) // Järjestetään lista
+
+    // Yhdistetään data otsikkokenttien kanssa samaan listaan
+    const dataWithHeaders = [["Puolue", "Kannatusprosentti", { role: "style" }]].concat(reconstructedData)
+
+    const options = {
+        title: area + " " + year,
+        animation: {
+            duration: 250,
+            startup: true
+        },
+        bar: { groupWidth: "80%" },
+        legend: { position: "none" },
+        hAxis: { viewWindow: { min: 0, max: 100 } }
+    }
+
+    const controls = [
+        {
+            controlType: "NumberRangeFilter",
+            options: {
+                filterColumnLabel: "Kannatusprosentti",
+                ui: {
+                    step: 0.1
+                }
+            },
+            controlWrapperParams: {
+                state: { lowValue: 0, highValue: 100 }
+            }
+        }
+    ]
 
     return (
         <>
@@ -28,28 +62,8 @@ export const DataChart = props => {
                     chartType="BarChart"
                     loader={<div>Loading Chart</div>}
                     data={dataWithHeaders}
-                    options={{
-                        title: area + " " + year,
-                        animation: {
-                            duration: 1000,
-                            easing: "out",
-                            startup: true
-                        },
-                        bar: { groupWidth: "80%" },
-                        legend: { position: "none" },
-                        hAxis: { viewWindow: { min: 0, max: 100 } }
-                    }}
-                    controls={[
-                        {
-                            controlType: "NumberRangeFilter",
-                            options: {
-                                filterColumnLabel: "Kannatusprosentti"
-                            },
-                            controlWrapperParams: {
-                                state: { lowValue: 0, highValue: 100 }
-                            }
-                        }
-                    ]}
+                    options={options}
+                    controls={controls}
                     rootProps={{ "data-testid": "1" }}
                 />
             )}
