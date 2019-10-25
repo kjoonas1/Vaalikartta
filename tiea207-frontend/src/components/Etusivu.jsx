@@ -3,13 +3,14 @@ import { Col, Row } from "react-bootstrap"
 import { useFetch } from "../hooks/UseFetch"
 import { Timeline } from "./Timeline"
 import { AreaContext, YearContext } from "../Contexts"
-import { ConstituencyMap } from "./ConstituencyMap"
+import { ConstituencyMap } from "./Maps/ConstituencyMap"
 import * as objectHelper from "../utils/objectHelper"
 import * as MapParts from "../dataset/SVGMapParts"
 import { DataChart } from "./DataChart"
 import * as colors from "../dataset/partyColors.json"
 import { timelineData } from "../dataset/timelineData"
 import { ControlledTabs } from "./ControlledTabs"
+import { ElectionMap } from "./Maps/ElectionMap"
 
 const Etusivu = () => {
     const { area, setArea } = useContext(AreaContext)
@@ -46,8 +47,8 @@ const Etusivu = () => {
                 name: "Vaalipiirit"
             },
             {
-                map: <ConstituencyMap height="35em" />,
-                name: "Kaupungit"
+                map:  <ElectionMap mapData={{data: []}}/>,
+                name: "Kunnat"
             }
         ]
 
@@ -60,7 +61,6 @@ const Etusivu = () => {
                     <Col>
                         <Row>
                             <Col xs={12} xl={4}>
-                                {/* <ElectionMap map    Data={mapData}/> */}
                                 <ControlledTabs tabs={maps} />
                             </Col>
                             <Col xs={12} xl={8}>

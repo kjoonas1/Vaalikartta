@@ -14,9 +14,10 @@ export const DataChart = props => {
         const value = props.luvut[key].vote
         return [label, value, fillColor]
     })
-
+    
+    // eslint-disable-next-line
     const allValues = partition(data, ([puolue, kannatus, vari]) => kannatus < 1.0)
-    console.log(allValues)
+
     // Yhdistetään yli 1% kannatuksen saaneet ja pienemmät niin, että pienemmät yhdistetään yhdeksi luvuksi pienpuolueiden alle.
     const reconstructedData = allValues[1].concat([["Pienpuolueet", sumArray(allValues[0].map(p => p[1])), "#ff0000"]])
         .slice().sort((a, b) => b[1] - a[1]) // Järjestetään lista
@@ -35,19 +36,6 @@ export const DataChart = props => {
         hAxis: { viewWindow: { min: 0, max: 100 } }
     }
 
-    const controls = [
-        {
-            controlType: "NumberRangeFilter",
-            options: {
-                filterColumnLabel: "Kannatusprosentti",
-
-            },
-            controlWrapperParams: {
-                state: { lowValue: 0, highValue: 100 }
-            }
-        }
-    ]
-
     return (
         <>
             {data.length > 0 && (
@@ -58,7 +46,6 @@ export const DataChart = props => {
                     loader={<div>Loading Chart</div>}
                     data={dataWithHeaders}
                     options={options}
-                    controls={controls}
                     rootProps={{ "data-testid": "1" }}
                 />
             )}
