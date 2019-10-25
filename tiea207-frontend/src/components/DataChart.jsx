@@ -2,7 +2,7 @@ import React, { useContext } from "react"
 import { AreaContext, YearContext } from "../Contexts"
 import { Chart } from "react-google-charts"
 import "../styles/DataChart.scss"
-import { sumArray } from "../utils/arrayHelper"
+import { sumArray, partition } from "../utils/arrayHelper"
  
 export const DataChart = props => {
     const { area } = useContext(AreaContext)
@@ -15,17 +15,10 @@ export const DataChart = props => {
         return [label, value, fillColor]
     })
 
-    // 1% tai alle saaneet puolueet sijoitetaan omaan listaansa ja yli 1% saaneet omaansa
-    const partitiveData = (data, partitiveNumber) => {
-        return Object.entries(data)
-        /*eslint no-unused-vars: ["error", { "args": "none" }]*/
-        .reduce(([small, big], [_, [puolue, kannatus, vari]]) => 
-            kannatus > partitiveNumber ? [small,[...big, [puolue, kannatus, vari]]] : [[...small, kannatus], big], [[], []])
-        }
-
-    const allValues = partitiveData(data, 1)
+    const allValues = partition(data, ([puolue, kannatus, vari]) => kannatus < 1.0)
+    console.log(allValues)
     // Yhdistetään yli 1% kannatuksen saaneet ja pienemmät niin, että pienemmät yhdistetään yhdeksi luvuksi pienpuolueiden alle.
-    const reconstructedData = allValues[1].concat([["Pienpuolueet", sumArray(allValues[0]), "#ff0000"]])
+    const reconstructedData = allValues[1].concat([["Pienpuolueet", sumArray(allValues[0].map(p => p[1])), "#ff0000"]])
         .slice().sort((a, b) => b[1] - a[1]) // Järjestetään lista
 
     // Yhdistetään data otsikkokenttien kanssa samaan listaan
