@@ -67,9 +67,6 @@ const Etusivu = () => {
                                 <DataChart luvut={chartData} />
                             </Col>
                         </Row>
-                        <Row>
-                            <Col xs={12} xl={12} className="footer"></Col>
-                        </Row>
                     </Col>
                 </Row>
             </>
