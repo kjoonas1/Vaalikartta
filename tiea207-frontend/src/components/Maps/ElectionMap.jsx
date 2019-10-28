@@ -1,6 +1,6 @@
 import React, { useContext } from "react"
 import { Map, GeoJSON } from "react-leaflet"
-import { AreaContext } from "../../Contexts"
+import { AreaContext } from "../../contexts/Contexts"
 
 export const ElectionMap = props => {
     const { setArea } = useContext(AreaContext)

@@ -1,5 +1,5 @@
 import React, { useContext } from "react"
-import { AreaContext, YearContext } from "../../Contexts"
+import { AreaContext, YearContext } from "../../contexts/Contexts"
 import { uudetVaalipiirit, vanhatVaalipiirit } from "../../dataset/SVGMapParts"
 import { Link } from "react-router-dom"
 import "../../styles/Constituency.scss"

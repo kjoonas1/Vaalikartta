@@ -1,10 +1,11 @@
 import React from "react"
 import "@testing-library/jest-dom/extend-expect"
-import { render, cleanup } from "@testing-library/react"
+import { render, cleanup, fireEvent } from "@testing-library/react"
 import { Timeline } from "../components/Timeline"
 import { timelineData } from "../dataset/timelineData"
-import { YearContext, EventContext } from "../Contexts"
 import { BrowserRouter as Router } from "react-router-dom"
+import YearContextProvider from "../contexts/YearContextProvider"
+import EventContextProvider from "../contexts/EventContextProvider"
 
 afterEach(cleanup)
 
@@ -13,18 +14,17 @@ describe("Timeline", () => {
         const data = timelineData
         const component = render(
             <Router>
-                <YearContext.Provider value={{ year: 1983 }}>
-                    <EventContext.Provider
-                        value={{
-                            name: "Neuvostoliiton hajoaminen",
-                            year: 1991
-                        }}
-                    >
+                <YearContextProvider>
+                    <EventContextProvider>
                         <Timeline data={data} />
-                    </EventContext.Provider>
-                </YearContext.Provider>
+                    </EventContextProvider>
+                </YearContextProvider>
             </Router>
         )
-        expect(component.container.textContent).toBe(timelineData.years.join(""))
+        expect(component.container.textContent).toContain(timelineData.years.join(""))
+
+        const button = component.getByTestId("event-link-0")
+        fireEvent.click(button)
+        expect(component.container.textContent).toContain(timelineData.events[0].name)
     })
 })

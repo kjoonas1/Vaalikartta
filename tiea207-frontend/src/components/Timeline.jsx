@@ -2,7 +2,7 @@ import React, { useContext, Fragment } from "react"
 import { Col } from "react-bootstrap"
 import shortid from "shortid"
 import { Link } from "react-router-dom"
-import { YearContext, EventContext } from "../Contexts"
+import { YearContext, EventContext } from "../contexts/Contexts"
 import "../styles/Timeline.scss"
 export const Timeline = props => {
     const { year, setYear } = useContext(YearContext)
@@ -68,7 +68,7 @@ export const Timeline = props => {
                         </Fragment>
                     )
                 })}
-                {events.map(event => {
+                {events.map((event, index) => {
                     const minYear = Math.min(...years)
                     const maxYear = Math.max(...years)
                     const x = padding + ((100 - 2 * padding) * (event.year - minYear)) / (maxYear - minYear)
@@ -81,6 +81,7 @@ export const Timeline = props => {
                     return (
                         <Fragment key={shortid.generate()}>
                             <Link
+                                
                                 to=""
                                 onClick={() => {
                                     // Pallon uudelleenklikkaus poistaa aktivoinnin
@@ -88,6 +89,7 @@ export const Timeline = props => {
                                 }}
                             >
                                 <line
+                                    data-testid={"event-link-" + index}
                                     className="event"
                                     key={shortid.generate()}
                                     x1={x + "%"}

@@ -1,5 +1,5 @@
 import React, { useContext } from "react"
-import { AreaContext, YearContext } from "../Contexts"
+import { AreaContext, YearContext } from "../contexts/Contexts"
 import { Chart } from "react-google-charts"
 import "../styles/DataChart.scss"
 import { sumArray, partition } from "../utils/arrayHelper"

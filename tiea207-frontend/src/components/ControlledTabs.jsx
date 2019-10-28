@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react"
 import { Tabs, Tab } from "react-bootstrap"
-import { AreaContext } from "../Contexts"
+import { AreaContext } from "../contexts/Contexts"
 
 export const ControlledTabs = props => {
     const { area } = useContext(AreaContext)
