@@ -8,7 +8,7 @@ tiea207-frontend/.pnp
 
 # testing
 tiea207-frontend/coverage
-
+tiea207-frontend/src/__tests__/__snapshots__
 # production
 tiea207-frontend/build
 

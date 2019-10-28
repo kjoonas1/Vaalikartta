@@ -37,7 +37,7 @@ export const Timeline = props => {
                         <Fragment key={shortid.generate()}>
                             <Link
                                 key={shortid.generate()}
-                                to="/#"
+                                to=""
                                 onClick={() => {
                                     setYear(year)
                                     // Tällä aktivoidaan event joka on samana vuonna kuin valittu vuosi
@@ -81,7 +81,7 @@ export const Timeline = props => {
                     return (
                         <Fragment key={shortid.generate()}>
                             <Link
-                                to="/#"
+                                to=""
                                 onClick={() => {
                                     // Pallon uudelleenklikkaus poistaa aktivoinnin
                                     isActive ? setEvent(null) : setEvent(event)
