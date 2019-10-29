@@ -11,26 +11,20 @@ module.exports = app => {
         res.send(JSON.stringify(provinceBorders))
     })
 
-    app.get("/api/districts/district", async (req, res) => {
-        res.send(
-            { district: JSON.stringify(req.query.district), 
-                constituency: "find this from db"
-            })
-    })
-
-    app.get("/api/mongotesti/:id", async (req, res) => {
-        console.log(req.params)
-        const collection = req.db.collection("leluesimerkki")
-        const items = await collection.find({}).toArray()
-        res.send(items)
-    })
-
     app.get("/api/vaalipiirit/kannatus/:vaalipiiri/:vuosi", async (req, res) => {
         console.log(req.params)
         const vaalipiiri=req.params.vaalipiiri
         const vuosi=parseInt(req.params.vuosi)
         const collection = req.db.collection("kannatusprosentit-vaalipiireittäin")
         const items = await collection.find({Alue: vaalipiiri, Vuosi: vuosi}).toArray()
+        res.send(items)
+    })
+
+    app.get("/api/koko-maa/kannatus/:vuosi", async (req, res) => {
+        console.log(req.params)
+        const vuosi=parseInt(req.params.vuosi)
+        const collection = req.db.collection("kannatusprosentit-koko-maa")
+        const items = await collection.find({ Vuosi: vuosi }).toArray()
         res.send(items)
     })
 
