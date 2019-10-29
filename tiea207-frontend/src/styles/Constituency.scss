@@ -1,6 +1,10 @@
 .constituency {
     fill-opacity: 0.5;
 }
+
+.constituency-map {
+  padding-top: 3em;
+}
   
 .constituency:hover {
     fill-opacity: 1;
@@ -11,7 +15,7 @@
 
 .map-part-active {
     fill-opacity: 1;
-    animation: opacity-change 1.5s;
+    animation: opacity-change 0.5s;
     stroke: silver;
     stroke-width: 1px;
 }

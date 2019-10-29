@@ -1,9 +1,9 @@
 import React, { useContext } from "react"
-//import {BarChart, CartesianGrid, XAxis, Tooltip, YAxis, Legend, Bar} from "recharts"
 import { AreaContext, YearContext } from "../Contexts"
 import { Chart } from "react-google-charts"
 import "../styles/DataChart.scss"
-
+import { sumArray, partition } from "../utils/arrayHelper"
+ 
 export const DataChart = props => {
     const { area } = useContext(AreaContext)
     const { year } = useContext(YearContext)
@@ -14,10 +14,27 @@ export const DataChart = props => {
         const value = props.luvut[key].vote
         return [label, value, fillColor]
     })
+    
+    // eslint-disable-next-line
+    const allValues = partition(data, ([puolue, kannatus, vari]) => kannatus < 1.0)
 
-    const dataWithHeaders = [
-        ["Puolue", "Kannatusprosentti", { role: "style" }]
-    ].concat(data.slice(0, 11))
+    // Yhdistetään yli 1% kannatuksen saaneet ja pienemmät niin, että pienemmät yhdistetään yhdeksi luvuksi pienpuolueiden alle.
+    const reconstructedData = allValues[1].concat([["Pienpuolueet", sumArray(allValues[0].map(p => p[1])), "#ff0000"]])
+        .slice().sort((a, b) => b[1] - a[1]) // Järjestetään lista
+
+    // Yhdistetään data otsikkokenttien kanssa samaan listaan
+    const dataWithHeaders = [["Puolue", "Kannatusprosentti", { role: "style" }]].concat(reconstructedData)
+
+    const options = {
+        title: area + " " + year,
+        animation: {
+            duration: 250,
+            startup: true
+        },
+        bar: { groupWidth: "80%" },
+        legend: { position: "none" },
+        hAxis: { viewWindow: { min: 0, max: 100 } }
+    }
 
     return (
         <>
@@ -28,28 +45,7 @@ export const DataChart = props => {
                     chartType="BarChart"
                     loader={<div>Loading Chart</div>}
                     data={dataWithHeaders}
-                    options={{
-                        title: area + " " + year,
-                        animation: {
-                            duration: 1000,
-                            easing: "out",
-                            startup: true
-                        },
-                        bar: { groupWidth: "80%" },
-                        legend: { position: "none" },
-                        hAxis: { viewWindow: { min: 0, max: 100 } }
-                    }}
-                    controls={[
-                        {
-                            controlType: "NumberRangeFilter",
-                            options: {
-                                filterColumnLabel: "Kannatusprosentti"
-                            },
-                            controlWrapperParams: {
-                                state: { lowValue: 0, highValue: 100 }
-                            }
-                        }
-                    ]}
+                    options={options}
                     rootProps={{ "data-testid": "1" }}
                 />
             )}

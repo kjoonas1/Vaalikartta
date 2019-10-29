@@ -1,9 +1,41 @@
+:focus {
+  outline: 0;
+}
+
 .container {
   margin-top: 1rem;
   text-align: left;
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: red;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: red;
+}
+
+.nav-link {
+  font-family: 'Play', sans-serif;
+}
+
 .navbar-brand a {
+  font-family: 'Play', sans-serif;
+  font-size: 1.25em;
+  padding: 0.5em;
   color: white !important;
 }
   

@@ -1,8 +1,8 @@
 import React, { useContext } from "react"
-import { AreaContext, YearContext } from "../Contexts"
-import { uudetVaalipiirit, vanhatVaalipiirit } from "../dataset/SVGMapParts"
+import { AreaContext, YearContext } from "../../Contexts"
+import { uudetVaalipiirit, vanhatVaalipiirit } from "../../dataset/SVGMapParts"
 import { Link } from "react-router-dom"
-import "../styles/Constituency.scss"
+import "../../styles/Constituency.scss"
 
 export const ConstituencyMap = (props) => {
     const { area, setArea } = useContext(AreaContext)
@@ -18,7 +18,7 @@ export const ConstituencyMap = (props) => {
                     { Object.keys(_map).map((key, index) => {
                         const getMapPart = (area, globalArea, path) => {
                             if (globalArea === area) {
-                                return React.cloneElement(path, {fill: "#fcb103", className:"map-part-active"})
+                                return React.cloneElement(path, {fill: "#fcb103", outline: "0", className:"map-part-active"})
                             }
                             return React.cloneElement(_map[key].path, {fill: "#000"})
                         }
