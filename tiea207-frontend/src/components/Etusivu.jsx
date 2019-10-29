@@ -11,16 +11,16 @@ import * as colors from "../dataset/partyColors.json"
 import { timelineData } from "../dataset/timelineData"
 import { ControlledTabs } from "./ControlledTabs"
 import { ElectionMap } from "./Maps/ElectionMap"
+import { CountryMap } from "./Maps/CountryMap"
 
 const Etusivu = () => {
-    const { area, setArea } = useContext(AreaContext)
+    const { area, dispatchArea } = useContext(AreaContext)
     const { year } = useContext(YearContext)
 
     const uudetVaalipiirit = MapParts.uudetVaalipiirit.map(key => key.name)
     const vanhatVaalipiirit = MapParts.vanhatVaalipiirit.map(key => key.name)
     const colorArray = colors.default
-
-    const vaalipiiriKannatus = useFetch(`http://localhost:8000/api/vaalipiirit/kannatus/${area}/${year}`)
+    const vaalipiiriKannatus = useFetch(`http://localhost:8000/api/vaalipiirit/kannatus/${area.constituency}/${year}`)
     // Tehdään taulukko, jossa on kukin puolue ja sen kannatus.
     // Jätetään pois kentät joiden nimi on removeAttributesissa (eivät ole puolueita):
     // Järjestetään äänestysprosentin mukaan laskevaan järjestykseen
@@ -30,9 +30,11 @@ const Etusivu = () => {
         const puolueLuvut = objectHelper
             .extractArrayOfResponseData(kannatus, removeAttributes, "name", "vote")
             
-        if (year > 2011 && vanhatVaalipiirit.includes(area) && !uudetVaalipiirit.includes(area)) setArea(null)
-        else if (year <= 2011 && !vanhatVaalipiirit.includes(area) && uudetVaalipiirit.includes(area)) setArea(null)
+        // Jos valittua aluetta ei enää vuoden vaihdon jälkeen ole, poistetaan aluevalinta
+        if (year > 2011 && vanhatVaalipiirit.includes(area) && !uudetVaalipiirit.includes(area)) dispatchArea({type: "CHANGE_CONSTITUENCY_TO", to:null})
+        else if (year <= 2011 && !vanhatVaalipiirit.includes(area) && uudetVaalipiirit.includes(area)) dispatchArea({type: "CHANGE_CONSTITUENCY_TO", to:null})
 
+        // Haetaan puolueen luvut, nimet sekä tunnusvärit
         const chartData = puolueLuvut.map(party => {
             const puolue = colorArray.find(col => col.name.toUpperCase() === party.name.toUpperCase())
             const color = () => {
@@ -41,9 +43,10 @@ const Etusivu = () => {
             return { fill: color(), name: party.name, vote: party.vote }
         })
 
+        // Karttatyypit valtiolle, vaalipiireille ja kunnille
         const maps = [
             {
-                map: <ConstituencyMap height="35em" />,
+                map: <CountryMap height="35em" />,
                 name: "Koko maa"
             },
             {

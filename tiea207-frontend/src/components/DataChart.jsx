@@ -8,6 +8,17 @@ export const DataChart = props => {
     const { area } = useContext(AreaContext)
     const { year } = useContext(YearContext)
 
+    // Otsikko chartille sen mukaan mikä välilehti on aktiivinen kartalla
+    const getTitle = (mapType, area) => {
+        switch (mapType) {
+        case "Vaalipiirit": return area.constituency
+        case "Koko maa": return area.country
+        default: return ""
+        }
+    }
+
+    const chartTitle = getTitle(area.active, area)
+
     const data = Object.keys(props.luvut).map(key => {
         const fillColor = props.luvut[key].fill
         const label = props.luvut[key].name
@@ -26,7 +37,7 @@ export const DataChart = props => {
     const dataWithHeaders = [["Puolue", "Kannatusprosentti", { role: "style" }]].concat(reconstructedData)
 
     const options = {
-        title: area + " " + year,
+        title: chartTitle + " " + year,
         animation: {
             duration: 250,
             startup: true

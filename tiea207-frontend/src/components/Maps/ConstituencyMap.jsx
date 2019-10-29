@@ -5,10 +5,9 @@ import { Link } from "react-router-dom"
 import "../../styles/Constituency.scss"
 
 export const ConstituencyMap = (props) => {
-    const { area, setArea } = useContext(AreaContext)
+    const { area, dispatchArea } = useContext(AreaContext)
     const { year } = useContext(YearContext)
     const mapType = (year) => (year > 2011) ? uudetVaalipiirit : vanhatVaalipiirit
-
     const _map = mapType(year)
 
     return (
@@ -24,7 +23,7 @@ export const ConstituencyMap = (props) => {
                         }
                         const mapPart = getMapPart(area, _map[key].name, _map[key].path)
                         return (<Link key={index} to="" onClick={() => {
-                            setArea(_map[key].name)
+                            dispatchArea({type: "CHANGE_CONSTITUENCY_TO", to: _map[key].name})
                         }}>{mapPart}
                         </Link>)
                     })}

@@ -11,13 +11,13 @@ export const Timeline = props => {
     const years = props.data.years
     const events = props.data.events
 
+    // Asetetaan oletuksena vuosi 2019
     year === null && setYear(years[years.length - 1])
 
     const contextYear = year
     const contextEvent = event
     const padding = 10
     const mainLineHeight = "6em"
-    // const eventYears = events.map((event) => { return event.year })
 
     return (
         <Col md={{ span: 12 }}>
@@ -40,9 +40,6 @@ export const Timeline = props => {
                                 to=""
                                 onClick={() => {
                                     setYear(year)
-                                    // Tällä aktivoidaan event joka on samana vuonna kuin valittu vuosi
-                                    //const eventYearIndex = eventYears.indexOf(year)
-                                    //eventYearIndex > -1 && setEvent(events[eventYearIndex])
                                 }}
                             >
                                 <line
