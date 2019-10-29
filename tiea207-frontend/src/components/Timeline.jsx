@@ -89,7 +89,6 @@ export const Timeline = props => {
                                 }}
                             >
                                 <line
-                                    data-testid={"event-link-" + index}
                                     className="event"
                                     key={shortid.generate()}
                                     x1={x + "%"}
@@ -103,6 +102,7 @@ export const Timeline = props => {
                                     }}
                                 />
                                 <circle
+                                    data-testid={"event-link-" + index}
                                     className="event"
                                     stroke={eventActiveness.boconstituencyrderColor}
                                     fillOpacity={eventActiveness.fill}

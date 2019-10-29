@@ -44,6 +44,10 @@ const Etusivu = () => {
         const maps = [
             {
                 map: <ConstituencyMap height="35em" />,
+                name: "Koko maa"
+            },
+            {
+                map: <ConstituencyMap height="35em" />,
                 name: "Vaalipiirit"
             },
             {
