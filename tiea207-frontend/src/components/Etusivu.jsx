@@ -22,10 +22,12 @@ const Etusivu = () => {
     const vanhatVaalipiirit = MapParts.vanhatVaalipiirit.map(key => key.name)
     const colorArray = colors.default
 
+
     // TODO: Järkeistä kokonaisuus niin, että kannatusten datan käpistely tapahtuu jossain muualla
     const maaKannatus = useFetch(`${backendUrl}/api/koko-maa/kannatus/${year}`)
-    console.log(maaKannatus.data)
-    const vaalipiiriKannatus = useFetch(`${backendUrl}/api/vaalipiirit/kannatus/${area}/${year}`)
+    console.log(maaKannatus)
+
+    const vaalipiiriKannatus = useFetch(`${backendUrl}/api/vaalipiirit/kannatus/${area.constituency}/${year}`)
     // Tehdään taulukko, jossa on kukin puolue ja sen kannatus.
     // Jätetään pois kentät joiden nimi on removeAttributesissa (eivät ole puolueita):
     // Järjestetään äänestysprosentin mukaan laskevaan järjestykseen
