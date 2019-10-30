@@ -18,7 +18,7 @@ export const DataChart = props => {
     }
 
     const chartTitle = getTitle(area.active, area)
-
+    console.log(chartTitle, props)
     const data = Object.keys(props.luvut).map(key => {
         const fillColor = props.luvut[key].fill
         const label = props.luvut[key].name
@@ -28,38 +28,51 @@ export const DataChart = props => {
     
     // eslint-disable-next-line
     const allValues = partition(data, ([puolue, kannatus, vari]) => kannatus < 1.0)
-
+    const pienpuolueet = allValues[0].sort((a, b) => b[1] - a[1])
     // Yhdistetään yli 1% kannatuksen saaneet ja pienemmät niin, että pienemmät yhdistetään yhdeksi luvuksi pienpuolueiden alle.
     const reconstructedData = allValues[1].concat([["Pienpuolueet", sumArray(allValues[0].map(p => p[1])), "#ff0000"]])
         .slice().sort((a, b) => b[1] - a[1]) // Järjestetään lista
+    
 
     // Yhdistetään data otsikkokenttien kanssa samaan listaan
-    const dataWithHeaders = [["Puolue", "Kannatusprosentti", { role: "style" }]].concat(reconstructedData)
+    const addChartHeader = data => [["Puolue", "Kannatusprosentti", { role: "style" }]].concat(data)
+    const dataWithHeaders = addChartHeader(reconstructedData)
+    const pienpuolueetWithHeaders = addChartHeader(pienpuolueet)
 
-    const options = {
-        title: chartTitle + " " + year,
+    const options = (title, max) => ({
+        title: title,
         animation: {
             duration: 250,
             startup: true
         },
         bar: { groupWidth: "80%" },
         legend: { position: "none" },
-        hAxis: { viewWindow: { min: 0, max: 100 } }
-    }
+        hAxis: { viewWindow: { min: 0, max: max } }
+    })
+
 
     return (
         <>
-            {data.length > 0 && (
+            {data.length > 0 && (<>
                 <Chart
                     width={"100%"}
                     height={"600px"}
                     chartType="BarChart"
                     loader={<div>Loading Chart</div>}
                     data={dataWithHeaders}
-                    options={options}
+                    options={options(area.active + " " + year,100)}
                     rootProps={{ "data-testid": "1" }}
                 />
-            )}
+                <Chart
+                    width={"100%"}
+                    height={"600px"}
+                    chartType="PieChart"
+                    loader={<div>Loading Chart</div>}
+                    data={pienpuolueetWithHeaders}
+                    options={options(area.active + " " + year,1)}
+                    rootProps={{ "data-testid": "1" }}
+                /> </>
+            ) }
         </>
     )
 }
