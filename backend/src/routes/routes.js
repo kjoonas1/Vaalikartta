@@ -18,7 +18,7 @@ router.get("/kunnat/kannatus/:kunta/:vuosi", async (req, res) => {
     res.send(items)
 })
 
-router.get("/api/vaalipiirit/kannatus/:vaalipiiri/:vuosi", async (req, res) => {
+router.get("/vaalipiirit/kannatus/:vaalipiiri/:vuosi", async (req, res) => {
     const vaalipiiri = req.params.vaalipiiri
     const vuosi = parseInt(req.params.vuosi)
     if (vaalipiiri === "undefined" || vuosi === NaN)
@@ -29,7 +29,7 @@ router.get("/api/vaalipiirit/kannatus/:vaalipiiri/:vuosi", async (req, res) => {
     res.send(items)
 })
 
-router.get("/api/koko-maa/kannatus/:vuosi", async (req, res) => {
+router.get("/koko-maa/kannatus/:vuosi", async (req, res) => {
     const vuosi=parseInt(req.params.vuosi)
     if (vuosi === NaN)
         return res.status(204).send()
