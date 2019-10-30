@@ -21,7 +21,7 @@ export const ConstituencyMap = (props) => {
                             }
                             return React.cloneElement(_map[key].path, {fill: "#000"})
                         }
-                        const mapPart = getMapPart(area, _map[key].name, _map[key].path)
+                        const mapPart = getMapPart(area.constituency, _map[key].name, _map[key].path)
                         return (<Link key={index} to="" onClick={() => {
                             dispatchArea({type: "CHANGE_CONSTITUENCY_TO", to: _map[key].name})
                         }}>{mapPart}
