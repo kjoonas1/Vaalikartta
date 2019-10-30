@@ -4,10 +4,11 @@
   "description": "TIEA207 projektin backend",
   "main": "index.js",
   "scripts": {
-    "start": "node ./src/app.js",
-    "test": "jest --verbose",
-    "lint": "./node_modules/.bin/eslint . ; exit 0",
-    "lint-fix": "./node_modules/.bin/eslint . --fix; exit 0"
+    "start": "node ./src/index.js",
+    "test": "./node_modules/.bin/cross-env TEST=true jest --verbose --detectOpenHandles --force-exit",
+    "lint": "./node_modules/.bin/eslint .",
+    "lint-fix": "./node_modules/.bin/eslint . --fix",
+    "nodemon": "./node_modules/.bin/nodemon ./src/ -i ./tests"
   },
   "dependencies": {
     "cors": "^2.8.5",
@@ -26,14 +27,18 @@
   },
   "homepage": "https://github.com/kjoonas1/TIEA207#readme",
   "devDependencies": {
+    "cross-env": "^6.0.3",
     "eslint": "^6.5.1",
+    "eslint-plugin-jest": "^22.20.0",
     "eslint-plugin-prefer-arrow": "^1.1.6",
     "husky": "^3.0.9",
-    "jest": "^24.9.0"
+    "jest": "^24.9.0",
+    "nodemon": "^1.19.4",
+    "supertest": "^4.0.2"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint-fix",
+      "pre-commit": "npm run lint-fix && npm test",
       "pre-push": "npm run lint-fix"
     }
   },

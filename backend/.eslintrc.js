@@ -1,14 +1,16 @@
 module.exports = {
     "env": {
         "es6": true,
-        "node": true
+        "node": true,
+        "jest/globals": true
     },
     "extends": "eslint:recommended",
     "parserOptions": {
         "ecmaVersion": 2018
     },
     "plugins": [
-        "prefer-arrow"
+        "prefer-arrow",
+        "jest"
     ],
     "rules": {
         "prefer-arrow/prefer-arrow-functions": [
