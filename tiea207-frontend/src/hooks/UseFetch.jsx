@@ -15,6 +15,7 @@ const useFetch = (url) => {
         const fetchData = async () => {
             setIsLoading(true)
             try {
+                if (!url) throw Error("Invalid url")
                 const response = await axios.get(url, {signal: abortController.signal, timeout: 20000 })
                 if (mounted) {
                     setData(response.data)

@@ -2,7 +2,7 @@ import React, { useContext, Fragment } from "react"
 import { Col } from "react-bootstrap"
 import shortid from "shortid"
 import { Link } from "react-router-dom"
-import { YearContext, EventContext } from "../Contexts"
+import { YearContext, EventContext } from "../contexts/Contexts"
 import "../styles/Timeline.scss"
 export const Timeline = props => {
     const { year, setYear } = useContext(YearContext)
@@ -11,13 +11,13 @@ export const Timeline = props => {
     const years = props.data.years
     const events = props.data.events
 
+    // Asetetaan oletuksena vuosi 2019
     year === null && setYear(years[years.length - 1])
 
     const contextYear = year
     const contextEvent = event
     const padding = 10
     const mainLineHeight = "6em"
-    // const eventYears = events.map((event) => { return event.year })
 
     return (
         <Col md={{ span: 12 }}>
@@ -37,12 +37,9 @@ export const Timeline = props => {
                         <Fragment key={shortid.generate()}>
                             <Link
                                 key={shortid.generate()}
-                                to="/#"
+                                to=""
                                 onClick={() => {
                                     setYear(year)
-                                    // Tällä aktivoidaan event joka on samana vuonna kuin valittu vuosi
-                                    //const eventYearIndex = eventYears.indexOf(year)
-                                    //eventYearIndex > -1 && setEvent(events[eventYearIndex])
                                 }}
                             >
                                 <line
@@ -68,7 +65,7 @@ export const Timeline = props => {
                         </Fragment>
                     )
                 })}
-                {events.map(event => {
+                {events.map((event, index) => {
                     const minYear = Math.min(...years)
                     const maxYear = Math.max(...years)
                     const x = padding + ((100 - 2 * padding) * (event.year - minYear)) / (maxYear - minYear)
@@ -81,7 +78,8 @@ export const Timeline = props => {
                     return (
                         <Fragment key={shortid.generate()}>
                             <Link
-                                to="/#"
+                                
+                                to=""
                                 onClick={() => {
                                     // Pallon uudelleenklikkaus poistaa aktivoinnin
                                     isActive ? setEvent(null) : setEvent(event)
@@ -101,6 +99,7 @@ export const Timeline = props => {
                                     }}
                                 />
                                 <circle
+                                    data-testid={"event-link-" + index}
                                     className="event"
                                     stroke={eventActiveness.boconstituencyrderColor}
                                     fillOpacity={eventActiveness.fill}
