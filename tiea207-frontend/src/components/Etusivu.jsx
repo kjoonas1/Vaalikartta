@@ -22,18 +22,20 @@ const Etusivu = () => {
     const vanhatVaalipiirit = MapParts.vanhatVaalipiirit.map(key => key.name)
     const colorArray = colors.default
 
+    let url = ""
+    if (area.active === "Koko maa")
+        url = `${backendUrl}/api/koko-maa/kannatus/${year}`
+    else if (area.active === "Vaalipiirit")
+        url = `${backendUrl}/api/vaalipiirit/kannatus/${area.constituency}/${year}`
 
     // TODO: Järkeistä kokonaisuus niin, että kannatusten datan käpistely tapahtuu jossain muualla
-    const maaKannatus = useFetch(`${backendUrl}/api/koko-maa/kannatus/${year}`)
-    console.log(maaKannatus)
-
-    const vaalipiiriKannatus = useFetch(`${backendUrl}/api/vaalipiirit/kannatus/${area.constituency}/${year}`)
+    const kannatusHaku = useFetch(url)
     // Tehdään taulukko, jossa on kukin puolue ja sen kannatus.
     // Jätetään pois kentät joiden nimi on removeAttributesissa (eivät ole puolueita):
     // Järjestetään äänestysprosentin mukaan laskevaan järjestykseen
-    if (vaalipiiriKannatus.error === null) {
-        const removeAttributes = ["Alue", "_id", "Vuosi", "tyyppi", "aluekoodi"]
-        const kannatus = objectHelper.filterFromObject(vaalipiiriKannatus.data[0], a => a !== null)
+    if (kannatusHaku.error === null) {
+        const removeAttributes = ["Alue", "_id", "Vuosi", "tyyppi", "aluekoodi", "Puolueiden äänet yhteensä"]
+        const kannatus = objectHelper.filterFromObject(kannatusHaku.data[0], a => a !== null)
         const puolueLuvut = objectHelper
             .extractArrayOfResponseData(kannatus, removeAttributes, "name", "vote")
             
@@ -86,7 +88,7 @@ const Etusivu = () => {
             </>
         )
     }
-    if (vaalipiiriKannatus.error) return <div>Error</div>
+    if (kannatusHaku.error) return <div>Error</div>
 }
 
 export default Etusivu
