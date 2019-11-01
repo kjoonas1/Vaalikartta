@@ -18,7 +18,6 @@ export const DataChart = props => {
     }
 
     const chartTitle = getTitle(area.active, area)
-    console.log(chartTitle, props)
     const data = Object.keys(props.luvut).map(key => {
         const fillColor = props.luvut[key].fill
         const label = props.luvut[key].name
@@ -60,7 +59,7 @@ export const DataChart = props => {
                     chartType="BarChart"
                     loader={<div>Loading Chart</div>}
                     data={dataWithHeaders}
-                    options={options(area.active + " " + year,100)}
+                    options={options(chartTitle + " " + year,100)}
                     rootProps={{ "data-testid": "1" }}
                 />
                 <Chart
@@ -69,7 +68,7 @@ export const DataChart = props => {
                     chartType="PieChart"
                     loader={<div>Loading Chart</div>}
                     data={pienpuolueetWithHeaders}
-                    options={options(area.active + " " + year,1)}
+                    options={options(chartTitle + " " + year,1)}
                     rootProps={{ "data-testid": "1" }}
                 /> </>
             ) }
