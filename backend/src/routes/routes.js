@@ -60,12 +60,14 @@ router.get("/avainluvut/:vuosi/:kunta", async (req, res) => {
         "Väkiluku", "Ruotsinkielisten osuus väestöstä, %", "Työllisyysaste, %", "Ulkomaan kansalaisten osuus väestöstä, %",
         "Taajama-aste, %",
     ]
-    const tiedotKannasta = await avainluvut.find({ Alue: kunta, Tiedot: { $in: halututKentat } }, { projection: { [vuosi]: 1, Tiedot: 1, Alue: 1 } }).toArray()
+    const tiedotKannasta = await avainluvut.find({ Alue: kunta, Tiedot: { $in: halututKentat } }, { projection: { [vuosi]: 1, Tiedot: 1, Alue: 1 } })
+        .toArray()
+    console.log(tiedotKannasta)
     if (tiedotKannasta.length === 0)
         return res.sendStatus(404)
-    if (tiedotKannasta[0][vuosi] == undefined) // varmistetaan että on dataa eikä vain undefined
+    if (tiedotKannasta[0][vuosi] === undefined) // varmistetaan että on dataa eikä vain undefined
         return res.sendStatus(404)
-    const sievennettyData = tiedotKannasta.reduce((acc, kentta) => {
+    const sievennettyData = tiedotKannasta.filter(kentta => kentta[vuosi] !== null).reduce((acc, kentta) => {
         return { ...acc, [kentta.Tiedot]: (kentta[vuosi]) }
     }, {})
     res.send(sievennettyData)
