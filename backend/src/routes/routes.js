@@ -44,6 +44,8 @@ router.get("/kunnat/koordinaatit/:vuosi", async (req, res) => {
     const kuntienNimet = kunnat.map(kunta => kunta.Alue)
     const kokoelma = req.db.collection("kuntien-koordinaatit")
     const koordinaatit = await kokoelma.find({ "properties.name": { $in: kuntienNimet } }).toArray()
+    if (koordinaatit.length === 0)
+        return res.sendStatus(404)
     const geoJSONKoordinaatit = {
         type: "FeatureCollection",
         features: koordinaatit
