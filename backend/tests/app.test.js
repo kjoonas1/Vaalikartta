@@ -53,3 +53,25 @@ describe("Kuntien koordinaatit", () => {
             .end(done)
     })
 })
+
+describe("Kuntien avainluvut", () => {
+    test("Dataa saadaan", done => {
+        request.get("/api/avainluvut/2011/Äänekoski")
+            .expect(200)
+            .expect("Content-Type", /application\/json/)
+            .expect("Content-Length", "303")
+            .end(done)
+    })
+
+    test("Olemattomista kunnista tulee HTTP 404", done => {
+        request.get("/api/avainluvut/2011/Kuusniemi")
+            .expect(404)
+            .end(done)
+    })
+
+    test("Muilta kuin vaalivuosilta välillä 1987-2018 palautetaan HTTP 404", done => {
+        request.get("/api/avainluvut/1983/Helsinki")
+            .expect(404)
+            .end(done)
+    })
+})
