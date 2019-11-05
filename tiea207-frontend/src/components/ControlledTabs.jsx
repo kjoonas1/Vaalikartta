@@ -3,12 +3,11 @@ import { Tabs, Tab } from "react-bootstrap"
 import { AreaContext } from "../contexts/Contexts"
 
 export const ControlledTabs = props => {
-    const { area, dispatchArea } = useContext(AreaContext)
+    const { dispatchArea } = useContext(AreaContext)
     const [key, setKey] = useState(props.tabs[0].name)
     const tabs = Object.keys(props.tabs).map((key, index) => {
         return (
             <Tab eventKey={props.tabs[key].name} title={props.tabs[key].name} key={index}>
-                {area === null && <p>Valitse alue kartalta</p>}
                 {props.tabs[key].map}
             </Tab>
         )
