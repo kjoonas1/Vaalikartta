@@ -7,7 +7,8 @@ export const ControlledTabs = props => {
     const [key, setKey] = useState(props.tabs[0].name)
     const tabs = Object.keys(props.tabs).map((key, index) => {
         return (
-            <Tab eventKey={props.tabs[key].name} title={props.tabs[key].name} key={index}>
+            <Tab eventKey={props.tabs[key].name} title={props.tabs[key].name} key={index}
+                data-testid={"tab-" + props.tabs[key].name}>
                 {area === null && <p>Valitse alue kartalta</p>}
                 {props.tabs[key].map}
             </Tab>
