@@ -75,4 +75,22 @@ router.get("/avainluvut/:vuosi/:kunta", async (req, res) => {
     res.send(sievennettyData)
 })
 
+router.get("/kunnat/aanestystiedot/:kunta/:vuosi", async (req, res) => {
+    const vuosi = parseInt(req.params.vuosi)
+    const kunta = req.params.kunta
+    if (kunta === "undefined" || isNaN(vuosi))
+        return res.status(204).send()
+    const aanestystiedot = req.db.collection("aanestystiedot-kunnat")
+    const items = await aanestystiedot.find({ Alue: kunta, Vuosi: vuosi }, {
+        projection: {
+            Alue: 1, Vuosi: 1,
+            "Äänestysprosentti Sukupuolet yhteensä": 1, "Äänestysprosentti Miehet": 1,
+            "Äänestysprosentti Naiset": 1, "Hylätyt äänet Sukupuolet yhteensä": 1
+        }
+    }).toArray()
+    if (items.length === 0)
+        return res.sendStatus(404)
+    res.send(items)
+})
+
 module.exports = router
