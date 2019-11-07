@@ -95,3 +95,25 @@ describe("Kuntien avainluvut", () => {
             .end(done)
     })
 })
+
+describe("Kuntien aanestystiedot", () => {
+    test("Dataa saadaan", done => {
+        request.get("/api/kunnat/aanestystiedot/Helsinki/2015")
+        .expect(200)
+        .expect("Content-Type", /application\/json/)
+        .expect("Content-Length", "228")
+        .end(done)
+    })
+
+    test("Olemattomista kunnista tulee HTTP 404", done => {
+        request.get("/api/kunnat/aanestystiedot/Muumilaakso/2015")
+        .expect(404)
+        .end(done)
+    })
+
+    test("Jos väärä vaalivuosi niin palautetaan HTTP 404", done => {
+        request.get("/api/kunnat/aanestystiedot/Helsinki/2014")
+        .expect(404)
+        .end(done)
+    })
+})
