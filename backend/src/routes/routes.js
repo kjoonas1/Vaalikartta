@@ -111,4 +111,22 @@ router.get("/vaalipiirit/aanestystiedot/:vaalipiiri/:vuosi", async (req, res) =>
     res.send(items)
 })
 
+router.get("/muut-alueet/aanestystiedot/:muuAlue/:vuosi", async (req, res) => {
+    const vuosi = parseInt(req.params.vuosi)
+    const muuAlue = req.params.muuAlue
+    if (muuAlue === "undefined" || isNaN(vuosi))
+        return res.status(204).send()
+    const aanestystiedot = req.db.collection("aanestystiedot-muut-alueet")
+    const items = await aanestystiedot.find({ Alue: muuAlue, Vuosi: vuosi }, {
+        projection: {
+            Alue: 1, Vuosi: 1,
+            "Äänestysprosentti Sukupuolet yhteensä": 1, "Äänestysprosentti Miehet": 1,
+            "Äänestysprosentti Naiset": 1, "Hylätyt äänet Sukupuolet yhteensä": 1
+        }
+    }).toArray()
+    if (items.length === 0)
+        return res.sendStatus(404)
+    res.send(items)
+})
+
 module.exports = router
