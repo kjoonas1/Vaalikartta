@@ -22,7 +22,8 @@ export const ControlledTabs = props => {
                 activeKey={key}
                 onSelect={k => {
                     setKey(k)
-                    dispatchArea({type: "CHANGE_ACTIVE_TO", to: k})
+                    dispatchArea({ type: "CHANGE_ACTIVE_TO", to: k })
+                    window.dispatchEvent(new Event("resize"))
                 }}>
                 {tabs}
             </Tabs>
