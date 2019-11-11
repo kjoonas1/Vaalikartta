@@ -95,3 +95,69 @@ describe("Kuntien avainluvut", () => {
             .end(done)
     })
 })
+
+describe("Kuntien aanestystiedot", () => {
+    test("Dataa saadaan", done => {
+        request.get("/api/kunnat/aanestystiedot/Helsinki/2015")
+            .expect(200)
+            .expect("Content-Type", /application\/json/)
+            .expect("Content-Length", "228")
+            .end(done)
+    })
+
+    test("Olemattomista kunnista tulee HTTP 404", done => {
+        request.get("/api/kunnat/aanestystiedot/Muumilaakso/2015")
+            .expect(404)
+            .end(done)
+    })
+
+    test("Jos väärä vaalivuosi niin palautetaan HTTP 404", done => {
+        request.get("/api/kunnat/aanestystiedot/Helsinki/2014")
+            .expect(404)
+            .end(done)
+    })
+})
+
+describe("Vaalipiirien aanestystiedot", () => {
+    test("Dataa saadaan", done => {
+        request.get("/api/vaalipiirit/aanestystiedot/Helsingin%20vaalipiiri/2019")
+            .expect(200)
+            .expect("Content-Type", /application\/json/)
+            .expect("Content-Length", "240")
+            .end(done)
+    })
+
+    test("Olemattomista vaalipiireistä tulee HTTP 404", done => {
+        request.get("/api/vaalipiirit/aanestystiedot/Muumilaakso/2019")
+            .expect(404)
+            .end(done)
+    })
+
+    test("Jos väärä vaalivuosi niin palautetaan HTTP 404", done => {
+        request.get("/api/vaalipiirit/aanestystiedot/Helsingin%20vaalipiiri/2018")
+            .expect(404)
+            .end(done)
+    })
+})
+
+describe("Muiden alueiden aanestystiedot", () => {
+    test("Dataa saadaan", done => {
+        request.get("/api/muut-alueet/aanestystiedot/Suomessa%20asuvat%20Suomen%20kansalaiset/2003")
+            .expect(200)
+            .expect("Content-Type", /application\/json/)
+            .expect("Content-Length", "254")
+            .end(done)
+    })
+
+    test("Olemattomista alueista tulee HTTP 404", done => {
+        request.get("/api/muut-alueet/aanestystiedot/Muumilaaksossa%20asuvat%20Muumilaakson%20kansalaiset/2003")
+            .expect(404)
+            .end(done)
+    })
+
+    test("Jos väärä vaalivuosi niin palautetaan HTTP 404", done => {
+        request.get("/api/muut-alueet/aanestystiedot/Suomessa%20asuvat%20Suomen%20kansalaiset/2002")
+            .expect(404)
+            .end(done)
+    })
+})
