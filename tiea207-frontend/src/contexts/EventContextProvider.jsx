@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react"
+import React, { useState, useContext, useMemo } from "react"
 import { EventContext } from "./Contexts"
 
 const EventContextProvider = props => {
@@ -11,3 +11,5 @@ const EventContextProvider = props => {
 }
 
 export default EventContextProvider
+
+export const useEvent = () => useContext(EventContext)

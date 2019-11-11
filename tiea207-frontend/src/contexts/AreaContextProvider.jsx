@@ -1,4 +1,4 @@
-import React, { useMemo, useReducer } from "react"
+import React, { useMemo, useContext, useReducer } from "react"
 import { AreaContext } from "./Contexts"
 
 const AreaContextProvider = props => {
@@ -12,6 +12,8 @@ const AreaContextProvider = props => {
             return { ...state, country: action.to }
         case "CHANGE_ACTIVE_TO":
             return { ...state, active: action.to}
+        case "CHANGE_DISTRICT_TO":
+            return {...state, district: action.to }
         default:
             return { ...state}
         }
@@ -24,3 +26,5 @@ const AreaContextProvider = props => {
 }
 
 export default AreaContextProvider
+
+export const useArea = () => useContext(AreaContext)

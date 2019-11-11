@@ -8,7 +8,7 @@ import { AreaContext, YearContext } from "../contexts/Contexts"
 import * as MapParts from "../dataset/SVGMapParts"
 import * as colors from "../dataset/partyColors.json"
 import { sumArray, partition } from "../utils/arrayHelper"
-import BubbleChart from "@weknow/react-bubble-chart-d3"
+import BubbleChart from "./BubbleChart"
 
 const Charts = () => {
     const { area, dispatchArea } = useContext(AreaContext)
@@ -91,7 +91,14 @@ const Charts = () => {
         return (
             <Col xs={12} xl={8}>
                 <BubbleChart
-                    data={chartData}
+                    data={
+                        [
+                            {v: 1, text: "asd", color: "red"},
+                            {v: 50, text: "asd", color: "blue"},
+                            {v: 30, text: "asd", color: "lime"}
+                        ]
+                    }
+                    useLabels={true}
                     width={1000}
                     height={800}
                 />
