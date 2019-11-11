@@ -1,18 +1,19 @@
-import React, { useContext } from "react"
+import React from "react"
 import { useFetch } from "../hooks/UseFetch"
 import { Col } from "react-bootstrap"
 import { DataChart } from "./DataChart"
 import { backendUrl } from "../constants"
 import * as objectHelper from "../utils/objectHelper"
-import { AreaContext, YearContext } from "../contexts/Contexts"
 import * as MapParts from "../dataset/SVGMapParts"
 import * as colors from "../dataset/partyColors.json"
 import { sumArray, partition } from "../utils/arrayHelper"
 import BubbleChart from "./BubbleChart"
+import { useArea } from "../contexts/AreaContextProvider"
+import { useYear } from "../contexts/YearContextProvider"
 
 const Charts = () => {
-    const { area, dispatchArea } = useContext(AreaContext)
-    const { year } = useContext(YearContext)
+    const { area, dispatchArea } = useArea()
+    const { year } = useYear()
 
     const uudetVaalipiirit = MapParts.uudetVaalipiirit.map(key => key.name)
     const vanhatVaalipiirit = MapParts.vanhatVaalipiirit.map(key => key.name)
@@ -32,6 +33,7 @@ const Charts = () => {
     }
 
     const kannatusHaku = useFetch(url(area.active))
+
     // Tehdään taulukko, jossa on kukin puolue ja sen kannatus.
     // Jätetään pois kentät joiden nimi on removeAttributesissa (eivät ole puolueita):
     // Järjestetään äänestysprosentin mukaan laskevaan järjestykseen
@@ -52,14 +54,14 @@ const Charts = () => {
             const color = () => {
                 return puolue && puolue.color ? puolue.color : "#bdbdbd"
             }
-            return { label: party.name, value: party.vote, color: color() }
+            return { text: party.name, v: party.vote, color: color() }
         })
 
         const data = Object.keys(chartData).map(key => {
             const color = chartData[key].color
-            const label = chartData[key].label
-            const value = chartData[key].value
-            return [label, value, color]
+            const text = chartData[key].label
+            const v = chartData[key].value
+            return [text, v, color]
         })
 
         // eslint-disable-next-line
@@ -88,16 +90,11 @@ const Charts = () => {
 
         const chartTitle = getTitle(area.active, area)
 
+        if (chartData.length) {
         return (
             <Col xs={12} xl={8}>
                 <BubbleChart
-                    data={
-                        [
-                            {v: 1, text: "asd", color: "red"},
-                            {v: 50, text: "asd", color: "blue"},
-                            {v: 30, text: "asd", color: "lime"}
-                        ]
-                    }
+                    data={chartData}
                     useLabels={true}
                     width={1000}
                     height={800}
@@ -105,6 +102,8 @@ const Charts = () => {
                 <DataChart data={dataWithHeaders} chartType="BarChart" title={chartTitle + " " + year} axisMax={100} />
             </Col>
         )
+    }
+    return <div>loading</div>
     }
 }
 export default Charts
