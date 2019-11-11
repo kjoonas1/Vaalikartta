@@ -5,7 +5,6 @@ import { Timeline } from "./Timeline"
 import { ConstituencyMap } from "./Maps/ConstituencyMap"
 import * as objectHelper from "../utils/objectHelper"
 import * as MapParts from "../dataset/SVGMapParts"
-import { DataChart } from "./DataChart"
 import * as colors from "../dataset/partyColors.json"
 import { timelineData } from "../dataset/timelineData"
 import { ControlledTabs } from "./ControlledTabs"
@@ -14,6 +13,7 @@ import { CountryMap } from "./Maps/CountryMap"
 import { backendUrl } from "../constants"
 import { useArea } from "../contexts/AreaContextProvider"
 import { useYear } from "../contexts/YearContextProvider"
+import Charts from "./Charts"
 
 const Etusivu = () => {
     const { area, dispatchArea } = useArea()
@@ -49,6 +49,7 @@ const Etusivu = () => {
         else if (year <= 2011 && !vanhatVaalipiirit.includes(area) && uudetVaalipiirit.includes(area)) dispatchArea({type: "CHANGE_CONSTITUENCY_TO", to:null})
 
         // Haetaan puolueen luvut, nimet sekä tunnusvärit
+        // eslint-disable-next-line
         const chartData = puolueLuvut.map(party => {
             const puolue = colorArray.find(col => col.name.toUpperCase() === party.name.toUpperCase())
             const color = () => {
@@ -89,7 +90,7 @@ const Etusivu = () => {
                                 <ControlledTabs tabs={maps} />
                             </Col>
                             <Col xs={12} xl={8}>
-                                <DataChart luvut={chartData} />
+                                <Charts />
                             </Col>
                         </Row>
                     </Col>
