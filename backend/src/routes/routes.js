@@ -75,4 +75,53 @@ router.get("/avainluvut/:vuosi/:kunta", async (req, res) => {
     res.send(sievennettyData)
 })
 
+const haeAanestysTiedot = async (alue, vuosi, aanestystiedot) => {
+    return await aanestystiedot.find({ Alue: alue, Vuosi: vuosi }, {
+        projection: {
+            Alue: 1, Vuosi: 1,
+            "Äänestysprosentti Sukupuolet yhteensä": 1, "Äänestysprosentti Miehet": 1,
+            "Äänestysprosentti Naiset": 1, "Hylätyt äänet Sukupuolet yhteensä": 1
+        }
+    }).toArray()
+}
+
+router.get("/kunnat/aanestystiedot/:kunta/:vuosi", async (req, res) => {
+    const vuosi = parseInt(req.params.vuosi)
+    const kunta = req.params.kunta
+    if (kunta === "undefined" || isNaN(vuosi))
+        return res.status(204).send()
+    const collectionNimi = "aanestystiedot-kunnat"
+    const aanestystiedot = req.db.collection(collectionNimi)
+    const filtteroituData = await haeAanestysTiedot(kunta, vuosi, aanestystiedot)
+    if (filtteroituData.length === 0)
+        return res.sendStatus(404)
+    res.send(filtteroituData)
+})
+
+router.get("/vaalipiirit/aanestystiedot/:vaalipiiri/:vuosi", async (req, res) => {
+    const vuosi = parseInt(req.params.vuosi)
+    const vaalipiiri = req.params.vaalipiiri
+    if (vaalipiiri === "undefined" || isNaN(vuosi))
+        return res.status(204).send()
+    const collectionNimi = "aanestystiedot-vaalipiirit"
+    const aanestystiedot = req.db.collection(collectionNimi)
+    const filtteroituData = await haeAanestysTiedot(vaalipiiri, vuosi, aanestystiedot)
+    if (filtteroituData.length === 0)
+        return res.sendStatus(404)
+    res.send(filtteroituData)
+})
+
+router.get("/muut-alueet/aanestystiedot/:muuAlue/:vuosi", async (req, res) => {
+    const vuosi = parseInt(req.params.vuosi)
+    const muuAlue = req.params.muuAlue
+    if (muuAlue === "undefined" || isNaN(vuosi))
+        return res.status(204).send()
+    const collectionNimi = "aanestystiedot-muut-alueet"
+    const aanestystiedot = req.db.collection(collectionNimi)
+    const filtteroituData = await haeAanestysTiedot(muuAlue, vuosi, aanestystiedot)
+    if (filtteroituData.length === 0)
+        return res.sendStatus(404)
+    res.send(filtteroituData)
+})
+
 module.exports = router
