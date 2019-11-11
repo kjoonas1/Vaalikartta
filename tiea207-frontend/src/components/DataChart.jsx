@@ -13,6 +13,7 @@ export const DataChart = props => {
         switch (mapType) {
         case "Vaalipiirit": return area.constituency
         case "Koko maa": return area.country
+        case "Kunnat": return area.district
         default: return ""
         }
     }

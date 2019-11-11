@@ -26,7 +26,7 @@ const Etusivu = () => {
         switch (active) {
         case "Koko maa": return `${backendUrl}/api/koko-maa/kannatus/${year}`
         case "Vaalipiirit": return `${backendUrl}/api/vaalipiirit/kannatus/${area.constituency}/${year}`
-        case "Kunnat": return `${backendUrl}/api/vaalipiirit/kannatus/${area.district}/${year}` // FIXME: placeholder
+        case "Kunnat": return `${backendUrl}/api/kunnat/kannatus/${area.district}/${year}`
         default: return null
         }
     }
