@@ -1,8 +1,7 @@
-import React, { useContext } from "react"
+import React from "react"
 import { Col, Row } from "react-bootstrap"
 import { useFetch } from "../hooks/UseFetch"
 import { Timeline } from "./Timeline"
-import { AreaContext, YearContext } from "../contexts/Contexts"
 import { ConstituencyMap } from "./Maps/ConstituencyMap"
 import * as objectHelper from "../utils/objectHelper"
 import * as MapParts from "../dataset/SVGMapParts"
@@ -13,14 +12,17 @@ import { ControlledTabs } from "./ControlledTabs"
 import { ElectionMap } from "./Maps/ElectionMap"
 import { CountryMap } from "./Maps/CountryMap"
 import { backendUrl } from "../constants"
+import { useArea } from "../contexts/AreaContextProvider"
+import { useYear } from "../contexts/YearContextProvider"
 
 const Etusivu = () => {
-    const { area, dispatchArea } = useContext(AreaContext)
-    const { year } = useContext(YearContext)
+    const { area, dispatchArea } = useArea()
+    const { year } = useYear()
 
     const uudetVaalipiirit = MapParts.uudetVaalipiirit.map(key => key.name)
     const vanhatVaalipiirit = MapParts.vanhatVaalipiirit.map(key => key.name)
     const colorArray = colors.default
+    const kuntaData = useFetch(`${backendUrl}/api/kunnat/koordinaatit/${year}`)
 
     const url = (active) => {
         switch (active) {
@@ -55,6 +57,8 @@ const Etusivu = () => {
             return { fill: color(), name: party.name, vote: party.vote }
         })
 
+
+
         // Karttatyypit valtiolle, vaalipiireille ja kunnille
         const maps = [
             {
@@ -66,10 +70,12 @@ const Etusivu = () => {
                 name: "Vaalipiirit"
             },
             {
-                map:  <ElectionMap mapData={{data: []}}/>,
+                map:  <ElectionMap mapData={kuntaData.data}/>,
                 name: "Kunnat"
             }
         ]
+
+
 
         return (
             <>

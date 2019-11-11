@@ -1,9 +1,9 @@
-import React, { useState, useContext } from "react"
+import React, { useState } from "react"
 import { Tabs, Tab } from "react-bootstrap"
-import { AreaContext } from "../contexts/Contexts"
+import { useArea } from "../contexts/AreaContextProvider"
 
 export const ControlledTabs = props => {
-    const { area, dispatchArea } = useContext(AreaContext)
+    const { area, dispatchArea } = useArea()
     const [key, setKey] = useState(props.tabs[0].name)
     const tabs = Object.keys(props.tabs).map((key, index) => {
         return (

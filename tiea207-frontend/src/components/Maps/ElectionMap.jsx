@@ -1,26 +1,24 @@
-import React, { useContext } from "react"
+import React from "react"
 import { Map, GeoJSON, TileLayer } from "react-leaflet"
-import { AreaContext, YearContext } from "../../contexts/Contexts"
 import { useFetch } from "../../hooks/UseFetch"
 import { backendUrl } from "../../constants"
 import L from "leaflet"
+import { useArea } from "../../contexts/AreaContextProvider"
+import { useYear } from "../../contexts/YearContextProvider"
+
 
 //import 'leaflet/dist/leaflet.css'
 
 
 export const ElectionMap = () => {
-    const { dispatchArea } = useContext(AreaContext)
-    const { year } = useContext(YearContext)
+    const { dispatchArea } = useArea()
+    const { year } = useYear()
     const { data, error, isLoading } = useFetch(`${backendUrl}/api/kunnat/koordinaatit/${year}`)
     const mapData = data
 
     const pointToLayer = (feature, latlng) => {
-        console.log("feature: ", feature)
-        console.log("latlng: ", latlng)
         return L.circleMarker(latlng, null)
     }
-
-
 
     // hoitaa kartan klikkauksen
     const addAreaInfo = (feature, layer) => {

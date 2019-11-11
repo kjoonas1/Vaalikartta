@@ -1,13 +1,14 @@
-import React, { useContext } from "react"
-import { AreaContext, YearContext } from "../../contexts/Contexts"
+import React from "react"
 import { uudetVaalipiirit, vanhatVaalipiirit } from "../../dataset/SVGMapParts"
 import { Link } from "react-router-dom"
 import "../../styles/Constituency.scss"
 import shortid from "shortid"
+import { useYear } from "../../contexts/YearContextProvider"
+import { useArea } from "../../contexts/AreaContextProvider"
 
 export const CountryMap = props => {
-    const { year } = useContext(YearContext)
-    const { dispatchArea } = useContext(AreaContext)
+    const { year } = useYear()
+    const { dispatchArea } = useArea()
 
     const mapType = year => (year > 2011 ? uudetVaalipiirit : vanhatVaalipiirit)
 

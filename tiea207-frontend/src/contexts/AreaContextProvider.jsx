@@ -1,4 +1,4 @@
-import React, { useMemo, useReducer } from "react"
+import React, { useMemo, useContext, useReducer } from "react"
 import { AreaContext } from "./Contexts"
 
 const AreaContextProvider = props => {
@@ -26,3 +26,5 @@ const AreaContextProvider = props => {
 }
 
 export default AreaContextProvider
+
+export const useArea = () => useContext(AreaContext)

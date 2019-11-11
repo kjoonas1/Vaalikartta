@@ -1,12 +1,13 @@
-import React, { useContext } from "react"
-import { AreaContext, YearContext } from "../contexts/Contexts"
+import React from "react"
 import { Chart } from "react-google-charts"
 import "../styles/DataChart.scss"
 import { sumArray, partition } from "../utils/arrayHelper"
+import { useArea } from "../contexts/AreaContextProvider"
+import { useYear } from "../contexts/YearContextProvider"
  
 export const DataChart = props => {
-    const { area } = useContext(AreaContext)
-    const { year } = useContext(YearContext)
+    const { area } = useArea()
+    const { year } = useYear()
 
     // Otsikko chartille sen mukaan mikä välilehti on aktiivinen kartalla
     const getTitle = (mapType, area) => {
