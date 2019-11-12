@@ -11,7 +11,6 @@ const BubbleChart = props => {
     const padding = 8
 
     let mounted = true
-
     // Tähän pitäisi tehdä cleanup funktio. Heittää virheilmoituksen konsoliin kun vaihdetaan esim. koko maasta vaalipiireihin ellei aluetta ole valittu.
     useEffect(() => {
         if (data.length && mounted) simulatePositions(props.data, mounted)
@@ -45,10 +44,10 @@ const BubbleChart = props => {
 
     const renderBubbles = data => {
         const color = d3
-            .scalePow().exponent(0.4)
+            .scaleLinear()
             .domain([minValue, maxValue])
             .interpolate(d3.interpolateHcl)
-            .range(["#eb001b", "#f79e1b"])
+            .range(["#eb001b", "#d6d1a5"])
 
         // render circle and text elements inside a group
         const texts = data.map((item, index) => {
@@ -59,16 +58,23 @@ const BubbleChart = props => {
                         <g key={index} transform={`translate(${props.width / 2 + item.x}, ${props.height / 2 + item.y})`}>
                             {item.v > 0 && <>
                                 <circle
-                                    r={radiusScale(item.v)+5}
+                                    r={radiusScale(item.v) + 5}
                                     fill={item.color}
-                                    stroke={d3.rgb(color(item.v)).brighter(2)}
+                                    stroke={d3.rgb(color(item.v)).brighter(1)}
                                     strokeWidth="3"
                                 />
                                 <text dy="0%" fill="#fff" textAnchor="middle" fontSize={`${fontSize}em`} fontWeight="bold">
-                                    <tspan x="0" dy="0em">
-                                        {item.text}
-                                    </tspan>
-                                    <tspan x="0" dy="1em">
+                                    {/* Muu puolueen takia säädetään rivitystä */}
+                                        {item.text.split(" ").map((word, i) => {
+                                            let y=0
+                                            if (item.text.split(" ").length > 1) y=0.5
+                                            return (
+                                                <tspan key={i} x="0" dy={i*1.5-y + "em"}>
+                                                    {word}
+                                                </tspan>
+                                            )
+                                        })}
+                                    <tspan x="0" dy={"1em"}>
                                         {item.v}
                                     </tspan>
                                 </text> </>}
@@ -83,12 +89,14 @@ const BubbleChart = props => {
     if (data.length) {
 
         return (
-            <svg width={props.width} height={props.height}>
-                {renderBubbles(data)}
-            </svg>
+            <>
+                <p>{props.title}</p>
+                <svg width={props.width} height={props.height}>
+                    {renderBubbles(data)}
+                </svg>
+            </>
         )
     }
-    return <div>Loading</div>
 }
 
 export default BubbleChart

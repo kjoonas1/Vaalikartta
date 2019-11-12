@@ -26,7 +26,7 @@ const Charts = () => {
         case "Vaalipiirit":
             return `${backendUrl}/api/vaalipiirit/kannatus/${area.constituency}/${year}`
         case "Kunnat":
-            return `${backendUrl}/api/vaalipiirit/kannatus/${area.district}/${year}` // FIXME: placeholder
+            return `${backendUrl}/api/vaalipiirit/kannatus/${area.district}/${year}`
         default:
             return null
         }
@@ -97,15 +97,16 @@ const Charts = () => {
             <Col xs={12} xl={8}>
                 <BubbleChart
                     data={bubbleChartData()}
+                    title={chartTitle + " " + year}
                     useLabels={true}
-                    width={1000}
-                    height={800}
+                    width={700}
+                    height={700}
                 />
-                <DataChart data={dataWithHeaders} chartType="BarChart" title={chartTitle + " " + year} axisMax={100} />
-            </Col>
+{/*                 <DataChart data={dataWithHeaders} chartType="BarChart" title={chartTitle + " " + year} axisMax={100} />
+ */}            </Col>
         )
     }
-    return <div>loading</div>
+    return <div>Loading..</div>
     }
 }
 export default Charts
