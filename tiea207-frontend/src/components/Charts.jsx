@@ -1,12 +1,11 @@
 import React from "react"
 import { useFetch } from "../hooks/UseFetch"
 import { Col } from "react-bootstrap"
-import { DataChart } from "./DataChart"
+// import { DataChart } from "./DataChart"
 import { backendUrl } from "../constants"
 import * as objectHelper from "../utils/objectHelper"
 import * as MapParts from "../dataset/SVGMapParts"
 import * as colors from "../dataset/partyColors.json"
-import { sumArray, partition } from "../utils/arrayHelper"
 import BubbleChart from "./BubbleChart"
 import { useArea } from "../contexts/AreaContextProvider"
 import { useYear } from "../contexts/YearContextProvider"
@@ -37,7 +36,7 @@ const Charts = () => {
     // Tehdään taulukko, jossa on kukin puolue ja sen kannatus.
     // Jätetään pois kentät joiden nimi on removeAttributesissa (eivät ole puolueita):
     // Järjestetään äänestysprosentin mukaan laskevaan järjestykseen
-    if (kannatusHaku.error === null) {
+    if (kannatusHaku.error === null && kannatusHaku.data) {
         const removeAttributes = ["Alue", "_id", "Vuosi", "tyyppi", "aluekoodi", "Puolueiden äänet yhteensä"]
         const kannatus = objectHelper.filterFromObject(kannatusHaku.data[0], a => a !== null)
         const puolueLuvut = objectHelper.extractArrayOfResponseData(kannatus, removeAttributes, "name", "vote")
@@ -60,26 +59,6 @@ const Charts = () => {
         // Sorttauksella voidaan määrittää pallojen järjestyminen
         const bubbleChartData = () => chartData.sort((a, b) => b.v - a.v)
 
-        const data = Object.keys(chartData).map(key => {
-            const color = chartData[key].color
-            const text = chartData[key].label
-            const v = chartData[key].value
-            return [text, v, color]
-        })
-
-        // eslint-disable-next-line
-        const suuretPuolueet = partition(data, ([puolue, kannatus, vari]) => kannatus < 1.0)
-        //const pienpuolueet = suuretPuolueet[0].sort((a, b) => b[1] - a[1])
-        // Yhdistetään yli 1% kannatuksen saaneet ja pienemmät niin, että pienemmät yhdistetään yhdeksi luvuksi pienpuolueiden alle.
-        const suuretPuolueetChart = suuretPuolueet[1]
-            .concat([["Pienpuolueet", sumArray(suuretPuolueet[0].map(p => p[1])), "#ff0000"]])
-            .sort((a, b) => b[1] - a[1]) // Järjestetään lista
-
-        // Yhdistetään data otsikkokenttien kanssa samaan listaan
-        const addChartHeader = data => [["Puolue", "Kannatusprosentti", { role: "style" }]].concat(data)
-        const dataWithHeaders = addChartHeader(suuretPuolueetChart)
-
-        // Otsikko chartille sen mukaan mikä välilehti on aktiivinen kartalla
         const getTitle = (mapType, area) => {
             switch (mapType) {
             case "Vaalipiirit":
@@ -90,7 +69,6 @@ const Charts = () => {
                 return ""
             }
         }
-
         const chartTitle = getTitle(area.active, area)
         if (chartData.length) {
         return (

@@ -2,6 +2,8 @@
 
 import React, { useEffect, useState } from "react"
 import * as d3 from "d3"
+// import {usePrevious} from "../hooks/UsePrevious"
+
 
 const BubbleChart = props => {
 
@@ -9,6 +11,7 @@ const BubbleChart = props => {
     const maxValue = 1.05 * d3.max(props.data, item => item.v)
     const [data, setData] = useState(props.data)
     const padding = 8
+    // const prevData = usePrevious(props.data)
 
     let mounted = true
     // Tähän pitäisi tehdä cleanup funktio. Heittää virheilmoituksen konsoliin kun vaihdetaan esim. koko maasta vaalipiireihin ellei aluetta ole valittu.
@@ -50,7 +53,7 @@ const BubbleChart = props => {
             .range(["#eb001b", "#d6d1a5"])
 
         // render circle and text elements inside a group
-        const texts = data.map((item, index) => {
+        const bubbles = data.map((item, index) => {
             const fontSize = radiusScale(item.v) / 40 + 0.35 // lisätään vakio, jotta pienissä palloissa oleva teksti näkyy
             {
                 if (item.x && item.y && item.v)
@@ -83,7 +86,7 @@ const BubbleChart = props => {
             }
         })
 
-        return texts
+        return bubbles
     }
 
     if (data.length) {
