@@ -92,7 +92,6 @@ const Charts = () => {
         }
 
         const chartTitle = getTitle(area.active, area)
-
         if (chartData.length) {
         return (
             <Col xs={12} xl={8}>

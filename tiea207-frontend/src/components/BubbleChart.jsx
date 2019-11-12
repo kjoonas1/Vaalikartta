@@ -36,8 +36,8 @@ const BubbleChart = props => {
 
     const radiusScale = value => {
         const fx = d3
-            .scalePow().exponent(0.4)
-            .range([6, 90])
+            .scalePow().exponent(0.5)
+            .range([6, 100])
             .domain([minValue, maxValue])
 
         return fx(value)
@@ -45,14 +45,14 @@ const BubbleChart = props => {
 
     const renderBubbles = data => {
         const color = d3
-            .scaleLinear()
+            .scalePow().exponent(0.4)
             .domain([minValue, maxValue])
             .interpolate(d3.interpolateHcl)
             .range(["#eb001b", "#f79e1b"])
 
         // render circle and text elements inside a group
         const texts = data.map((item, index) => {
-            const fontSize = radiusScale(item.v) / 32
+            const fontSize = radiusScale(item.v) / 40 + 0.35 // lisätään vakio, jotta pienissä palloissa oleva teksti näkyy
             {
                 if (item.x && item.y && item.v)
                     return (
@@ -62,7 +62,7 @@ const BubbleChart = props => {
                                     r={radiusScale(item.v)+5}
                                     fill={item.color}
                                     stroke={d3.rgb(color(item.v)).brighter(2)}
-                                    strokeWidth="1"
+                                    strokeWidth="3"
                                 />
                                 <text dy="0%" fill="#fff" textAnchor="middle" fontSize={`${fontSize}em`} fontWeight="bold">
                                     <tspan x="0" dy="0em">
