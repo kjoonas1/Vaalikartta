@@ -57,6 +57,9 @@ const Charts = () => {
             return { text: party.name, v: party.vote, color: color() }
         })
 
+        // Sorttauksella voidaan määrittää pallojen järjestyminen
+        const bubbleChartData = () => chartData.sort((a, b) => b.v - a.v)
+
         const data = Object.keys(chartData).map(key => {
             const color = chartData[key].color
             const text = chartData[key].label
@@ -94,7 +97,7 @@ const Charts = () => {
         return (
             <Col xs={12} xl={8}>
                 <BubbleChart
-                    data={chartData}
+                    data={bubbleChartData()}
                     useLabels={true}
                     width={1000}
                     height={800}
