@@ -8,6 +8,7 @@ const BubbleChart = props => {
     const minValue = 0.95 * d3.min(props.data, item => item.v)
     const maxValue = 1.05 * d3.max(props.data, item => item.v)
     const [data, setData] = useState(props.data)
+    const padding = 8
 
     let mounted = true
 
@@ -22,9 +23,9 @@ const BubbleChart = props => {
                 .forceSimulation()
                 .nodes(data)
                 .velocityDecay(0.5)
-                .force("x", d3.forceX().strength(0.025))
-                .force("y", d3.forceY().strength(0.025))
-                .force("collide", d3.forceCollide(d => radiusScale(d.v) + 8))
+                .force("x", d3.forceX().strength(0.000125))
+                .force("y", d3.forceY().strength(0.000125))
+                .force("collide", d3.forceCollide(d => radiusScale(d.v) + padding))
                 .on("tick", () => {
                     if (data.length) {
                         setData(data)
@@ -36,7 +37,7 @@ const BubbleChart = props => {
     const radiusScale = value => {
         const fx = d3
             .scalePow().exponent(0.4)
-            .range([5, 80])
+            .range([6, 90])
             .domain([minValue, maxValue])
 
         return fx(value)
@@ -51,19 +52,19 @@ const BubbleChart = props => {
 
         // render circle and text elements inside a group
         const texts = data.map((item, index) => {
-            const fontSize = radiusScale(item.v) / 2
+            const fontSize = radiusScale(item.v) / 32
             {
                 if (item.x && item.y && item.v)
                     return (
                         <g key={index} transform={`translate(${props.width / 2 + item.x}, ${props.height / 2 + item.y})`}>
                             {item.v > 0 && <>
                                 <circle
-                                    r={radiusScale(item.v)}
+                                    r={radiusScale(item.v)+5}
                                     fill={item.color}
                                     stroke={d3.rgb(color(item.v)).brighter(2)}
-                                    strokeWidth="3"
+                                    strokeWidth="1"
                                 />
-                                <text dy="0%" fill="#fff" textAnchor="middle" fontSize={`${fontSize}px`} fontWeight="bold">
+                                <text dy="0%" fill="#fff" textAnchor="middle" fontSize={`${fontSize}em`} fontWeight="bold">
                                     <tspan x="0" dy="0em">
                                         {item.text}
                                     </tspan>
