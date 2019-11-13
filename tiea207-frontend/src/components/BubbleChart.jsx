@@ -2,8 +2,6 @@
 
 import React, { useEffect, useState } from "react"
 import * as d3 from "d3"
-// import {usePrevious} from "../hooks/UsePrevious"
-
 
 const BubbleChart = props => {
 
@@ -11,26 +9,30 @@ const BubbleChart = props => {
     const maxValue = 1.05 * d3.max(props.data, item => item.v)
     const [data, setData] = useState(props.data)
     const padding = 8
-    // const prevData = usePrevious(props.data)
 
-    let mounted = true
+    let mounted
     // Tähän pitäisi tehdä cleanup funktio. Heittää virheilmoituksen konsoliin kun vaihdetaan esim. koko maasta vaalipiireihin ellei aluetta ole valittu.
     useEffect(() => {
-        if (data.length && mounted) simulatePositions(props.data, mounted)
+        if (data.length) {
+            mounted = true
+            simulatePositions(props.data, mounted)
+        }
+        return () => mounted = false
     }, [props.data])
 
     const simulatePositions = (data, mounted) => {
+        const simulation = d3.forceSimulation()
         if (mounted) {
-            d3
-                .forceSimulation()
+            simulation.alphaDecay(0.1) // Tämä pysäyttää simulaation
+            simulation
                 .nodes(data)
                 .velocityDecay(0.5)
                 .force("x", d3.forceX().strength(0.000125))
                 .force("y", d3.forceY().strength(0.000125))
                 .force("collide", d3.forceCollide(d => radiusScale(d.v) + padding))
                 .on("tick", () => {
-                        setData(data)
-                })
+                    setData(data)
+                }).on("end", () => simulation.stop())
         }
     }
 
@@ -58,17 +60,17 @@ const BubbleChart = props => {
                                     stroke={d3.color(item.color).darker(0.5)}
                                     strokeWidth="3"
                                 />
-                                <text dy="0%" fill={  d3.hsl(d3.color(item.color)).l > 0.7 ? "#555" : "#fff"} textAnchor="middle" fontSize={`${fontSize}em`} fontWeight="bold">
+                                <text dy="0%" fill={d3.hsl(d3.color(item.color)).l > 0.7 ? "#555" : "#fff"} textAnchor="middle" fontSize={`${fontSize}em`} fontWeight="bold">
                                     {/* Muu puolueen takia säädetään rivitystä */}
-                                        {item.text.split(" ").map((word, i) => {
-                                            let y=0
-                                            if (item.text.split(" ").length > 1) y=0.5
-                                            return (
-                                                <tspan key={i} x="0" dy={i*1.5-y + "em"}>
-                                                    {word}
-                                                </tspan>
-                                            )
-                                        })}
+                                    {item.text.split(" ").map((word, i) => {
+                                        let y = 0
+                                        if (item.text.split(" ").length > 1) y = 0.5
+                                        return (
+                                            <tspan key={i} x="0" dy={i * 1.5 - y + "em"}>
+                                                {word}
+                                            </tspan>
+                                        )
+                                    })}
                                     <tspan x="0" dy={"1em"}>
                                         {item.v}
                                     </tspan>
