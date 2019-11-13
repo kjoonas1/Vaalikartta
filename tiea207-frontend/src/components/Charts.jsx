@@ -20,14 +20,14 @@ const Charts = () => {
 
     const url = active => {
         switch (active) {
-        case "Koko maa":
-            return `${backendUrl}/api/koko-maa/kannatus/${year}`
-        case "Vaalipiirit":
-            return `${backendUrl}/api/vaalipiirit/kannatus/${area.constituency}/${year}`
-        case "Kunnat":
-            return `${backendUrl}/api/vaalipiirit/kannatus/${area.district}/${year}`
-        default:
-            return null
+            case "Koko maa":
+                return `${backendUrl}/api/koko-maa/kannatus/${year}`
+            case "Vaalipiirit":
+                return `${backendUrl}/api/vaalipiirit/kannatus/${area.constituency}/${year}`
+            case "Kunnat":
+                return `${backendUrl}/api/kunnat/kannatus/${area.district}/${year}`
+            default:
+                return null
         }
     }
 
@@ -61,30 +61,31 @@ const Charts = () => {
 
         const getTitle = (mapType, area) => {
             switch (mapType) {
-            case "Vaalipiirit":
-                return area.constituency !== undefined ? area.constituency : ""
-            case "Koko maa":
-                return area.country !== undefined ? area.country : ""
-            default:
-                return ""
+                case "Vaalipiirit":
+                    return area.constituency !== undefined ? area.constituency : ""
+                case "Koko maa":
+                    return area.country !== undefined ? area.country : ""
+                case "Kunnat":
+                    return area.district !== undefined ? area.district : ""
+                default:
+                    return ""
             }
         }
         const chartTitle = getTitle(area.active, area)
         if (chartData.length) {
-        return (
-            <Col xs={12} xl={8}>
-                <BubbleChart
-                    data={bubbleChartData()}
-                    title={chartTitle + " " + year}
-                    useLabels={true}
-                    width={700}
-                    height={700}
-                />
-{/*                 <DataChart data={dataWithHeaders} chartType="BarChart" title={chartTitle + " " + year} axisMax={100} />
- */}            </Col>
-        )
+            return (
+                <Col xs={12} xl={8}>
+                    <BubbleChart
+                        data={bubbleChartData()}
+                        title={chartTitle + " " + year}
+                        useLabels={true}
+                        width={700}
+                        height={700}
+                    />
+                </Col>
+            )
+        }
     }
     return <div>Loading..</div>
-    }
 }
 export default Charts

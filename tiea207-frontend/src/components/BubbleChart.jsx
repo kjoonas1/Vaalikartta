@@ -29,29 +29,21 @@ const BubbleChart = props => {
                 .force("y", d3.forceY().strength(0.000125))
                 .force("collide", d3.forceCollide(d => radiusScale(d.v) + padding))
                 .on("tick", () => {
-                    if (data.length) {
                         setData(data)
-                    }
                 })
         }
     }
 
     const radiusScale = value => {
         const fx = d3
-            .scalePow().exponent(0.5)
-            .range([6, 100])
+            .scaleLinear()
+            .range([10, 100])
             .domain([minValue, maxValue])
 
         return fx(value)
     }
 
     const renderBubbles = data => {
-        const color = d3
-            .scaleLinear()
-            .domain([minValue, maxValue])
-            .interpolate(d3.interpolateHcl)
-            .range(["#eb001b", "#d6d1a5"])
-
         // render circle and text elements inside a group
         const bubbles = data.map((item, index) => {
             const fontSize = radiusScale(item.v) / 40 + 0.35 // lisätään vakio, jotta pienissä palloissa oleva teksti näkyy
@@ -63,10 +55,10 @@ const BubbleChart = props => {
                                 <circle
                                     r={radiusScale(item.v) + 5}
                                     fill={item.color}
-                                    stroke={d3.rgb(color(item.v)).brighter(1)}
+                                    stroke={d3.color(item.color).darker(0.5)}
                                     strokeWidth="3"
                                 />
-                                <text dy="0%" fill="#fff" textAnchor="middle" fontSize={`${fontSize}em`} fontWeight="bold">
+                                <text dy="0%" fill={  d3.hsl(d3.color(item.color)).l > 0.7 ? "#555" : "#fff"} textAnchor="middle" fontSize={`${fontSize}em`} fontWeight="bold">
                                     {/* Muu puolueen takia säädetään rivitystä */}
                                         {item.text.split(" ").map((word, i) => {
                                             let y=0
