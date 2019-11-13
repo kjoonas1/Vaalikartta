@@ -36,7 +36,7 @@ const Charts = () => {
     // Tehdään taulukko, jossa on kukin puolue ja sen kannatus.
     // Jätetään pois kentät joiden nimi on removeAttributesissa (eivät ole puolueita):
     // Järjestetään äänestysprosentin mukaan laskevaan järjestykseen
-    if (kannatusHaku.error === null && kannatusHaku.data) {
+    if (kannatusHaku.error === null && kannatusHaku.data.length) {
         const removeAttributes = ["Alue", "_id", "Vuosi", "tyyppi", "aluekoodi", "Puolueiden äänet yhteensä"]
         const kannatus = objectHelper.filterFromObject(kannatusHaku.data[0], a => a !== null)
         const puolueLuvut = objectHelper.extractArrayOfResponseData(kannatus, removeAttributes, "name", "vote")
@@ -72,6 +72,7 @@ const Charts = () => {
             }
         }
         const chartTitle = getTitle(area.active, area)
+
         if (chartData.length) {
             return (
                 <Col xs={12} xl={8}>

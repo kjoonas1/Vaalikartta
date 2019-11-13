@@ -9,31 +9,30 @@ const BubbleChart = props => {
     const maxValue = 1.05 * d3.max(props.data, item => item.v)
     const [data, setData] = useState(props.data)
     const padding = 8
+    const simulation = d3.forceSimulation()
+    const isCancelled = React.useRef(false);
 
-    let mounted
-    // Tähän pitäisi tehdä cleanup funktio. Heittää virheilmoituksen konsoliin kun vaihdetaan esim. koko maasta vaalipiireihin ellei aluetta ole valittu.
     useEffect(() => {
         if (data.length) {
-            mounted = true
-            simulatePositions(props.data, mounted)
+            isCancelled.current = false
+            simulatePositions(props.data)
         }
-        return () => mounted = false
+        return () => {
+            isCancelled.current = true;
+        }
     }, [props.data])
 
     const simulatePositions = (data, mounted) => {
-        const simulation = d3.forceSimulation()
-        if (mounted) {
-            simulation.alphaDecay(0.1) // Tämä pysäyttää simulaation
+            simulation.alphaDecay(0.05) // Tämä pysäyttää simulaation
             simulation
                 .nodes(data)
                 .velocityDecay(0.5)
-                .force("x", d3.forceX().strength(0.000125))
-                .force("y", d3.forceY().strength(0.000125))
+                .force("x", d3.forceX().strength(0.125))
+                .force("y", d3.forceY().strength(0.125))
                 .force("collide", d3.forceCollide(d => radiusScale(d.v) + padding))
                 .on("tick", () => {
-                    setData(data)
-                }).on("end", () => simulation.stop())
-        }
+                    if(!isCancelled.current) setData(data)
+                })
     }
 
     const radiusScale = value => {
