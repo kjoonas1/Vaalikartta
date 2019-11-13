@@ -87,6 +87,6 @@ const Charts = () => {
             )
         }
     }
-    return <div>Loading..</div>
+    return <div>Valitse aika ja paikka</div>
 }
 export default Charts

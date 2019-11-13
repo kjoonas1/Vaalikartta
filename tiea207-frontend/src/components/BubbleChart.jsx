@@ -22,17 +22,17 @@ const BubbleChart = props => {
         }
     }, [props.data])
 
-    const simulatePositions = (data, mounted) => {
-            simulation.alphaDecay(0.05) // Tämä pysäyttää simulaation
-            simulation
-                .nodes(data)
-                .velocityDecay(0.5)
-                .force("x", d3.forceX().strength(0.125))
-                .force("y", d3.forceY().strength(0.125))
-                .force("collide", d3.forceCollide(d => radiusScale(d.v) + padding))
-                .on("tick", () => {
-                    if(!isCancelled.current) setData(data)
-                })
+    const simulatePositions = (data) => {
+        simulation
+            .nodes(data)
+            .alphaDecay(0.05)
+            .force("x", d3.forceX().strength(0.025))
+            .force("y", d3.forceY().strength(0.025))
+            .force("collide", d3.forceCollide(d => radiusScale(d.v) + padding))
+            .on("tick", () => {
+                if (!isCancelled.current) setData(data)
+            })
+
     }
 
     const radiusScale = value => {
