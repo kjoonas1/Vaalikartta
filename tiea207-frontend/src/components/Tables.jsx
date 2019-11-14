@@ -9,9 +9,9 @@ export const Tables = props => {
     console.log(props)
     const getTitle = (mapType, area) => {
         switch (mapType) {
-            case "Vaalipiirit": return area.constituency
-            case "Koko maa": return area.country
-            default: return ""
+        case "Vaalipiirit": return area.constituency
+        case "Koko maa": return area.country
+        default: return ""
         }
     }
 
