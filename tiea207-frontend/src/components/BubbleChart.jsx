@@ -10,7 +10,7 @@ const BubbleChart = props => {
     const [data, setData] = useState(props.data)
     const padding = 8
     const simulation = d3.forceSimulation()
-    const isCancelled = React.useRef(false);
+    const isCancelled = React.useRef(false)
 
     useEffect(() => {
         if (data.length) {
@@ -30,7 +30,9 @@ const BubbleChart = props => {
             .force("y", d3.forceY().strength(0.025))
             .force("collide", d3.forceCollide(d => radiusScale(d.v) + padding))
             .on("tick", () => {
-                if (!isCancelled.current) setData(data)
+                if (!isCancelled.current) {
+                    setData(data)
+                }
             })
 
     }
@@ -45,7 +47,6 @@ const BubbleChart = props => {
     }
 
     const renderBubbles = data => {
-        // render circle and text elements inside a group
         const bubbles = data.map((item, index) => {
             const fontSize = radiusScale(item.v) / 40 + 0.35 // lisätään vakio, jotta pienissä palloissa oleva teksti näkyy
             {
@@ -93,6 +94,7 @@ const BubbleChart = props => {
             </>
         )
     }
+    else return <>Loading</>
 }
 
 export default BubbleChart

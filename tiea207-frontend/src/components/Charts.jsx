@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { useFetch } from "../hooks/UseFetch"
 import { Col } from "react-bootstrap"
 // import { DataChart } from "./DataChart"
@@ -10,7 +10,7 @@ import BubbleChart from "./BubbleChart"
 import { useArea } from "../contexts/AreaContextProvider"
 import { useYear } from "../contexts/YearContextProvider"
 
-const Charts = () => {
+const Charts = props => {
     const { area, dispatchArea } = useArea()
     const { year } = useYear()
 
@@ -36,57 +36,54 @@ const Charts = () => {
     // Tehdään taulukko, jossa on kukin puolue ja sen kannatus.
     // Jätetään pois kentät joiden nimi on removeAttributesissa (eivät ole puolueita):
     // Järjestetään äänestysprosentin mukaan laskevaan järjestykseen
-    if (kannatusHaku.error === null && kannatusHaku.data.length) {
-        const removeAttributes = ["Alue", "_id", "Vuosi", "tyyppi", "aluekoodi", "Puolueiden äänet yhteensä"]
-        const kannatus = objectHelper.filterFromObject(kannatusHaku.data[0], a => a !== null)
-        const puolueLuvut = objectHelper.extractArrayOfResponseData(kannatus, removeAttributes, "name", "vote")
+    const removeAttributes = ["Alue", "_id", "Vuosi", "tyyppi", "aluekoodi", "Puolueiden äänet yhteensä"]
+    const kannatus = objectHelper.filterFromObject(kannatusHaku.data[0], a => a !== null)
+    const puolueLuvut = objectHelper.extractArrayOfResponseData(kannatus, removeAttributes, "name", "vote")
 
-        // Jos valittua aluetta ei enää vuoden vaihdon jälkeen ole, poistetaan aluevalinta
-        if (year > 2011 && vanhatVaalipiirit.includes(area) && !uudetVaalipiirit.includes(area))
-            dispatchArea({ type: "CHANGE_CONSTITUENCY_TO", to: null })
-        else if (year <= 2011 && !vanhatVaalipiirit.includes(area) && uudetVaalipiirit.includes(area))
-            dispatchArea({ type: "CHANGE_CONSTITUENCY_TO", to: null })
+    // Jos valittua aluetta ei enää vuoden vaihdon jälkeen ole, poistetaan aluevalinta
+    if (year > 2011 && vanhatVaalipiirit.includes(area) && !uudetVaalipiirit.includes(area))
+        dispatchArea({ type: "CHANGE_CONSTITUENCY_TO", to: null })
+    else if (year <= 2011 && !vanhatVaalipiirit.includes(area) && uudetVaalipiirit.includes(area))
+        dispatchArea({ type: "CHANGE_CONSTITUENCY_TO", to: null })
 
-        // Haetaan puolueen luvut, nimet sekä tunnusvärit
-        const chartData = puolueLuvut.map(party => {
-            const puolue = colorArray.find(col => col.name.toUpperCase() === party.name.toUpperCase())
-            const color = () => {
-                return puolue && puolue.color ? puolue.color : "#bdbdbd"
-            }
-            return { text: party.name, v: party.vote, color: color() }
-        })
-
-        // Sorttauksella voidaan määrittää pallojen järjestyminen
-        const bubbleChartData = () => chartData.sort((a, b) => b.v - a.v)
-
-        const getTitle = (mapType, area) => {
-            switch (mapType) {
-                case "Vaalipiirit":
-                    return area.constituency !== undefined ? area.constituency : ""
-                case "Koko maa":
-                    return area.country !== undefined ? area.country : ""
-                case "Kunnat":
-                    return area.district !== undefined ? area.district : ""
-                default:
-                    return ""
-            }
+    // Haetaan puolueen luvut, nimet sekä tunnusvärit
+    const chartData = puolueLuvut.map(party => {
+        const puolue = colorArray.find(col => col.name.toUpperCase() === party.name.toUpperCase())
+        const color = () => {
+            return puolue && puolue.color ? puolue.color : "#bdbdbd"
         }
-        const chartTitle = getTitle(area.active, area)
+        return { text: party.name, v: party.vote, color: color() }
+    }).sort((a, b) => b.v - a.v)
 
-        if (chartData.length) {
-            return (
-                <Col xs={12} xl={8}>
-                    <BubbleChart
-                        data={bubbleChartData()}
-                        title={chartTitle + " " + year}
-                        useLabels={true}
-                        width={700}
-                        height={700}
-                    />
-                </Col>
-            )
+    // Sorttauksella voidaan määrittää pallojen järjestyminen
+
+    const getTitle = (mapType, area) => {
+        switch (mapType) {
+            case "Vaalipiirit":
+                return area.constituency !== undefined ? area.constituency : ""
+            case "Koko maa":
+                return area.country !== undefined ? area.country : ""
+            case "Kunnat":
+                return area.district !== undefined ? area.district : ""
+            default:
+                return ""
         }
+    }
+    const chartTitle = getTitle(area.active, area)
+    if (chartData.length) {
+        return (
+            <Col xs={12} xl={8}>
+                <BubbleChart
+                    data={chartData}
+                    title={chartTitle + " " + year}
+                    useLabels={true}
+                    width={700}
+                    height={700}
+                />
+            </Col>
+        )
     }
     return <div>Valitse aika ja paikka</div>
 }
+
 export default Charts
