@@ -19,24 +19,26 @@ const Charts = () => {
 
     const url = active => {
         switch (active) {
-        case "Koko maa":
-            return `${backendUrl}/api/koko-maa/kannatus/${year}`
-        case "Vaalipiirit":
-            return `${backendUrl}/api/vaalipiirit/kannatus/${area.constituency}/${year}`
-        case "Kunnat":
-            return `${backendUrl}/api/kunnat/kannatus/${area.district}/${year}`
-        default:
-            return null
+            case "Koko maa":
+                return `${backendUrl}/api/koko-maa/kannatus/${year}`
+            case "Vaalipiirit":
+                return `${backendUrl}/api/vaalipiirit/kannatus/${area.constituency}/${year}`
+            case "Kunnat":
+                return `${backendUrl}/api/kunnat/kannatus/${area.district}/${year}`
+            default:
+                return null
         }
     }
+    const {data, error, isLoading} = useFetch(url(area.active))
 
-    const kannatusHaku = useFetch(url(area.active))
-
+    if (isLoading) return <>Ladataan</>
+    if (error) return <>Virhe</>
+    
     // Tehdään taulukko, jossa on kukin puolue ja sen kannatus.
     // Jätetään pois kentät joiden nimi on removeAttributesissa (eivät ole puolueita):
     // Järjestetään äänestysprosentin mukaan laskevaan järjestykseen
     const removeAttributes = ["Alue", "_id", "Vuosi", "tyyppi", "aluekoodi", "Puolueiden äänet yhteensä"]
-    const kannatus = objectHelper.filterFromObject(kannatusHaku.data[0], a => a !== null)
+    const kannatus = objectHelper.filterFromObject(data[0], a => a !== null)
     const puolueLuvut = objectHelper.extractArrayOfResponseData(kannatus, removeAttributes, "name", "vote")
 
     // Jos valittua aluetta ei enää vuoden vaihdon jälkeen ole, poistetaan aluevalinta
@@ -57,18 +59,18 @@ const Charts = () => {
 
     const getTitle = (mapType, area) => {
         switch (mapType) {
-        case "Vaalipiirit":
-            return area.constituency !== undefined ? area.constituency : ""
-        case "Koko maa":
-            return area.country !== undefined ? area.country : ""
-        case "Kunnat":
-            return area.district !== undefined ? area.district : ""
-        default:
-            return ""
+            case "Vaalipiirit":
+                return area.constituency !== undefined ? area.constituency : ""
+            case "Koko maa":
+                return area.country !== undefined ? area.country : ""
+            case "Kunnat":
+                return area.district !== undefined ? area.district : ""
+            default:
+                return ""
         }
     }
     const chartTitle = getTitle(area.active, area)
-    if (chartData.length && !kannatusHaku.isLoading) {
+    if (chartData.length && !isLoading) {
         return (
             <Col xs={12} xl={8}>
                 <BubbleChart

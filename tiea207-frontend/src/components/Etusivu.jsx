@@ -6,14 +6,13 @@ import { timelineData } from "../dataset/timelineData"
 import { ControlledTabs } from "./ControlledTabs"
 import { ElectionMap } from "./Maps/ElectionMap"
 import { CountryMap } from "./Maps/CountryMap"
-import { backendUrl } from "../constants"
-import { useYear } from "../contexts/YearContextProvider"
-import { useArea } from "../contexts/AreaContextProvider"
 import Charts from "./Charts"
 import { useFetch } from "../hooks/UseFetch"
-
+import { backendUrl } from "../constants"
+import { useYear } from "../contexts/YearContextProvider"
 const Etusivu = () => {
-
+    const { year } = useYear()
+    const { data, error, isLoading } = useFetch(`${backendUrl}/api/kunnat/koordinaatit/${year}`)
 
     // Karttatyypit valtiolle, vaalipiireille ja kunnille
     const maps = [
@@ -26,11 +25,10 @@ const Etusivu = () => {
             name: "Vaalipiirit"
         },
         {
-            map: <ElectionMap />,
+            map: <ElectionMap mapData={data}/>,
             name: "Kunnat"
         }
     ]
-
     return (
         <>
             <Row className="timeline">
@@ -40,7 +38,7 @@ const Etusivu = () => {
                 <Col>
                     <Row>
                         <Col xs={12} xl={4}>
-                            <ControlledTabs tabs={maps} />
+                            {(data.features) && <ControlledTabs tabs={maps} />}
                         </Col>
                         <Col xs={12} xl={8}>
                             <Charts />
