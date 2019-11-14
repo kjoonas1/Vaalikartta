@@ -14,21 +14,21 @@ import { useFetch } from "../hooks/UseFetch"
 
 const Etusivu = () => {
     const { year } = useYear()
-    const { area, dispatchArea } = useArea()
+    const { area } = useArea()
 
     const kuntaData = useFetch(`${backendUrl}/api/kunnat/koordinaatit/${year}`)
 
 
     const url = active => {
         switch (active) {
-            case "Koko maa":
-                return `${backendUrl}/api/koko-maa/kannatus/${year}`
-            case "Vaalipiirit":
-                return `${backendUrl}/api/vaalipiirit/kannatus/${area.constituency}/${year}`
-            case "Kunnat":
-                return `${backendUrl}/api/kunnat/kannatus/${area.district}/${year}`
-            default:
-                return null
+        case "Koko maa":
+            return `${backendUrl}/api/koko-maa/kannatus/${year}`
+        case "Vaalipiirit":
+            return `${backendUrl}/api/vaalipiirit/kannatus/${area.constituency}/${year}`
+        case "Kunnat":
+            return `${backendUrl}/api/kunnat/kannatus/${area.district}/${year}`
+        default:
+            return null
         }
     }
     const kannatusHaku = useFetch(url(area.active))

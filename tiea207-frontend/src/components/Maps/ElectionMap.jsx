@@ -38,9 +38,9 @@ export const ElectionMap = () => {
     }
 
     if (isLoading)
-        return <div>Loading...</div>
+        return <div>Ladataan...</div>
     if (error)
-        return <div>Error!</div>
+        return <div>Virhe dataa haettaessa!</div>
 
     return (
 

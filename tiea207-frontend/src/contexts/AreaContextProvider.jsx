@@ -19,7 +19,7 @@ const AreaContextProvider = props => {
         }
     }
 
-    const [area, dispatchArea] = useReducer(reducer, { country: "Koko maa", constituency: "Lapin vaalipiiri", active: "Koko maa" })
+    const [area, dispatchArea] = useReducer(reducer, { country: "Koko maa", constituency: "Lapin vaalipiiri", district: "Helsinki", active: "Koko maa" })
     const areaProviderValue = useMemo(() => ({ area, dispatchArea }), [area, dispatchArea]) // Optimointi  kontekstin käytölle
 
     return <AreaContext.Provider value={areaProviderValue}>{props.children}</AreaContext.Provider>

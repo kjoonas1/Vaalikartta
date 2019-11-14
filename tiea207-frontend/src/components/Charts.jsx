@@ -1,7 +1,6 @@
-import React, { useEffect } from "react"
+import React from "react"
 import { useFetch } from "../hooks/UseFetch"
 import { Col } from "react-bootstrap"
-// import { DataChart } from "./DataChart"
 import { backendUrl } from "../constants"
 import * as objectHelper from "../utils/objectHelper"
 import * as MapParts from "../dataset/SVGMapParts"
@@ -10,7 +9,7 @@ import BubbleChart from "./BubbleChart"
 import { useArea } from "../contexts/AreaContextProvider"
 import { useYear } from "../contexts/YearContextProvider"
 
-const Charts = props => {
+const Charts = () => {
     const { area, dispatchArea } = useArea()
     const { year } = useYear()
 
@@ -20,14 +19,14 @@ const Charts = props => {
 
     const url = active => {
         switch (active) {
-            case "Koko maa":
-                return `${backendUrl}/api/koko-maa/kannatus/${year}`
-            case "Vaalipiirit":
-                return `${backendUrl}/api/vaalipiirit/kannatus/${area.constituency}/${year}`
-            case "Kunnat":
-                return `${backendUrl}/api/kunnat/kannatus/${area.district}/${year}`
-            default:
-                return null
+        case "Koko maa":
+            return `${backendUrl}/api/koko-maa/kannatus/${year}`
+        case "Vaalipiirit":
+            return `${backendUrl}/api/vaalipiirit/kannatus/${area.constituency}/${year}`
+        case "Kunnat":
+            return `${backendUrl}/api/kunnat/kannatus/${area.district}/${year}`
+        default:
+            return null
         }
     }
 
@@ -54,19 +53,18 @@ const Charts = props => {
         }
         return { text: party.name, v: party.vote, color: color() }
     }).sort((a, b) => b.v - a.v)
-
     // Sorttauksella voidaan määrittää pallojen järjestyminen
 
     const getTitle = (mapType, area) => {
         switch (mapType) {
-            case "Vaalipiirit":
-                return area.constituency !== undefined ? area.constituency : ""
-            case "Koko maa":
-                return area.country !== undefined ? area.country : ""
-            case "Kunnat":
-                return area.district !== undefined ? area.district : ""
-            default:
-                return ""
+        case "Vaalipiirit":
+            return area.constituency !== undefined ? area.constituency : ""
+        case "Koko maa":
+            return area.country !== undefined ? area.country : ""
+        case "Kunnat":
+            return area.district !== undefined ? area.district : ""
+        default:
+            return ""
         }
     }
     const chartTitle = getTitle(area.active, area)

@@ -23,7 +23,7 @@ export const DataChart = props => {
                     width={"100%"}
                     height={"600px"}
                     chartType={props.chartType}
-                    loader={<div>Loading Chart</div>}
+                    loader={<div>Ladataan kaaviota...</div>}
                     data={props.data}
                     options={options(props.title, props.axisMax)}
                     rootProps={{ "data-testid": "1" }}
