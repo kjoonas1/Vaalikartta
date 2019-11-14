@@ -13,11 +13,19 @@
     transition: 0.5s;
 }
 
-.map-part-active {
+%map-part-base {
     fill-opacity: 1;
-    animation: opacity-change 0.5s;
     stroke: silver;
     stroke-width: 1px;
+}
+
+.map-part-active {
+    @extend %map-part-base;
+    animation: opacity-change 0.5s;
+}
+
+.map-part-active-no-animation {
+    @extend %map-part-base;
 }
   
 @keyframes opacity-change {
