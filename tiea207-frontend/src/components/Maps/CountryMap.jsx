@@ -33,7 +33,7 @@ export const CountryMap = props => {
                                 fill: "#0073e6",
                                 opacity: "0.6",
                                 outline: "0",
-                                className: "map-part-active"
+                                className: "map-part-active-no-animation"
                             })
                             return <g key={shortid.generate()}>{el}</g>
                         })}
