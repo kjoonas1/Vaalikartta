@@ -1,12 +1,12 @@
 import React, { useContext } from "react"
-import { AreaContext } from "../contexts/Contexts"
-//import { Tabs, Tab } from "react-bootstrap"
+import { AreaContext, YearContext } from "../contexts/Contexts"
 import { Chart } from "react-google-charts"
+import { useFetch } from "../hooks/UseFetch"
+import { backendUrl } from "../constants"
 
-export const Tables = props => {
+export const VotingStatisticsTable = () => {
     const { area } = useContext(AreaContext)
-    //const { year } = useContext(YearContext)
-    console.log(props)
+    const { year } = useContext(YearContext)
     const getTitle = (mapType, area) => {
         switch (mapType) {
         case "Vaalipiirit": return area.constituency
@@ -15,8 +15,16 @@ export const Tables = props => {
         }
     }
 
+    const url = (active) => {
+        switch (active) {
+            case "Koko maa": return `${backendUrl}/api/muut-alueet/aanestystiedot/${area.country}/${year}`
+            case "Vaalipiirit": return `${backendUrl}/api/vaalipiirit/aanestystiedot/${area.constituency}/${year}`
+            case "Kunnat": return `${backendUrl}/api/kunnat/aanestystiedot/${area.district}/${year}` // FIXME: placeholder
+            default: return null
+        }
+    }
     const chartTitle = getTitle(area.active, area)
-    const data = "testi"
+    const aanestysHaku = useFetch(url(area.active))
 
     return (
         <>
@@ -30,7 +38,7 @@ export const Tables = props => {
                         { type: "string", label: chartTitle },
                         { type: "string", label: "Otsikko2" }
                     ],
-                    [data, { v: chartTitle }]
+                    [aanestysHaku, { v: chartTitle }]
                 ]}
                 options={{ showRowNumber: true, }}
                 rootProps={{ "data-testid": "1" }}

@@ -13,7 +13,8 @@ import { ControlledTabs } from "./ControlledTabs"
 import { ElectionMap } from "./Maps/ElectionMap"
 import { CountryMap } from "./Maps/CountryMap"
 import { backendUrl } from "../constants"
-import { Tables } from "./Tables"
+import { VotingStatisticsTable } from "./VotingStatisticsTable"
+import { Tabs, Tab } from "react-bootstrap"
 
 const Etusivu = () => {
     const { area, dispatchArea } = useContext(AreaContext)
@@ -72,18 +73,6 @@ const Etusivu = () => {
             }
         ]
 
-        const aanestysTiedot = [
-            {
-                aanestysTieto: <Tables height="35em" />,
-                name: "Aanestysprosentit"
-            },
-            {
-                aanestysTieto: <Tables height="35em" />,
-                name: "Hylatyt aanet"
-            }
-
-        ]
-
         return (
             <>
                 <Row className="timeline">
@@ -96,13 +85,14 @@ const Etusivu = () => {
                                 <ControlledTabs tabs={maps} />
                             </Col>
                             <Col xs={12} xl={8}>
-                                <DataChart luvut={chartData} />
-                            </Col>
-                            <Col xs={12} xl={12}>
-                                <ControlledTabs tabs={aanestysTiedot} />
-                                {/* <Tabs>
-                                    <Tab></Tab>
-                                </Tabs> */}
+                                <Tabs defaultActiveKey="kannatus">
+                               <Tab eventKey="kannatus" title="puoluekannatus">
+                               <DataChart luvut={chartData} />
+                               </Tab>
+                                    <Tab eventKey="Aanestystiedot" title="Aanestystiedot">
+                                        <VotingStatisticsTable />
+                                    </Tab>
+                                </Tabs>
                             </Col>
                         </Row>
                     </Col>
