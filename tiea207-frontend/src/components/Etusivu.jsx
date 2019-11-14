@@ -13,6 +13,8 @@ import { ControlledTabs } from "./ControlledTabs"
 import { ElectionMap } from "./Maps/ElectionMap"
 import { CountryMap } from "./Maps/CountryMap"
 import { backendUrl } from "../constants"
+import Table from "react-bootstrap/Table"
+import { Tables } from "./Tables"
 
 const Etusivu = () => {
     const { area, dispatchArea } = useContext(AreaContext)
@@ -71,6 +73,18 @@ const Etusivu = () => {
             }
         ]
 
+        const aanestysTiedot = [
+            {
+                aanestysTieto: <Table height="35em" />,
+                name: "Aanestysprosentit"
+            },
+            {
+                aanestysTieto: <Table height="35em" />,
+                name: "Hylatyt aanet"
+            }
+
+        ]
+
         return (
             <>
                 <Row className="timeline">
@@ -84,6 +98,9 @@ const Etusivu = () => {
                             </Col>
                             <Col xs={12} xl={8}>
                                 <DataChart luvut={chartData} />
+                            </Col>
+                            <Col xs={12} xl={12}>
+                                <Tables tabs={aanestysTiedot} />
                             </Col>
                         </Row>
                     </Col>
