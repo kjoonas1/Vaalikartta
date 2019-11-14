@@ -17,10 +17,10 @@ export const VotingStatisticsTable = () => {
 
     const url = (active) => {
         switch (active) {
-            case "Koko maa": return `${backendUrl}/api/muut-alueet/aanestystiedot/${area.country}/${year}`
-            case "Vaalipiirit": return `${backendUrl}/api/vaalipiirit/aanestystiedot/${area.constituency}/${year}`
-            case "Kunnat": return `${backendUrl}/api/kunnat/aanestystiedot/${area.district}/${year}` // FIXME: placeholder
-            default: return null
+        case "Koko maa": return `${backendUrl}/api/muut-alueet/aanestystiedot/${area.country}/${year}`
+        case "Vaalipiirit": return `${backendUrl}/api/vaalipiirit/aanestystiedot/${area.constituency}/${year}`
+        case "Kunnat": return `${backendUrl}/api/kunnat/aanestystiedot/${area.district}/${year}` // FIXME: placeholder
+        default: return null
         }
     }
     const chartTitle = getTitle(area.active, area)

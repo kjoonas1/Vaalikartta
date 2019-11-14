@@ -26,10 +26,10 @@ const Etusivu = () => {
 
     const url = (active) => {
         switch (active) {
-            case "Koko maa": return `${backendUrl}/api/koko-maa/kannatus/${year}`
-            case "Vaalipiirit": return `${backendUrl}/api/vaalipiirit/kannatus/${area.constituency}/${year}`
-            case "Kunnat": return `${backendUrl}/api/vaalipiirit/kannatus/${area.district}/${year}` // FIXME: placeholder
-            default: return null
+        case "Koko maa": return `${backendUrl}/api/koko-maa/kannatus/${year}`
+        case "Vaalipiirit": return `${backendUrl}/api/vaalipiirit/kannatus/${area.constituency}/${year}`
+        case "Kunnat": return `${backendUrl}/api/vaalipiirit/kannatus/${area.district}/${year}` // FIXME: placeholder
+        default: return null
         }
     }
 
@@ -86,9 +86,9 @@ const Etusivu = () => {
                             </Col>
                             <Col xs={12} xl={8}>
                                 <Tabs defaultActiveKey="kannatus">
-                               <Tab eventKey="kannatus" title="puoluekannatus">
-                               <DataChart luvut={chartData} />
-                               </Tab>
+                                    <Tab eventKey="kannatus" title="puoluekannatus">
+                                        <DataChart luvut={chartData} />
+                                    </Tab>
                                     <Tab eventKey="Aanestystiedot" title="Aanestystiedot">
                                         <VotingStatisticsTable />
                                     </Tab>
