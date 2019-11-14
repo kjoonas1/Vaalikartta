@@ -13,7 +13,6 @@ import { ControlledTabs } from "./ControlledTabs"
 import { ElectionMap } from "./Maps/ElectionMap"
 import { CountryMap } from "./Maps/CountryMap"
 import { backendUrl } from "../constants"
-import Table from "react-bootstrap/Table"
 import { Tables } from "./Tables"
 
 const Etusivu = () => {
@@ -75,11 +74,11 @@ const Etusivu = () => {
 
         const aanestysTiedot = [
             {
-                aanestysTieto: <Table height="35em" />,
+                aanestysTieto: <Tables height="35em" />,
                 name: "Aanestysprosentit"
             },
             {
-                aanestysTieto: <Table height="35em" />,
+                aanestysTieto: <Tables height="35em" />,
                 name: "Hylatyt aanet"
             }
 
@@ -100,7 +99,7 @@ const Etusivu = () => {
                                 <DataChart luvut={chartData} />
                             </Col>
                             <Col xs={12} xl={12}>
-                                <Tables tabs={aanestysTiedot} />
+                                <ControlledTabs tabs={aanestysTiedot} />
                             </Col>
                         </Row>
                     </Col>
