@@ -25,10 +25,10 @@ const Etusivu = () => {
 
     const url = (active) => {
         switch (active) {
-        case "Koko maa": return `${backendUrl}/api/koko-maa/kannatus/${year}`
-        case "Vaalipiirit": return `${backendUrl}/api/vaalipiirit/kannatus/${area.constituency}/${year}`
-        case "Kunnat": return `${backendUrl}/api/vaalipiirit/kannatus/${area.district}/${year}` // FIXME: placeholder
-        default: return null
+            case "Koko maa": return `${backendUrl}/api/koko-maa/kannatus/${year}`
+            case "Vaalipiirit": return `${backendUrl}/api/vaalipiirit/kannatus/${area.constituency}/${year}`
+            case "Kunnat": return `${backendUrl}/api/vaalipiirit/kannatus/${area.district}/${year}` // FIXME: placeholder
+            default: return null
         }
     }
 
@@ -42,10 +42,10 @@ const Etusivu = () => {
         const kannatus = objectHelper.filterFromObject(kannatusHaku.data[0], a => a !== null)
         const puolueLuvut = objectHelper
             .extractArrayOfResponseData(kannatus, removeAttributes, "name", "vote")
-            
+
         // Jos valittua aluetta ei enää vuoden vaihdon jälkeen ole, poistetaan aluevalinta
-        if (year > 2011 && vanhatVaalipiirit.includes(area) && !uudetVaalipiirit.includes(area)) dispatchArea({type: "CHANGE_CONSTITUENCY_TO", to:null})
-        else if (year <= 2011 && !vanhatVaalipiirit.includes(area) && uudetVaalipiirit.includes(area)) dispatchArea({type: "CHANGE_CONSTITUENCY_TO", to:null})
+        if (year > 2011 && vanhatVaalipiirit.includes(area) && !uudetVaalipiirit.includes(area)) dispatchArea({ type: "CHANGE_CONSTITUENCY_TO", to: null })
+        else if (year <= 2011 && !vanhatVaalipiirit.includes(area) && uudetVaalipiirit.includes(area)) dispatchArea({ type: "CHANGE_CONSTITUENCY_TO", to: null })
 
         // Haetaan puolueen luvut, nimet sekä tunnusvärit
         const chartData = puolueLuvut.map(party => {
@@ -67,7 +67,7 @@ const Etusivu = () => {
                 name: "Vaalipiirit"
             },
             {
-                map:  <ElectionMap mapData={{data: []}}/>,
+                map: <ElectionMap mapData={{ data: [] }} />,
                 name: "Kunnat"
             }
         ]
@@ -100,6 +100,9 @@ const Etusivu = () => {
                             </Col>
                             <Col xs={12} xl={12}>
                                 <ControlledTabs tabs={aanestysTiedot} />
+                                {/* <Tabs>
+                                    <Tab></Tab>
+                                </Tabs> */}
                             </Col>
                         </Row>
                     </Col>
