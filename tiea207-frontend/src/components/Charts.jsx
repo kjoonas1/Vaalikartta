@@ -68,7 +68,7 @@ const Charts = () => {
         }
     }
     const chartTitle = getTitle(area.active, area)
-    if (chartData.length) {
+    if (chartData.length && !kannatusHaku.isLoading) {
         return (
             <Col xs={12} xl={8}>
                 <BubbleChart

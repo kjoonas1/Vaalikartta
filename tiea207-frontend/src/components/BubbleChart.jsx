@@ -35,6 +35,7 @@ const BubbleChart = props => {
     }, [radiusScale, simulation])
 
     useEffect(() => {
+        console.log(data)
         if (data.length) {
             isCancelled.current = false
             simulatePositions(props.data)

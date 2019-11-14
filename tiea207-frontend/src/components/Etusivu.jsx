@@ -13,25 +13,7 @@ import Charts from "./Charts"
 import { useFetch } from "../hooks/UseFetch"
 
 const Etusivu = () => {
-    const { year } = useYear()
-    const { area } = useArea()
 
-    const kuntaData = useFetch(`${backendUrl}/api/kunnat/koordinaatit/${year}`)
-
-
-    const url = active => {
-        switch (active) {
-        case "Koko maa":
-            return `${backendUrl}/api/koko-maa/kannatus/${year}`
-        case "Vaalipiirit":
-            return `${backendUrl}/api/vaalipiirit/kannatus/${area.constituency}/${year}`
-        case "Kunnat":
-            return `${backendUrl}/api/kunnat/kannatus/${area.district}/${year}`
-        default:
-            return null
-        }
-    }
-    const kannatusHaku = useFetch(url(area.active))
 
     // Karttatyypit valtiolle, vaalipiireille ja kunnille
     const maps = [
@@ -44,7 +26,7 @@ const Etusivu = () => {
             name: "Vaalipiirit"
         },
         {
-            map: <ElectionMap mapData={kuntaData.data} />,
+            map: <ElectionMap />,
             name: "Kunnat"
         }
     ]
@@ -61,8 +43,7 @@ const Etusivu = () => {
                             <ControlledTabs tabs={maps} />
                         </Col>
                         <Col xs={12} xl={8}>
-                            {(!kannatusHaku.isLoading && kannatusHaku.error == null) &&
-                                <Charts kannatusHaku={kannatusHaku} />}
+                            <Charts />
                         </Col>
                     </Row>
                 </Col>
