@@ -26,15 +26,16 @@ const Etusivu = () => {
 
     const url = (active) => {
         switch (active) {
-        case "Koko maa": return `${backendUrl}/api/koko-maa/kannatus/${year}`
-        case "Vaalipiirit": return `${backendUrl}/api/vaalipiirit/kannatus/${area.constituency}/${year}`
-        case "Kunnat": return `${backendUrl}/api/vaalipiirit/kannatus/${area.district}/${year}` // FIXME: placeholder
-        default: return null
+            case "Koko maa": return `${backendUrl}/api/koko-maa/kannatus/${year}`
+            case "Vaalipiirit": return `${backendUrl}/api/vaalipiirit/kannatus/${area.constituency}/${year}`
+            case "Kunnat": return `${backendUrl}/api/vaalipiirit/kannatus/${area.district}/${year}` // FIXME: placeholder
+            default: return null
         }
     }
 
     // TODO: Järkeistä kokonaisuus niin, että kannatusten datan käpistely tapahtuu jossain muualla
     const kannatusHaku = useFetch(url(area.active))
+    console.log(kannatusHaku)
     // Tehdään taulukko, jossa on kukin puolue ja sen kannatus.
     // Jätetään pois kentät joiden nimi on removeAttributesissa (eivät ole puolueita):
     // Järjestetään äänestysprosentin mukaan laskevaan järjestykseen
@@ -56,7 +57,6 @@ const Etusivu = () => {
             }
             return { fill: color(), name: party.name, vote: party.vote }
         })
-
         // Karttatyypit valtiolle, vaalipiireille ja kunnille
         const maps = [
             {
@@ -86,7 +86,7 @@ const Etusivu = () => {
                             </Col>
                             <Col xs={12} xl={8}>
                                 <Tabs defaultActiveKey="kannatus">
-                                    <Tab eventKey="kannatus" title="puoluekannatus">
+                                    <Tab eventKey="kannatus" title="Puoluekannatus">
                                         <DataChart luvut={chartData} />
                                     </Tab>
                                     <Tab eventKey="Aanestystiedot" title="Aanestystiedot">
