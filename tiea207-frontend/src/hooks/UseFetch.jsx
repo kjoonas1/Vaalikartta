@@ -18,8 +18,8 @@ const useFetch = (url) => {
                 if (!url) throw Error("Invalid url")
                 const response = await axios.get(url, {signal: abortController.signal, timeout: 20000 })
                 if (mounted) {
-                    setData(response.data)
                     setIsLoading(false)
+                    setData(response.data)
                 }
             } catch (err) {
                 setIsLoading(false)
