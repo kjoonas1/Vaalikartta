@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 import { Map, GeoJSON, TileLayer } from "react-leaflet"
 import { useFetch } from "../../hooks/UseFetch"
 import { backendUrl } from "../../constants"
@@ -7,13 +7,12 @@ import { useArea } from "../../contexts/AreaContextProvider"
 import { useYear } from "../../contexts/YearContextProvider"
 import shortid from "shortid"
 
-export const ElectionMap = props => {
+export const ElectionMap = () => {
     const { dispatchArea } = useArea()
     const { year } = useYear()
     const { data, error, isLoading } = useFetch(`${backendUrl}/api/kunnat/koordinaatit/${year}`)
     const mapData = data
 
-    console.log(data, error, isLoading)
     if (error !== null)
         return <div>Tapahtui virhe kuntien koordinaatteja haettaessa</div>
 
@@ -62,7 +61,7 @@ export const ElectionMap = props => {
                         fillOpacity: 1
                     })}
                 />
-            }}
+            }
         </Map>
     )
 }
