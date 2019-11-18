@@ -34,6 +34,7 @@ export const VotingStatisticsTable = () => {
             .map(rivi => [rivi.name, rivi.luku])
 
 
+
         return (
             <>
                 <Chart
@@ -44,7 +45,7 @@ export const VotingStatisticsTable = () => {
                     data={[
                         [
                             { type: "string", label: chartTitle + " " + year },
-                            { type: "number", label: "%" }
+                            { type: "number", label: "luku" }
                         ],
                         ...aanestys
                     ]}

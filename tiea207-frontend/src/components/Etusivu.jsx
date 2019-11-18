@@ -35,7 +35,6 @@ const Etusivu = () => {
 
     // TODO: Järkeistä kokonaisuus niin, että kannatusten datan käpistely tapahtuu jossain muualla
     const kannatusHaku = useFetch(url(area.active))
-    console.log(kannatusHaku)
     // Tehdään taulukko, jossa on kukin puolue ja sen kannatus.
     // Jätetään pois kentät joiden nimi on removeAttributesissa (eivät ole puolueita):
     // Järjestetään äänestysprosentin mukaan laskevaan järjestykseen
