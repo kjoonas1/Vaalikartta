@@ -16,8 +16,6 @@ export const VotingStatisticsTable = () => {
         }
     }
 
-    console.log(Chart)
-
     const url = (active) => {
         switch (active) {
             case "Koko maa": return `${backendUrl}/api/muut-alueet/aanestystiedot/${area.country}/${year}`
@@ -34,8 +32,6 @@ export const VotingStatisticsTable = () => {
         const aanestysFilter = objectHelper.filterFromObject(aanestysHaku.data[0], a => a !== null)
         const aanestys = objectHelper.extractArrayOfResponseData(aanestysFilter, removeAttributes, "name", "luku")
             .map(rivi => [rivi.name, rivi.luku])
-
-
 
         return (
             <>
