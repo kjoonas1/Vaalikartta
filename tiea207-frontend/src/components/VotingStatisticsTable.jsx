@@ -36,6 +36,7 @@ export const VotingStatisticsTable = () => {
             .map(rivi => [rivi.name, rivi.luku])
 
 
+
         return (
             <>
                 <Chart
