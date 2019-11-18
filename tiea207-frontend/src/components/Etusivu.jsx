@@ -15,6 +15,7 @@ import { CountryMap } from "./Maps/CountryMap"
 import { backendUrl } from "../constants"
 import { VotingStatisticsTable } from "./VotingStatisticsTable"
 import { Tabs, Tab } from "react-bootstrap"
+import { KuntaStatisticsTable } from "./KuntaStatisticsTable"
 
 const Etusivu = () => {
     const { area, dispatchArea } = useContext(AreaContext)
@@ -90,6 +91,9 @@ const Etusivu = () => {
                                     </Tab>
                                     <Tab eventKey="Aanestystiedot" title="Aanestystiedot">
                                         <VotingStatisticsTable />
+                                    </Tab>
+                                    <Tab eventKey="Kuntatiedot" title="Kuntatiedot">
+                                        <KuntaStatisticsTable />
                                     </Tab>
                                 </Tabs>
                             </Col>
