@@ -16,6 +16,8 @@ export const VotingStatisticsTable = () => {
         }
     }
 
+    console.log(Chart)
+
     const url = (active) => {
         switch (active) {
             case "Koko maa": return `${backendUrl}/api/muut-alueet/aanestystiedot/${area.country}/${year}`
@@ -44,11 +46,21 @@ export const VotingStatisticsTable = () => {
                     data={[
                         [
                             { type: "string", label: chartTitle + " " + year },
-                            { type: "number", label: "%" }
+                            { type: "number", label: "" }
                         ],
                         ...aanestys
                     ]}
-                    options={{ showRowNumber: false, }}
+                    formatters={[
+                        {
+                            type: "NumberFormat",
+                            column: 1,
+                            options: {
+                                groupingSymbol: " ",
+                                decimalSymbol: ","
+                            },
+                        },
+                    ]}
+                    options={{ showRowNumber: false }}
                     rootProps={{ "data-testid": "1" }}
                 />
 
