@@ -5,13 +5,14 @@ import { useFetch } from "../hooks/UseFetch"
 import { backendUrl } from "../constants"
 import * as objectHelper from "../utils/objectHelper"
 
-export const VotingStatisticsTable = () => {
+const VotingStatisticsTable = () => {
     const { area } = useContext(AreaContext)
     const { year } = useContext(YearContext)
     const getTitle = (mapType, area) => {
         switch (mapType) {
             case "Vaalipiirit": return area.constituency
             case "Koko maa": return area.country
+            case "Kunnat": return area.district
             default: return ""
         }
     }
@@ -20,7 +21,7 @@ export const VotingStatisticsTable = () => {
         switch (active) {
             case "Koko maa": return `${backendUrl}/api/muut-alueet/aanestystiedot/${area.country}/${year}`
             case "Vaalipiirit": return `${backendUrl}/api/vaalipiirit/aanestystiedot/${area.constituency}/${year}`
-            case "Kunnat": return `${backendUrl}/api/kunnat/aanestystiedot/${area.district}/${year}` // FIXME: placeholder
+            case "Kunnat": return `${backendUrl}/api/kunnat/aanestystiedot/${area.district}/${year}`
             default: return null
         }
     }
@@ -66,3 +67,4 @@ export const VotingStatisticsTable = () => {
     }
     if (aanestysHaku.error) return <div>Error</div>
 }
+export default VotingStatisticsTable

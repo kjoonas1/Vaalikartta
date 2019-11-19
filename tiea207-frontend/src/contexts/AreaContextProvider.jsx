@@ -1,4 +1,4 @@
-import React, { useMemo, useReducer } from "react"
+import React, { useMemo, useContext, useReducer } from "react"
 import { AreaContext } from "./Contexts"
 
 const AreaContextProvider = props => {
@@ -11,16 +11,20 @@ const AreaContextProvider = props => {
             case "CHANGE_COUNTRY_TO":
                 return { ...state, country: action.to }
             case "CHANGE_ACTIVE_TO":
-                return { ...state, active: action.to }
+                return { ...state, active: action.to}
+            case "CHANGE_DISTRICT_TO":
+                return {...state, district: action.to }
             default:
-                return { ...state }
+                return { ...state}
         }
     }
 
-    const [area, dispatchArea] = useReducer(reducer, { country: "Koko maa", active: "Koko maa" })
+    const [area, dispatchArea] = useReducer(reducer, { country: "Koko maa", constituency: "Lapin vaalipiiri", district: "Helsinki", active: "Koko maa" })
     const areaProviderValue = useMemo(() => ({ area, dispatchArea }), [area, dispatchArea]) // Optimointi  kontekstin käytölle
 
     return <AreaContext.Provider value={areaProviderValue}>{props.children}</AreaContext.Provider>
 }
 
 export default AreaContextProvider
+
+export const useArea = () => useContext(AreaContext)
