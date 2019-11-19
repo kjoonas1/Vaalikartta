@@ -6,14 +6,14 @@ const AreaContextProvider = props => {
     // Esimerkki käytöstä: dispatchArea({type: "CHANGE_CONSTITUENCY_TO", to: "Lapin vaalipiiri"})
     const reducer = (state, action) => {
         switch (action.type) {
-        case "CHANGE_CONSTITUENCY_TO":
-            return { ...state, constituency: action.to }
-        case "CHANGE_COUNTRY_TO":
-            return { ...state, country: action.to }
-        case "CHANGE_ACTIVE_TO":
-            return { ...state, active: action.to}
-        default:
-            return { ...state}
+            case "CHANGE_CONSTITUENCY_TO":
+                return { ...state, constituency: action.to }
+            case "CHANGE_COUNTRY_TO":
+                return { ...state, country: action.to }
+            case "CHANGE_ACTIVE_TO":
+                return { ...state, active: action.to }
+            default:
+                return { ...state }
         }
     }
 

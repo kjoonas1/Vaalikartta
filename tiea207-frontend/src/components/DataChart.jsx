@@ -3,7 +3,7 @@ import { AreaContext, YearContext } from "../contexts/Contexts"
 import { Chart } from "react-google-charts"
 import "../styles/DataChart.scss"
 import { sumArray, partition } from "../utils/arrayHelper"
- 
+
 export const DataChart = props => {
     const { area } = useContext(AreaContext)
     const { year } = useContext(YearContext)
@@ -11,9 +11,9 @@ export const DataChart = props => {
     // Otsikko chartille sen mukaan mikä välilehti on aktiivinen kartalla
     const getTitle = (mapType, area) => {
         switch (mapType) {
-        case "Vaalipiirit": return area.constituency
-        case "Koko maa": return area.country
-        default: return ""
+            case "Vaalipiirit": return area.constituency
+            case "Koko maa": return area.country
+            default: return ""
         }
     }
 
@@ -25,7 +25,7 @@ export const DataChart = props => {
         const value = props.luvut[key].vote
         return [label, value, fillColor]
     })
-    
+
     // eslint-disable-next-line
     const allValues = partition(data, ([puolue, kannatus, vari]) => kannatus < 1.0)
 

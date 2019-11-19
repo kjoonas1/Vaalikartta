@@ -22,7 +22,7 @@ module.exports = {
                 "classPropertiesAllowed": false
             }],
         'react/prop-types': 0,
-        indent: ['error', 4],
+        indent: ['error', 4, {"SwitchCase": 1}],
         'linebreak-style': ['error', 'unix'],
         quotes: ['error', 'double'],
         semi: ['error', 'never']

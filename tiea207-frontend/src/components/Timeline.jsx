@@ -18,6 +18,9 @@ export const Timeline = props => {
     const contextEvent = event
     const padding = 10
     const mainLineHeight = "6em"
+    const activeColor = "#404040"
+    const inactiveColor  = "#757575"
+    const circleColor = "#fcb103"
 
     return (
         <Col md={{ span: 12 }}>
@@ -48,7 +51,7 @@ export const Timeline = props => {
                                     y1={mainLineHeight}
                                     x2={lineX + "%"}
                                     y2="4em"
-                                    style={{ stroke: "#404040", strokeLinecap: "round", strokeWidth: "0.5em" }}
+                                    style={{ stroke: activeColor, strokeLinecap: "round", strokeWidth: "0.5em" }}
                                 />
                                 <text
                                     textAnchor="middle"
@@ -56,7 +59,7 @@ export const Timeline = props => {
                                     key={shortid.generate()}
                                     x={lineX + "%"}
                                     y="1em"
-                                    fill="#404040"
+                                    fill={activeColor}
                                     fontWeight={bolding}
                                 >
                                     {year}
@@ -73,7 +76,7 @@ export const Timeline = props => {
                     const eventActiveness = {
                         fill: isActive ? "1" : "0.25",
                         size: isActive ? "1.5em" : "1em",
-                        borderColor: isActive ? "#404040" : "#757575"
+                        borderColor: isActive ? activeColor : inactiveColor
                     }
                     return (
                         <Fragment key={shortid.generate()}>
@@ -101,17 +104,17 @@ export const Timeline = props => {
                                 <circle
                                     data-testid={"event-link-" + index}
                                     className="event"
-                                    stroke={eventActiveness.boconstituencyrderColor}
+                                    stroke={eventActiveness.borderColor}
                                     fillOpacity={eventActiveness.fill}
                                     strokeWidth="2"
-                                    fill="#fcb103"
+                                    fill={circleColor}
                                     cx={x + "%"}
                                     cy="9em"
                                     r={eventActiveness.size}
                                 ></circle>
                             </Link>
                             {isActive && (
-                                <text textAnchor="middle" fontSize="1.5em" key={shortid.generate()} y="8em" x={x + "%"}>
+                                <text textAnchor="middle" fontSize="1.7em" key={shortid.generate()} y="7.5em" x={x + "%"}>
                                     {contextEvent.name}
                                 </text>
                             )}
@@ -124,7 +127,7 @@ export const Timeline = props => {
                     y1={mainLineHeight}
                     x2={100 - padding + "%"}
                     y2={mainLineHeight}
-                    style={{ stroke: "#404040", strokeWidth: "0.5em" }}
+                    style={{ stroke: activeColor, strokeWidth: "0.5em" }}
                 />
             </svg>
         </Col>
