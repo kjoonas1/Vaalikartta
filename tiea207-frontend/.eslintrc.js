@@ -5,6 +5,7 @@ module.exports = {
         jest: true
     },
     extends: ['eslint:recommended', 'plugin:react/recommended'],
+    parser: "babel-eslint",
     parserOptions: {
         ecmaFeatures: {
             jsx: true
@@ -22,7 +23,7 @@ module.exports = {
                 "classPropertiesAllowed": false
             }],
         'react/prop-types': 0,
-        indent: ['error', 4, {"SwitchCase": 1}],
+        indent: ['error', 4, { 'SwitchCase': 1 }],
         'linebreak-style': ['error', 'unix'],
         quotes: ['error', 'double'],
         semi: ['error', 'never']

@@ -1,18 +1,17 @@
-import React, { useContext, Fragment } from "react"
+import React, { Fragment } from "react"
 import { Col } from "react-bootstrap"
 import shortid from "shortid"
 import { Link } from "react-router-dom"
-import { YearContext, EventContext } from "../contexts/Contexts"
 import "../styles/Timeline.scss"
+import { useYear } from "../contexts/YearContextProvider"
+import { useEvent } from "../contexts/EventContextProvider"
+
 export const Timeline = props => {
-    const { year, setYear } = useContext(YearContext)
-    const { event, setEvent } = useContext(EventContext)
+    const { year, setYear } = useYear()
+    const { event, setEvent } = useEvent()
 
     const years = props.data.years
     const events = props.data.events
-
-    // Asetetaan oletuksena vuosi 2019
-    year === null && setYear(years[years.length - 1])
 
     const contextYear = year
     const contextEvent = event

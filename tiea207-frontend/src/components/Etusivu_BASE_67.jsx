@@ -1,29 +1,36 @@
-import React from "react"
+import React, { useContext } from "react"
 import { Col, Row } from "react-bootstrap"
+import { useFetch } from "../hooks/UseFetch"
 import { Timeline } from "./Timeline"
+import { AreaContext, YearContext } from "../contexts/Contexts"
 import { ConstituencyMap } from "./Maps/ConstituencyMap"
+import * as objectHelper from "../utils/objectHelper"
+import * as MapParts from "../dataset/SVGMapParts"
+import { DataChart } from "./DataChart"
+import * as colors from "../dataset/partyColors.json"
 import { timelineData } from "../dataset/timelineData"
 import { ControlledTabs } from "./ControlledTabs"
 import { ElectionMap } from "./Maps/ElectionMap"
 import { CountryMap } from "./Maps/CountryMap"
-import Charts from "./Charts"
+import { backendUrl } from "../constants"
+import { VotingStatisticsTable } from "./VotingStatisticsTable"
+import { Tabs, Tab } from "react-bootstrap"
 
 const Etusivu = () => {
-    // Karttatyypit valtiolle, vaalipiireille ja kunnille
-    const maps = [
-        {
-            map: <CountryMap height="35em" />,
-            name: "Koko maa"
-        },
-        {
-            map: <ConstituencyMap height="35em" />,
-            name: "Vaalipiirit"
-        },
-        {
-            map: <ElectionMap/>,
-            name: "Kunnat"
+    const { area, dispatchArea } = useContext(AreaContext)
+    const { year } = useContext(YearContext)
+
+    const uudetVaalipiirit = MapParts.uudetVaalipiirit.map(key => key.name)
+    const vanhatVaalipiirit = MapParts.vanhatVaalipiirit.map(key => key.name)
+    const colorArray = colors.default
+
+    const url = (active) => {
+        switch (active) {
+            case "Koko maa": return `${backendUrl}/api/koko-maa/kannatus/${year}`
+            case "Vaalipiirit": return `${backendUrl}/api/vaalipiirit/kannatus/${area.constituency}/${year}`
+            case "Kunnat": return `${backendUrl}/api/vaalipiirit/kannatus/${area.district}/${year}` // FIXME: placeholder
+            default: return null
         }
-<<<<<<< HEAD
     }
 
     // TODO: Järkeistä kokonaisuus niin, että kannatusten datan käpistely tapahtuu jossain muualla
@@ -84,9 +91,6 @@ const Etusivu = () => {
                                     <Tab eventKey="Aanestystiedot" title="Aanestystiedot">
                                         <VotingStatisticsTable />
                                     </Tab>
-                                    <Tab eventKey="Kuntatiedot" title="Kuntatiedot">
-                                        <KuntaStatisticsTable />
-                                    </Tab>
                                 </Tabs>
                             </Col>
                         </Row>
@@ -96,29 +100,6 @@ const Etusivu = () => {
         )
     }
     if (kannatusHaku.error) return <div>Error</div>
-=======
-    ]
-    return (
-        <>
-            <Row className="timeline">
-                <Timeline data={timelineData} />
-            </Row>
-            <Row>
-                <Col>
-                    <Row>
-                        <Col xs={12} xl={4}>
-                            <ControlledTabs tabs={maps} />
-                        </Col>
-                        <Col xs={12} xl={8}>
-                            <Charts />
-                        </Col>
-                    </Row>
-                </Col>
-            </Row>
-        </>
-    )
->>>>>>> 2e55b2a671c725421c93eb3323f4fced230ab513
 }
-
 
 export default Etusivu

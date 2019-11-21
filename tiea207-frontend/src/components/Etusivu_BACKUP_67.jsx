@@ -6,7 +6,14 @@ import { timelineData } from "../dataset/timelineData"
 import { ControlledTabs } from "./ControlledTabs"
 import { ElectionMap } from "./Maps/ElectionMap"
 import { CountryMap } from "./Maps/CountryMap"
+<<<<<<< HEAD
+import { backendUrl } from "../constants"
+import { VotingStatisticsTable } from "./VotingStatisticsTable"
+import { Tabs, Tab } from "react-bootstrap"
+import { KuntaStatisticsTable } from "./KuntaStatisticsTable"
+=======
 import Charts from "./Charts"
+>>>>>>> 2e55b2a671c725421c93eb3323f4fced230ab513
 
 const Etusivu = () => {
     // Karttatyypit valtiolle, vaalipiireille ja kunnille

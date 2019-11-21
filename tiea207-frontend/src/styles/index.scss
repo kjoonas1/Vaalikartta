@@ -12,9 +12,32 @@ code {
     monospace;
 }
 
+.leaflet-popup {
+	position: absolute;
+  text-align: center;
+  //background: black;
+	margin-bottom: 20px;
+  }
+  
+  .leaflet-popup-content-wrapper {
+    padding: 1px;
+    text-align: left;
+   // border-radius: 12px;
+    }
+  .leaflet-popup-content {
+    margin: 13px 19px;
+    line-height: 1;
+    color: black;
+    //text-decoration: underline;
+    font-size: 1.4em;
+    font-weight: bold
+    }
+
 // Tälle koko on pakko määritellä, jotta kartta edes näkyy
-.leaflet-container {
-    height: 600px;
-    background: white;
-}
+//.leaflet-container {
+  // height: 600px;
+  // width: 100%;
+  // margin: 0 auto;
+ //  background: transparent;
+//}
 

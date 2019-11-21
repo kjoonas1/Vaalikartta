@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react"
+import React, { useState, useContext, useMemo } from "react"
 import { YearContext } from "./Contexts"
 import { timelineData } from "../dataset/timelineData"
 
@@ -10,3 +10,5 @@ const YearContextProvider = props => {
 }
 
 export default YearContextProvider
+
+export const useYear = () => useContext(YearContext)
