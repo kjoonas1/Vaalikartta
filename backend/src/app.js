@@ -10,7 +10,7 @@ if (process.env.TEST)
     console.log = () => { } // Otetaan loggaus pois käytöstä jottei sotke testejä
 
 // Käyttäjällä vaalikartta on vain lukuoikeus tietokantaan
-const databaseUrl = `mongodb://vaalikartta:${process.env.PASSWD}@klusteri-shard-00-00-asaca.mongodb.net:27017,klusteri-shard-00-01-asaca.mongodb.net:27017,klusteri-shard-00-02-asaca.mongodb.net:27017/test?ssl=true&replicaSet=Klusteri-shard-0&authSource=admin&retryWrites=true&w=majority`
+const databaseUrl = `mongodb+srv://vaalikartta:${process.env.PASSWD}@klusteri-asaca.mongodb.net/test?retryWrites=true&w=majority`
 const databaseName = "vaalikartta"
 process.on("exit", () => {
     app.onExit()
@@ -32,7 +32,7 @@ const createApp = new Promise((resolve, reject) => {
         })
 
         app.use("/api", router)
-        app.use("/app", express.static(path.join(__dirname, "../../tiea207-frontend/build/")))
+        app.use("/", express.static(path.join(__dirname, "../build")))
         // Tämä vain jotta /favicon.ico hakeminen ei tuota 404
         app.get("/favicon.ico", (req, res) => res.sendStatus(204))
         resolve(app) // app valmis käyttöön
