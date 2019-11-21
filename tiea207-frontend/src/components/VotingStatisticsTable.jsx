@@ -34,10 +34,6 @@ const VotingStatisticsTable = () => {
         const aanestys = objectHelper.extractArrayOfResponseData(aanestysFilter, removeAttributes, "name", "luku")
             .map(rivi => [rivi.name, rivi.luku])
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 2e55b2a671c725421c93eb3323f4fced230ab513
         return (
             <>
                 <Chart
