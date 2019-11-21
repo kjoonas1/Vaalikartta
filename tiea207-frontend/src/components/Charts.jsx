@@ -9,6 +9,7 @@ import BubbleChart from "./BubbleChart"
 import { useArea } from "../contexts/AreaContextProvider"
 import { useYear } from "../contexts/YearContextProvider"
 import VotingStatisticsTable from "../components/VotingStatisticsTable"
+import KuntaStatisticsTable from "../components/KuntaStatisticsTable"
 import { Tab, Tabs } from "react-bootstrap"
 
 const Charts = () => {
@@ -75,7 +76,7 @@ const Charts = () => {
     if (chartData.length && !isLoading) {
         return (
             <Col xs={12} xl={8}>
-                <Tabs defaultActiveKey="kannatus">
+                <Tabs defaultActiveKey="kannatus" mountOnEnter={true} >
                     <Tab eventKey="kannatus" title="Puoluekannatus">
                         <BubbleChart
                             data={chartData}
@@ -88,6 +89,10 @@ const Charts = () => {
                     <Tab eventKey="Aanestystiedot" title="Aanestystiedot">
                         <VotingStatisticsTable />
                     </Tab>
+                    {(area.active !== "Kunnat") ? null :
+                        <Tab eventKey="Kuntatiedot" title="Kuntatiedot">
+                            <KuntaStatisticsTable />
+                        </Tab>}
                 </Tabs>
             </Col>
         )

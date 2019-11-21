@@ -1,35 +1,32 @@
 import React, { useContext } from "react"
-import { YearContext } from "../contexts/Contexts"
+import { YearContext, AreaContext } from "../contexts/Contexts"
 import { Chart } from "react-google-charts"
 import { useFetch } from "../hooks/UseFetch"
-//import { backendUrl } from "../constants"
+import { backendUrl } from "../constants"
 import * as objectHelper from "../utils/objectHelper"
 
-export const KuntaStatisticsTable = () => {
-    //  const { area } = useContext(AreaContext)
+const KuntaStatisticsTable = () => {
+    const { area } = useContext(AreaContext)
     const { year } = useContext(YearContext)
-    //const getTitle = (mapType, area) => {
-    //    switch (mapType) {
-    //        case "Kunnat": return area.district
-    //        default: return ""
-    //    }
-    // }
+    const getTitle = (mapType, area) => {
+        switch (mapType) {
+            case "Kunnat": return area.district
+            default: return ""
+        }
+    }
+    const url = (active) => {
+        switch (active) {
+            case "Kunnat": return `${backendUrl}/api/kunnat/aanestystiedot/${area.district}/${year}`
+            default: return null
+        }
+    }
+    const chartTitle = getTitle(area.active, area)
+    const kuntaDataHaku = useFetch(url(area.active))
 
-    //    const url = (active) => {
-    //       switch (active) {
-    //           case "Kunnat": return `${backendUrl}/api/avainluvut/${year}/${area.district}` // FIXME: placeholder
-    //           default: return null
-    //       }
-
-    //   const chartTitle = getTitle(area.active, area)
-
-    const kuntaHaku = useFetch("http://localhost:8000/api/avainluvut/2018/Helsinki")
-    console.log(kuntaHaku)
-    if (kuntaHaku.error === null) {
-        const removeAttributes = ["_id"]
-        const kuntaFilter = objectHelper.filterFromObject(kuntaHaku.data, a => a !== null)
-        console.log(kuntaFilter)
-        const kuntaData = objectHelper.extractArrayOfResponseData(kuntaFilter, removeAttributes, "name", "luku")
+    if (kuntaDataHaku.error === null) {
+        const removeAttributes = ["_id", "Alue", "Vuosi"]
+        const kuntaDataFilter = objectHelper.filterFromObject(kuntaDataHaku.data[0], a => a !== null)
+        const kuntaData = objectHelper.extractArrayOfResponseData(kuntaDataFilter, removeAttributes, "name", "luku")
             .map(rivi => [rivi.name, rivi.luku])
         console.log(kuntaData)
         return (
@@ -41,7 +38,7 @@ export const KuntaStatisticsTable = () => {
                     loader={<div>Loading Chart</div>}
                     data={[
                         [
-                            { type: "string", label: "Kunta " + year },
+                            { type: "string", label: chartTitle },
                             { type: "number", label: "" }
                         ],
                         ...kuntaData
@@ -56,11 +53,13 @@ export const KuntaStatisticsTable = () => {
                             },
                         },
                     ]}
-                    options={{ showRowNumber: false, }}
+                    options={{ showRowNumber: false }}
                     rootProps={{ "data-testid": "1" }}
                 />
+
             </>
         )
     }
-    if (kuntaHaku.error) return <div>Error</div>
+    if (kuntaDataHaku.error) return <div>Error</div>
 }
+export default KuntaStatisticsTable
