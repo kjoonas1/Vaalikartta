@@ -77,12 +77,11 @@ const BubbleChart = props => {
         return (
             <>
                 <h4>{props.title}</h4>
-                <svg ref={container} width={props.width} height={props.height}>
-                </svg>
+                <svg ref={container} width={props.width} height={props.height} />
             </>
         )
     }
-    else return <>Ladataan kuplakaaviota...</>
+    return null
 }
 
 export default BubbleChart
