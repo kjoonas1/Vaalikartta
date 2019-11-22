@@ -58,13 +58,19 @@ const BubbleChart = props => {
                     .attr("font-weight", "bold")
                     .attr("fill", (d) => d3.hsl(d3.color(d.color)).l > 0.7 ? "#555" : "#fff")
 
+                const percents = bubbles.append("text")
+                    .text((d) => d.v)
+                    .attr("text-anchor", "middle")
+                    .attr("font-size", fontSize)
+                    .attr("font-weight", "bold")
+                    .attr("fill", (d) => d3.hsl(d3.color(d.color)).l > 0.7 ? "#555" : "#fff")
 
                 simulation.nodes(props.data)
                     .on("tick", () => {
                         bubbles
                             .attr("transform", (d) => `translate(${d.x}, ${d.y})`)
                         texts
-                            .attr("y", 5)
+                            .attr("y", (d) => (radiusScale(d.v) / 4 + 10))
                     })
             } 
             // Tää on ihan sen takia ettei komponenttia päivitetä muuta kuin mountatessa.
