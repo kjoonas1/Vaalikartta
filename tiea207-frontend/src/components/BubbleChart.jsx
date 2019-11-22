@@ -35,7 +35,7 @@ const BubbleChart = props => {
                 const data = svg.selectAll(".bubble")
                     .data(props.data)
 
-                const nodesRemove = data
+                data
                     .exit()
                     .remove()
 
@@ -50,19 +50,20 @@ const BubbleChart = props => {
                     .attr("stroke-width", 3)
 
                 const fontSize = (d) => radiusScale(d.v) / 4 + 10
+                const fontColor = color => d3.hsl(d3.color(color)).l > 0.7 ? "#555" : "#fff" 
                 const texts = bubbles.append("text")
                     .text((d) => d.text)
                     .attr("text-anchor", "middle")
                     .attr("font-size", fontSize)
                     .attr("font-weight", "bold")
-                    .attr("fill", (d) => d3.hsl(d3.color(d.color)).l > 0.7 ? "#555" : "#fff")
+                    .attr("fill", d => fontColor(d.color))
 
-                const percents = bubbles.append("text")
+                bubbles.append("text")
                     .text((d) => d.v)
                     .attr("text-anchor", "middle")
                     .attr("font-size", fontSize)
                     .attr("font-weight", "bold")
-                    .attr("fill", (d) => d3.hsl(d3.color(d.color)).l > 0.7 ? "#555" : "#fff")
+                    .attr("fill", d => fontColor(d.color))
 
                 simulation.nodes(props.data)
                     .on("tick", () => {

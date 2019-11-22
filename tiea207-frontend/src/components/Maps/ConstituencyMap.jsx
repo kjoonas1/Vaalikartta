@@ -11,12 +11,12 @@ export const ConstituencyMap = props => {
     const mapType = year => (year > 2011 ? uudetVaalipiirit : vanhatVaalipiirit)
     const _map = mapType(year)
     
-    const vaalipiirit = Object.entries(_map).map(([key, item]) => item.name)
+    const vaalipiirit = Object.entries(_map).map(([/**/, item]) => item.name)
 
     useEffect(() => {
         if (!vaalipiirit.includes(area.constituency)) dispatchArea({ type: "CHANGE_CONSTITUENCY_TO", to: null })
 
-    }, [_map])
+    }, [_map, area.constituency, dispatchArea, vaalipiirit])
 
     return (
         <div className="constituency-map">
