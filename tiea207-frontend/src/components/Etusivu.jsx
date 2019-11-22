@@ -11,8 +11,6 @@ import { useFetch } from "../hooks/UseFetch"
 import { backendUrl } from "../constants"
 import { useYear } from "../contexts/YearContextProvider"
 const Etusivu = () => {
-    const { year } = useYear()
-    const { data, error, isLoading } = useFetch(`${backendUrl}/api/kunnat/koordinaatit/${year}`)
 
     // Karttatyypit valtiolle, vaalipiireille ja kunnille
     const maps = [
@@ -25,7 +23,7 @@ const Etusivu = () => {
             name: "Vaalipiirit"
         },
         {
-            map: <ElectionMap mapData={data}/>,
+            map: <ElectionMap/>,
             name: "Kunnat"
         }
     ]
@@ -38,7 +36,7 @@ const Etusivu = () => {
                 <Col>
                     <Row>
                         <Col xs={12} xl={4}>
-                            {(data.features) && <ControlledTabs tabs={maps} />}
+                            <ControlledTabs tabs={maps} />
                         </Col>
                         <Col xs={12} xl={8}>
                             <Charts />

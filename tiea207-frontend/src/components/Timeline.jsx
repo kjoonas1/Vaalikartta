@@ -13,8 +13,6 @@ export const Timeline = props => {
     const years = props.data.years
     const events = props.data.events
 
-    // Asetetaan oletuksena vuosi 2019
-    year === null && setYear(years[years.length - 1])
 
     const contextYear = year
     const contextEvent = event

@@ -70,7 +70,7 @@ const Charts = () => {
         }
     }
     const chartTitle = getTitle(area.active, area)
-    if (chartData.length && !isLoading) {
+    if (chartData.length && !chartData.isLoading && !chartData.error) {
         return (
             <Col xs={12} xl={8}>
                 <BubbleChart
@@ -83,7 +83,7 @@ const Charts = () => {
             </Col>
         )
     }
-    return <div>Valitse aika ja paikka</div>
+    return null
 }
 
 export default Charts
