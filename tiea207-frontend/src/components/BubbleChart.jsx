@@ -11,6 +11,7 @@ const BubbleChart = props => {
     useEffect(
         () => {
             if (props.data && container.current) {
+                
                 const minValue = 0.95 * d3.min(props.data, item => item.v)
                 const maxValue = 1.05 * d3.max(props.data, item => item.v)
 
@@ -19,13 +20,12 @@ const BubbleChart = props => {
                     .force("x", d3.forceX().strength(0.025))
                     .force("y", d3.forceY().strength(0.025))
                     .force("collide", d3.forceCollide(d => radiusScale(d.v) + padding))
-                    
+
                 const radiusScale = value => {
                     const fx = d3
                         .scaleLinear()
                         .range([10, props.width / 6])
                         .domain([minValue, maxValue])
-
                     return fx(value)
                 }
 
@@ -35,9 +35,11 @@ const BubbleChart = props => {
 
                 const data = svg.selectAll(".bubble")
                     .data(props.data)
+
                 data
                     .exit()
                     .remove()
+
                 const bubbles = data.enter()
                     .append("g")
                     .attr("class", "bubble")
@@ -56,15 +58,18 @@ const BubbleChart = props => {
                     .attr("font-weight", "bold")
                     .attr("fill", (d) => d3.hsl(d3.color(d.color)).l > 0.7 ? "#555" : "#fff")
 
+
                 simulation.nodes(props.data)
                     .on("tick", () => {
                         bubbles
                             .attr("transform", (d) => `translate(${d.x}, ${d.y})`)
                         texts
                             .attr("y", 5)
-
                     })
-            }
+            } 
+            // Tää on ihan sen takia ettei komponenttia päivitetä muuta kuin mountatessa.
+            // Muuten d3 piirtää päällekäin monta svg:tä
+            // eslint-disable-next-line react-hooks/exhaustive-deps
         }, [])
     if (props.data.length) {
         return (
