@@ -5,13 +5,12 @@ const BubbleChart = props => {
     const padding = 8
     const container = React.useRef(null)
 
-    // React valittaa dependency arraysta, mutta tässä on tarkoituksella "tehty väärin"
-    // jotta useEffect ajetaan vain "mountatessa". Jos propsit lisätään taulukkoon, niin d3 aiemmin piirtämä
-    // chartti jää näkyviin.
     useEffect(
         () => {
             if (props.data && container.current) {
-                
+                // Poistetaan kaikki lapsisolmut ennen kuin tehdään mitään muuta
+                d3.select(container.current).selectAll("*").remove()
+
                 const minValue = 0.95 * d3.min(props.data, item => item.v)
                 const maxValue = 1.05 * d3.max(props.data, item => item.v)
 
@@ -36,7 +35,7 @@ const BubbleChart = props => {
                 const data = svg.selectAll(".bubble")
                     .data(props.data)
 
-                data
+                const nodesRemove = data
                     .exit()
                     .remove()
 
@@ -73,10 +72,9 @@ const BubbleChart = props => {
                             .attr("y", (d) => (radiusScale(d.v) / 4 + 10))
                     })
             } 
-            // Tää on ihan sen takia ettei komponenttia päivitetä muuta kuin mountatessa.
-            // Muuten d3 piirtää päällekäin monta svg:tä
-            // eslint-disable-next-line react-hooks/exhaustive-deps
-        }, [])
+        }, [props])
+
+
     if (props.data.length) {
         return (
             <>
