@@ -13,7 +13,6 @@ export const Timeline = props => {
     const years = props.data.years
     const events = props.data.events
 
-
     const contextYear = year
     const contextEvent = event
     const padding = 10

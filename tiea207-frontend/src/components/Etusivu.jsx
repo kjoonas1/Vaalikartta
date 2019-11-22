@@ -7,11 +7,8 @@ import { ControlledTabs } from "./ControlledTabs"
 import { ElectionMap } from "./Maps/ElectionMap"
 import { CountryMap } from "./Maps/CountryMap"
 import Charts from "./Charts"
-import { useFetch } from "../hooks/UseFetch"
-import { backendUrl } from "../constants"
-import { useYear } from "../contexts/YearContextProvider"
-const Etusivu = () => {
 
+const Etusivu = () => {
     // Karttatyypit valtiolle, vaalipiireille ja kunnille
     const maps = [
         {
