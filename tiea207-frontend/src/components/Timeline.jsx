@@ -25,8 +25,8 @@ export const Timeline = props => {
         <Col md={{ span: 12 }}>
             <svg
                 key={shortid.generate()}
-                height="14em"
-                viewBox={"0 0 2400 200"}
+                height="18em"
+                viewBox={"0 0 2400 250"}
                 width={"100%"}
                 display="block"
                 margin="0, auto"
@@ -54,10 +54,10 @@ export const Timeline = props => {
                                 />
                                 <text
                                     textAnchor="middle"
-                                    fontSize="2.5em"
+                                    fontSize="3.5em"
                                     key={shortid.generate()}
                                     x={lineX + "%"}
-                                    y="1em"
+                                    y="0.5em"
                                     fill={activeColor}
                                     fontWeight={bolding}
                                 >
@@ -74,7 +74,7 @@ export const Timeline = props => {
                     const isActive = JSON.stringify(event) === JSON.stringify(contextEvent)
                     const eventActiveness = {
                         fill: isActive ? "1" : "0.25",
-                        size: isActive ? "1.5em" : "1em",
+                        size: isActive ? "1.75em" : "1.5em",
                         borderColor: isActive ? activeColor : inactiveColor
                     }
                     return (
@@ -108,12 +108,12 @@ export const Timeline = props => {
                                     strokeWidth="2"
                                     fill={circleColor}
                                     cx={x + "%"}
-                                    cy="9em"
+                                    cy="9.5em"
                                     r={eventActiveness.size}
                                 ></circle>
                             </Link>
                             {isActive && (
-                                <text textAnchor="middle" fontSize="1.7em" key={shortid.generate()} y="7.5em" x={x + "%"}>
+                                <text textAnchor="middle" fontSize="2.5em" key={shortid.generate()} y="5.5em" x={x + "%"}>
                                     {contextEvent.name}
                                 </text>
                             )}

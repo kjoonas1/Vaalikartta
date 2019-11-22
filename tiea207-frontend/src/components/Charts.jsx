@@ -31,8 +31,7 @@ const Charts = () => {
     }
     const {data, error, isLoading} = useFetch(url(area.active))
 
-    if (isLoading) return <>Ladataan</>
-    if (error) return <>Virhe</>
+
     
     // Tehdään taulukko, jossa on kukin puolue ja sen kannatus.
     // Jätetään pois kentät joiden nimi on removeAttributesissa (eivät ole puolueita):
@@ -70,7 +69,7 @@ const Charts = () => {
         }
     }
     const chartTitle = getTitle(area.active, area)
-    if (chartData.length && !chartData.isLoading && !chartData.error) {
+
         return (
             <Col xs={12} xl={8}>
                 <BubbleChart
@@ -82,8 +81,6 @@ const Charts = () => {
                 />
             </Col>
         )
-    }
-    return null
 }
 
 export default Charts
