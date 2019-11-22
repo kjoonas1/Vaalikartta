@@ -29,10 +29,10 @@ const Charts = () => {
                 return null
         }
     }
-    const {data, error, isLoading} = useFetch(url(area.active))
+    const { data } = useFetch(url(area.active))
 
 
-    
+
     // Tehdään taulukko, jossa on kukin puolue ja sen kannatus.
     // Jätetään pois kentät joiden nimi on removeAttributesissa (eivät ole puolueita):
     // Järjestetään äänestysprosentin mukaan laskevaan järjestykseen
@@ -53,7 +53,9 @@ const Charts = () => {
             return puolue && puolue.color ? puolue.color : "#bdbdbd"
         }
         return { text: party.name, v: party.vote, color: color() }
-    }).sort((a, b) => b.v - a.v)
+    })
+        .filter((item) => item.v > 0)
+        .sort((a, b) => b.v - a.v)
     // Sorttauksella voidaan määrittää pallojen järjestyminen
 
     const getTitle = (mapType, area) => {
@@ -70,17 +72,17 @@ const Charts = () => {
     }
     const chartTitle = getTitle(area.active, area)
 
-        return (
-            <Col xs={12} xl={8}>
-                <BubbleChart
-                    data={chartData}
-                    title={chartTitle + " " + year}
-                    useLabels={true}
-                    width={700}
-                    height={700}
-                />
-            </Col>
-        )
+    return (
+        <Col xs={12} xl={8}>
+            <BubbleChart
+                data={chartData}
+                title={chartTitle + " " + year}
+                useLabels={true}
+                width={700}
+                height={700}
+            />
+        </Col>
+    )
 }
 
 export default Charts
