@@ -2,15 +2,8 @@ import React, { useEffect } from "react"
 import * as d3 from "d3"
 
 const BubbleChart = props => {
-
-
     const padding = 8
     const container = React.useRef(null)
-
-    // Näitä useCallback-hommeleita 'pitää vaan käyttää' jotta React on tyytyväinen
-
-    console.log(props.data)
-
 
     // React valittaa dependency arraysta, mutta tässä on tarkoituksella "tehty väärin"
     // jotta useEffect ajetaan vain "mountatessa". Jos propsit lisätään taulukkoon, niin d3 aiemmin piirtämä
