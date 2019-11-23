@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import { uudetVaalipiirit, vanhatVaalipiirit } from "../../dataset/SVGMapParts"
 import { Link } from "react-router-dom"
 import "../../styles/Constituency.scss"
@@ -11,13 +11,6 @@ export const ConstituencyMap = props => {
     const mapType = year => (year > 2011 ? uudetVaalipiirit : vanhatVaalipiirit)
     const _map = mapType(year)
     
-    const vaalipiirit = Object.entries(_map).map(([/**/, item]) => item.name)
-
-    useEffect(() => {
-        if (!vaalipiirit.includes(area.constituency)) dispatchArea({ type: "CHANGE_CONSTITUENCY_TO", to: null })
-
-    }, [_map, area.constituency, dispatchArea, vaalipiirit])
-
     return (
         <div className="constituency-map">
             <svg
