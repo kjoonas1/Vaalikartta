@@ -88,7 +88,12 @@ const BubbleChart = props => {
             </>
         )
     }
-    return <><h4>Valitse vaalipiiri</h4></>
+    return (
+        <>
+            <h4>{props.title}</h4>
+            <p>Ei dataa. Alue on todennäköisesti liitetty toiseen tai sitä ei ole vielä ollut olemassa</p>
+        </>
+    )
 }
 
 export default BubbleChart
