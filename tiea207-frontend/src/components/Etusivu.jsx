@@ -30,9 +30,9 @@ const Etusivu = () => {
                 <Timeline data={timelineData} />
             </Row>
             <Row>
-                <Col>
+                <Col >
                     <Row>
-                        <Col xs={12} xl={4}>
+                        <Col xs={12} xl={4} className="maps">
                             <ControlledTabs tabs={maps} />
                         </Col>
                         <Col xs={12} xl={8}>

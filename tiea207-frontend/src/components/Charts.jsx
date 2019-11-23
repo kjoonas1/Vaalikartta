@@ -75,9 +75,8 @@ const Charts = () => {
     }
     const chartTitle = getTitle(area.active, area)
 
-    //if (chartData.length && !isLoading) {
     return (
-        <Col xs={12} xl={8}>
+        <Col>
             <Tabs defaultActiveKey="kannatus">
                 <Tab eventKey="kannatus" title="Puoluekannatus" className="aanestys-tab">
                     <BubbleChart
@@ -94,8 +93,6 @@ const Charts = () => {
             </Tabs>
         </Col>
     )
-    // }
-    //  return <div>Valitse aika ja paikka</div>
 }
 
 export default Charts
