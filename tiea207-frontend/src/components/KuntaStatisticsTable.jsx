@@ -8,34 +8,26 @@ import * as objectHelper from "../utils/objectHelper"
 const KuntaStatisticsTable = () => {
     const { area } = useContext(AreaContext)
     const { year } = useContext(YearContext)
-    const getTitle = (mapType, area) => {
-        switch (mapType) {
-            case "Kunnat": return area.district
-            default: return ""
-        }
-    }
-    const url = (active) => {
-        switch (active) {
-            case "Kunnat": return `${backendUrl}/api/kunnat/aanestystiedot/${area.district}/${year}`
-            default: return null
-        }
-    }
-    const chartTitle = getTitle(area.active, area)
-    const kuntaDataHaku = useFetch(url(area.active))
+
+    const chartTitle = area.district + " " + year
+    const url = `${backendUrl}/api/avainluvut/${year}/${area.district}`
+    const kuntaDataHaku = useFetch(url)
+
+    if (kuntaDataHaku.isLoading)
+        return <div>Ladataan kuntadataa...</div>
 
     if (kuntaDataHaku.error === null) {
         const removeAttributes = ["_id", "Alue", "Vuosi"]
         const kuntaDataFilter = objectHelper.filterFromObject(kuntaDataHaku.data[0], a => a !== null)
         const kuntaData = objectHelper.extractArrayOfResponseData(kuntaDataFilter, removeAttributes, "name", "luku")
             .map(rivi => [rivi.name, rivi.luku])
-        console.log(kuntaData)
         return (
             <>
                 <Chart
                     width={"100%"}
                     height={"600px"}
                     chartType="Table"
-                    loader={<div>Loading Chart</div>}
+                    loader={<div>Ladataan taulukkoa...</div>}
                     data={[
                         [
                             { type: "string", label: chartTitle },
@@ -54,12 +46,12 @@ const KuntaStatisticsTable = () => {
                         },
                     ]}
                     options={{ showRowNumber: false }}
-                    rootProps={{ "data-testid": "1" }}
+                    rootProps={{ "data-testid": "kuntadata-taulukko" }}
                 />
 
             </>
         )
     }
-    if (kuntaDataHaku.error) return <div>Error</div>
+    if (kuntaDataHaku.error) return <div>Tapahtui virhe</div>
 }
 export default KuntaStatisticsTable

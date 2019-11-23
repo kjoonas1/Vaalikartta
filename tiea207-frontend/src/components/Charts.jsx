@@ -90,7 +90,7 @@ const Charts = () => {
                         <VotingStatisticsTable />
                     </Tab>
                     {(area.active !== "Kunnat") ? null :
-                        <Tab eventKey="Kuntatiedot" title="Kuntatiedot">
+                        <Tab eventKey="Kunnan tiedot" title="Kunnan tiedot">
                             <KuntaStatisticsTable />
                         </Tab>}
                 </Tabs>
