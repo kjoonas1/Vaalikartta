@@ -10,6 +10,14 @@
     transform: translate(0, -3em)
 }
 
+@media (max-width: 768px) {
+    .bubblechart {
+        transform: translate(0, 3em) scale(1.5);
+
+
+    }
+}
+
 .maps {
     padding-bottom: 2em;
 }
