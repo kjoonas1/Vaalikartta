@@ -10,6 +10,7 @@ import { useArea } from "../contexts/AreaContextProvider"
 import { useYear } from "../contexts/YearContextProvider"
 import VotingStatisticsTable from "../components/VotingStatisticsTable"
 import { Tab, Tabs } from "react-bootstrap"
+import "../styles/Charts.scss"
 
 const Charts = () => {
     const { area, dispatchArea } = useArea()
@@ -31,10 +32,9 @@ const Charts = () => {
                 return null
         }
     }
-    const { data, error, isLoading } = useFetch(url(area.active))
+    const { data } = useFetch(url(area.active))
 
-    if (isLoading) return <>Ladataan</>
-    if (error) return <>Virhe</>
+
 
     // Tehdään taulukko, jossa on kukin puolue ja sen kannatus.
     // Jätetään pois kentät joiden nimi on removeAttributesissa (eivät ole puolueita):
@@ -56,7 +56,9 @@ const Charts = () => {
             return puolue && puolue.color ? puolue.color : "#bdbdbd"
         }
         return { text: party.name, v: party.vote, color: color() }
-    }).sort((a, b) => b.v - a.v)
+    })
+        .filter((item) => item.v > 0)
+        .sort((a, b) => b.v - a.v)
     // Sorttauksella voidaan määrittää pallojen järjestyminen
 
     const getTitle = (mapType, area) => {
@@ -72,27 +74,28 @@ const Charts = () => {
         }
     }
     const chartTitle = getTitle(area.active, area)
-    if (chartData.length && !isLoading) {
-        return (
-            <Col xs={12} xl={8}>
-                <Tabs defaultActiveKey="kannatus">
-                    <Tab eventKey="kannatus" title="Puoluekannatus">
-                        <BubbleChart
-                            data={chartData}
-                            title={chartTitle + " " + year}
-                            useLabels={true}
-                            width={700}
-                            height={700}
-                        />
-                    </Tab>
-                    <Tab eventKey="Aanestystiedot" title="Aanestystiedot">
-                        <VotingStatisticsTable />
-                    </Tab>
-                </Tabs>
-            </Col>
-        )
-    }
-    return <div>Valitse aika ja paikka</div>
+
+    //if (chartData.length && !isLoading) {
+    return (
+        <Col xs={12} xl={8}>
+            <Tabs defaultActiveKey="kannatus">
+                <Tab eventKey="kannatus" title="Puoluekannatus" className="aanestys-tab">
+                    <BubbleChart
+                        data={chartData}
+                        title={chartTitle + " " + year}
+                        useLabels={true}
+                        width={700}
+                        height={700}
+                    />
+                </Tab>
+                <Tab eventKey="Aanestystiedot" title="Aanestystiedot" className="aanestys-tab">
+                    <VotingStatisticsTable />
+                </Tab>
+            </Tabs>
+        </Col>
+    )
+    // }
+    //  return <div>Valitse aika ja paikka</div>
 }
 
 export default Charts
