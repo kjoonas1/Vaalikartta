@@ -11,3 +11,55 @@
     stroke: gray;
     stroke-width: 1px;
 }
+
+.timeline-event-text {
+    font-size: 2.5em;
+    transform: translateY(3em)
+}
+
+.timeline-container {
+    height: 18em;
+}
+
+.timeline-year {
+    font-size: 2.5em;
+}
+
+@media (max-width: 1200px) {
+    .timeline-container {
+        height: 15em;
+    }
+    .timeline-year {
+        font-size: 3em;
+    }
+    .timeline-event-text {
+        margin-top: 1em;
+        transform: translateY(3em)
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .timeline-container {
+        height: 12em;
+    }
+    .timeline-year {
+        font-size: 3.5em;
+    }
+    .timeline-event-text {
+        font-size: 3em;
+        transform: translateY(2em)
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .timeline-container {
+        height: 8em;
+    }
+    .timeline-year {
+        font-size: 4.75em;
+    }
+    .timeline-event-text {
+        font-size: 3.75em;
+        transform: translateY(1em)
+    }
+  }
