@@ -1,5 +1,6 @@
 import React, { useEffect } from "react"
 import * as d3 from "d3"
+import "../styles/Charts.scss"
 
 const BubbleChart = props => {
     const padding = 8
@@ -29,8 +30,9 @@ const BubbleChart = props => {
                 }
 
                 const svg = d3.select(container.current)
-                    .attr("width", '100%')
-                    .attr("height", props.height)
+                    .attr("width", "60%")
+                    .attr("class", "bubblechart")
+                    .attr("height", "60%")
                     .attr("viewBox", "0 0 " + Math.min(props.width, props.height) + " " + Math.min(props.width, props.height))
                     .attr("preserveAspectRatio", "xMinYMin")
                     .append("g")
@@ -84,7 +86,9 @@ const BubbleChart = props => {
         return (
             <>
                 <h4>{props.title}</h4>
-                <svg ref={container} width={props.width} height={props.height} />
+                <div className="bubblechart-container">
+                    <svg ref={container} width={props.width} height={props.height} />
+                </div>
             </>
         )
     }

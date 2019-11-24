@@ -60,7 +60,7 @@ const Charts = props => {
     const chartTitle = getTitle(area.active, area)
 
     return (
-        <Col xs={12} xl={8}>
+        <Col>
             <Tabs defaultActiveKey="kannatus">
                 <Tab eventKey="kannatus" title="Puoluekannatus" className="aanestys-tab">
                     <BubbleChart
