@@ -1,7 +1,5 @@
 import React from "react"
-import { useFetch } from "../hooks/UseFetch"
 import { Col } from "react-bootstrap"
-import { backendUrl } from "../constants"
 import * as objectHelper from "../utils/objectHelper"
 import * as MapParts from "../dataset/SVGMapParts"
 import * as colors from "../dataset/partyColors.json"

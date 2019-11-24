@@ -1,17 +1,10 @@
-import React, { useContext } from "react"
-import { AreaContext, YearContext } from "../contexts/Contexts"
+import React from "react"
 import { Chart } from "react-google-charts"
-import { useFetch } from "../hooks/UseFetch"
-import { backendUrl } from "../constants"
 import * as objectHelper from "../utils/objectHelper"
 
 const VotingStatisticsTable = (props) => {
-    const { area } = useContext(AreaContext)
-    const { year } = useContext(YearContext)
-
-    const aanestysHaku = props.data
     const removeAttributes = ["_id", "tyyppi", "Alue", "Vuosi"]
-    const aanestysFilter = objectHelper.filterFromObject(aanestysHaku[0], a => a !== null)
+    const aanestysFilter = objectHelper.filterFromObject(props.data[0], a => a !== null)
     const aanestys = objectHelper.extractArrayOfResponseData(aanestysFilter, removeAttributes, "name", "luku")
         .map(rivi => [rivi.name, rivi.luku])
 
