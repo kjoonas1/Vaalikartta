@@ -14,8 +14,8 @@ const BubbleChart = props => {
 
                 const simulation = d3.forceSimulation()
                     .alphaDecay(0.05)
-                    .force("x", d3.forceX().strength(0.025))
-                    .force("y", d3.forceY().strength(0.025))
+                    .force("x", d3.forceX().strength(0.0125))
+                    .force("y", d3.forceY().strength(0.0125))
                     .force("collide", d3.forceCollide(d => radiusScale(d.v) + padding))
 
                 const radiusScale = A => 10 + 35*Math.sqrt(A/Math.PI)

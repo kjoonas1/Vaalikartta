@@ -48,18 +48,18 @@ const Charts = props => {
         <Col>
             <Tabs defaultActiveKey="kannatus">
                 <Tab eventKey="kannatus" title="Puoluekannatus" className="aanestys-tab">
-                {chartData.length &&
+                {chartData.length ?
                     <BubbleChart
                         data={chartData}
                         title={props.chartTitle}
                         useLabels={true}
                         width={700}
                         height={700}
-                    />}
+                    /> : null}
                 </Tab>
                 <Tab eventKey="Aanestystiedot" title="Aanestystiedot" className="aanestys-tab">
-                    {props.votingStatistics.length && 
-                     <VotingStatisticsTable title={props.chartTitle} data={props.votingStatistics}/>}
+                    {chartData.length ? 
+                     <VotingStatisticsTable title={props.chartTitle} data={props.votingStatistics}/> : null}
                 </Tab>
             </Tabs>
         </Col>
