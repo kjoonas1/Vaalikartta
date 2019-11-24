@@ -13,6 +13,7 @@ import "../styles/Charts.scss"
 const Charts = props => {
     const { area, dispatchArea } = useArea()
     const { year } = useYear()
+    
     const data = props.bubbleChartData
 
     const uudetVaalipiirit = MapParts.uudetVaalipiirit.map(key => key.name)
@@ -43,22 +44,22 @@ const Charts = props => {
         .sort((a, b) => b.v - a.v)
     // Sorttauksella voidaan määrittää pallojen järjestyminen
 
-
-
     return (
         <Col>
             <Tabs defaultActiveKey="kannatus">
                 <Tab eventKey="kannatus" title="Puoluekannatus" className="aanestys-tab">
+                {chartData.length &&
                     <BubbleChart
                         data={chartData}
                         title={props.chartTitle}
                         useLabels={true}
                         width={700}
                         height={700}
-                    />
+                    />}
                 </Tab>
                 <Tab eventKey="Aanestystiedot" title="Aanestystiedot" className="aanestys-tab">
-                     <VotingStatisticsTable title={props.chartTitle} data={props.votingStatistics}/>
+                    {props.votingStatistics.length && 
+                     <VotingStatisticsTable title={props.chartTitle} data={props.votingStatistics}/>}
                 </Tab>
             </Tabs>
         </Col>

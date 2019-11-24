@@ -84,14 +84,10 @@ const Etusivu = () => {
                             <ControlledTabs tabs={maps} />
                         </Col>
                         <Col xs={12} xl={8}>
-                            {(bubbleChart.data.length && !bubbleChart.isLoading && !bubbleChart.error) &&
-                                (votingStatistics.data.length && !votingStatistics.isLoading && !votingStatistics.error) ?
-                                <Charts chartTitle={chartTitle} votingStatistics={votingStatistics.data} bubbleChartData={bubbleChart.data} />
-                                :
-                                null}
+                            <Charts chartTitle={chartTitle} votingStatistics={votingStatistics.data} bubbleChartData={bubbleChart.data} />
                             {!bubbleChart.data.length &&
                                 <>
-                                <h4>{chartTitle}</h4>
+                                    <h4>{chartTitle}</h4>
                                     <p>Ei dataa. Alue on todennäköisesti liitetty toiseen tai sitä ei ole vielä ollut olemassa</p>
                                 </>
                             }
