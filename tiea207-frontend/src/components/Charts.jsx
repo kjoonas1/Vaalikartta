@@ -43,19 +43,7 @@ const Charts = props => {
         .sort((a, b) => b.v - a.v)
     // Sorttauksella voidaan määrittää pallojen järjestyminen
 
-    const getTitle = (mapType, area) => {
-        switch (mapType) {
-            case "Vaalipiirit":
-                return area.constituency !== undefined ? area.constituency : ""
-            case "Koko maa":
-                return area.country !== undefined ? area.country : ""
-            case "Kunnat":
-                return area.district !== undefined ? area.district : ""
-            default:
-                return ""
-        }
-    }
-    const chartTitle = getTitle(area.active, area)
+
 
     return (
         <Col>
@@ -63,14 +51,14 @@ const Charts = props => {
                 <Tab eventKey="kannatus" title="Puoluekannatus" className="aanestys-tab">
                     <BubbleChart
                         data={chartData}
-                        title={chartTitle + " " + year}
+                        title={props.chartTitle}
                         useLabels={true}
                         width={700}
                         height={700}
                     />
                 </Tab>
                 <Tab eventKey="Aanestystiedot" title="Aanestystiedot" className="aanestys-tab">
-                     <VotingStatisticsTable chartTitle={chartTitle + " " + year} data={props.votingStatistics}/>
+                     <VotingStatisticsTable title={props.chartTitle} data={props.votingStatistics}/>
                 </Tab>
             </Tabs>
         </Col>

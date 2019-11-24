@@ -17,7 +17,7 @@ const VotingStatisticsTable = (props) => {
                 loader={<div>Loading Chart</div>}
                 data={[
                     [
-                        { type: "string", label: props.chartTitle },
+                        { type: "string", label: props.title },
                         { type: "number", label: "" }
                     ],
                     ...aanestys

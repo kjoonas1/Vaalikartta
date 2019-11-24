@@ -58,6 +58,20 @@ const Etusivu = () => {
         }
     ]
 
+    const getTitle = (mapType, area) => {
+        switch (mapType) {
+            case "Vaalipiirit":
+                return area.constituency !== undefined ? area.constituency : ""
+            case "Koko maa":
+                return area.country !== undefined ? area.country : ""
+            case "Kunnat":
+                return area.district !== undefined ? area.district : ""
+            default:
+                return ""
+        }
+    }
+    const chartTitle = getTitle(area.active, area) + " " + year
+
     return (
         <>
             <Row className="timeline">
@@ -72,12 +86,12 @@ const Etusivu = () => {
                         <Col xs={12} xl={8}>
                             {(bubbleChart.data.length && !bubbleChart.isLoading && !bubbleChart.error) &&
                                 (votingStatistics.data.length && !votingStatistics.isLoading && !votingStatistics.error) ?
-                                <Charts votingStatistics={votingStatistics.data} bubbleChartData={bubbleChart.data} />
+                                <Charts chartTitle={chartTitle} votingStatistics={votingStatistics.data} bubbleChartData={bubbleChart.data} />
                                 :
                                 null}
                             {!bubbleChart.data.length &&
                                 <>
-                                <h4>{area.active}</h4>
+                                <h4>{chartTitle}</h4>
                                     <p>Ei dataa. Alue on todennäköisesti liitetty toiseen tai sitä ei ole vielä ollut olemassa</p>
                                 </>
                             }
