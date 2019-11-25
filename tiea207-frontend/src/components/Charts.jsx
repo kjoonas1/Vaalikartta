@@ -88,7 +88,7 @@ const Charts = props => {
         <Col id="charts">
             <Tabs defaultActiveKey="kannatus" className="flex-row">
                 <Tab eventKey="kannatus" title="Puoluekannatus" className="aanestys-tab">
-                    {(!bubbleChart.error && bubbleChart.payload) ?
+                    {(!bubbleChart.error && bubbleChart.payload && bubbleChart.payload.length) ?
                         <BubbleChart
                             data={getBubbleChartData(bubbleChart.payload)}
                             title={chartTitle}
@@ -96,7 +96,12 @@ const Charts = props => {
                             width={700}
                             height={700}
                             loading={bubbleChart.loading}
-                        /> : errorMessage
+                        /> : bubbleChart.payload && !bubbleChart.payload.length ?
+                            <>
+                                <h4>{chartTitle}</h4>
+                                <p>Ei dataa. Alue on todennäköisesti liitetty toiseen tai sitä ei ole vielä ollut olemassa</p>
+                            </>
+                            : errorMessage
                     }
                 </Tab>
                 <Tab eventKey="Aanestystiedot" title="Aanestystiedot" className="aanestys-tab">
