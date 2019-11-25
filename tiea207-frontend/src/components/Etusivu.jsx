@@ -18,14 +18,10 @@ const Etusivu = () => {
 
     const url = active => {
         switch (active) {
-            case "Koko maa":
-                return `/api/koko-maa/kannatus/${year}`
-            case "Vaalipiirit":
-                return `/api/vaalipiirit/kannatus/${area.constituency}/${year}`
-            case "Kunnat":
-                return `/api/kunnat/kannatus/${area.district}/${year}`
-            default:
-                return null
+            case "Koko maa": return `/api/koko-maa/kannatus/${year}`
+            case "Vaalipiirit": return `/api/vaalipiirit/kannatus/${area.constituency}/${year}`
+            case "Kunnat": return `/api/kunnat/kannatus/${area.district}/${year}`
+            default: return null
         }
     }
 
@@ -38,8 +34,29 @@ const Etusivu = () => {
         }
     }
 
-    //const bubbleChart = useFetch(url(area.active))
-    //const votingStatistics = useFetch(aanestystiedotUrl(area.active))
+    const getTitle = (mapType, area) => {
+        switch (mapType) {
+            case "Vaalipiirit": return area.constituency !== undefined ? area.constituency : ""
+            case "Koko maa": return area.country !== undefined ? area.country : ""
+            case "Kunnat": return area.district !== undefined ? area.district : ""
+            default: return ""
+        }
+    }
+
+    const bubbleChart = useQuery({
+        method: "GET",
+        endpoint: url(area.active),
+    })
+
+    const votingStatistics = useQuery({
+        method: "GET",
+        endpoint: aanestystiedotUrl(area.active),
+    })
+
+    const coordinates = useQuery({
+        method: "GET",
+        endpoint: `/api/kunnat/koordinaatit/${year}`
+    })
 
     // Karttatyypit valtiolle, vaalipiireille ja kunnille
     const maps = [
@@ -52,39 +69,17 @@ const Etusivu = () => {
             name: "Vaalipiirit"
         },
         {
-            map: <ElectionMap />,
+            map: <ElectionMap coordinates={coordinates} />,
             name: "Kunnat"
         }
     ]
 
-    const getTitle = (mapType, area) => {
-        switch (mapType) {
-            case "Vaalipiirit":
-                return area.constituency !== undefined ? area.constituency : ""
-            case "Koko maa":
-                return area.country !== undefined ? area.country : ""
-            case "Kunnat":
-                return area.district !== undefined ? area.district : ""
-            default:
-                return ""
-        }
-    }
-
-    const bubbleChart = useQuery({
-        method: 'GET',
-        endpoint: url(area.active),
-      })
-
-      const votingStatistics = useQuery({
-        method: 'GET',
-        endpoint: aanestystiedotUrl(area.active),
-      })
-
     const chartTitle = getTitle(area.active, area) + " " + year
+
     return (
         <>
             <Row className="timeline">
-                <Timeline data={timelineData} />
+                <Timeline />
             </Row>
             <Row>
                 <Col >
@@ -101,6 +96,5 @@ const Etusivu = () => {
         </>
     )
 }
-
 
 export default Etusivu

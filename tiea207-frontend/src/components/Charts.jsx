@@ -52,21 +52,23 @@ const Charts = props => {
 
     return (
         <Col id="charts">
-            <Tabs defaultActiveKey="kannatus" classNme="nav flex-column">
+            <Tabs defaultActiveKey="kannatus" className="flex-row">
                 <Tab eventKey="kannatus" title="Puoluekannatus" className="aanestys-tab">
-                    {(!data.loading && !data.error && data.payload) ?
+                    {(!data.error && data.payload) ?
                         <BubbleChart
                             data={getBubbleChartData(data)}
                             title={props.chartTitle}
                             useLabels={true}
                             width={700}
                             height={700}
-                        /> : data.error ? errorMessage : null}
+                            loading={data.loading}
+                        /> : errorMessage
+                    }
                 </Tab>
                 <Tab eventKey="Aanestystiedot" title="Aanestystiedot" className="aanestys-tab">
                     {(!dataStatisticsTable.loading && !dataStatisticsTable.error && dataStatisticsTable.payload) ?
                         <VotingStatisticsTable title={props.chartTitle} data={props.votingStatistics.payload} />
-                        : dataStatisticsTable.error ? errorMessage : null}
+                        : dataStatisticsTable.error ? errorMessage : data.loading && "Ladataan"}
                 </Tab>
             </Tabs>
         </Col>

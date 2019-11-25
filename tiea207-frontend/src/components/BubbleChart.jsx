@@ -40,45 +40,46 @@ const BubbleChart = props => {
                 .attr("preserveAspectRatio", "xMinYMin")
                 .append("g")
                 .style("transform", "translate(52%,55%)")
+            if (!props.loading) {
+                const data = svg.selectAll(".bubble").data(props.data)
 
-            const data = svg.selectAll(".bubble").data(props.data)
+                data.exit().remove()
 
-            data.exit().remove()
+                const bubbles = data
+                    .enter()
+                    .append("g")
+                    .attr("class", "bubble")
 
-            const bubbles = data
-                .enter()
-                .append("g")
-                .attr("class", "bubble")
+                bubbles
+                    .append("circle")
+                    .attr("r", d => radiusScale(d.v))
+                    .attr("fill", d => d.color)
+                    .attr("stroke", d => d3.color(d.color).darker(0.5))
+                    .attr("stroke-width", 3)
 
-            bubbles
-                .append("circle")
-                .attr("r", d => radiusScale(d.v))
-                .attr("fill", d => d.color)
-                .attr("stroke", d => d3.color(d.color).darker(0.5))
-                .attr("stroke-width", 3)
+                const fontSize = d => radiusScale(d.v) / 4 + 10
+                const fontColor = color => (d3.hsl(d3.color(color)).l > 0.7 ? "#555" : "#fff")
+                const texts = bubbles
+                    .append("text")
+                    .text(d => d.text)
+                    .attr("text-anchor", "middle")
+                    .attr("font-size", fontSize)
+                    .attr("font-weight", "bold")
+                    .attr("fill", d => fontColor(d.color))
 
-            const fontSize = d => radiusScale(d.v) / 4 + 10
-            const fontColor = color => (d3.hsl(d3.color(color)).l > 0.7 ? "#555" : "#fff")
-            const texts = bubbles
-                .append("text")
-                .text(d => d.text)
-                .attr("text-anchor", "middle")
-                .attr("font-size", fontSize)
-                .attr("font-weight", "bold")
-                .attr("fill", d => fontColor(d.color))
+                bubbles
+                    .append("text")
+                    .text(d => d.v)
+                    .attr("text-anchor", "middle")
+                    .attr("font-size", fontSize)
+                    .attr("font-weight", "bold")
+                    .attr("fill", d => fontColor(d.color))
 
-            bubbles
-                .append("text")
-                .text(d => d.v)
-                .attr("text-anchor", "middle")
-                .attr("font-size", fontSize)
-                .attr("font-weight", "bold")
-                .attr("fill", d => fontColor(d.color))
-
-            simulation.nodes(props.data).on("tick", () => {
-                bubbles.attr("transform", d => `translate(${d.x}, ${d.y})`)
-                texts.attr("y", d => radiusScale(d.v) / 4 + 10)
-            })
+                simulation.nodes(props.data).on("tick", () => {
+                    bubbles.attr("transform", d => `translate(${d.x}, ${d.y})`)
+                    texts.attr("y", d => radiusScale(d.v) / 4 + 10)
+                })
+            }
         }
     }, [props])
 

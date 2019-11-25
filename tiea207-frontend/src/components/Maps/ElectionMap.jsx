@@ -7,14 +7,10 @@ import { useArea } from "../../contexts/AreaContextProvider"
 import { useYear } from "../../contexts/YearContextProvider"
 import shortid from "shortid"
 
-export const ElectionMap = () => {
+export const ElectionMap = props => {
     const { dispatchArea } = useArea()
     const { year } = useYear()
-    const { data, error, isLoading } = useFetch(`${backendUrl}/api/kunnat/koordinaatit/${year}`)
-    const mapData = data
-
-    if (error !== null)
-        return <div>Tapahtui virhe kuntien koordinaatteja haettaessa</div>
+    const data = props.coordinates
 
     const pointToLayer = (feature, latlng) => {
         return L.circleMarker(latlng, null)
@@ -45,11 +41,11 @@ export const ElectionMap = () => {
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
 
-            {(!isLoading && (data.features && data.features.length)) &&
+            {(!data.loading && !data.error && data.payload) ?
                 <GeoJSON
                     key={shortid.generate()}
-                    keyFunction={mapData}
-                    data={mapData}
+                    keyFunction={data.payload}
+                    data={data.payload}
                     onEachFeature={addAreaInfo}
                     pointToLayer={pointToLayer}
 
@@ -60,7 +56,7 @@ export const ElectionMap = () => {
                         fillColor: "#097ab8",
                         fillOpacity: 1
                     })}
-                />
+                /> : <div>Tapahtui virhe kuntien koordinaatteja haettaessa</div>
             }
         </Map>
     )

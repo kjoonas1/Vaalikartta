@@ -5,13 +5,16 @@ import "../styles/Timeline.scss"
 import { useYear } from "../contexts/YearContextProvider"
 import { useEvent } from "../contexts/EventContextProvider"
 import { HashLink as Link } from "react-router-hash-link"
+import { timelineData } from "../dataset/timelineData"
 
 export const Timeline = props => {
     const { year, setYear } = useYear()
     const { event, setEvent } = useEvent()
 
-    const years = props.data.years
-    const events = props.data.events
+    const data = timelineData
+
+    const years = data.years
+    const events = data.events
 
     const contextYear = year
     const contextEvent = event
