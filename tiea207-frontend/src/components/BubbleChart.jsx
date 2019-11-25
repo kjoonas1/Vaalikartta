@@ -5,15 +5,17 @@ import "../styles/Charts.scss"
 const BubbleChart = props => {
     const padding = 3
     const container = React.useRef(null)
-
     useEffect(() => {
         if (props.data && container.current) {
             // Poistetaan kaikki lapsisolmut ennen kuin tehdään mitään muuta
+
+            if (!props.loading) {
             d3.select(container.current)
                 .selectAll("*")                    
                 .transition()
-                .style("opacity", "0.25").duration(250).ease(d3.easeLinear)
+                .style("opacity", "0").duration(250).ease(d3.easeLinear)
                 .remove()
+            } else d3.select(container.current).selectAll("*").remove() // Jos ollaan lataus-tilassa, ei animoida mitään
 
             const simulation = d3
                 .forceSimulation()
@@ -58,10 +60,15 @@ const BubbleChart = props => {
                     .attr("r", d => radiusScale(d.v))
                     .attr("fill", d => d.color)
                     .attr("stroke", d => d3.color(d.color).darker(0.5))
-                    .attr("stroke-width", 3)
-                    .style("opacity", "0.75")
+                    .attr("stroke-width", 1)
+                    .style("opacity", "0.5")
                     .transition()
-                    .style("opacity", "1").duration(250).ease(d3.easeLinear).delay(100)
+                    .style("opacity", "1")
+                    .duration(100)
+                    .ease(d3.easeLinear)
+                    .transition()
+                    .attr("stroke-width", 3)
+                    .duration(200)
 
 
                 const fontSize = d => radiusScale(d.v) / 4 + 10

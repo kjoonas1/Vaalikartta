@@ -9,13 +9,37 @@ import { useYear } from "../contexts/YearContextProvider"
 import VotingStatisticsTable from "../components/VotingStatisticsTable"
 import { Tab, Tabs } from "react-bootstrap"
 import "../styles/Charts.scss"
+import { useQuery } from 'react-fetching-library';
 
 const Charts = props => {
     const { area, dispatchArea } = useArea()
     const { year } = useYear()
+    const url = active => {
+        switch (active) {
+            case "Koko maa": return `/api/koko-maa/kannatus/${year}`
+            case "Vaalipiirit": return `/api/vaalipiirit/kannatus/${area.constituency}/${year}`
+            case "Kunnat": return `/api/kunnat/kannatus/${area.district}/${year}`
+            default: return null
+        }
+    }
 
-    const data = props.bubbleChartData
-    const dataStatisticsTable = props.votingStatistics
+    const aanestystiedotUrl = active => {
+        switch (active) {
+            case "Koko maa": return `/api/muut-alueet/aanestystiedot/${area.country}/${year}`
+            case "Vaalipiirit": return `/api/vaalipiirit/aanestystiedot/${area.constituency}/${year}`
+            case "Kunnat": return `/api/kunnat/aanestystiedot/${area.district}/${year}`
+            default: return null
+        }
+    }
+    const bubbleChart = useQuery({
+        method: "GET",
+        endpoint: url(area.active),
+    })
+
+    const votingStatistics = useQuery({
+        method: "GET",
+        endpoint: aanestystiedotUrl(area.active),
+    })
 
     const getBubbleChartData = (data) => {
         const uudetVaalipiirit = MapParts.uudetVaalipiirit.map(key => key.name)
@@ -25,7 +49,7 @@ const Charts = props => {
         // Jätetään pois kentät joiden nimi on removeAttributesissa (eivät ole puolueita):
         // Järjestetään äänestysprosentin mukaan laskevaan järjestykseen
         const removeAttributes = ["Alue", "_id", "Vuosi", "tyyppi", "aluekoodi", "Puolueiden äänet yhteensä"]
-        const kannatus = objectHelper.filterFromObject(data.payload[0], a => a !== null)
+        const kannatus = objectHelper.filterFromObject(data[0], a => a !== null)
         const puolueLuvut = objectHelper.extractArrayOfResponseData(kannatus, removeAttributes, "name", "vote")
 
         // Jos valittua aluetta ei enää vuoden vaihdon jälkeen ole, poistetaan aluevalinta
@@ -48,27 +72,37 @@ const Charts = props => {
         return chartData
     }
 
-    const errorMessage = "Virhe, kokeile uudestaan."
+    const getTitle = (mapType, area) => {
+        switch (mapType) {
+            case "Vaalipiirit": return area.constituency !== undefined ? area.constituency : ""
+            case "Koko maa": return area.country !== undefined ? area.country : ""
+            case "Kunnat": return area.district !== undefined ? area.district : ""
+            default: return ""
+        }
+    }
 
+    const chartTitle = getTitle(area.active, area) + " " + year
+
+    const errorMessage = "Virhe, kokeile uudestaan."
     return (
         <Col id="charts">
             <Tabs defaultActiveKey="kannatus" className="flex-row">
                 <Tab eventKey="kannatus" title="Puoluekannatus" className="aanestys-tab">
-                    {(!data.error && data.payload) ?
+                    {(!bubbleChart.error && bubbleChart.payload) ?
                         <BubbleChart
-                            data={getBubbleChartData(data)}
-                            title={props.chartTitle}
+                            data={getBubbleChartData(bubbleChart.payload)}
+                            title={chartTitle}
                             useLabels={true}
                             width={700}
                             height={700}
-                            loading={data.loading}
+                            loading={bubbleChart.loading}
                         /> : errorMessage
                     }
                 </Tab>
                 <Tab eventKey="Aanestystiedot" title="Aanestystiedot" className="aanestys-tab">
-                    {(!dataStatisticsTable.loading && !dataStatisticsTable.error && dataStatisticsTable.payload) ?
-                        <VotingStatisticsTable title={props.chartTitle} data={props.votingStatistics.payload} />
-                        : dataStatisticsTable.error ? errorMessage : data.loading && "Ladataan"}
+                    {(!votingStatistics.loading && !votingStatistics.error && votingStatistics.payload) ?
+                        <VotingStatisticsTable title={chartTitle} data={votingStatistics.payload} />
+                        : votingStatistics.error ? errorMessage : votingStatistics.loading && "Ladataan"}
                 </Tab>
             </Tabs>
         </Col>

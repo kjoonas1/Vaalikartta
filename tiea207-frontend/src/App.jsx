@@ -15,7 +15,6 @@ const App = () => {
     return (
         <div className="App">
             <ClientContextProvider client={Client}>
-
                 <YearContextProvider>
                     <AreaContextProvider>
                         <EventContextProvider>
@@ -29,7 +28,7 @@ const App = () => {
                                 </Container>
                                 <footer className="text-muted">
                                     Footer text
-                            </footer>
+                                </footer>
                             </Router>
                         </EventContextProvider>
                     </AreaContextProvider>
