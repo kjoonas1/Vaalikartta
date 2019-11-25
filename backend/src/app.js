@@ -19,12 +19,12 @@ process.on("exit", () => {
 // Tehdään promisena, jotta kutsuvassa koodissa voidaan sitten varmistua siitä, että yhteys tietokantaan on
 // saatu
 const createApp = new Promise((resolve, reject) => {
-    MongoClient.connect(databaseUrl, { useNewUrlParser: false, useUnifiedTopology: true }).then(client => {
+    MongoClient.connect(databaseUrl, { useNewUrlParser: true, useUnifiedTopology: true }).then(client => {
         app.mongoClient = client
         console.log("Connected to database")
 
         app.use(cors())
-        app.use(morgan("tiny"))
+        process.env.NODE_ENV === "development" && app.use(morgan("tiny"))
         // Middleware, joka vie Db instanssin jokaisen pyynnön mukana
         app.use((req, res, next) => {
             req.db = app.mongoClient.db(databaseName)

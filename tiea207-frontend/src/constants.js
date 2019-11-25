@@ -1,1 +1,2 @@
-export const backendUrl =  process.env.NODE_ENV === "production" ? "http://vaalikartta.appspot.com" : "http://localhost:8000"
+/* eslint-disable */
+export const backendUrl = process.env.NODE_ENV === "production" ? "http://vaalikartta.appspot.com" : "http://localhost:8000"
