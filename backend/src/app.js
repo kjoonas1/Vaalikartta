@@ -4,6 +4,7 @@ const cors = require("cors")
 const morgan = require("morgan")
 const MongoClient = require("mongodb").MongoClient
 const router = require("./routes/routes")
+const path = require("path")
 
 if (process.env.TEST)
     console.log = () => { } // Otetaan loggaus pois käytöstä jottei sotke testejä
@@ -23,7 +24,7 @@ const createApp = new Promise((resolve, reject) => {
         console.log("Connected to database")
 
         app.use(cors())
-        app.use(morgan("tiny"))
+        process.env.NODE_ENV === "development" && app.use(morgan("tiny"))
         // Middleware, joka vie Db instanssin jokaisen pyynnön mukana
         app.use((req, res, next) => {
             req.db = app.mongoClient.db(databaseName)
@@ -31,6 +32,7 @@ const createApp = new Promise((resolve, reject) => {
         })
 
         app.use("/api", router)
+        app.use("/", express.static(path.join(__dirname, "../build")))
         // Tämä vain jotta /favicon.ico hakeminen ei tuota 404
         app.get("/favicon.ico", (req, res) => res.sendStatus(204))
         resolve(app) // app valmis käyttöön
