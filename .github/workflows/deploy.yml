@@ -1,0 +1,32 @@
+name: Build and deploy to Google App Engine
+
+on:
+  push:
+    branches:
+      - master
+
+# Environment variables
+env:
+  GAE_PROJECT: ${{ secrets.GAE_PROJECT }}
+  GAE_EMAIL: ${{ secrets.GAE_EMAIL }}
+  GAE_SA_KEY: ${{ secrets.GAE_SA_KEY }}
+
+jobs:
+  setup-build-deploy:
+    name: Setup, build and deploy
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: Checkout
+      uses: actions/checkout@master
+    # Setup gcloud CLI
+    - uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
+      with:
+        version: '270.0.0'
+        service_account_email: ${{ secrets.GAE_EMAIL }}
+        service_account_key: ${{ secrets.GAE_SA_KEY }}
+    # TODO:
+    # frontend: npm install
+    # Build frontend and move 'build' folder to backend
+    # backend: npm install
+    # Deploy with gcloud
