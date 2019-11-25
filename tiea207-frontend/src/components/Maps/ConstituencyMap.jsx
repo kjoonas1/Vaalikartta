@@ -1,9 +1,9 @@
 import React from "react"
 import { uudetVaalipiirit, vanhatVaalipiirit } from "../../dataset/SVGMapParts"
-import { Link } from "react-router-dom"
 import "../../styles/Constituency.scss"
 import { useArea } from "../../contexts/AreaContextProvider"
 import { useYear } from "../../contexts/YearContextProvider"
+import { HashLink as Link } from "react-router-hash-link"
 
 export const ConstituencyMap = props => {
     const { area, dispatchArea } = useArea()
@@ -36,7 +36,7 @@ export const ConstituencyMap = props => {
                             <Link
                                 data-testid={"constituency-link-" + index}
                                 key={index}
-                                to=""
+                                smooth to="#charts"
                                 onClick={() => {
                                     dispatchArea({ type: "CHANGE_CONSTITUENCY_TO", to: _map[key].name })
                                 }}

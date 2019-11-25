@@ -51,8 +51,8 @@ const Charts = props => {
     const errorMessage = "Virhe, kokeile uudestaan."
 
     return (
-        <Col>
-            <Tabs defaultActiveKey="kannatus">
+        <Col id="charts">
+            <Tabs defaultActiveKey="kannatus" classNme="nav flex-column">
                 <Tab eventKey="kannatus" title="Puoluekannatus" className="aanestys-tab">
                     {(!data.loading && !data.error && data.payload) ?
                         <BubbleChart
