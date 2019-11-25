@@ -5,7 +5,7 @@
 .event {
     transition: 0.5s;
 }
-  
+
 .event:hover {
     fill-opacity: 1;
     stroke: gray;
@@ -14,7 +14,7 @@
 
 .timeline-event-text {
     font-size: 2.5em;
-    transform: translateY(3em)
+    transform: translateY(3em);
 }
 
 .timeline-container {
@@ -23,6 +23,7 @@
 
 .timeline-year {
     font-size: 3em;
+    text-shadow: 1px 1px 3px rgb(158, 158, 158);
 }
 
 @media (max-width: 1200px) {
@@ -31,14 +32,15 @@
     }
     .timeline-year {
         font-size: 3.5em;
+        text-shadow: 1px 1px 3px rgb(158, 158, 158);
     }
     .timeline-event-text {
         margin-top: 1em;
-        transform: translateY(3em)
+        transform: translateY(3em);
     }
-  }
-  
-  @media (max-width: 992px) {
+}
+
+@media (max-width: 992px) {
     .timeline-container {
         height: 12em;
     }
@@ -47,19 +49,21 @@
     }
     .timeline-event-text {
         font-size: 3em;
-        transform: translateY(2em)
+        transform: translateY(2em);
     }
-  }
-  
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .timeline-container {
         height: 8em;
     }
     .timeline-year {
-        font-size: 5em;
+        font-size: 6em;
+        text-shadow: 1px 1px 3px #000;
+        transform: translateY(-0.25em);
     }
     .timeline-event-text {
         font-size: 3.75em;
-        transform: translateY(1em)
+        transform: translateY(1em);
     }
-  }
+}

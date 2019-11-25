@@ -46,7 +46,7 @@ const Charts = props => {
 
     return (
         <Col id="charts">
-            <Tabs defaultActiveKey="kannatus">
+            <Tabs defaultActiveKey="kannatus" classNme="nav flex-column">
                 <Tab eventKey="kannatus" title="Puoluekannatus" className="aanestys-tab">
                     {chartData.length ?
                         <BubbleChart

@@ -7,15 +7,24 @@
   }
 
 .bubblechart {
-    transform: translate(0, -3em)
+    transform: translate(0, -1em)
 }
 
 @media (max-width: 768px) {
     .bubblechart {
-        transform: translate(0, 3em) scale(1.5);
+        transform: translate(0, 6em) scale(1.25);
     }
 }
 
 .maps {
     padding-bottom: 2em;
+}
+
+.nav-tabs {
+    font-size: 0.8em
+}
+
+.nav-tabs a {
+    color: rgb(140, 152, 255);
+    text-shadow: 1px 1px 3px rgb(144, 179, 212);
 }

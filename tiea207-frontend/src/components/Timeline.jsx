@@ -1,10 +1,10 @@
 import React, { Fragment } from "react"
 import { Col } from "react-bootstrap"
 import shortid from "shortid"
-import { Link } from "react-router-dom"
 import "../styles/Timeline.scss"
 import { useYear } from "../contexts/YearContextProvider"
 import { useEvent } from "../contexts/EventContextProvider"
+import { HashLink as Link } from "react-router-hash-link"
 
 export const Timeline = props => {
     const { year, setYear } = useYear()
@@ -39,7 +39,7 @@ export const Timeline = props => {
                         <Fragment key={shortid.generate()}>
                             <Link
                                 key={shortid.generate()}
-                                to=""
+                                smooth to="#charts"
                                 onClick={() => {
                                     setYear(year)
                                 }}
@@ -80,7 +80,6 @@ export const Timeline = props => {
                     return (
                         <Fragment key={shortid.generate()}>
                             <Link
-
                                 to=""
                                 onClick={() => {
                                     // Pallon uudelleenklikkaus poistaa aktivoinnin
