@@ -1,7 +1,5 @@
 import React from "react"
-import { useFetch } from "../hooks/UseFetch"
 import { Col } from "react-bootstrap"
-import { backendUrl } from "../constants"
 import * as objectHelper from "../utils/objectHelper"
 import * as MapParts from "../dataset/SVGMapParts"
 import * as colors from "../dataset/partyColors.json"
@@ -11,32 +9,17 @@ import { useYear } from "../contexts/YearContextProvider"
 import VotingStatisticsTable from "../components/VotingStatisticsTable"
 import KuntaStatisticsTable from "../components/KuntaStatisticsTable"
 import { Tab, Tabs } from "react-bootstrap"
+import "../styles/Charts.scss"
 
-const Charts = () => {
+const Charts = props => {
     const { area, dispatchArea } = useArea()
     const { year } = useYear()
+
+    const data = props.bubbleChartData
 
     const uudetVaalipiirit = MapParts.uudetVaalipiirit.map(key => key.name)
     const vanhatVaalipiirit = MapParts.vanhatVaalipiirit.map(key => key.name)
     const colorArray = colors.default
-
-    const url = active => {
-        switch (active) {
-            case "Koko maa":
-                return `${backendUrl}/api/koko-maa/kannatus/${year}`
-            case "Vaalipiirit":
-                return `${backendUrl}/api/vaalipiirit/kannatus/${area.constituency}/${year}`
-            case "Kunnat":
-                return `${backendUrl}/api/kunnat/kannatus/${area.district}/${year}`
-            default:
-                return null
-        }
-    }
-    const { data, error, isLoading } = useFetch(url(area.active))
-
-    if (isLoading) return <>Ladataan</>
-    if (error) return <>Virhe</>
-
     // Tehdään taulukko, jossa on kukin puolue ja sen kannatus.
     // Jätetään pois kentät joiden nimi on removeAttributesissa (eivät ole puolueita):
     // Järjestetään äänestysprosentin mukaan laskevaan järjestykseen
@@ -57,47 +40,35 @@ const Charts = () => {
             return puolue && puolue.color ? puolue.color : "#bdbdbd"
         }
         return { text: party.name, v: party.vote, color: color() }
-    }).sort((a, b) => b.v - a.v)
+    })
+        .filter((item) => item.v > 0)
+        .sort((a, b) => b.v - a.v)
     // Sorttauksella voidaan määrittää pallojen järjestyminen
 
-    const getTitle = (mapType, area) => {
-        switch (mapType) {
-            case "Vaalipiirit":
-                return area.constituency !== undefined ? area.constituency : ""
-            case "Koko maa":
-                return area.country !== undefined ? area.country : ""
-            case "Kunnat":
-                return area.district !== undefined ? area.district : ""
-            default:
-                return ""
-        }
-    }
-    const chartTitle = getTitle(area.active, area)
-    if (chartData.length && !isLoading) {
-        return (
-            <Col xs={12} xl={8}>
-                <Tabs defaultActiveKey="kannatus" mountOnEnter={true} >
-                    <Tab eventKey="kannatus" title="Puoluekannatus">
+    return (
+        <Col>
+            <Tabs defaultActiveKey="kannatus">
+                <Tab eventKey="kannatus" title="Puoluekannatus" className="aanestys-tab">
+                    {chartData.length ?
                         <BubbleChart
                             data={chartData}
-                            title={chartTitle + " " + year}
+                            title={props.chartTitle}
                             useLabels={true}
                             width={700}
                             height={700}
-                        />
-                    </Tab>
-                    <Tab eventKey="Aanestystiedot" title="Aanestystiedot">
-                        <VotingStatisticsTable />
-                    </Tab>
-                    {(area.active !== "Kunnat") ? null :
-                        <Tab eventKey="Kuntatiedot" title="Kuntatiedot">
-                            <KuntaStatisticsTable />
-                        </Tab>}
-                </Tabs>
-            </Col>
-        )
-    }
-    return <div>Valitse aika ja paikka</div>
+                        /> : null}
+                </Tab>
+                <Tab eventKey="Aanestystiedot" title="Aanestystiedot" className="aanestys-tab">
+                    {chartData.length ?
+                        <VotingStatisticsTable title={props.chartTitle} data={props.votingStatistics} /> : null}
+                </Tab>
+                {(area.active !== "Kunnat") ? null :
+                    <Tab eventKey="Kuntatiedot" title="Kuntatiedot">
+                        <KuntaStatisticsTable />
+                    </Tab>}
+            </Tabs>
+        </Col>
+    )
 }
 
 export default Charts

@@ -1,96 +1,86 @@
-import React, { useEffect, useState, useCallback } from "react"
+import React, { useEffect } from "react"
 import * as d3 from "d3"
+import "../styles/Charts.scss"
 
 const BubbleChart = props => {
+    const padding = 5
+    const container = React.useRef(null)
 
-    const minValue = 0.95 * d3.min(props.data, item => item.v)
-    const maxValue = 1.05 * d3.max(props.data, item => item.v)
-    const [data, setData] = useState(props.data)
-    const padding = 8
-    const simulation = d3.forceSimulation()
-    const isCancelled = React.useRef(false)
+    useEffect(
+        () => {
+            if (props.data && container.current) {
+                // Poistetaan kaikki lapsisolmut ennen kuin tehdään mitään muuta
+                d3.select(container.current).selectAll("*").remove()
 
-    // Näitä useCallback-hommeleita 'pitää vaan käyttää' jotta React on tyytyväinen
-    const radiusScale = useCallback(value => {
-        const fx = d3
-            .scaleLinear()
-            .range([10, props.width / 6])
-            .domain([minValue, maxValue])
+                const simulation = d3.forceSimulation()
+                    .alphaDecay(0.05)
+                    .force("x", d3.forceX().strength(0.0125))
+                    .force("y", d3.forceY().strength(0.0125))
+                    .force("collide", d3.forceCollide(d => radiusScale(d.v) + padding))
 
-        return fx(value)
-    }, [minValue, maxValue, props.width])
+                const radiusScale = A => 10 + 35*Math.sqrt(A/Math.PI)
 
-    const simulatePositions = useCallback(data => {
-        simulation
-            .nodes(data)
-            .alphaDecay(0.1)
-            .force("x", d3.forceX().strength(0.0025))
-            .force("y", d3.forceY().strength(0.0025))
-            .force("collide", d3.forceCollide(d => radiusScale(d.v) + padding))
-            .on("tick", () => {
-                if (!isCancelled.current) {
-                    setData(data)
-                }
-            })
-    }, [radiusScale, simulation])
+                const svg = d3.select(container.current)
+                    .attr("width", '100%')
+                    .attr("height", props.height)
+                    .attr("viewBox", "0 0 " + Math.min(props.width, props.height) + " " + Math.min(props.width, props.height))
+                    .attr("preserveAspectRatio", "xMinYMin")
+                    .append("g")
+                    .style("transform", "translate(50%,50%)")
 
-    useEffect(() => {
-        if (data.length) {
-            isCancelled.current = false
-            simulatePositions(props.data)
-        }
-        return () => {
-            isCancelled.current = true
-        }
-    }, [props.data, data.length, simulatePositions])
+                const data = svg.selectAll(".bubble")
+                    .data(props.data)
 
-    const renderBubbles = data => {
-        const bubbles = data.map((item, index) => {
-            const fontSize = radiusScale(item.v) / 40 + 0.35 // lisätään vakio, jotta pienissä palloissa oleva teksti näkyy
-            if (item.x && item.y && item.v) {
-                return (
-                    <g key={index} transform={`translate(${props.width / 2 + item.x}, ${props.height / 2 + item.y})`}>
-                        {item.v > 0 && <>
-                            <circle
-                                r={radiusScale(item.v) + 5}
-                                fill={item.color}
-                                stroke={d3.color(item.color).darker(0.5)}
-                                strokeWidth="3"
-                            />
-                            <text dy="0%" fill={d3.hsl(d3.color(item.color)).l > 0.7 ? "#555" : "#fff"} textAnchor="middle" fontSize={`${fontSize}em`} fontWeight="bold">
-                                {/* Muu puolueen takia säädetään rivitystä */}
-                                {item.text.split(" ").map((word, i) => {
-                                    let y = 0
-                                    if (item.text.split(" ").length > 1) y = 0.5
-                                    return (
-                                        <tspan key={i} x="0" dy={i * 1.5 - y + "em"}>
-                                            {word}
-                                        </tspan>
-                                    )
-                                })}
-                                <tspan x="0" dy={"1em"}>
-                                    {item.v}
-                                </tspan>
-                            </text> </>}
-                    </g>
-                )
+                data
+                    .exit()
+                    .remove()
+
+                const bubbles = data.enter()
+                    .append("g")
+                    .attr("class", "bubble")
+
+                bubbles.append("circle")
+                    .attr("r", (d) => radiusScale(d.v))
+                    .attr("fill", (d) => d.color)
+                    .attr("stroke", (d) => d3.color(d.color).darker(0.5))
+                    .attr("stroke-width", 3)
+
+                const fontSize = (d) => radiusScale(d.v) / 4 + 10
+                const fontColor = color => d3.hsl(d3.color(color)).l > 0.7 ? "#555" : "#fff"
+                const texts = bubbles.append("text")
+                    .text((d) => d.text)
+                    .attr("text-anchor", "middle")
+                    .attr("font-size", fontSize)
+                    .attr("font-weight", "bold")
+                    .attr("fill", d => fontColor(d.color))
+
+                bubbles.append("text")
+                    .text((d) => d.v)
+                    .attr("text-anchor", "middle")
+                    .attr("font-size", fontSize)
+                    .attr("font-weight", "bold")
+                    .attr("fill", d => fontColor(d.color))
+
+                simulation.nodes(props.data)
+                    .on("tick", () => {
+                        bubbles
+                            .attr("transform", (d) => `translate(${d.x}, ${d.y})`)
+                        texts
+                            .attr("y", (d) => (radiusScale(d.v) / 4 + 10))
+                    })
             }
-            return null
-        })
-        return bubbles
-    }
+        }, [props])
 
-    if (data.length) {
+
+    if (props.data.length) {
         return (
             <>
                 <h4>{props.title}</h4>
-                <svg width={props.width} height={props.height}>
-                    {renderBubbles(data)}
-                </svg>
+                <svg ref={container} width={props.width} height={props.height} />
             </>
         )
     }
-    else return <>Ladataan kuplakaaviota...</>
+    return null
 }
 
 export default BubbleChart

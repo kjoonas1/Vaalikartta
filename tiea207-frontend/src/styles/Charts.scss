@@ -1,0 +1,21 @@
+.aanestys-tab {
+    padding: 2em 0.5em 0em 0.5em;
+}
+
+.bubblechart-container {
+    text-align: center
+  }
+
+.bubblechart {
+    transform: translate(0, -3em)
+}
+
+@media (max-width: 768px) {
+    .bubblechart {
+        transform: translate(0, 3em) scale(1.5);
+    }
+}
+
+.maps {
+    padding-bottom: 2em;
+}
