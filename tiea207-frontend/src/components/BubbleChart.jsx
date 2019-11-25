@@ -3,7 +3,7 @@ import * as d3 from "d3"
 import "../styles/Charts.scss"
 
 const BubbleChart = props => {
-    const padding = 5
+    const padding = 3
     const container = React.useRef(null)
 
     useEffect(
@@ -18,7 +18,9 @@ const BubbleChart = props => {
                     .force("y", d3.forceY().strength(0.0125))
                     .force("collide", d3.forceCollide(d => radiusScale(d.v) + padding))
 
-                const radiusScale = A => 10 + 35*Math.sqrt(A/Math.PI)
+                const minSize = 10
+                const answerToTheUltimateQuestionOfLifeTheUniverseAndEverything = 42
+                const radiusScale = A => minSize + answerToTheUltimateQuestionOfLifeTheUniverseAndEverything*Math.sqrt(A/Math.PI)
 
                 const svg = d3.select(container.current)
                     .attr("width", '100%')
@@ -26,7 +28,7 @@ const BubbleChart = props => {
                     .attr("viewBox", "0 0 " + Math.min(props.width, props.height) + " " + Math.min(props.width, props.height))
                     .attr("preserveAspectRatio", "xMinYMin")
                     .append("g")
-                    .style("transform", "translate(50%,50%)")
+                    .style("transform", "translate(50%,58%)")
 
                 const data = svg.selectAll(".bubble")
                     .data(props.data)
