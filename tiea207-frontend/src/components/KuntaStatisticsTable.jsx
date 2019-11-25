@@ -1,24 +1,12 @@
-import React, { useContext } from "react"
-import { YearContext, AreaContext } from "../contexts/Contexts"
+import React from "react"
 import { Chart } from "react-google-charts"
-import { useFetch } from "../hooks/UseFetch"
-import { backendUrl } from "../constants"
 import * as objectHelper from "../utils/objectHelper"
 
-const KuntaStatisticsTable = () => {
-    const { area } = useContext(AreaContext)
-    const { year } = useContext(YearContext)
-
-    const chartTitle = area.district + " " + year
-    const url = `${backendUrl}/api/avainluvut/${year}/${area.district}`
-    const kuntaDataHaku = useFetch(url)
-
-    if (kuntaDataHaku.isLoading)
-        return <div>Ladataan kuntadataa...</div>
-
-    if (kuntaDataHaku.error === null) {
+const KuntaStatisticsTable = (props) => {
+    console.log(props)
+        if (props.data.length === 0) return <div>Ei dataa.</div>
         const removeAttributes = ["_id", "Alue", "Vuosi"]
-        const kuntaDataFilter = objectHelper.filterFromObject(kuntaDataHaku.data[0], a => a !== null)
+        const kuntaDataFilter = objectHelper.filterFromObject(props.data, a => a !== null)
         const kuntaData = objectHelper.extractArrayOfResponseData(kuntaDataFilter, removeAttributes, "name", "luku")
             .map(rivi => [rivi.name, rivi.luku])
         return (
@@ -30,7 +18,7 @@ const KuntaStatisticsTable = () => {
                     loader={<div>Ladataan taulukkoa...</div>}
                     data={[
                         [
-                            { type: "string", label: chartTitle },
+                            { type: "string", label: props.title },
                             { type: "number", label: "" }
                         ],
                         ...kuntaData
@@ -52,6 +40,5 @@ const KuntaStatisticsTable = () => {
             </>
         )
     }
-    if (kuntaDataHaku.error) return <div>Tapahtui virhe</div>
-}
+
 export default KuntaStatisticsTable

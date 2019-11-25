@@ -41,6 +41,10 @@ const Etusivu = () => {
 
     const bubbleChart = useFetch(url(area.active))
     const votingStatistics = useFetch(aanestystiedotUrl(area.active))
+    const getYear = year === 2019 ? 2018 : year
+    const avaintiedot = `${backendUrl}/api/avainluvut/${getYear}/${area.district}`
+    const kuntaStatistics = useFetch(avaintiedot)
+    if (kuntaStatistics.error) kuntaStatistics.data = []
 
     // Karttatyypit valtiolle, vaalipiireille ja kunnille
     const maps = [
@@ -71,6 +75,7 @@ const Etusivu = () => {
         }
     }
     const chartTitle = getTitle(area.active, area) + " " + year
+    const chartKuntaTitle = area.district + " " + getYear
 
     return (
         <>
@@ -84,7 +89,8 @@ const Etusivu = () => {
                             <ControlledTabs tabs={maps} />
                         </Col>
                         <Col xs={12} xl={8}>
-                            <Charts chartTitle={chartTitle} votingStatistics={votingStatistics.data} bubbleChartData={bubbleChart.data} />
+                            <Charts chartTitle={chartTitle} chartKuntaTitle={chartKuntaTitle}
+                                kuntaStatistics={kuntaStatistics.data} votingStatistics={votingStatistics.data} bubbleChartData={bubbleChart.data} />
                             {!bubbleChart.data.length &&
                                 <>
                                     <h4>{chartTitle}</h4>

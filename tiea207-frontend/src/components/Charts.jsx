@@ -63,8 +63,9 @@ const Charts = props => {
                         <VotingStatisticsTable title={props.chartTitle} data={props.votingStatistics} /> : null}
                 </Tab>
                 {(area.active !== "Kunnat") ? null :
-                    <Tab eventKey="Kuntatiedot" title="Kuntatiedot">
-                        <KuntaStatisticsTable />
+                    <Tab eventKey="Kuntatiedot" title="Kuntatiedot" className="aanestys-tab">
+                        {chartData.length ?
+                        <KuntaStatisticsTable data={props.kuntaStatistics} title={props.chartKuntaTitle}  /> : null}
                     </Tab>}
             </Tabs>
         </Col>
