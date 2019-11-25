@@ -10,7 +10,9 @@ const BubbleChart = props => {
         if (props.data && container.current) {
             // Poistetaan kaikki lapsisolmut ennen kuin tehdään mitään muuta
             d3.select(container.current)
-                .selectAll("*")
+                .selectAll("*")                    
+                .transition()
+                .style("opacity", "0.25").duration(250).ease(d3.easeLinear)
                 .remove()
 
             const simulation = d3
@@ -38,7 +40,7 @@ const BubbleChart = props => {
                     "0 0 " + Math.min(props.width, props.height) + " " + Math.min(props.width, props.height)
                 )
                 .attr("preserveAspectRatio", "xMinYMin")
-                .append("g")
+                .append("g")                
                 .style("transform", "translate(52%,55%)")
                 
             if (!props.loading) {
@@ -57,9 +59,9 @@ const BubbleChart = props => {
                     .attr("fill", d => d.color)
                     .attr("stroke", d => d3.color(d.color).darker(0.5))
                     .attr("stroke-width", 3)
-                    .style("opacity", "0.5")
+                    .style("opacity", "0.75")
                     .transition()
-                    .style("opacity", "1").duration(250)
+                    .style("opacity", "1").duration(250).ease(d3.easeLinear).delay(100)
 
 
                 const fontSize = d => radiusScale(d.v) / 4 + 10
