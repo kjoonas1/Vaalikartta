@@ -15,18 +15,33 @@ jobs:
   setup-build-deploy:
     name: Setup, build and deploy
     runs-on: ubuntu-latest
-    steps:
 
+    steps:
     - name: Checkout
       uses: actions/checkout@master
+
     # Setup gcloud CLI
     - uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
       with:
         version: '270.0.0'
         service_account_email: ${{ secrets.GAE_EMAIL }}
         service_account_key: ${{ secrets.GAE_SA_KEY }}
-    # TODO:
-    # frontend: npm install
-    # Build frontend and move 'build' folder to backend
-    # backend: npm install
-    # Deploy with gcloud
+
+    - name: Install frontend dependencies
+      run: |
+        cd tiea207-frontend
+        npm install --only=production
+
+    - name: Build frontend and move it to `backend` folder
+      run: |
+        npm run-script build
+        mv ./build ../backend/
+
+    - name: Install backend dependencies
+      run: |
+        cd ../backend
+        npm install --only=production
+
+    - name: Deploy to Google App Engine
+      run: |
+        gcloud app deploy --project=$GAE_PROJECT
