@@ -34,14 +34,16 @@ jobs:
 
     - name: Build frontend and move it to `backend` folder
       run: |
+        cd ./tiea207-frontend
         npm run-script build
         mv ./build ../backend/
 
     - name: Install backend dependencies
       run: |
-        cd ../backend
+        cd ./backend
         npm install --only=production
 
     - name: Deploy to Google App Engine
       run: |
+        cd ./backend
         gcloud app deploy --project=$GAE_PROJECT
