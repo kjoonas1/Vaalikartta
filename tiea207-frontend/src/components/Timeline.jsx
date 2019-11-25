@@ -25,7 +25,7 @@ export const Timeline = props => {
         <Col md={{ span: 12 }}>
             <svg
                 key={shortid.generate()}
-                viewBox={"0 0 2400 250"}
+                viewBox={"0 0 2800 250"}
                 width={"100%"}
                 display="block"
                 margin="0, auto"

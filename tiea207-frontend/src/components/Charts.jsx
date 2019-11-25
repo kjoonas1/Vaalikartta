@@ -45,21 +45,21 @@ const Charts = props => {
     // Sorttauksella voidaan määrittää pallojen järjestyminen
 
     return (
-        <Col>
+        <Col id="charts">
             <Tabs defaultActiveKey="kannatus">
                 <Tab eventKey="kannatus" title="Puoluekannatus" className="aanestys-tab">
-                {chartData.length ?
-                    <BubbleChart
-                        data={chartData}
-                        title={props.chartTitle}
-                        useLabels={true}
-                        width={700}
-                        height={700}
-                    /> : null}
+                    {chartData.length ?
+                        <BubbleChart
+                            data={chartData}
+                            title={props.chartTitle}
+                            useLabels={true}
+                            width={700}
+                            height={700}
+                        /> : null}
                 </Tab>
                 <Tab eventKey="Aanestystiedot" title="Aanestystiedot" className="aanestys-tab">
                     {chartData.length ? 
-                     <VotingStatisticsTable title={props.chartTitle} data={props.votingStatistics}/> : null}
+                        <VotingStatisticsTable title={props.chartTitle} data={props.votingStatistics}/> : null}
                 </Tab>
             </Tabs>
         </Col>

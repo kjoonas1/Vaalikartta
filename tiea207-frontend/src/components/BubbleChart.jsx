@@ -21,7 +21,7 @@ const BubbleChart = props => {
                 const radiusScale = A => 10 + 35*Math.sqrt(A/Math.PI)
 
                 const svg = d3.select(container.current)
-                    .attr("width", '100%')
+                    .attr("width", "100%")
                     .attr("height", props.height)
                     .attr("viewBox", "0 0 " + Math.min(props.width, props.height) + " " + Math.min(props.width, props.height))
                     .attr("preserveAspectRatio", "xMinYMin")
