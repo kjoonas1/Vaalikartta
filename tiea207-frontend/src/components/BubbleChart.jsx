@@ -40,6 +40,7 @@ const BubbleChart = props => {
                 .attr("preserveAspectRatio", "xMinYMin")
                 .append("g")
                 .style("transform", "translate(52%,55%)")
+                
             if (!props.loading) {
                 const data = svg.selectAll(".bubble").data(props.data)
 
@@ -56,6 +57,10 @@ const BubbleChart = props => {
                     .attr("fill", d => d.color)
                     .attr("stroke", d => d3.color(d.color).darker(0.5))
                     .attr("stroke-width", 3)
+                    .style("opacity", "0.5")
+                    .transition()
+                    .style("opacity", "1").duration(250)
+
 
                 const fontSize = d => radiusScale(d.v) / 4 + 10
                 const fontColor = color => (d3.hsl(d3.color(color)).l > 0.7 ? "#555" : "#fff")

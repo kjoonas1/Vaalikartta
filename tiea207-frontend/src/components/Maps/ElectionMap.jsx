@@ -1,15 +1,11 @@
 import React from "react"
 import { Map, GeoJSON, TileLayer } from "react-leaflet"
-import { useFetch } from "../../hooks/UseFetch"
-import { backendUrl } from "../../constants"
 import L from "leaflet"
 import { useArea } from "../../contexts/AreaContextProvider"
-import { useYear } from "../../contexts/YearContextProvider"
 import shortid from "shortid"
 
 export const ElectionMap = props => {
     const { dispatchArea } = useArea()
-    const { year } = useYear()
     const data = props.coordinates
 
     const pointToLayer = (feature, latlng) => {
