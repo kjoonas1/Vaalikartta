@@ -9,8 +9,7 @@ import { CountryMap } from "./Maps/CountryMap"
 import Charts from "./Charts"
 import { useArea } from "../contexts/AreaContextProvider"
 import { useYear } from "../contexts/YearContextProvider"
-import { backendUrl } from "../constants"
-import { useFetch } from "../hooks/UseFetch"
+import { useQuery } from 'react-fetching-library';
 
 const Etusivu = () => {
 
@@ -20,11 +19,11 @@ const Etusivu = () => {
     const url = active => {
         switch (active) {
             case "Koko maa":
-                return `${backendUrl}/api/koko-maa/kannatus/${year}`
+                return `/api/koko-maa/kannatus/${year}`
             case "Vaalipiirit":
-                return `${backendUrl}/api/vaalipiirit/kannatus/${area.constituency}/${year}`
+                return `/api/vaalipiirit/kannatus/${area.constituency}/${year}`
             case "Kunnat":
-                return `${backendUrl}/api/kunnat/kannatus/${area.district}/${year}`
+                return `/api/kunnat/kannatus/${area.district}/${year}`
             default:
                 return null
         }
@@ -32,15 +31,15 @@ const Etusivu = () => {
 
     const aanestystiedotUrl = active => {
         switch (active) {
-            case "Koko maa": return `${backendUrl}/api/muut-alueet/aanestystiedot/${area.country}/${year}`
-            case "Vaalipiirit": return `${backendUrl}/api/vaalipiirit/aanestystiedot/${area.constituency}/${year}`
-            case "Kunnat": return `${backendUrl}/api/kunnat/aanestystiedot/${area.district}/${year}`
+            case "Koko maa": return `/api/muut-alueet/aanestystiedot/${area.country}/${year}`
+            case "Vaalipiirit": return `/api/vaalipiirit/aanestystiedot/${area.constituency}/${year}`
+            case "Kunnat": return `/api/kunnat/aanestystiedot/${area.district}/${year}`
             default: return null
         }
     }
 
-    const bubbleChart = useFetch(url(area.active))
-    const votingStatistics = useFetch(aanestystiedotUrl(area.active))
+    //const bubbleChart = useFetch(url(area.active))
+    //const votingStatistics = useFetch(aanestystiedotUrl(area.active))
 
     // Karttatyypit valtiolle, vaalipiireille ja kunnille
     const maps = [
@@ -70,8 +69,18 @@ const Etusivu = () => {
                 return ""
         }
     }
-    const chartTitle = getTitle(area.active, area) + " " + year
 
+    const bubbleChart = useQuery({
+        method: 'GET',
+        endpoint: url(area.active),
+      })
+
+      const votingStatistics = useQuery({
+        method: 'GET',
+        endpoint: aanestystiedotUrl(area.active),
+      })
+
+    const chartTitle = getTitle(area.active, area) + " " + year
     return (
         <>
             <Row className="timeline">
@@ -79,18 +88,12 @@ const Etusivu = () => {
             </Row>
             <Row>
                 <Col >
-                    <Row>
+                    <Row className="animate-bottom">
                         <Col xs={12} xl={4} className="maps">
                             <ControlledTabs tabs={maps} />
                         </Col>
                         <Col xs={12} xl={8}>
-                            <Charts chartTitle={chartTitle} votingStatistics={votingStatistics.data} bubbleChartData={bubbleChart.data} />
-                            {!bubbleChart.data.length &&
-                                <>
-                                    <h4>{chartTitle}</h4>
-                                    <p>Ei dataa. Alue on todennäköisesti liitetty toiseen tai sitä ei ole vielä ollut olemassa</p>
-                                </>
-                            }
+                            <Charts chartTitle={chartTitle} votingStatistics={votingStatistics} bubbleChartData={bubbleChart} />
                         </Col>
                     </Row>
                 </Col>

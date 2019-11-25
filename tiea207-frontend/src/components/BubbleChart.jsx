@@ -27,6 +27,7 @@ const BubbleChart = props => {
                     .attr("height", props.height)
                     .attr("viewBox", "0 0 " + Math.min(props.width, props.height) + " " + Math.min(props.width, props.height))
                     .attr("preserveAspectRatio", "xMinYMin")
+                    .attr("class", "bubblechart")
                     .append("g")
                     .style("transform", "translate(50%,58%)")
 
