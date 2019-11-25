@@ -21,7 +21,6 @@ router.get("/vaalipiirit/kannatus/:vaalipiiri/:vuosi", async (req, res) => {
     const vuosi = parseInt(req.params.vuosi)
     if (vaalipiiri === "undefined" || isNaN(vuosi))
         return res.status(204).send()
-    console.log(vuosi)
     const collection = req.db.collection("kannatusprosentit-vaalipiireittäin")
     const items = await collection.find({ Alue: vaalipiiri, Vuosi: vuosi }).toArray()
     res.send(items)
@@ -64,7 +63,6 @@ router.get("/avainluvut/:vuosi/:kunta", async (req, res) => {
     ]
     const tiedotKannasta = await avainluvut.find({ Alue: kunta, Tiedot: { $in: halututKentat } }, { projection: { [vuosi]: 1, Tiedot: 1, Alue: 1 } })
         .toArray()
-    console.log(tiedotKannasta)
     if (tiedotKannasta.length === 0)
         return res.sendStatus(404)
     if (tiedotKannasta[0][vuosi] === undefined) // varmistetaan että on dataa eikä vain undefined
