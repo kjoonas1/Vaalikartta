@@ -1,8 +1,9 @@
 import React, { useEffect } from "react"
 import * as d3 from "d3"
+import "../styles/Charts.scss"
 
 const BubbleChart = props => {
-    const padding = 8
+    const padding = 5
     const container = React.useRef(null)
 
     useEffect(
@@ -11,22 +12,13 @@ const BubbleChart = props => {
                 // Poistetaan kaikki lapsisolmut ennen kuin tehdään mitään muuta
                 d3.select(container.current).selectAll("*").remove()
 
-                const minValue = 0.95 * d3.min(props.data, item => item.v)
-                const maxValue = 1.05 * d3.max(props.data, item => item.v)
-
                 const simulation = d3.forceSimulation()
                     .alphaDecay(0.05)
-                    .force("x", d3.forceX().strength(0.025))
-                    .force("y", d3.forceY().strength(0.025))
+                    .force("x", d3.forceX().strength(0.0125))
+                    .force("y", d3.forceY().strength(0.0125))
                     .force("collide", d3.forceCollide(d => radiusScale(d.v) + padding))
 
-                const radiusScale = value => {
-                    const fx = d3
-                        .scaleLinear()
-                        .range([10, props.width / 6])
-                        .domain([minValue, maxValue])
-                    return fx(value)
-                }
+                const radiusScale = A => 10 + 35*Math.sqrt(A/Math.PI)
 
                 const svg = d3.select(container.current)
                     .attr("width", '100%')
@@ -48,7 +40,7 @@ const BubbleChart = props => {
                     .attr("class", "bubble")
 
                 bubbles.append("circle")
-                    .attr("r", (d) => radiusScale(d.v) + 5)
+                    .attr("r", (d) => radiusScale(d.v))
                     .attr("fill", (d) => d.color)
                     .attr("stroke", (d) => d3.color(d.color).darker(0.5))
                     .attr("stroke-width", 3)
@@ -88,12 +80,7 @@ const BubbleChart = props => {
             </>
         )
     }
-    return (
-        <>
-            <h4>{props.title}</h4>
-            <p>Ei dataa. Alue on todennäköisesti liitetty toiseen tai sitä ei ole vielä ollut olemassa</p>
-        </>
-    )
+    return null
 }
 
 export default BubbleChart
