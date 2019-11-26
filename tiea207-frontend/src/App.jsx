@@ -10,6 +10,7 @@ import YearContextProvider from "./contexts/YearContextProvider"
 import EventContextProvider from "./contexts/EventContextProvider"
 import { ClientContextProvider } from 'react-fetching-library';
 import { Client } from './api/Client';
+import CookieBanner from 'react-cookie-banner';
 
 const App = () => {
     return (

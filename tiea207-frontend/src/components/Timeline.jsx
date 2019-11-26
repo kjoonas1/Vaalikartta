@@ -14,8 +14,8 @@ export const Timeline = () => {
     const mainLineHeight = "6em"
     const activeColor = "#404040"
     const inactiveColor = "#757575"
-    const circleColor = "#fcb103"
-    
+    const circleColor = "#5289ff"
+
     return (<>
         <Col md={{ span: 12 }}>
             <svg
@@ -47,7 +47,7 @@ export const Timeline = () => {
                                     y1={mainLineHeight}
                                     x2={lineX + "%"}
                                     y2="4em"
-                                    style={{ stroke: activeColor, strokeLinecap: "round", strokeWidth: "0.5em" }}
+                                    className="timeline-line"
                                 />
                                 <text
                                     textAnchor="middle"
@@ -70,7 +70,7 @@ export const Timeline = () => {
                     const x = padding + ((100 - 2 * padding) * (_event.year - minYear)) / (maxYear - minYear)
                     const isActive = JSON.stringify(_event) === JSON.stringify(event)
                     const eventActiveness = {
-                        fill: isActive ? "1" : "0.25",
+                        fill: isActive ? "1" : "0.6",
                         size: isActive ? "1.75em" : "1.5em",
                         borderColor: isActive ? activeColor : inactiveColor
                     }
@@ -84,24 +84,34 @@ export const Timeline = () => {
                                 }}
                             >
                                 <line
-                                    className="event"
                                     key={shortid.generate()}
                                     x1={x + "%"}
                                     y1={mainLineHeight}
                                     x2={x + "%"}
                                     y2="8em"
+                                    className="event timeline-line"
                                     style={{
-                                        stroke: eventActiveness.borderColor,
                                         strokeLinecap: "round",
                                         strokeWidth: "0.25em"
                                     }}
                                 />
+                                <filter id="dropshadow" height="130%">
+                                    <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
+                                    <feOffset dx="2" dy="2" result="offsetblur" />
+                                    <feComponentTransfer>
+                                        <feFuncA type="linear" slope="0.2" />
+                                    </feComponentTransfer>
+                                    <feMerge>
+                                        <feMergeNode />
+                                        <feMergeNode in="SourceGraphic" />
+                                    </feMerge>
+                                </filter>
                                 <circle
                                     data-testid={"event-link-" + index}
-                                    className="event"
                                     stroke={eventActiveness.borderColor}
                                     fillOpacity={eventActiveness.fill}
                                     strokeWidth="2"
+                                    className="event timeline-event-circle"
                                     fill={circleColor}
                                     cx={x + "%"}
                                     cy="9.5em"
@@ -122,7 +132,7 @@ export const Timeline = () => {
                     y1={mainLineHeight}
                     x2={100 - padding + "%"}
                     y2={mainLineHeight}
-                    style={{ stroke: activeColor, strokeWidth: "0.5em" }}
+                    className="timeline-mainline"
                 />
             </svg>
         </Col>
