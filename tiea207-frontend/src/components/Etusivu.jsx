@@ -9,6 +9,8 @@ import Charts from "./Charts"
 
 const Etusivu = () => {
     // Karttatyypit valtiolle, vaalipiireille ja kunnille
+    const chartsRef = React.createRef();
+
     const maps = [
         {
             map: <CountryMap height="35em" />,
@@ -19,7 +21,7 @@ const Etusivu = () => {
             name: "Vaalipiirit"
         },
         {
-            map: <ElectionMap />,
+            map: <ElectionMap chartsRef={chartsRef}/>,
             name: "Kunnat"
         }
     ]
@@ -36,7 +38,7 @@ const Etusivu = () => {
                             <ControlledTabs tabs={maps} />
                         </Col>
                         <Col xs={12} xl={8}>
-                            <Charts />
+                            <Charts chartsRef={chartsRef}/>
                         </Col>
                     </Row>
                 </Col>

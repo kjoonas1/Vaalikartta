@@ -11,7 +11,8 @@ import { Tab, Tabs } from "react-bootstrap"
 import "../styles/Charts.scss"
 import { useQuery } from 'react-fetching-library';
 
-const Charts = () => {
+const Charts = props => {
+
     const { area, dispatchArea } = useArea()
     const { year } = useYear()
     const url = active => {
@@ -85,7 +86,7 @@ const Charts = () => {
 
     const errorMessage = "Virhe, kokeile uudestaan."
     return (
-        <Col id="charts">
+        <Col ref={props.chartsRef} id="charts">
             <Tabs defaultActiveKey="kannatus" className="flex-row">
                 <Tab eventKey="kannatus" title="Puoluekannatus" className="aanestys-tab">
                     {(!bubbleChart.error && bubbleChart.payload && bubbleChart.payload.length) ?

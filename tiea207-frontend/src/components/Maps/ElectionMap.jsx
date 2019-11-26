@@ -6,7 +6,7 @@ import shortid from "shortid"
 import { useQuery } from 'react-fetching-library';
 import { useYear } from "../../contexts/YearContextProvider"
 
-export const ElectionMap = () => {
+export const ElectionMap = props => {
     const { year } = useYear()
     const { dispatchArea } = useArea()
     const data = useQuery({
@@ -30,6 +30,7 @@ export const ElectionMap = () => {
             layer.on({
                 click: () => {
                     dispatchArea({ type: "CHANGE_DISTRICT_TO", to: feature.properties.name })
+                    props.chartsRef.current.scrollIntoView({behavior: "smooth", block: "start"})
                 }
             })
         }
