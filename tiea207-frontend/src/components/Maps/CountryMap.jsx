@@ -22,9 +22,10 @@ export const CountryMap = props => {
                 xmlns="http://www.w3.org/2000/svg"
             >
                 <Link
-                    smooth to="#charts"
+                    smooth to=""
                     onClick={() => {
                         dispatchArea({type: "CHANGE_COUNTRY_TO", to: "Koko maa"})
+                        props.chartsRef.current.scrollIntoView({behavior: "smooth", block: "start"})
                     }}
                 >
                     <g transform="translate(-21.222 -12.752)">

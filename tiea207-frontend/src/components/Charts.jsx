@@ -85,8 +85,13 @@ const Charts = props => {
     const chartTitle = getTitle(area.active, area) + " " + year
 
     const errorMessage = "Virhe, kokeile uudestaan."
+
+    const noDataMessage = <>
+        <h4>{chartTitle}</h4>
+        <p>Ei dataa. Alue on todennäköisesti liitetty toiseen tai sitä ei ole vielä ollut olemassa</p>
+    </>
     return (
-        <Col ref={props.chartsRef} id="charts">
+        <Col>
             <Tabs defaultActiveKey="kannatus" className="flex-row">
                 <Tab eventKey="kannatus" title="Puoluekannatus" className="aanestys-tab">
                     {(!bubbleChart.error && bubbleChart.payload && bubbleChart.payload.length) ?
@@ -98,17 +103,17 @@ const Charts = props => {
                             height={700}
                             loading={bubbleChart.loading}
                         /> : bubbleChart.payload && !bubbleChart.payload.length ?
-                            <>
-                                <h4>{chartTitle}</h4>
-                                <p>Ei dataa. Alue on todennäköisesti liitetty toiseen tai sitä ei ole vielä ollut olemassa</p>
-                            </>
+                            noDataMessage
                             : errorMessage
                     }
                 </Tab>
                 <Tab eventKey="Aanestystiedot" title="Aanestystiedot" className="aanestys-tab">
-                    {(!votingStatistics.loading && !votingStatistics.error && votingStatistics.payload) ?
-                        <VotingStatisticsTable title={chartTitle} data={votingStatistics.payload} />
-                        : votingStatistics.error ? errorMessage : votingStatistics.loading && "Ladataan"}
+                    {(!votingStatistics.error && votingStatistics.payload && votingStatistics.payload.length) ?
+                        <VotingStatisticsTable
+                            title={chartTitle} 
+                            loading={votingStatistics.loading} 
+                            data={votingStatistics.payload} />
+                        : votingStatistics.payload && !votingStatistics.payload.length ? noDataMessage : errorMessage}
                 </Tab>
             </Tabs>
         </Col>

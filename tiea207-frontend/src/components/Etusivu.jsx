@@ -13,11 +13,11 @@ const Etusivu = () => {
 
     const maps = [
         {
-            map: <CountryMap height="35em" />,
+            map: <CountryMap chartsRef={chartsRef} height="35em" />,
             name: "Koko maa"
         },
         {
-            map: <ConstituencyMap height="35em" />,
+            map: <ConstituencyMap chartsRef={chartsRef} height="35em" />,
             name: "Vaalipiirit"
         },
         {
@@ -37,8 +37,8 @@ const Etusivu = () => {
                         <Col xs={12} xl={4} className="maps">
                             <ControlledTabs tabs={maps} />
                         </Col>
-                        <Col xs={12} xl={8}>
-                            <Charts chartsRef={chartsRef}/>
+                        <Col xs={12} xl={8} ref={chartsRef}>
+                            <Charts/>
                         </Col>
                     </Row>
                 </Col>

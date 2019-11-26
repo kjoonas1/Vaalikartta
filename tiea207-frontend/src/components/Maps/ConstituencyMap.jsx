@@ -35,9 +35,10 @@ export const ConstituencyMap = props => {
                             <Link
                                 data-testid={"constituency-link-" + index}
                                 key={index}
-                                smooth to="#charts"
+                                smooth to=""
                                 onClick={() => {
                                     dispatchArea({ type: "CHANGE_CONSTITUENCY_TO", to: _map[key].name })
+                                    props.chartsRef.current.scrollIntoView({behavior: "smooth", block: "start"})
                                 }}
                             >
                                 {mapPart}
