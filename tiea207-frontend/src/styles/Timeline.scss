@@ -21,9 +21,10 @@
     height: 18em;
 }
 
+$timeline-year-shadow: 1px 1px 3px rgb(158, 158, 158);
 .timeline-year {
     font-size: 3em;
-    text-shadow: 1px 1px 3px rgb(158, 158, 158);
+    text-shadow: $timeline-year-shadow;
 }
 
 @media (max-width: 1200px) {
@@ -32,7 +33,7 @@
     }
     .timeline-year {
         font-size: 3.5em;
-        text-shadow: 1px 1px 3px rgb(158, 158, 158);
+        text-shadow: $timeline-year-shadow;
     }
     .timeline-event-text {
         margin-top: 1em;
@@ -59,7 +60,7 @@
     }
     .timeline-year {
         font-size: 6em;
-        text-shadow: 1px 1px 3px rgb(188, 221, 231);
+        text-shadow: $timeline-year-shadow;
         transform: translateY(-0.25em);
     }
     .timeline-event-text {
