@@ -6,17 +6,8 @@ import { ControlledTabs } from "./ControlledTabs"
 import { ElectionMap } from "./Maps/ElectionMap"
 import { CountryMap } from "./Maps/CountryMap"
 import Charts from "./Charts"
-import { useYear } from "../contexts/YearContextProvider"
-import { useQuery } from 'react-fetching-library';
 
 const Etusivu = () => {
-    const { year } = useYear()
-
-    const coordinates = useQuery({
-        method: "GET",
-        endpoint: `/api/kunnat/koordinaatit/${year}`
-    })
-
     // Karttatyypit valtiolle, vaalipiireille ja kunnille
     const maps = [
         {
@@ -28,12 +19,10 @@ const Etusivu = () => {
             name: "Vaalipiirit"
         },
         {
-            map: <ElectionMap coordinates={coordinates} />,
+            map: <ElectionMap />,
             name: "Kunnat"
         }
     ]
-
-
 
     return (
         <>
@@ -44,7 +33,7 @@ const Etusivu = () => {
                 <Col >
                     <Row className="animate-bottom">
                         <Col xs={12} xl={4} className="maps">
-                            <ControlledTabs tabs={maps} loading={coordinates.loading} />
+                            <ControlledTabs tabs={maps} />
                         </Col>
                         <Col xs={12} xl={8}>
                             <Charts />

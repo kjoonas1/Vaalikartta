@@ -7,23 +7,15 @@ import { useEvent } from "../contexts/EventContextProvider"
 import { HashLink as Link } from "react-router-hash-link"
 import { timelineData } from "../dataset/timelineData"
 
-export const Timeline = props => {
+export const Timeline = () => {
     const { year, setYear } = useYear()
     const { event, setEvent } = useEvent()
-
-    const data = timelineData
-
-    const years = data.years
-    const events = data.events
-
-    const contextYear = year
-    const contextEvent = event
     const padding = 10
     const mainLineHeight = "6em"
     const activeColor = "#404040"
     const inactiveColor = "#757575"
     const circleColor = "#fcb103"
-
+    
     return (<>
         <Col md={{ span: 12 }}>
             <svg
@@ -34,17 +26,19 @@ export const Timeline = props => {
                 margin="0, auto"
                 className="timeline-container"
             >
-                {years.map((year, index) => {
-                    const x = (100 - 2 * padding) * (index / (years.length - 1)) // Vaakaviivojen ja tekstin paikka, jossa ei vielä huomioida paddingia
+                {timelineData.years.map((_year, index) => {
+                    const x = (100 - 2 * padding) * (index / (timelineData.years.length - 1)) // Vaakaviivojen ja tekstin paikka, jossa ei vielä huomioida paddingia
                     const lineX = (padding + x).toString()
-                    const bolding = contextYear === year ? "bold" : "normal"
+                    const bolding = year === _year ? "bold" : "normal"
                     return (
                         <Fragment key={shortid.generate()}>
                             <Link
                                 key={shortid.generate()}
                                 smooth to="#charts"
                                 onClick={() => {
-                                    setYear(year)
+                                    if (year !== _year) {
+                                        setYear(_year)
+                                    }
                                 }}
                             >
                                 <line
@@ -64,17 +58,17 @@ export const Timeline = props => {
                                     fill={activeColor}
                                     fontWeight={bolding}
                                 >
-                                    {year}
+                                    {_year}
                                 </text>
                             </Link>
                         </Fragment>
                     )
                 })}
-                {events.map((event, index) => {
-                    const minYear = Math.min(...years)
-                    const maxYear = Math.max(...years)
-                    const x = padding + ((100 - 2 * padding) * (event.year - minYear)) / (maxYear - minYear)
-                    const isActive = JSON.stringify(event) === JSON.stringify(contextEvent)
+                {timelineData.events.map((_event, index) => {
+                    const minYear = Math.min(...timelineData.years)
+                    const maxYear = Math.max(...timelineData.years)
+                    const x = padding + ((100 - 2 * padding) * (_event.year - minYear)) / (maxYear - minYear)
+                    const isActive = JSON.stringify(_event) === JSON.stringify(event)
                     const eventActiveness = {
                         fill: isActive ? "1" : "0.25",
                         size: isActive ? "1.75em" : "1.5em",
@@ -86,7 +80,7 @@ export const Timeline = props => {
                                 to=""
                                 onClick={() => {
                                     // Pallon uudelleenklikkaus poistaa aktivoinnin
-                                    isActive ? setEvent(null) : setEvent(event)
+                                    isActive ? setEvent(null) : setEvent(_event)
                                 }}
                             >
                                 <line
@@ -116,7 +110,7 @@ export const Timeline = props => {
                             </Link>
                             {isActive && (
                                 <text className="timeline-event-text" textAnchor="middle" key={shortid.generate()} y="3em" x={x + "%"}>
-                                    {contextEvent.name}
+                                    {event.name}
                                 </text>
                             )}
                         </Fragment>

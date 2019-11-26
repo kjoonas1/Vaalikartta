@@ -3,12 +3,12 @@ import * as d3 from "d3"
 import "../styles/Charts.scss"
 
 const BubbleChart = props => {
+    
     const padding = 3
     const container = React.useRef(null)
     useEffect(() => {
         if (props.data && container.current) {
             // Poistetaan kaikki lapsisolmut ennen kuin tehdään mitään muuta
-
             if (!props.loading) {
             d3.select(container.current)
                 .selectAll("*")                    
@@ -61,15 +61,12 @@ const BubbleChart = props => {
                     .attr("fill", d => d.color)
                     .attr("stroke", d => d3.color(d.color).darker(0.5))
                     .attr("stroke-width", 1)
-                    .style("opacity", "0.5")
+                    .style("opacity", "0.25")
                     .transition()
                     .style("opacity", "1")
-                    .duration(100)
-                    .ease(d3.easeLinear)
-                    .transition()
                     .attr("stroke-width", 3)
-                    .duration(200)
-
+                    .duration(250)
+                    .ease(d3.easeLinear)
 
                 const fontSize = d => radiusScale(d.v) / 4 + 10
                 const fontColor = color => (d3.hsl(d3.color(color)).l > 0.7 ? "#555" : "#fff")

@@ -10,7 +10,6 @@ export const ConstituencyMap = props => {
     const { year } = useYear()
     const mapType = year => (year > 2011 ? uudetVaalipiirit : vanhatVaalipiirit)
     const _map = mapType(year)
-    
     return (
         <div className="constituency-map">
             <svg

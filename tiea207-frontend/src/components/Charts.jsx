@@ -11,7 +11,7 @@ import { Tab, Tabs } from "react-bootstrap"
 import "../styles/Charts.scss"
 import { useQuery } from 'react-fetching-library';
 
-const Charts = props => {
+const Charts = () => {
     const { area, dispatchArea } = useArea()
     const { year } = useYear()
     const url = active => {
