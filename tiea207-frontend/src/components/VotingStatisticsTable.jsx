@@ -3,10 +3,10 @@ import { Table } from "react-bootstrap"
 
 const VotingStatisticsTable = (props) => {
 
-    const data = !props.loading ? props.data.map((el, key) => <tr key={key}>
-    <td>{el[0]}</td>
+    const data = props.data.map((el, key) => el.length == 2 ? <tr key={key}>
+        <td>{el[0]}</td>
         <td>{el[1]}</td>
-        </tr>) : []
+    </tr> : "Virhe")
 
 
     return (
