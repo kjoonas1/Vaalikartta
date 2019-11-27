@@ -7,7 +7,7 @@ import { useEvent } from "../contexts/EventContextProvider"
 import { HashLink as Link } from "react-router-hash-link"
 import { timelineData } from "../dataset/timelineData"
 
-export const Timeline = () => {
+export const Timeline = props => {
     const { year, setYear } = useYear()
     const { event, setEvent } = useEvent()
     const padding = 10
@@ -34,8 +34,9 @@ export const Timeline = () => {
                         <Fragment key={shortid.generate()}>
                             <Link
                                 key={shortid.generate()}
-                                smooth to="#charts"
+                                to=""
                                 onClick={() => {
+                                    props.chartsRef.current.scrollIntoView({behavior: "smooth", block: "start"})
                                     if (year !== _year) {
                                         setYear(_year)
                                     }

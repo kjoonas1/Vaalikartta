@@ -29,7 +29,7 @@ const Etusivu = () => {
     return (
         <>
             <Row className="timeline">
-                <Timeline />
+                <Timeline chartsRef={chartsRef}/>
             </Row>
             <Row>
                 <Col >
