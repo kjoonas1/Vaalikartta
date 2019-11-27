@@ -83,15 +83,15 @@ describe("Kuntien avainluvut", () => {
             .end(done)
     })
 
-    test("Olemattomista kunnista tulee HTTP 404", done => {
+    test("Olemattomista kunnista tulee HTTP 204", done => {
         request.get("/api/avainluvut/2011/Kuusniemi")
-            .expect(404)
+            .expect(204)
             .end(done)
     })
 
-    test("Muilta kuin vaalivuosilta välillä 1987-2018 palautetaan HTTP 404", done => {
+    test("Muilta kuin vaalivuosilta välillä 1987-2018 palautetaan HTTP 204", done => {
         request.get("/api/avainluvut/1983/Helsinki")
-            .expect(404)
+            .expect(204)
             .end(done)
     })
 })

@@ -1,8 +1,7 @@
 import React from "react"
 import { Table } from "react-bootstrap"
 
-const VotingStatisticsTable = (props) => {
-
+const StatisticsTable = (props) => {
     const data = props.data.map((el, key) => el.length === 2 && 
     <tr key={key}>
         <td>{el[0]}</td>
@@ -24,4 +23,4 @@ const VotingStatisticsTable = (props) => {
         </>
     )
 }
-export default VotingStatisticsTable
+export default StatisticsTable
