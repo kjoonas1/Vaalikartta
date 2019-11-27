@@ -11,7 +11,7 @@ import { Tab, Tabs } from "react-bootstrap"
 import "../styles/Charts.scss"
 import { useQuery } from 'react-fetching-library';
 
-const Charts = props => {
+const Charts = () => {
 
     const { area, dispatchArea } = useArea()
     const { year } = useYear()
@@ -115,12 +115,12 @@ const Charts = props => {
                     }
                 </Tab>
                 <Tab eventKey="Aanestystiedot" title="Aanestystiedot" className="aanestys-tab">
-                    {(!votingStatistics.error && votingStatistics.payload && votingStatistics.payload.length) ?
+                    {(!votingStatistics.error && votingStatistics.payload && bubbleChart.payload.length) ?
                         <VotingStatisticsTable
                             title={chartTitle}
                             loading={votingStatistics.loading}
                             data={getVotingStatisticsData(votingStatistics.payload)} />
-                        : votingStatistics.payload && !votingStatistics.payload.length ?
+                        : bubbleChart.payload && !bubbleChart.payload.length ?
                             noDataMessage
                             : errorMessage}
                 </Tab>
