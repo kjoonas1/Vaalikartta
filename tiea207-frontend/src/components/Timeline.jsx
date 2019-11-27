@@ -1,47 +1,45 @@
 import React, { Fragment } from "react"
 import { Col } from "react-bootstrap"
 import shortid from "shortid"
-import { Link } from "react-router-dom"
 import "../styles/Timeline.scss"
 import { useYear } from "../contexts/YearContextProvider"
 import { useEvent } from "../contexts/EventContextProvider"
+import { HashLink as Link } from "react-router-hash-link"
+import { timelineData } from "../dataset/timelineData"
 
 export const Timeline = props => {
     const { year, setYear } = useYear()
     const { event, setEvent } = useEvent()
-
-    const years = props.data.years
-    const events = props.data.events
-
-    const contextYear = year
-    const contextEvent = event
     const padding = 10
     const mainLineHeight = "6em"
     const activeColor = "#404040"
     const inactiveColor = "#757575"
-    const circleColor = "#fcb103"
+    const circleColor = "#5289ff"
 
     return (<>
         <Col md={{ span: 12 }}>
             <svg
                 key={shortid.generate()}
-                viewBox={"0 0 2400 250"}
+                viewBox={"0 0 2800 250"}
                 width={"100%"}
                 display="block"
                 margin="0, auto"
                 className="timeline-container"
             >
-                {years.map((year, index) => {
-                    const x = (100 - 2 * padding) * (index / (years.length - 1)) // Vaakaviivojen ja tekstin paikka, jossa ei vielä huomioida paddingia
+                {timelineData.years.map((_year, index) => {
+                    const x = (100 - 2 * padding) * (index / (timelineData.years.length - 1)) // Vaakaviivojen ja tekstin paikka, jossa ei vielä huomioida paddingia
                     const lineX = (padding + x).toString()
-                    const bolding = contextYear === year ? "bold" : "normal"
+                    const bolding = year === _year ? "bold" : "normal"
                     return (
                         <Fragment key={shortid.generate()}>
                             <Link
                                 key={shortid.generate()}
                                 to=""
                                 onClick={() => {
-                                    setYear(year)
+                                    props.chartsRef.current.scrollIntoView({behavior: "smooth", block: "start"})
+                                    if (year !== _year) {
+                                        setYear(_year)
+                                    }
                                 }}
                             >
                                 <line
@@ -50,7 +48,7 @@ export const Timeline = props => {
                                     y1={mainLineHeight}
                                     x2={lineX + "%"}
                                     y2="4em"
-                                    style={{ stroke: activeColor, strokeLinecap: "round", strokeWidth: "0.5em" }}
+                                    className="timeline-line"
                                 />
                                 <text
                                     textAnchor="middle"
@@ -61,51 +59,60 @@ export const Timeline = props => {
                                     fill={activeColor}
                                     fontWeight={bolding}
                                 >
-                                    {year}
+                                    {_year}
                                 </text>
                             </Link>
                         </Fragment>
                     )
                 })}
-                {events.map((event, index) => {
-                    const minYear = Math.min(...years)
-                    const maxYear = Math.max(...years)
-                    const x = padding + ((100 - 2 * padding) * (event.year - minYear)) / (maxYear - minYear)
-                    const isActive = JSON.stringify(event) === JSON.stringify(contextEvent)
+                {timelineData.events.map((_event, index) => {
+                    const minYear = Math.min(...timelineData.years)
+                    const maxYear = Math.max(...timelineData.years)
+                    const x = padding + ((100 - 2 * padding) * (_event.year - minYear)) / (maxYear - minYear)
+                    const isActive = JSON.stringify(_event) === JSON.stringify(event)
                     const eventActiveness = {
-                        fill: isActive ? "1" : "0.25",
+                        fill: isActive ? "1" : "0.6",
                         size: isActive ? "1.75em" : "1.5em",
                         borderColor: isActive ? activeColor : inactiveColor
                     }
                     return (
                         <Fragment key={shortid.generate()}>
                             <Link
-
                                 to=""
                                 onClick={() => {
                                     // Pallon uudelleenklikkaus poistaa aktivoinnin
-                                    isActive ? setEvent(null) : setEvent(event)
+                                    isActive ? setEvent(null) : setEvent(_event)
                                 }}
                             >
                                 <line
-                                    className="event"
                                     key={shortid.generate()}
                                     x1={x + "%"}
                                     y1={mainLineHeight}
                                     x2={x + "%"}
                                     y2="8em"
+                                    className="event timeline-line"
                                     style={{
-                                        stroke: eventActiveness.borderColor,
                                         strokeLinecap: "round",
                                         strokeWidth: "0.25em"
                                     }}
                                 />
+                                <filter id="dropshadow" height="130%">
+                                    <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
+                                    <feOffset dx="2" dy="2" result="offsetblur" />
+                                    <feComponentTransfer>
+                                        <feFuncA type="linear" slope="0.2" />
+                                    </feComponentTransfer>
+                                    <feMerge>
+                                        <feMergeNode />
+                                        <feMergeNode in="SourceGraphic" />
+                                    </feMerge>
+                                </filter>
                                 <circle
                                     data-testid={"event-link-" + index}
-                                    className="event"
                                     stroke={eventActiveness.borderColor}
                                     fillOpacity={eventActiveness.fill}
                                     strokeWidth="2"
+                                    className="event timeline-event-circle"
                                     fill={circleColor}
                                     cx={x + "%"}
                                     cy="9.5em"
@@ -114,7 +121,7 @@ export const Timeline = props => {
                             </Link>
                             {isActive && (
                                 <text className="timeline-event-text" textAnchor="middle" key={shortid.generate()} y="3em" x={x + "%"}>
-                                    {contextEvent.name}
+                                    {event.name}
                                 </text>
                             )}
                         </Fragment>
@@ -126,7 +133,7 @@ export const Timeline = props => {
                     y1={mainLineHeight}
                     x2={100 - padding + "%"}
                     y2={mainLineHeight}
-                    style={{ stroke: activeColor, strokeWidth: "0.5em" }}
+                    className="timeline-mainline"
                 />
             </svg>
         </Col>

@@ -1,43 +1,30 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 .leaflet-popup {
-	position: absolute;
+  position: absolute;
   text-align: center;
-  //background: black;
-	margin-bottom: 20px;
-  }
-  
-  .leaflet-popup-content-wrapper {
-    padding: 1px;
-    text-align: left;
-   // border-radius: 12px;
-    }
-  .leaflet-popup-content {
-    margin: 13px 19px;
-    line-height: 1;
-    color: black;
-    //text-decoration: underline;
-    font-size: 1.4em;
-    font-weight: bold
-    }
+  margin-bottom: 20px;
+}
 
-// Tälle koko on pakko määritellä, jotta kartta edes näkyy
-//.leaflet-container {
-  // height: 600px;
-  // width: 100%;
-  // margin: 0 auto;
- //  background: transparent;
-//}
+.leaflet-popup-content-wrapper {
+  padding: 1px;
+  text-align: left;
+}
 
+.leaflet-popup-content {
+  margin: 13px 19px;
+  line-height: 1;
+  color: black;
+  font-size: 1.4em;
+  font-weight: bold;
+}

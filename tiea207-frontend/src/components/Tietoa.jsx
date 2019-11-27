@@ -1,13 +1,13 @@
-import React, { Fragment } from "react"
-import shortid from "shortid"
-import { useFetch } from "../hooks/UseFetch"
+import React from "react"
+/* import shortid from "shortid"
+import { useFetch } from "../hooks/UseFetch" */
 // Komponentti hakee backendistä helloworldin ja näyttää sen selaimessa
 const Tietoa = () => {
-    const url = "http://localhost:8000/api/helloworld"
-    const res = useFetch(url)
+/*     const url = "http://localhost:8000/api/helloworld"
+    const res = useFetch(url) */
 
     // Loading state
-    if (res.isLoading && res.error === null) {
+   /*  if (res.isLoading && res.error === null) {
         return (
             <Fragment>
                 <p>Loading..</p>
@@ -33,7 +33,7 @@ const Tietoa = () => {
                 ))}
             </Fragment>
         )
-    }
+    } */ return <>Tietoa</>
 }
 
 export default Tietoa

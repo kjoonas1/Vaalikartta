@@ -1,10 +1,10 @@
 import React from "react"
 import { uudetVaalipiirit, vanhatVaalipiirit } from "../../dataset/SVGMapParts"
-import { Link } from "react-router-dom"
 import "../../styles/Constituency.scss"
 import shortid from "shortid"
 import { useYear } from "../../contexts/YearContextProvider"
 import { useArea } from "../../contexts/AreaContextProvider"
+import { HashLink as Link } from "react-router-hash-link"
 
 export const CountryMap = props => {
     const { year } = useYear()
@@ -25,6 +25,7 @@ export const CountryMap = props => {
                     to=""
                     onClick={() => {
                         dispatchArea({type: "CHANGE_COUNTRY_TO", to: "Koko maa"})
+                        props.chartsRef.current.scrollIntoView({behavior: "smooth", block: "start"})
                     }}
                 >
                     <g transform="translate(-21.222 -12.752)">

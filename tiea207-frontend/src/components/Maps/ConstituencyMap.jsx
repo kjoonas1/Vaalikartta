@@ -1,16 +1,15 @@
 import React from "react"
 import { uudetVaalipiirit, vanhatVaalipiirit } from "../../dataset/SVGMapParts"
-import { Link } from "react-router-dom"
 import "../../styles/Constituency.scss"
 import { useArea } from "../../contexts/AreaContextProvider"
 import { useYear } from "../../contexts/YearContextProvider"
+import { HashLink as Link } from "react-router-hash-link"
 
 export const ConstituencyMap = props => {
     const { area, dispatchArea } = useArea()
     const { year } = useYear()
     const mapType = year => (year > 2011 ? uudetVaalipiirit : vanhatVaalipiirit)
     const _map = mapType(year)
-    
     return (
         <div className="constituency-map">
             <svg
@@ -39,6 +38,7 @@ export const ConstituencyMap = props => {
                                 to=""
                                 onClick={() => {
                                     dispatchArea({ type: "CHANGE_CONSTITUENCY_TO", to: _map[key].name })
+                                    props.chartsRef.current.scrollIntoView({behavior: "smooth", block: "start"})
                                 }}
                             >
                                 {mapPart}
