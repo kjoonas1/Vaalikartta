@@ -6,7 +6,7 @@ const VotingStatisticsTable = (props) => {
     const data = props.data.map((el, key) => el.length === 2 && 
     <tr key={key}>
         <td>{el[0]}</td>
-        <td>{el[1] % 1 !== 0 ? el[1].toFixed(2) : el[1]}</td>
+        <td>{el[1] % 1 !== 0 ? el[1].toFixed(2) : el[1].toLocaleString("fi-FI")}</td>
     </tr>)
 
     return (
