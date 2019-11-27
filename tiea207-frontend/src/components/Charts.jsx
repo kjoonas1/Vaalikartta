@@ -81,6 +81,13 @@ const Charts = props => {
             default: return ""
         }
     }
+    const getVotingStatisticsData = (data) => {
+        const removeAttributes = ["_id", "tyyppi", "Alue", "Vuosi"]
+        const aanestysFilter = objectHelper.filterFromObject(data[0], a => a !== null)
+        const aanestys = objectHelper.extractArrayOfResponseData(aanestysFilter, removeAttributes, "name", "luku")
+            .map(rivi => [rivi.name, rivi.luku])
+        return aanestys
+    }
 
     const chartTitle = getTitle(area.active, area) + " " + year
 
@@ -110,10 +117,12 @@ const Charts = props => {
                 <Tab eventKey="Aanestystiedot" title="Aanestystiedot" className="aanestys-tab">
                     {(!votingStatistics.error && votingStatistics.payload && votingStatistics.payload.length) ?
                         <VotingStatisticsTable
-                            title={chartTitle} 
-                            loading={votingStatistics.loading} 
-                            data={votingStatistics.payload} />
-                        : votingStatistics.payload && !votingStatistics.payload.length ? noDataMessage : errorMessage}
+                            title={chartTitle}
+                            loading={votingStatistics.loading}
+                            data={getVotingStatisticsData(votingStatistics.payload)} />
+                        : votingStatistics.payload && !votingStatistics.payload.length ?
+                            noDataMessage
+                            : errorMessage}
                 </Tab>
             </Tabs>
         </Col>

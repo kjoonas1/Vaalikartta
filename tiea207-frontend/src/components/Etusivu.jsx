@@ -21,7 +21,7 @@ const Etusivu = () => {
             name: "Vaalipiirit"
         },
         {
-            map: <ElectionMap chartsRef={chartsRef}/>,
+            map: <ElectionMap chartsRef={chartsRef} />,
             name: "Kunnat"
         }
     ]
@@ -29,16 +29,16 @@ const Etusivu = () => {
     return (
         <>
             <Row className="timeline">
-                <Timeline chartsRef={chartsRef}/>
+                <Timeline chartsRef={chartsRef} />
             </Row>
-            <Row>
+            <Row>     
                 <Col >
                     <Row className="animate-bottom">
                         <Col xs={12} xl={4} className="maps">
                             <ControlledTabs tabs={maps} />
                         </Col>
                         <Col xs={12} xl={8} ref={chartsRef}>
-                            <Charts/>
+                            <Charts />
                         </Col>
                     </Row>
                 </Col>

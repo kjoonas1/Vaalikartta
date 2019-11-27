@@ -3,18 +3,18 @@ import * as d3 from "d3"
 import "../styles/Charts.scss"
 
 const BubbleChart = props => {
-    
+
     const padding = 3
     const container = React.useRef(null)
     useEffect(() => {
         if (props.data && container.current) {
             // Poistetaan kaikki lapsisolmut ennen kuin tehdään mitään muuta
             if (!props.loading) {
-            d3.select(container.current)
-                .selectAll("*")                    
-                .transition()
-                .style("opacity", "0").duration(250).ease(d3.easeLinear)
-                .remove()
+                d3.select(container.current)
+                    .selectAll("*")
+                    .transition()
+                    .style("opacity", "0").duration(250).ease(d3.easeLinear)
+                    .remove()
             } else d3.select(container.current).selectAll("*").remove() // Jos ollaan lataus-tilassa, ei animoida mitään
 
             const simulation = d3
@@ -42,9 +42,9 @@ const BubbleChart = props => {
                     "0 0 " + Math.min(props.width, props.height) + " " + Math.min(props.width, props.height)
                 )
                 .attr("preserveAspectRatio", "xMinYMin")
-                .append("g")                
+                .append("g")
                 .style("transform", "translate(52%,55%)")
-                
+
             if (!props.loading) {
                 const data = svg.selectAll(".bubble").data(props.data)
 
