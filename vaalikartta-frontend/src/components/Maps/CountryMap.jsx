@@ -4,7 +4,8 @@ import "../../styles/Constituency.scss"
 import shortid from "shortid"
 import { useYear } from "../../contexts/YearContextProvider"
 import { useArea } from "../../contexts/AreaContextProvider"
-import { HashLink as Link } from "react-router-hash-link"
+import { Link } from "react-router-dom"
+
 
 export const CountryMap = props => {
     const { year } = useYear()
@@ -22,9 +23,10 @@ export const CountryMap = props => {
                 xmlns="http://www.w3.org/2000/svg"
             >
                 <Link
-                    smooth to="#charts"
+                    to=""
                     onClick={() => {
                         dispatchArea({type: "CHANGE_COUNTRY_TO", to: "Koko maa"})
+                        props.chartsRef.current.scrollIntoView({behavior: "smooth", block: "start"})
                     }}
                 >
                     <g transform="translate(-21.222 -12.752)">

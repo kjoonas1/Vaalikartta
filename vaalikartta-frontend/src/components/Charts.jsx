@@ -6,12 +6,13 @@ import * as colors from "../dataset/partyColors.json"
 import BubbleChart from "./BubbleChart"
 import { useArea } from "../contexts/AreaContextProvider"
 import { useYear } from "../contexts/YearContextProvider"
-import VotingStatisticsTable from "../components/VotingStatisticsTable"
+import StatisticsTable from "./StatisticsTable"
 import { Tab, Tabs } from "react-bootstrap"
 import "../styles/Charts.scss"
-import { useQuery } from 'react-fetching-library';
+import { useQuery } from "react-fetching-library"
 
-const Charts = props => {
+const Charts = () => {
+
     const { area, dispatchArea } = useArea()
     const { year } = useYear()
     const url = active => {
@@ -39,6 +40,12 @@ const Charts = props => {
     const votingStatistics = useQuery({
         method: "GET",
         endpoint: aanestystiedotUrl(area.active),
+    })
+
+    const getYear = year === 2019 ? 2018 : year
+    const kuntaStatistics = useQuery({
+        method: "GET",
+        endpoint: `/api/avainluvut/${getYear}/${area.district}`
     })
 
     const getBubbleChartData = (data) => {
@@ -80,12 +87,34 @@ const Charts = props => {
             default: return ""
         }
     }
+    const getVotingStatisticsData = (data) => {
+        const removeAttributes = ["_id", "tyyppi", "Alue", "Vuosi"]
+        const aanestysFilter = objectHelper.filterFromObject(data[0], a => a !== null)
+        const aanestys = objectHelper.extractArrayOfResponseData(aanestysFilter, removeAttributes, "name", "luku")
+            .map(rivi => [rivi.name, rivi.luku])
+        return aanestys
+    }
+
+    const getKuntaStatisticsData = (data) => {
+        const removeAttributes = ["_id", "Alue", "Vuosi"]
+        const kuntaDataFilter = objectHelper.filterFromObject(data, a => a !== null)
+        const kuntaData = objectHelper.extractArrayOfResponseData(kuntaDataFilter, removeAttributes, "name", "luku")
+            .map(rivi => [rivi.name, rivi.luku])
+        return kuntaData
+    }
+
 
     const chartTitle = getTitle(area.active, area) + " " + year
 
     const errorMessage = "Virhe, kokeile uudestaan."
+
+    const noDataMessage = <>
+        <h4>{chartTitle}</h4>
+        <p>Ei dataa. Alue on todennäköisesti liitetty toiseen tai sitä ei ole vielä ollut olemassa</p>
+    </>
+    
     return (
-        <Col id="charts">
+        <Col>
             <Tabs defaultActiveKey="kannatus" className="flex-row">
                 <Tab eventKey="kannatus" title="Puoluekannatus" className="aanestys-tab">
                     {(!bubbleChart.error && bubbleChart.payload && bubbleChart.payload.length) ?
@@ -96,19 +125,29 @@ const Charts = props => {
                             width={700}
                             height={700}
                             loading={bubbleChart.loading}
-                        /> : bubbleChart.payload && !bubbleChart.payload.length ?
-                            <>
-                                <h4>{chartTitle}</h4>
-                                <p>Ei dataa. Alue on todennäköisesti liitetty toiseen tai sitä ei ole vielä ollut olemassa</p>
-                            </>
+                        /> : bubbleChart.payload && !bubbleChart.payload.length
+                            ? noDataMessage
                             : errorMessage
                     }
                 </Tab>
                 <Tab eventKey="Aanestystiedot" title="Aanestystiedot" className="aanestys-tab">
-                    {(!votingStatistics.loading && !votingStatistics.error && votingStatistics.payload) ?
-                        <VotingStatisticsTable title={chartTitle} data={votingStatistics.payload} />
-                        : votingStatistics.error ? errorMessage : votingStatistics.loading && "Ladataan"}
+                    {(!votingStatistics.error && votingStatistics.payload && bubbleChart.payload.length) ?
+                        <StatisticsTable
+                            title={chartTitle}
+                            loading={votingStatistics.loading}
+                            data={getVotingStatisticsData(votingStatistics.payload)} />
+                        : bubbleChart.payload && !bubbleChart.payload.length
+                            ? noDataMessage
+                            : errorMessage}
                 </Tab>
+                {(area.active !== "Kunnat") ? null :
+                    <Tab eventKey="Kuntatiedot" title="Kuntatiedot" className="aanestys-tab">
+                        {(!kuntaStatistics.error && kuntaStatistics.payload && bubbleChart.payload.length) ?
+                            <StatisticsTable data={getKuntaStatisticsData(kuntaStatistics.payload)} title={getYear} />
+                            : bubbleChart.payload && !bubbleChart.payload.length
+                                ? noDataMessage
+                                : errorMessage}
+                    </Tab>}
             </Tabs>
         </Col>
     )

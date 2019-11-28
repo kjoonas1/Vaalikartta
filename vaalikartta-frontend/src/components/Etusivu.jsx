@@ -6,47 +6,38 @@ import { ControlledTabs } from "./ControlledTabs"
 import { ElectionMap } from "./Maps/ElectionMap"
 import { CountryMap } from "./Maps/CountryMap"
 import Charts from "./Charts"
-import { useYear } from "../contexts/YearContextProvider"
-import { useQuery } from 'react-fetching-library';
 
 const Etusivu = () => {
-    const { year } = useYear()
-
-    const coordinates = useQuery({
-        method: "GET",
-        endpoint: `/api/kunnat/koordinaatit/${year}`
-    })
-
     // Karttatyypit valtiolle, vaalipiireille ja kunnille
+    const chartsRef = React.createRef()
+
     const maps = [
         {
-            map: <CountryMap height="35em" />,
+            map: <CountryMap chartsRef={chartsRef} height="35em" />,
             name: "Koko maa"
         },
         {
-            map: <ConstituencyMap height="35em" />,
+            map: <ConstituencyMap chartsRef={chartsRef} height="35em" />,
             name: "Vaalipiirit"
         },
         {
-            map: <ElectionMap coordinates={coordinates} />,
+            map: <ElectionMap chartsRef={chartsRef} />,
             name: "Kunnat"
         }
     ]
 
-
-
     return (
         <>
             <Row className="timeline">
-                <Timeline />
+                <Timeline chartsRef={chartsRef} />
             </Row>
-            <Row>
+            <Row>     
                 <Col >
                     <Row className="animate-bottom">
                         <Col xs={12} xl={4} className="maps">
-                            <ControlledTabs tabs={maps} loading={coordinates.loading} />
+                            <ControlledTabs tabs={maps} />
                         </Col>
-                        <Col xs={12} xl={8}>
+                        <Col xs={12} xl={8} ref={chartsRef}>
                             <Charts />
                         </Col>
                     </Row>

@@ -64,9 +64,9 @@ router.get("/avainluvut/:vuosi/:kunta", async (req, res) => {
     const tiedotKannasta = await avainluvut.find({ Alue: kunta, Tiedot: { $in: halututKentat } }, { projection: { [vuosi]: 1, Tiedot: 1, Alue: 1 } })
         .toArray()
     if (tiedotKannasta.length === 0)
-        return res.sendStatus(404)
+        return res.sendStatus(204)
     if (tiedotKannasta[0][vuosi] === undefined) // varmistetaan että on dataa eikä vain undefined
-        return res.sendStatus(404)
+        return res.sendStatus(204)
     const sievennettyData = tiedotKannasta.filter(kentta => kentta[vuosi] !== null).reduce((acc, kentta) => {
         return { ...acc, [kentta.Tiedot]: (kentta[vuosi]) }
     }, {})

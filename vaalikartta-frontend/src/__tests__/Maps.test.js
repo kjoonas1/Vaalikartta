@@ -4,17 +4,17 @@ import { render, fireEvent, waitForElement } from "@testing-library/react"
 import App from "../App"
 import { act } from "react-dom/test-utils"
 
-const mockKannatukset = [{
+/* const mockKannatukset = [{
     Alue: "Koko maa",
     Vuosi: 2019,
     SDP: 20,
     KOK: 20,
     Muut: 2
 }]
-
-jest.mock("../hooks/UseFetch", () => ({
+ */
+/* jest.mock("../hooks/UseFetch", () => ({
     useFetch: () => ({ data: mockKannatukset, error: null, isLoading: false })
-}))
+})) */
 
 describe("Landing on front page", () => {
     const component = () => render(
@@ -38,7 +38,6 @@ describe("Landing on front page", () => {
             const c = component()
             const tabLink = c.getByText("Vaalipiirit")
             fireEvent.click(tabLink)
-            // const switchedToTab = 
             const switchedToTab = await waitForElement(() => c.getByTestId("tab-Vaalipiirit"), {c})
             attribute = switchedToTab.getAttribute("aria-hidden")
         })
