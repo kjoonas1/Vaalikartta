@@ -8,8 +8,6 @@ const StatisticsTable = (props) => {
         <td>{el[1] % 1 !== 0 ? el[1].toFixed(2) : el[1].toLocaleString("fi-FI")}</td>
     </tr>)
 
-    console.log(props.data[0])
-
     return (
         <>
             <Table responsive striped bordered hover size="sm">

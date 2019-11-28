@@ -26,9 +26,6 @@ const App = () => {
                                         <Route path="/tietoa" component={Tietoa} />
                                     </Switch>
                                 </Container>
-                                <footer className="text-muted">
-                                    Footer text
-                                </footer>
                             </Router>
                         </EventContextProvider>
                     </AreaContextProvider>

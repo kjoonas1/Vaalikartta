@@ -91,7 +91,7 @@ const Charts = () => {
         const removeAttributes = ["_id", "tyyppi", "Alue", "Vuosi"]
         const aanestysFilter = objectHelper.filterFromObject(data[0], a => a !== null)
         const aanestys = objectHelper.extractArrayOfResponseData(aanestysFilter, removeAttributes, "name", "luku")
-            .map(rivi => [rivi.name, rivi.luku])
+            .map(rivi => [rivi.name, rivi.luku]).sort(([a], [b]) => a.localeCompare(b))
         return aanestys
     }
 
@@ -99,7 +99,7 @@ const Charts = () => {
         const removeAttributes = ["_id", "Alue", "Vuosi"]
         const kuntaDataFilter = objectHelper.filterFromObject(data, a => a !== null)
         const kuntaData = objectHelper.extractArrayOfResponseData(kuntaDataFilter, removeAttributes, "name", "luku")
-            .map(rivi => [rivi.name, rivi.luku])
+            .map(rivi => [rivi.name, rivi.luku]).sort(([a], [b]) => a.localeCompare(b))
         return kuntaData
     }
 
@@ -112,7 +112,7 @@ const Charts = () => {
         <h4>{chartTitle}</h4>
         <p>Ei dataa. Alue on todennäköisesti liitetty toiseen tai sitä ei ole vielä ollut olemassa</p>
     </>
-    
+
     return (
         <Col>
             <Tabs defaultActiveKey="kannatus" className="flex-row">
@@ -130,8 +130,8 @@ const Charts = () => {
                             : errorMessage
                     }
                 </Tab>
-                <Tab eventKey="Aanestystiedot" title="Aanestystiedot" className="aanestys-tab">
-                    {(!votingStatistics.error && votingStatistics.payload && bubbleChart.payload.length) ?
+                <Tab eventKey="Aanestystiedot" title="Äänestystiedot" className="aanestys-tab">
+                    {(!votingStatistics.error && votingStatistics.payload && bubbleChart.payload && bubbleChart.payload.length) ?
                         <StatisticsTable
                             title={chartTitle}
                             loading={votingStatistics.loading}
@@ -142,7 +142,7 @@ const Charts = () => {
                 </Tab>
                 {(area.active !== "Kunnat") ? null :
                     <Tab eventKey="Kuntatiedot" title="Kuntatiedot" className="aanestys-tab">
-                        {(!kuntaStatistics.error && kuntaStatistics.payload && bubbleChart.payload.length) ?
+                        {(!kuntaStatistics.error && kuntaStatistics.payload && bubbleChart.payload && bubbleChart.payload.length) ?
                             <StatisticsTable data={getKuntaStatisticsData(kuntaStatistics.payload)} title={getYear} />
                             : bubbleChart.payload && !bubbleChart.payload.length
                                 ? noDataMessage
