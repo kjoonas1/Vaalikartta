@@ -29,12 +29,12 @@ jobs:
 
     - name: Install frontend dependencies
       run: |
-        cd tiea207-frontend
+        cd vaalikartta-frontend
         npm install --only=production
 
     - name: Build frontend and move it to `backend` folder
       run: |
-        cd ./tiea207-frontend
+        cd ./vaalikartta-frontend
         npm run-script build
         mv ./build ../backend/
 
