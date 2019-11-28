@@ -9,7 +9,7 @@ import { useYear } from "../contexts/YearContextProvider"
 import StatisticsTable from "./StatisticsTable"
 import { Tab, Tabs } from "react-bootstrap"
 import "../styles/Charts.scss"
-import { useQuery } from 'react-fetching-library';
+import { useQuery } from "react-fetching-library"
 
 const Charts = () => {
 

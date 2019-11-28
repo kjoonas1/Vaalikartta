@@ -3,7 +3,7 @@ import { Map, GeoJSON, TileLayer } from "react-leaflet"
 import L from "leaflet"
 import { useArea } from "../../contexts/AreaContextProvider"
 import shortid from "shortid"
-import { useQuery } from 'react-fetching-library';
+import { useQuery } from "react-fetching-library"
 import { useYear } from "../../contexts/YearContextProvider"
 
 export const ElectionMap = props => {

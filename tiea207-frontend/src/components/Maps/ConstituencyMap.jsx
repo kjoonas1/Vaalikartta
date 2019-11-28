@@ -3,7 +3,7 @@ import { uudetVaalipiirit, vanhatVaalipiirit } from "../../dataset/SVGMapParts"
 import "../../styles/Constituency.scss"
 import { useArea } from "../../contexts/AreaContextProvider"
 import { useYear } from "../../contexts/YearContextProvider"
-import { HashLink as Link } from "react-router-hash-link"
+import { Link } from "react-router-dom"
 
 export const ConstituencyMap = props => {
     const { area, dispatchArea } = useArea()

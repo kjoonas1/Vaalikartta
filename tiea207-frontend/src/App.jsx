@@ -8,8 +8,8 @@ import { Route, Switch, BrowserRouter as Router } from "react-router-dom"
 import AreaContextProvider from "./contexts/AreaContextProvider"
 import YearContextProvider from "./contexts/YearContextProvider"
 import EventContextProvider from "./contexts/EventContextProvider"
-import { ClientContextProvider } from 'react-fetching-library';
-import { Client } from './api/Client';
+import { ClientContextProvider } from "react-fetching-library"
+import { Client } from "./api/Client"
 
 const App = () => {
     return (

@@ -9,7 +9,7 @@ import Charts from "./Charts"
 
 const Etusivu = () => {
     // Karttatyypit valtiolle, vaalipiireille ja kunnille
-    const chartsRef = React.createRef();
+    const chartsRef = React.createRef()
 
     const maps = [
         {
