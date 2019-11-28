@@ -9,7 +9,7 @@ import Charts from "./Charts"
 
 const Etusivu = () => {
     // Karttatyypit valtiolle, vaalipiireille ja kunnille
-    const chartsRef = React.createRef();
+    const chartsRef = React.createRef()
 
     const maps = [
         {
@@ -21,7 +21,7 @@ const Etusivu = () => {
             name: "Vaalipiirit"
         },
         {
-            map: <ElectionMap chartsRef={chartsRef}/>,
+            map: <ElectionMap chartsRef={chartsRef} />,
             name: "Kunnat"
         }
     ]
@@ -29,16 +29,16 @@ const Etusivu = () => {
     return (
         <>
             <Row className="timeline">
-                <Timeline chartsRef={chartsRef}/>
+                <Timeline chartsRef={chartsRef} />
             </Row>
-            <Row>
+            <Row>     
                 <Col >
                     <Row className="animate-bottom">
                         <Col xs={12} xl={4} className="maps">
                             <ControlledTabs tabs={maps} />
                         </Col>
                         <Col xs={12} xl={8} ref={chartsRef}>
-                            <Charts/>
+                            <Charts />
                         </Col>
                     </Row>
                 </Col>

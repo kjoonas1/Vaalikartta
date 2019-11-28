@@ -5,4 +5,4 @@ import {backendUrl} from "../constants"
 
 export const Client = createClient({
     requestInterceptors: [requestHostInterceptor(backendUrl)],
-});
+})

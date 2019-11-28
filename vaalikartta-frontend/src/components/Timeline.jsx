@@ -4,8 +4,8 @@ import shortid from "shortid"
 import "../styles/Timeline.scss"
 import { useYear } from "../contexts/YearContextProvider"
 import { useEvent } from "../contexts/EventContextProvider"
-import { HashLink as Link } from "react-router-hash-link"
 import { timelineData } from "../dataset/timelineData"
+import { Link } from "react-router-dom"
 
 export const Timeline = props => {
     const { year, setYear } = useYear()

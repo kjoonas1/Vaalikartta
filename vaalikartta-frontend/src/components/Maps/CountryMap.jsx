@@ -4,7 +4,8 @@ import "../../styles/Constituency.scss"
 import shortid from "shortid"
 import { useYear } from "../../contexts/YearContextProvider"
 import { useArea } from "../../contexts/AreaContextProvider"
-import { HashLink as Link } from "react-router-hash-link"
+import { Link } from "react-router-dom"
+
 
 export const CountryMap = props => {
     const { year } = useYear()

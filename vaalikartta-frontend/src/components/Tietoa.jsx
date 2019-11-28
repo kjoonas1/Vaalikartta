@@ -7,7 +7,7 @@ const Tietoa = () => {
     const res = useFetch(url) */
 
     // Loading state
-   /*  if (res.isLoading && res.error === null) {
+    /*  if (res.isLoading && res.error === null) {
         return (
             <Fragment>
                 <p>Loading..</p>
