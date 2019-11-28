@@ -9,8 +9,8 @@ $navFont: "Lato", sans-serif;
 .App::after {
   content: "";
   background-image: url("https://images.pexels.com/photos/370799/pexels-photo-370799.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-  -webkit-filter: grayscale(50%) blur(2px);
-  filter: grayscale(50%) blur(2px);
+  -webkit-filter: grayscale(50%) blur(3px);
+  filter: grayscale(50%) blur(3px);
   
   opacity: 0.8;
   top: 0;
@@ -29,6 +29,7 @@ $navFont: "Lato", sans-serif;
 }
 
 .container {
+  max-width: 80%;
   background: rgb(255, 255, 249);
   padding: 0 4rem;
   margin-top: 0;
@@ -58,17 +59,19 @@ $navFont: "Lato", sans-serif;
   background-color: #343a40;
 }
 
-$smallScreenWidth: 95%;
+$smallScreenWidth: 90%;
 
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
   .container {
-    max-width: 1440px;
+    max-width: 80%;
+    padding: 0 3rem;
   }
 }
 
 @media (max-width: 992px) {
   .container {
     max-width: $smallScreenWidth;
+    padding: 0 2rem;
   }
 }
 
@@ -81,7 +84,7 @@ $smallScreenWidth: 95%;
 
 @media (max-width: 576px) {
   .container {
-    max-width: $smallScreenWidth;
+    max-width: 100%;
     padding: 0 1rem;
   }
 }
