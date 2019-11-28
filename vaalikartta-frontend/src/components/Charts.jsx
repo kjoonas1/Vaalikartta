@@ -130,8 +130,8 @@ const Charts = () => {
                             : errorMessage
                     }
                 </Tab>
-                <Tab eventKey="Aanestystiedot" title="Aanestystiedot" className="aanestys-tab">
-                    {(!votingStatistics.error && votingStatistics.payload && bubbleChart.payload.length) ?
+                <Tab eventKey="Aanestystiedot" title="Äänestystiedot" className="aanestys-tab">
+                    {(!votingStatistics.error && votingStatistics.payload && bubbleChart.payload && bubbleChart.payload.length) ?
                         <StatisticsTable
                             title={chartTitle}
                             loading={votingStatistics.loading}
@@ -142,7 +142,7 @@ const Charts = () => {
                 </Tab>
                 {(area.active !== "Kunnat") ? null :
                     <Tab eventKey="Kuntatiedot" title="Kuntatiedot" className="aanestys-tab">
-                        {(!kuntaStatistics.error && kuntaStatistics.payload && bubbleChart.payload.length) ?
+                        {(!kuntaStatistics.error && kuntaStatistics.payload && bubbleChart.payload && bubbleChart.payload.length) ?
                             <StatisticsTable data={getKuntaStatisticsData(kuntaStatistics.payload)} title={getYear} />
                             : bubbleChart.payload && !bubbleChart.payload.length
                                 ? noDataMessage
