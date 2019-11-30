@@ -1,5 +1,5 @@
 import React from "react"
-import { uudetVaalipiirit, vanhatVaalipiirit } from "../../dataset/SVGMapParts"
+import { suomiKartta } from "../../dataset/SVGMapParts"
 import "../../styles/Constituency.scss"
 import shortid from "shortid"
 import { useYear } from "../../contexts/YearContextProvider"
@@ -11,7 +11,7 @@ export const CountryMap = props => {
     const { year } = useYear()
     const { dispatchArea } = useArea()
 
-    const mapType = year => (year > 2011 ? uudetVaalipiirit : vanhatVaalipiirit)
+    const mapType = () => (suomiKartta)
 
     const _map = mapType(year)
     return (

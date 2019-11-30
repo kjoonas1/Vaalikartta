@@ -10,6 +10,7 @@ import StatisticsTable from "./StatisticsTable"
 import { Tab, Tabs } from "react-bootstrap"
 import "../styles/Charts.scss"
 import { useQuery } from "react-fetching-library"
+import Hallituskaudet from "./Hallituskaudet"
 
 const Charts = () => {
 
@@ -148,6 +149,10 @@ const Charts = () => {
                                 ? noDataMessage
                                 : errorMessage}
                     </Tab>}
+                    <Tab eventKey="Hallitukset" title="Hallitukset">
+                        <Hallituskaudet />
+
+                    </Tab>
             </Tabs>
         </Col>
     )

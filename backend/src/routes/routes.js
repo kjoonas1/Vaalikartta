@@ -122,4 +122,31 @@ router.get("/muut-alueet/aanestystiedot/:muuAlue/:vuosi", async (req, res) => {
     res.send(filtteroituData)
 })
 
+router.get("/hallituskaudet/vuosittain/:Vuositunniste", async (req, res) => {
+    const vuositunniste = req.params.Vuositunniste
+    
+
+    if (vuositunniste === "undefined")
+        return res.status(204).send()
+    const collection = req.db.collection("hallituskaudet")
+
+    const items = await collection.find({ Vuositunniste: vuositunniste }).toArray()
+    console.log(req.params)
+
+    res.send(items)
+})
+
+router.get("/ministerit/:ID", async (req, res) => {
+    const id = parseInt(req.params.ID)
+    
+    console.log(req.params)
+    if (isNaN(id))
+        return res.status(204).send()
+    const collection = req.db.collection("ministerit-hallituskausittain")
+
+    const items = await collection.find({ ID: id }).toArray()
+
+    res.send(items)
+})
+
 module.exports = router
