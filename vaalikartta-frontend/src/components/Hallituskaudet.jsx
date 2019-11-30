@@ -1,6 +1,6 @@
 import React, { useContext } from "react"
 import { YearContext } from "../contexts/Contexts"
-//import "../styles/Hallitustiedot.scss"
+import "../styles/Hallitustiedot.scss"
 import { useQuery } from "react-fetching-library"
 
 
