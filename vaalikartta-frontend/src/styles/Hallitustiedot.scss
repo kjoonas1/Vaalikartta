@@ -23,22 +23,17 @@
 
 .hallitustiedot {
   //  background: rgb(44, 250, 240);
-    width: 370px;
     float: left;
     padding: 2%;
-    font-size: 25px;
-    font-weight: bold;
 }
 
 .paaministerikuva {
-  margin-left: auto;
-  margin-right: auto;  
   display: block;
-  align-items: center;
   max-width: 80%;
-  max-height: 350px;
+  max-height: 15em;
   margin-top: 5%;
-  border: 5px solid rgb(0, 0, 0);
+  border: 8px ridge rgb(170, 118, 51);
+  box-shadow: 3px 3px 5px grey;
 }
 
 button {

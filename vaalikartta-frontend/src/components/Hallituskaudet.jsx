@@ -3,32 +3,34 @@ import "../styles/Hallitustiedot.scss"
 import { useQuery } from "react-fetching-library"
 
 
-const Hallituskaudet = ({data, loading}) => {
-
-    if (loading) return <div>ladataan</div>
-
+const Hallituskaudet = ({ data, loading }) => {
     const ministerit = useQuery({
         method: "GET",
         endpoint: `/api/ministerit/${2}`
     })
 
-
-    
-    console.log("data: ",data[0].ID)
-    console.log("ministerit: ",ministerit.payload)
+    console.log("data: ", data)
+    console.log("ministerit: ", ministerit.payload)
 
     return (
-        <div>
-            <div> 
-                <div><strong>Hallitus: {data.map(arvo => arvo.Hallitus)}</strong></div>
-                <div>Alku: {data.map(arvo => arvo.Alku)}</div>
-                <div>Loppu: {data.map(arvo => arvo.Loppu)}</div>
-                <div>Hallituspäivät: {data.map(arvo => arvo["Hallituspäivät"])}</div>
-                <div>Pääministerin puolue: {data.map(arvo => arvo["Pääministerin puolue"])}</div>
-                <img className="paaministerikuva" src="/vanhanen.jpg" alt="vanhanen vain nauroi"/>     
-            </div>
-        
-        </div>
+        <>
+        {
+            data.map((hallitus) => {
+                return (<div>
+                    <div>
+                        <div><strong>Hallitus: {hallitus.Hallitus}</strong></div>
+                        <div>Alku: {hallitus.Alku}</div>
+                        <div>Loppu: {hallitus.Loppu}</div>
+                        <div>Hallituspäivät: {hallitus["Hallituspäivät"]}</div>
+                        <div>Pääministerin puolue: {hallitus["Pääministerin puolue"]}</div>
+                        <img className="paaministerikuva" src="/vanhanen.jpg" alt="vanhanen vain nauroi" />
+                    </div>
+
+                </div>)
+            }
+            )
+        }
+        </>
     )
 }
 export default Hallituskaudet
