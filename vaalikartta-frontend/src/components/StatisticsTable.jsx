@@ -2,11 +2,12 @@ import React from "react"
 import { Table } from "react-bootstrap"
 
 const StatisticsTable = (props) => {
-    const data = props.data.map((el, key) => el.length === 2 && 
-    <tr key={key}>
-        <td>{el[0]}</td>
-        <td>{el[1] % 1 !== 0 ? el[1].toFixed(2) : el[1].toLocaleString("fi-FI")}</td>
-    </tr>)
+    console.log("statistics", props.data)
+    const data = props.data.map((field, key) =>
+        <tr key={key}>
+            <td>{field[0]}</td>
+            <td>{field[1].type === "float" ? field[1].value.toFixed(2).replace(/\./, ",") : field[1].value.toLocaleString("fi-FI")}</td>
+        </tr>)
 
     return (
         <>

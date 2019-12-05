@@ -89,8 +89,9 @@ const Charts = () => {
         }
     }
     const getVotingStatisticsData = (data) => {
-        const removeAttributes = ["_id", "tyyppi", "Alue", "Vuosi"]
-        const aanestysFilter = objectHelper.filterFromObject(data[0], a => a !== null)
+        console.log(data)
+        const removeAttributes = ["_id", "Alue", "Vuosi"]
+        const aanestysFilter = objectHelper.filterFromObject(data, a => a !== null)
         const aanestys = objectHelper.extractArrayOfResponseData(aanestysFilter, removeAttributes, "name", "luku")
             .map(rivi => [rivi.name, rivi.luku]).sort(([a], [b]) => a.localeCompare(b))
         return aanestys
@@ -137,7 +138,7 @@ const Charts = () => {
                     }
                 </Tab>
                 <Tab eventKey="Aanestystiedot" title="Äänestystiedot" className="aanestys-tab">
-                    {(!votingStatistics.error && votingStatistics.payload && bubbleChart.payload && bubbleChart.payload.length) ?
+                    {(!votingStatistics.error && votingStatistics.payload !== undefined && Object.entries(votingStatistics.payload).length && bubbleChart.payload && bubbleChart.payload.length) ?
                         <StatisticsTable
                             title={chartTitle}
                             loading={votingStatistics.loading}

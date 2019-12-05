@@ -9,14 +9,14 @@ const Hallituskaudet = ({ data, loading }) => {
         endpoint: `/api/ministerit/${2}`
     })
 
-    console.log("data: ", data)
-    console.log("ministerit: ", ministerit.payload)
+    // console.log("data: ", data)
+    // console.log("ministerit: ", ministerit.payload)
 
     return (
         <>
         {
-            data.map((hallitus) => {
-                return (<div>
+            data.map((hallitus, i) => {
+                return (<div key={"hallitus" + i}>
                     <div>
                         <div><strong>Hallitus: {hallitus.Hallitus}</strong></div>
                         <div>Alku: {hallitus.Alku}</div>
