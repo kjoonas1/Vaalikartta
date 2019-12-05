@@ -114,6 +114,11 @@ const Charts = () => {
         <p>Ei dataa. Alue on todennäköisesti liitetty toiseen tai sitä ei ole vielä ollut olemassa</p>
     </>
 
+    const hallitus = useQuery({
+        method: "GET",
+        endpoint: `/api/hallituskaudet/vuosittain/${year}`
+    })
+
     return (
         <Col>
             <Tabs defaultActiveKey="kannatus" className="flex-row">
@@ -149,10 +154,14 @@ const Charts = () => {
                                 ? noDataMessage
                                 : errorMessage}
                     </Tab>}
-                    <Tab eventKey="Hallitukset" title="Hallitukset">
-                        <Hallituskaudet />
+                <Tab eventKey="Hallitukset" title="Hallitukset" className="hallitustiedot">
+                    {(!hallitus.error && hallitus.payload) ?
+                        <Hallituskaudet
+                            loading={hallitus.loading}
+                            data={hallitus.payload} />
+                        :  errorMessage}
 
-                    </Tab>
+                </Tab>
             </Tabs>
         </Col>
     )
