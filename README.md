@@ -11,11 +11,12 @@ Kopion projektista saa komennolla:
 ### Esiasetukset
 
 Tarvitsee asentaa Git-sovelluksen, jotta ylläoleva komento toimii.
+
+### Asentaminen
+
 Jotta sovelluksen voi ajaa, nodejs täytyy olla asennettuna. Lisäksi backend- ja frontend-kansioihin tarvitsee asentaa modulit komennolla
 
 ### `npm install`
-
-### Asentaminen
 
 ## Testaus
 
@@ -25,6 +26,7 @@ Jotta sovelluksen voi ajaa, nodejs täytyy olla asennettuna. Lisäksi backend- j
 * React
 * npm
 * MongoDB
+* OpenStreetmap
 
 ## Tekijät
 
@@ -40,3 +42,4 @@ Tämän projektin lisenssi on GPLv3. Katso LICENCE-tiedostosta lisätietoja.
 ## Tunnustukset
 
 * Inspiraatio haettu vapaasta ideoinnista, joka hyödyntää avointa dataa. Päädyimme ideoinnin päätteeksi politiikkaan liittyvään aiheeseen.
+* Sovellus on kohdennettu Suomen politiikasta ja sen historiasta kiinnostuneille. Sovellusta voisi käyttää oppilaitoksissa interaktiivisena työkaluna esimerkiksi historian tai yhteiskuntaopin oppiaineissa.
