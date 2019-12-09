@@ -33,7 +33,7 @@ const Hallituskaudet = ({data}) => {
             else return 0
         })
     }
-    console.log("ministerit: ", sortatutMinisterit)
+    //console.log("ministerit: ", sortatutMinisterit)
     // console.log("ministerit: ", ministerit.payload)
 
     //jos valitulle vuodelle osuu useampi hallituskausi
