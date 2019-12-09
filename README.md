@@ -41,7 +41,7 @@ Jotta sovelluksen voi ajaa, nodejs täytyy olla asennettuna. Lisäksi backend- j
 
 ## Lisenssi
 
-Tämän projektin lisenssi on GPLv3. Katso [LICENCE](LICENCE)-tiedostosta lisätietoja.
+Tämän projektin lisenssi on GPLv3. Katso [LICENSE](LICENSE)-tiedostosta lisätietoja.
 
 ## Huomioita
 
