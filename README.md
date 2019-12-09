@@ -4,7 +4,16 @@ Jyväskylän Yliopiston Informaatioteknologiatiedekunnan TIEA207-kurssin projekt
 
 ## Aloitus
 
+Kopion projektista saa komennolla:
+
+### `git clone https://github.com/kjoonas1/Vaalikartta`
+
 ### Esiasetukset
+
+Tarvitsee asentaa Git-sovelluksen, jotta ylläoleva komento toimii.
+Jotta sovelluksen voi ajaa, nodejs täytyy olla asennettuna. Lisäksi backend- ja frontend-kansioihin tarvitsee asentaa modulit komennolla
+
+### `npm install`
 
 ### Asentaminen
 
@@ -26,7 +35,7 @@ Jyväskylän Yliopiston Informaatioteknologiatiedekunnan TIEA207-kurssin projekt
 
 ## Lisenssi
 
-Tämän projektin lisenssi on GPLv3.
+Tämän projektin lisenssi on GPLv3. Katso LICENCE-tiedostosta lisätietoja.
 
 ## Tunnustukset
 
