@@ -22,11 +22,14 @@ Jotta sovelluksen voi ajaa, nodejs täytyy olla asennettuna. Lisäksi backend- j
 
 ## Luotu käyttäen seuraavia työkaluja
 
+* Visual Studio Code
 * JavaScript
 * React
+* node.js
 * npm
 * MongoDB
 * OpenStreetmap
+* Tilastokeskuksen avoin data
 
 ## Tekijät
 
@@ -41,5 +44,5 @@ Tämän projektin lisenssi on GPLv3. Katso LICENCE-tiedostosta lisätietoja.
 
 ## Tunnustukset
 
-* Inspiraatio haettu vapaasta ideoinnista, joka hyödyntää avointa dataa. Päädyimme ideoinnin päätteeksi politiikkaan liittyvään aiheeseen.
+* Inspiraatio haettu vapaasta ideoinnista, joka hyödyntää avointa dataa. Päädyimme ideoinnin päätteeksi politiikkaan liittyvään aiheeseen. Avoin data hankittu Tilastokeskukselta.
 * Sovellus on kohdennettu Suomen politiikasta ja sen historiasta kiinnostuneille. Sovellusta voisi käyttää oppilaitoksissa interaktiivisena työkaluna esimerkiksi historian tai yhteiskuntaopin oppiaineissa.
