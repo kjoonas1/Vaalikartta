@@ -25,6 +25,7 @@ Jotta sovelluksen voi ajaa, nodejs täytyy olla asennettuna. Lisäksi backend- j
 * Visual Studio Code
 * JavaScript
 * React
+* d3
 * node.js
 * npm
 * MongoDB
@@ -40,9 +41,9 @@ Jotta sovelluksen voi ajaa, nodejs täytyy olla asennettuna. Lisäksi backend- j
 
 ## Lisenssi
 
-Tämän projektin lisenssi on GPLv3. Katso LICENCE-tiedostosta lisätietoja.
+Tämän projektin lisenssi on GPLv3. Katso [LICENCE](LICENCE)-tiedostosta lisätietoja.
 
-## Tunnustukset
+## Huomioita
 
 * Inspiraatio haettu vapaasta ideoinnista, joka hyödyntää avointa dataa. Päädyimme ideoinnin päätteeksi politiikkaan liittyvään aiheeseen. Avoin data hankittu Tilastokeskukselta.
 * Sovellus on kohdennettu Suomen politiikasta ja sen historiasta kiinnostuneille. Sovellusta voisi käyttää oppilaitoksissa interaktiivisena työkaluna esimerkiksi historian tai yhteiskuntaopin oppiaineissa.
