@@ -142,21 +142,28 @@ router.get("/muut-alueet/aanestystiedot/:muuAlue/:vuosi", async (req, res) => {
     res.send(filtteroituData)
 })
 
-router.get("/hallituskaudet/vuosittain/:Vuositunniste", async (req, res) => {
-    const vuositunniste = req.params.Vuositunniste
-    if (vuositunniste === "undefined")
+router.get("/hallituskaudet/vuosittain/:vuosi", async (req, res) => {
+    const vuositunniste = req.params.vuosi
+    if (vuositunniste === undefined)
         return res.status(204).send()
     const collection = req.db.collection("hallituskaudet")
-    const items = await collection.find({ Vuositunniste: vuositunniste }).toArray()
-    res.send(items)
+    const hallitukset = await collection.find({ Vuositunniste: vuositunniste }).toArray()
+    // Haetaan ministerit kullekin hallitukselle
+    const ministeritCollection = req.db.collection("ministerit-hallituskausittain")
+    const hallituksetMinistereineen = await hallitukset.map(async hallitus => {
+        const ministerit = await ministeritCollection.find({ ID: hallitus.ID }).toArray()
+        return {...hallitus, ministerit: ministerit}
+    })
+    console.log(hallituksetMinistereineen, hallitukset)
+    Promise.all(hallituksetMinistereineen).then(h => res.send(h))
 })
 
-router.get("/ministerit/:ID", async (req, res) => {
-    const id = parseInt(req.params.ID)
+router.get("/ministerit/:id", async (req, res) => {
+    const id = parseInt(req.params.id)
     if (isNaN(id))
         return res.status(204).send()
     const collection = req.db.collection("ministerit-hallituskausittain")
-    const items = await collection.find({ ID: id }).toArray()
+    const items = await collection.find({ id: id }).toArray()
     res.send(items)
 })
 

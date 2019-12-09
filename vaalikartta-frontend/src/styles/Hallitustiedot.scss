@@ -25,18 +25,22 @@ details summary::-webkit-details-marker {
   display:none;
 }
 
-.hallitustiedot {
-  //  background: rgb(44, 250, 240);
-    float: left;
-    padding: 2%;
-    font-size: 23px;
-    font-weight: bold;
-    
+.hallitus-tab {
+  margin-top: 1em;
+}
+
+.hallitus-tab .card-body {
+  padding: 0;
+}
+
+.hallitus-tab .list-group-item {
+  padding: .45rem 1.25rem;
 }
 
 
 .paaministerikuva {
   display: block;
+  margin: 0 auto;
   max-width: 80%;
   max-height: 15em;
   margin-top: 5%;
