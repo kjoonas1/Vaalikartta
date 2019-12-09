@@ -33,7 +33,7 @@ const Hallituskaudet = ({data}) => {
             else return 0
         })
     }
-     console.log("ministerit: ", sortatutMinisterit)
+    console.log("ministerit: ", sortatutMinisterit)
     // console.log("ministerit: ", ministerit.payload)
 
     //jos valitulle vuodelle osuu useampi hallituskausi
@@ -47,33 +47,33 @@ const Hallituskaudet = ({data}) => {
 
     if (data.length === 1){
 
-    return (
-        <>
-        {
-            data.map((hallitus, i) => {
-                return (<div key={"hallitus" + i}>
-                    <div className="hallitustiedot">
-                        <div><strong>Hallitus: {hallitus.Hallitus}</strong></div>
-                        <div>Alku: {hallitus.Alku}</div>
-                        <div>Loppu: {hallitus.Loppu}</div>
-                        <div>Hallituspäivät: {hallitus["Hallituspäivät"]}</div>
-                        <div>Pääministerin puolue: {hallitus["Pääministerin puolue"]}</div>
-                        <img className="paaministerikuva" src={paaministerit[apu-2]} alt="vanhanen vain nauroi" />
-                    </div>
-                    </div>)
-            }
-            )
-        }
-                    <div className="ministeri">
-                        {sortatutMinisterit.map(nimi => <details  key={nimi._id}><summary>{nimi.Rooli}: {nimi.Ministeri}</summary>
-                            <p>Nimitetty: {nimi.Nimitetty}</p>
-                            <p>Puolue: {nimi.Puolue}</p>
-                        </details>)}
-                    </div>
+        return (
+            <>
+                {
+                    data.map((hallitus, i) => {
+                        return (<div key={"hallitus" + i}>
+                            <div className="hallitustiedot">
+                                <div><strong>Hallitus: {hallitus.Hallitus}</strong></div>
+                                <div>Alku: {hallitus.Alku}</div>
+                                <div>Loppu: {hallitus.Loppu}</div>
+                                <div>Hallituspäivät: {hallitus["Hallituspäivät"]}</div>
+                                <div>Pääministerin puolue: {hallitus["Pääministerin puolue"]}</div>
+                                <img className="paaministerikuva" src={paaministerit[apu-2]} alt="vanhanen vain nauroi" />
+                            </div>
+                        </div>)
+                    }
+                    )
+                }
+                <div className="ministeri">
+                    {sortatutMinisterit.map(nimi => <details  key={nimi._id}><summary>{nimi.Rooli}: {nimi.Ministeri}</summary>
+                        <p>Nimitetty: {nimi.Nimitetty}</p>
+                        <p>Puolue: {nimi.Puolue}</p>
+                    </details>)}
+                </div>
 
                 
-        </>
-    )}
+            </>
+        )}
 
     if (data.length > 1) {
         if (data[0] === "undefined") {
