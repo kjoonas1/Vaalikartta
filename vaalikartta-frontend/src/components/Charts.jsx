@@ -155,7 +155,7 @@ const Charts = () => {
                                 ? noDataMessage
                                 : errorMessage}
                     </Tab>}
-                <Tab eventKey="Hallitukset" title="Hallitukset" className="hallitustiedot">
+                <Tab eventKey="Hallitukset" title="Hallitukset">
                     {(!hallitus.error && hallitus.payload) ?
                         <Hallituskaudet
                             loading={hallitus.loading}

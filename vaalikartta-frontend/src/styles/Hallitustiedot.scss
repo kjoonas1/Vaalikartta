@@ -2,13 +2,14 @@
     text-align: left;
     float: right;
     margin: 0 auto;
-    font-size: 20px;
+    font-size: 23px;
     padding-top: 2%;
     padding-bottom: 3%;
-    width: 640px;
+    width: 740px;
     height: 640px;
     overflow-y: scroll; 
     text-align:justify;
+    
 }
 .ministeri div {
 
@@ -20,12 +21,19 @@
   border-radius: 4px;
   
 }
+details summary::-webkit-details-marker {
+  display:none;
+}
 
 .hallitustiedot {
   //  background: rgb(44, 250, 240);
     float: left;
     padding: 2%;
+    font-size: 23px;
+    font-weight: bold;
+    
 }
+
 
 .paaministerikuva {
   display: block;
@@ -37,8 +45,9 @@
 }
 
 button {
-    margin: 0%;
+    margin-bottom: 3%;
     font-size: 75%;
+    
 }
 
 summary {
