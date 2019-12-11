@@ -2,7 +2,7 @@ import React, {useState} from "react"
 import { Alert, Button } from "react-bootstrap"
 
 const AlertOhje = () => {
-    const [show, setShow] = useState(true)
+    const [show, setShow] = useState(false)
     if (show) {
         return (
             <Alert variant="info" onClose={() => setShow(false)} dismissible>

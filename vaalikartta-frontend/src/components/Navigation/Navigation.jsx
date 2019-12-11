@@ -20,7 +20,7 @@ const Navigation = () => {
                 <Nav className="mr-auto">
                     <NavbarLink name="Etusivu" exact={true} path="/"></NavbarLink>
                     <NavbarLink name="Tietoa" path="/tietoa"></NavbarLink>
-                    <NavbarLink name="AlertOhje" path="/alertohje"></NavbarLink>
+                    <NavbarLink name="Ohjeet" exact={true} path="/"></NavbarLink>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

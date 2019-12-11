@@ -25,7 +25,7 @@ const App = () => {
                                     <Switch>
                                         <Route exact path="/" component={Etusivu} />
                                         <Route path="/tietoa" component={Tietoa} />
-                                        <Route part="/alertohje" component={AlertOhje} />
+                                        <Route part="/ohje" component={AlertOhje} />
                                     </Switch>
                                 </Container>
                             </Router>
