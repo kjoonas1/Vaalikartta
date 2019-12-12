@@ -2,7 +2,6 @@ import React from "react"
 import "./styles/App.scss"
 import Etusivu from "./components/Etusivu"
 import Tietoa from "./components/Tietoa"
-import AlertOhje from "./components/AlertOhje"
 import { Container } from "react-bootstrap"
 import Navigation from "./components/Navigation/Navigation"
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom"
@@ -27,7 +26,6 @@ const App = () => {
                                         <Switch>
                                             <Route exact path="/" component={Etusivu} />
                                             <Route path="/tietoa" component={Tietoa} />
-                                            <Route exact path="/" component={AlertOhje} />
                                         </Switch>
                                     </Container>
                                 </Router>
@@ -36,7 +34,6 @@ const App = () => {
                     </AreaContextProvider>
                 </YearContextProvider>
             </ClientContextProvider>
-
         </div>
     )
 }
