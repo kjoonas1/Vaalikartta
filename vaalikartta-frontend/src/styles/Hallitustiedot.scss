@@ -8,6 +8,13 @@
   margin-bottom: 5%;
 }
 
+@media (max-width: 768px) {
+  .ministerit {
+    overflow: visible;
+    max-height: 100%;
+    margin-top: 3em;
+  }}
+
 .ministeri {
     text-align: left;
     float: right;
