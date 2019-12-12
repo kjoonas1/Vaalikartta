@@ -9,6 +9,7 @@ import { Route, Switch, BrowserRouter as Router } from "react-router-dom"
 import AreaContextProvider from "./contexts/AreaContextProvider"
 import YearContextProvider from "./contexts/YearContextProvider"
 import EventContextProvider from "./contexts/EventContextProvider"
+import OhjeContextProvider from "./contexts/OhjeContextProvider"
 import { ClientContextProvider } from "react-fetching-library"
 import { Client } from "./api/Client"
 
@@ -19,16 +20,18 @@ const App = () => {
                 <YearContextProvider>
                     <AreaContextProvider>
                         <EventContextProvider>
-                            <Router>
-                                <Navigation />
-                                <Container>
-                                    <Switch>
-                                        <Route exact path="/" component={Etusivu} />
-                                        <Route path="/tietoa" component={Tietoa} />
-                                        <Route part="/ohje" component={AlertOhje} />
-                                    </Switch>
-                                </Container>
-                            </Router>
+                            <OhjeContextProvider>
+                                <Router>
+                                    <Navigation />
+                                    <Container>
+                                        <Switch>
+                                            <Route exact path="/" component={Etusivu} />
+                                            <Route path="/tietoa" component={Tietoa} />
+                                            <Route exact path="/" component={AlertOhje} />
+                                        </Switch>
+                                    </Container>
+                                </Router>
+                            </OhjeContextProvider>
                         </EventContextProvider>
                     </AreaContextProvider>
                 </YearContextProvider>

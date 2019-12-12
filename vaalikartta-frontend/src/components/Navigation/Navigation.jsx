@@ -2,12 +2,14 @@ import React from "react"
 import { Navbar, Nav } from "react-bootstrap"
 import NavbarLink from "./NavbarLink"
 import { IndexLinkContainer } from "react-router-bootstrap"
-
+import { useOhje } from "../../contexts/OhjeContextProvider"
 /* 
 Navigation bar that contains links.
 Links are now hard-coded, they could also come with props fromm App.js
 */
 const Navigation = () => {
+
+    const { setShow } = useOhje()
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Navbar.Brand>
@@ -20,7 +22,9 @@ const Navigation = () => {
                 <Nav className="mr-auto">
                     <NavbarLink name="Etusivu" exact={true} path="/"></NavbarLink>
                     <NavbarLink name="Tietoa" path="/tietoa"></NavbarLink>
-                    <NavbarLink name="Ohjeet" exact={true} path="/"></NavbarLink>
+                    <Nav.Link to="" onClick={() => setShow(true)}>
+                        Ohje
+                    </Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
