@@ -151,9 +151,21 @@ router.get("/hallituskaudet/vuosittain/:vuosi", async (req, res) => {
     const ministeritCollection = req.db.collection("ministerit-hallituskausittain")
     const hallituksetMinistereineen = await hallitukset.map(async hallitus => {
         const ministerit = await ministeritCollection.find({ ID: hallitus.ID }).toArray()
-        return {...hallitus, ministerit: ministerit.sort((a,b) => a.Rooli >= b.Rooli)}
+        
+          const sortatutMinisterit = ministerit.sort( (a, b) =>  {
+                if (a.Rooli < b.Rooli) {
+                    return -1
+                }
+                if (a.Rooli > b.Rooli) {
+                    return 1
+                }
+                else return 0
+            })
+        return {...hallitus, ministerit: sortatutMinisterit}
     })
+    
     Promise.all(hallituksetMinistereineen).then(h => res.send(h))
+    
 })
 
 router.get("/ministerit/:id", async (req, res) => {
