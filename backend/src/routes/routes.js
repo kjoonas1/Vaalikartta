@@ -85,7 +85,7 @@ router.get("/avainluvut/:vuosi/:kunta", async (req, res) => {
         return { ...acc, [kentta.Tiedot]: (kentta[vuosi]) }
     }, {})
     const tyypitetty = addTypes(["float", "float", "int", "float", "float", "float", "float", "float"], Object.entries(sievennettyData))
-    console.log(tyypitetty)
+    //console.log(tyypitetty)
     const tyypitettyIlmanNull = Object.entries(tyypitetty).filter(([key, val]) => val.value !== null).reduce((acc, kentta) => ({ ...acc, [kentta[0]]: kentta[1] }), {})
     res.send(tyypitettyIlmanNull)
 })
@@ -152,10 +152,21 @@ router.get("/hallituskaudet/vuosittain/:vuosi", async (req, res) => {
     const ministeritCollection = req.db.collection("ministerit-hallituskausittain")
     const hallituksetMinistereineen = await hallitukset.map(async hallitus => {
         const ministerit = await ministeritCollection.find({ ID: hallitus.ID }).toArray()
-        return {...hallitus, ministerit: ministerit}
+        
+          const sortatutMinisterit = ministerit.sort( (a, b) =>  {
+                if (a.Rooli < b.Rooli) {
+                    return -1
+                }
+                if (a.Rooli > b.Rooli) {
+                    return 1
+                }
+                else return 0
+            })
+        return {...hallitus, ministerit: sortatutMinisterit}
     })
-    console.log(hallituksetMinistereineen, hallitukset)
+    
     Promise.all(hallituksetMinistereineen).then(h => res.send(h))
+    
 })
 
 router.get("/ministerit/:id", async (req, res) => {
