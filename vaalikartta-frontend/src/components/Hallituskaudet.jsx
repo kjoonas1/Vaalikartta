@@ -4,30 +4,23 @@ import { Tab, Tabs, Accordion, Card, ListGroup, ListGroupItem, Row, Col } from "
 
 
 const Hallituskaudet = ({ data }) => {
-
-
-    console.log("hallitusdata", data)
+    // console.log("hallitusdata", data)
     if (data.length !== 0) {
-        return <Tabs defaultActiveKey="0">
+        return <Tabs defaultActiveKey="0" variant="pills">
             {
-                
                 data.map((hallitus, i) => {
-                    console.log("tässä i ", i)
-                    console.log("tässä hallitus ", Tabs.activeKey)
-                    return <Tab key={hallitus._id} eventKey={i} title={hallitus.Hallitus} className="hallitus-tab">
+                    return <Tab key={i} eventKey={i} title={hallitus.Hallitus} className="hallitus-tab">
                         <Row>
                             <Col md={4}>
                                 <Card key={"hallitus" + i}>
                                     <Card.Img variant="top" className="paaministerikuva" src={hallitus.Kuva} alt="vanhanen vain nauroi" />
                                     <Card.Body>
-                                        <Card.Text>
-                                            <ListGroup variant="flush">
-                                                <ListGroupItem><b>Alku: </b>{hallitus.Alku}</ListGroupItem>
-                                                <ListGroupItem><b>Loppu:</b> {hallitus.Loppu}</ListGroupItem>
-                                                <ListGroupItem><b>Hallituspäivät:</b> {hallitus["Hallituspäivät"]}</ListGroupItem>
-                                                <ListGroupItem><b>Pääministerin puolue:</b> {hallitus["Pääministerin puolue"]}</ListGroupItem>
-                                            </ListGroup>
-                                        </Card.Text>
+                                        <ListGroup variant="flush">
+                                            <ListGroupItem><b>Alku: </b>{hallitus.Alku}</ListGroupItem>
+                                            <ListGroupItem><b>Loppu:</b> {hallitus.Loppu}</ListGroupItem>
+                                            <ListGroupItem><b>Hallituspäivät:</b> {hallitus["Hallituspäivät"]}</ListGroupItem>
+                                            <ListGroupItem><b>Pääministerin puolue:</b> {hallitus["Pääministerin puolue"]}</ListGroupItem>
+                                        </ListGroup>
                                     </Card.Body>
                                 </Card>
                             </Col>

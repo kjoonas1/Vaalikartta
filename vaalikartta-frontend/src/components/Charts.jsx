@@ -89,7 +89,6 @@ const Charts = () => {
         }
     }
     const getVotingStatisticsData = (data) => {
-        console.log(data)
         const removeAttributes = ["_id", "Alue", "Vuosi"]
         const aanestysFilter = objectHelper.filterFromObject(data, a => a !== null)
         const aanestys = objectHelper.extractArrayOfResponseData(aanestysFilter, removeAttributes, "name", "luku")
@@ -104,7 +103,6 @@ const Charts = () => {
             .map(rivi => [rivi.name, rivi.luku]).sort(([a], [b]) => a.localeCompare(b))
         return kuntaData
     }
-
 
     const chartTitle = getTitle(area.active, area) + " " + year
 

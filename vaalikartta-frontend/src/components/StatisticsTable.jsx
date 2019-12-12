@@ -2,7 +2,6 @@ import React from "react"
 import { Table } from "react-bootstrap"
 
 const StatisticsTable = (props) => {
-    console.log("statistics", props.data)
     const data = props.data.map((field, key) =>
         <tr key={key}>
             <td>{field[0]}</td>
