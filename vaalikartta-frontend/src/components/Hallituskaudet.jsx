@@ -1,12 +1,15 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import "../styles/Hallitustiedot.scss"
 import { Tab, Tabs, Accordion, Card, ListGroup, ListGroupItem, Row, Col } from "react-bootstrap"
 
 
 const Hallituskaudet = ({ data }) => {
-    // console.log("hallitusdata", data)
+    const [hallitusIndeksi, setHallitusIndeksi] = useState(data.length - 1)
+
+    useEffect(() => setHallitusIndeksi(data.length - 1), [data])
+
     if (data.length !== 0) {
-        return <Tabs className="hallitusnappula" defaultActiveKey="0" variant="pills">
+        return <Tabs className="hallitusnappula" defaultActiveKey={hallitusIndeksi} activeKey={hallitusIndeksi} variant="pills" onSelect={(k => setHallitusIndeksi(k))}>
             {
                 data.map((hallitus, i) => {
                     return <Tab  key={i} eventKey={i} title={hallitus.Hallitus} className="hallitus-tab">

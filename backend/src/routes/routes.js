@@ -85,7 +85,6 @@ router.get("/avainluvut/:vuosi/:kunta", async (req, res) => {
         return { ...acc, [kentta.Tiedot]: (kentta[vuosi]) }
     }, {})
     const tyypitetty = addTypes(["float", "float", "int", "float", "float", "float", "float", "float"], Object.entries(sievennettyData))
-    //console.log(tyypitetty)
     const tyypitettyIlmanNull = Object.entries(tyypitetty).filter(([key, val]) => val.value !== null).reduce((acc, kentta) => ({ ...acc, [kentta[0]]: kentta[1] }), {})
     res.send(tyypitettyIlmanNull)
 })
