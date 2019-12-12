@@ -6,10 +6,10 @@ import { Tab, Tabs, Accordion, Card, ListGroup, ListGroupItem, Row, Col } from "
 const Hallituskaudet = ({ data }) => {
     // console.log("hallitusdata", data)
     if (data.length !== 0) {
-        return <Tabs defaultActiveKey="0" variant="pills">
+        return <Tabs className="hallitusnappula" defaultActiveKey="0" variant="pills">
             {
                 data.map((hallitus, i) => {
-                    return <Tab key={i} eventKey={i} title={hallitus.Hallitus} className="hallitus-tab">
+                    return <Tab  key={i} eventKey={i} title={hallitus.Hallitus} className="hallitus-tab">
                         <Row>
                             <Col md={4}>
                                 <Card key={"hallitus" + i}>
