@@ -1,3 +1,8 @@
+.ministerit {
+  overflow-y: scroll;
+  max-height: 600px;
+}
+
 .ministeri {
     text-align: left;
     float: right;
@@ -11,6 +16,7 @@
     text-align:justify;
     
 }
+
 .ministeri div {
 
   padding-left: 3%;
@@ -41,9 +47,10 @@ details summary::-webkit-details-marker {
 .paaministerikuva {
   display: block;
   margin: 0 auto;
-  max-width: 80%;
-  max-height: 15em;
+  max-width: 70%;
+  max-height: 410px;
   margin-top: 5%;
+  margin-bottom: 3%;
   border: 8px ridge rgb(170, 118, 51);
   box-shadow: 3px 3px 5px grey;
 }
