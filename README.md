@@ -18,7 +18,23 @@ Jotta sovelluksen voi ajaa, nodejs täytyy olla asennettuna. Lisäksi backend- j
 
 ### `npm install`
 
+### Ajaminen
+
+Jotta backend toimii niin tarvitaan MongoD:n salasana: vaalikartta
+
+Sovellus käynnistetään ajamalla backend-kansiossa komento
+
+### `npm start` tai `npm run nodemon`
+
+ja vaalikartta-frontend-kansiossa komento
+
+### `npm start`
+
 ## Testaus
+
+Testaaminen onnistuu backend- ja vaalikartta-frontend -kansioissa komennolla
+
+### `npm test`
 
 ## Luotu käyttäen seuraavia työkaluja
 
