@@ -38,7 +38,7 @@ export const ElectionMap = props => {
 
     return (
         //piirtyy nopeammin jostain syystä kun koko määritellään tässä
-        <Map style={{ width: "100%", height: "600px" }} center={[65.5, 25]} dragging={true} attributionControl={false} preferCanvas={true} zoom={5}>
+        <Map style={{ width: "100%", height: "600px" }} center={[65.5, 25]} dragging={true} preferCanvas={true} zoom={5}>
             <TileLayer
                 attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
