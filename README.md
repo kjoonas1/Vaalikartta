@@ -36,6 +36,9 @@ Testaaminen onnistuu backend- ja vaalikartta-frontend -kansioissa komennolla
 
 ### `npm test`
 
+Backendissa testataan get-pyyntöjen toimivuutta ja virhetilanteita.
+Frontendissa testataan kartat ja utils-kansion apuohjelmat.
+
 ## Luotu käyttäen seuraavia työkaluja
 
 * Visual Studio Code
