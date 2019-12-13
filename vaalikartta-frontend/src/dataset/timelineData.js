@@ -57,5 +57,9 @@ export const timelineData = {
             name: "Sipilän hallituksen hallituskriisi",
             year: 2017
         },
+        {
+            name: "Rinteen hallituksen hallituskriisi",
+            year: 2019
+        },
     ]
 }

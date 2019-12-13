@@ -3,6 +3,7 @@ import { Col, Row } from "react-bootstrap"
 import { Timeline } from "./Timeline"
 import { ConstituencyMap } from "./Maps/ConstituencyMap"
 import { ControlledTabs } from "./ControlledTabs"
+import AlertOhje from "./AlertOhje"
 import { ElectionMap } from "./Maps/ElectionMap"
 import { CountryMap } from "./Maps/CountryMap"
 import Charts from "./Charts"
@@ -28,10 +29,13 @@ const Etusivu = () => {
 
     return (
         <>
+            <Row className="ohjeet">
+                <AlertOhje />
+            </Row>
             <Row className="timeline">
                 <Timeline chartsRef={chartsRef} />
             </Row>
-            <Row>     
+            <Row>
                 <Col >
                     <Row className="animate-bottom">
                         <Col xs={12} xl={4} className="maps">
