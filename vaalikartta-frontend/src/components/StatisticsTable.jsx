@@ -2,11 +2,11 @@ import React from "react"
 import { Table } from "react-bootstrap"
 
 const StatisticsTable = (props) => {
-    const data = props.data.map((field, key) =>
+    const data = props.data.map((field, key) => field[1].value !== null ?
         <tr key={key}>
             <td>{field[0]}</td>
             <td>{field[1].type === "float" ? field[1].value.toFixed(2).replace(/\./, ",") : field[1].value.toLocaleString("fi-FI")}</td>
-        </tr>)
+        </tr> : null)
 
     return (
         <>
