@@ -52,6 +52,20 @@ router.get("/kunnat/koordinaatit/:vuosi", async (req, res) => {
     res.send(geoJSONKoordinaatit)
 })
 
+const addTypes = (types, fields) => {
+    return fields.reduce(
+        (acc, field, i) => {
+            return {
+                ...acc,
+                [field[0]]: {
+                    value: field[1] || null,
+                    type: types[i]
+                }
+            }
+        }
+        , {})
+}
+
 router.get("/avainluvut/:vuosi/:kunta", async (req, res) => {
     const vuosi = req.params.vuosi
     const kunta = req.params.kunta
@@ -67,20 +81,25 @@ router.get("/avainluvut/:vuosi/:kunta", async (req, res) => {
         return res.sendStatus(204)
     if (tiedotKannasta[0][vuosi] === undefined) // varmistetaan että on dataa eikä vain undefined
         return res.sendStatus(204)
-    const sievennettyData = tiedotKannasta.filter(kentta => kentta[vuosi] !== null).reduce((acc, kentta) => {
+    const sievennettyData = tiedotKannasta.reduce((acc, kentta) => {
         return { ...acc, [kentta.Tiedot]: (kentta[vuosi]) }
     }, {})
-    res.send(sievennettyData)
+    const tyypitetty = addTypes(["float", "float", "int", "float", "float", "float", "float", "float"], Object.entries(sievennettyData))
+    const tyypitettyIlmanNull = Object.entries(tyypitetty).filter(([key, val]) => val.value !== null).reduce((acc, kentta) => ({ ...acc, [kentta[0]]: kentta[1] }), {})
+    res.send(tyypitettyIlmanNull)
 })
 
 const haeAanestysTiedot = async (alue, vuosi, aanestystiedot) => {
-    return await aanestystiedot.find({ Alue: alue, Vuosi: vuosi }, {
+    const tiedotKannasta = await aanestystiedot.find({ Alue: alue, Vuosi: vuosi }, {
         projection: {
-            Alue: 1, Vuosi: 1,
+            _id: 0, Alue: 1, Vuosi: 1,
             "Äänestysprosentti Sukupuolet yhteensä": 1, "Äänestysprosentti Miehet": 1,
             "Äänestysprosentti Naiset": 1, "Hylätyt äänet Sukupuolet yhteensä": 1
         }
     }).toArray()
+    const kentat = Object.entries(tiedotKannasta[0])
+    const types = ["string", "int", "float", "float", "float", "int"]
+    return addTypes(types, kentat)
 }
 
 router.get("/kunnat/aanestystiedot/:kunta/:vuosi", async (req, res) => {
@@ -120,6 +139,42 @@ router.get("/muut-alueet/aanestystiedot/:muuAlue/:vuosi", async (req, res) => {
     if (filtteroituData.length === 0)
         return res.sendStatus(404)
     res.send(filtteroituData)
+})
+
+router.get("/hallituskaudet/vuosittain/:vuosi", async (req, res) => {
+    const vuositunniste = req.params.vuosi
+    if (vuositunniste === undefined)
+        return res.status(204).send()
+    const collection = req.db.collection("hallituskaudet")
+    const hallitukset = await collection.find({ Vuositunniste: vuositunniste }).toArray()
+    // Haetaan ministerit kullekin hallitukselle
+    const ministeritCollection = req.db.collection("ministerit-hallituskausittain")
+    const hallituksetMinistereineen = await hallitukset.map(async hallitus => {
+        const ministerit = await ministeritCollection.find({ ID: hallitus.ID }).toArray()
+        
+          const sortatutMinisterit = ministerit.sort( (a, b) =>  {
+                if (a.Rooli < b.Rooli) {
+                    return -1
+                }
+                if (a.Rooli > b.Rooli) {
+                    return 1
+                }
+                else return 0
+            })
+        return {...hallitus, ministerit: sortatutMinisterit}
+    })
+    
+    Promise.all(hallituksetMinistereineen).then(h => res.send(h))
+    
+})
+
+router.get("/ministerit/:id", async (req, res) => {
+    const id = parseInt(req.params.id)
+    if (isNaN(id))
+        return res.status(204).send()
+    const collection = req.db.collection("ministerit-hallituskausittain")
+    const items = await collection.find({ id: id }).toArray()
+    res.send(items)
 })
 
 module.exports = router

@@ -1,0 +1,92 @@
+.hallitusnappula {
+  margin-top: 1%;
+}
+
+.ministerit {
+  overflow-y: scroll;
+  max-height: 600px;
+  margin-bottom: 5%;
+}
+
+@media (max-width: 768px) {
+  .ministerit {
+    overflow: visible;
+    max-height: 100%;
+    margin-top: 3em;
+  }}
+
+.ministeri {
+    text-align: left;
+    float: right;
+    margin: 0 auto;
+    font-size: 23px;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    width: 740px;
+    height: 640px;
+    overflow-y: scroll; 
+    text-align:justify;
+    
+}
+
+.ministeri div {
+
+  padding-left: 3%;
+  font-style: italic;
+  padding-bottom: 2px;
+  background: lightyellow;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  
+}
+details summary::-webkit-details-marker {
+  display:none;
+}
+
+.hallitus-tab {
+  margin: 1em 0;
+}
+
+.hallitus-tab .card-body {
+  padding: 0;
+}
+
+.hallitus-tab .list-group-item {
+  padding: .45rem 1.25rem;
+}
+
+
+.paaministerikuva {
+  display: block;
+  margin: 0 auto;
+  max-width: 70%;
+  max-height: 410px;
+  margin-top: 5%;
+  margin-bottom: 3%;
+  border: 8px ridge rgb(170, 118, 51);
+  box-shadow: 3px 3px 5px grey;
+}
+
+button {
+    margin-bottom: 3%;
+    font-size: 75%;
+    
+}
+
+summary {
+ background: rgb(120, 185, 250);
+ border: 2px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  padding-left: 3%;
+  font-style: italic;
+  padding-bottom: 2px;
+  padding-right: 3px;
+  list-style-type: none;
+}
+
+details p {
+  line-height: 80%;
+  margin: 0;
+  padding: 1%;
+  background: rgb(28, 229, 255);
+}

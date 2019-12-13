@@ -10,6 +10,7 @@ import StatisticsTable from "./StatisticsTable"
 import { Tab, Tabs } from "react-bootstrap"
 import "../styles/Charts.scss"
 import { useQuery } from "react-fetching-library"
+import Hallituskaudet from "./Hallituskaudet"
 
 const Charts = () => {
 
@@ -88,8 +89,8 @@ const Charts = () => {
         }
     }
     const getVotingStatisticsData = (data) => {
-        const removeAttributes = ["_id", "tyyppi", "Alue", "Vuosi"]
-        const aanestysFilter = objectHelper.filterFromObject(data[0], a => a !== null)
+        const removeAttributes = ["_id", "Alue", "Vuosi"]
+        const aanestysFilter = objectHelper.filterFromObject(data, a => a !== null)
         const aanestys = objectHelper.extractArrayOfResponseData(aanestysFilter, removeAttributes, "name", "luku")
             .map(rivi => [rivi.name, rivi.luku]).sort(([a], [b]) => a.localeCompare(b))
         return aanestys
@@ -103,7 +104,6 @@ const Charts = () => {
         return kuntaData
     }
 
-
     const chartTitle = getTitle(area.active, area) + " " + year
 
     const errorMessage = "Virhe, kokeile uudestaan."
@@ -112,6 +112,11 @@ const Charts = () => {
         <h4>{chartTitle}</h4>
         <p>Ei dataa. Alue on todennäköisesti liitetty toiseen tai sitä ei ole vielä ollut olemassa</p>
     </>
+
+    const hallitus = useQuery({
+        method: "GET",
+        endpoint: `/api/hallituskaudet/vuosittain/${year}`
+    })
 
     return (
         <Col>
@@ -131,7 +136,7 @@ const Charts = () => {
                     }
                 </Tab>
                 <Tab eventKey="Aanestystiedot" title="Äänestystiedot" className="aanestys-tab">
-                    {(!votingStatistics.error && votingStatistics.payload && bubbleChart.payload && bubbleChart.payload.length) ?
+                    {(!votingStatistics.error && votingStatistics.payload !== undefined && Object.entries(votingStatistics.payload).length && bubbleChart.payload && bubbleChart.payload.length) ?
                         <StatisticsTable
                             title={chartTitle}
                             loading={votingStatistics.loading}
@@ -148,6 +153,14 @@ const Charts = () => {
                                 ? noDataMessage
                                 : errorMessage}
                     </Tab>}
+                <Tab eventKey="Hallitukset" title="Hallitukset">
+                    {(!hallitus.error && hallitus.payload) ?
+                        <Hallituskaudet
+                            loading={hallitus.loading}
+                            data={hallitus.payload} />
+                        :  errorMessage}
+
+                </Tab>
             </Tabs>
         </Col>
     )
