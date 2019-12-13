@@ -148,7 +148,7 @@ const Charts = () => {
                 {(area.active !== "Kunnat") ? null :
                     <Tab eventKey="Kuntatiedot" title="Kuntatiedot" className="aanestys-tab">
                         {(!kuntaStatistics.error && kuntaStatistics.payload && bubbleChart.payload && bubbleChart.payload.length) ?
-                            <StatisticsTable data={getKuntaStatisticsData(kuntaStatistics.payload)} title={getYear} />
+                            <StatisticsTable data={getKuntaStatisticsData(kuntaStatistics.payload)} title={chartTitle} />
                             : bubbleChart.payload && !bubbleChart.payload.length
                                 ? noDataMessage
                                 : errorMessage}
