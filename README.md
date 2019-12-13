@@ -6,7 +6,7 @@ Jyväskylän Yliopiston Informaatioteknologiatiedekunnan TIEA207-kurssin projekt
 
 Kopion projektista saa komennolla:
 
-### `git clone https://github.com/kjoonas1/Vaalikartta`
+ `git clone https://github.com/kjoonas1/Vaalikartta`
 
 ### Esiasetukset
 
@@ -15,29 +15,26 @@ Tarvitsee asentaa Git-sovelluksen, jotta ylläoleva komento toimii.
 ### Asentaminen
 
 Jotta sovelluksen voi ajaa, nodejs täytyy olla asennettuna. Lisäksi backend- ja frontend-kansioihin tarvitsee asentaa modulit komennolla
-
-### `npm install`
+`npm install`
 
 ### Ajaminen
 
-Jotta backend toimii niin tarvitaan MongoD:n salasana: vaalikartta
+Jotta backend toimii niin tarvitaan MongoDB:n salasana: `vaalit2019`
 
 Sovellus käynnistetään ajamalla backend-kansiossa komento
 
-### `npm start` tai `npm run nodemon`
+`PASSWD=vaalit2019 npm start`
 
 ja vaalikartta-frontend-kansiossa komento
 
-### `npm start`
+`npm start`
 
 ## Testaus
 
-Testaaminen onnistuu backend- ja vaalikartta-frontend -kansioissa komennolla
+Testit voi ajaa backend- ja vaalikartta-frontend -kansioissa komennolla
 
-### `npm test`
+ `npm test`
 
-Backendissa testataan get-pyyntöjen toimivuutta ja virhetilanteita.
-Frontendissa testataan kartat ja utils-kansion apuohjelmat.
 
 ## Luotu käyttäen seuraavia työkaluja
 
