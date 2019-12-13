@@ -105,6 +105,8 @@ const Charts = () => {
     }
 
     const chartTitle = getTitle(area.active, area) + " " + year
+    // Kuntadataa on vain vuoteen 2018 asti, joten näytetään 2018, jos tarvitaan vuodelta 2019
+    const kuntaChartTitle = getTitle(area.active, area) + " " + (year === 2019 ? 2018 : year) 
 
     const errorMessage = "Virhe, kokeile uudestaan."
 
@@ -148,7 +150,7 @@ const Charts = () => {
                 {(area.active !== "Kunnat") ? null :
                     <Tab eventKey="Kuntatiedot" title="Kuntatiedot" className="aanestys-tab">
                         {(!kuntaStatistics.error && kuntaStatistics.payload && bubbleChart.payload && bubbleChart.payload.length) ?
-                            <StatisticsTable data={getKuntaStatisticsData(kuntaStatistics.payload)} title={chartTitle} />
+                            <StatisticsTable data={getKuntaStatisticsData(kuntaStatistics.payload)} title={kuntaChartTitle} />
                             : bubbleChart.payload && !bubbleChart.payload.length
                                 ? noDataMessage
                                 : errorMessage}
