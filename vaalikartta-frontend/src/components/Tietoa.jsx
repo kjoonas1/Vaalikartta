@@ -83,6 +83,83 @@ const Tietoa = () => {
                         </td>
                     </tr>
                     <p></p>
+                   
+                        <p><strong>Pääministerien kuvat, Wikipedia:</strong></p>
+                        
+                    <tr>
+                        <td>
+                            <a href="https://fi.m.wikipedia.org/wiki/Tiedosto:Esko_Aho_2010-05-28.jpg"> Aho </a>
+                        </td>
+                        <td></td>
+                        <td>
+                            <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a>{" "}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://fi.m.wikipedia.org/wiki/Tiedosto:Harri-Holkeri-1981.jpg"> Holkeri</a>,
+                            <a href="https://fi.m.wikipedia.org/wiki/Tiedosto:Antti_Rinne.jpg"> Rinne</a>,
+                            <a href="https://fi.m.wikipedia.org/wiki/Tiedosto:Kalevi-Sorsa-1975.jpg"> Sorsa</a>
+                        </td>
+                        <td></td>
+                        <td>
+                            <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY 4.0</a>
+                        </td>
+                    </tr>
+                            
+                    <tr>
+                        <td>
+                            <a href="https://fi.m.wikipedia.org/wiki/Tiedosto:Anneli_J%C3%A4%C3%A4tteenm%C3%A4ki_2014-04-06_(3).jpg"> Jäätteenmäki </a>
+                        </td>
+                        <td></td>
+                        <td>
+                            <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://commons.wikimedia.org/wiki/File:Jyrki_Katainen_A4.jpeg"> Katainen</a>,
+                            <a href="https://fi.m.wikipedia.org/wiki/Tiedosto:Tallinn_Digital_Summit._Handshake_Juha_Sipil%C3%A4_(2017).jpg"> Sipilä</a>,
+                            <a href="https://fi.m.wikipedia.org/wiki/Tiedosto:Alexander_Stubb_EPP_October_2018_(44474967285)_(cropped).jpg"> Stubb</a>
+                        </td>
+                        <td></td>
+                        <td>
+                            <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <a href="https://fi.m.wikipedia.org/wiki/Tiedosto:Mari_Kiviniemi_2010-11-02_(2).jpg"> Kiviniemi</a>,
+                            <a href="https://fi.m.wikipedia.org/wiki/Tiedosto:Paavo_Lipponen_2004.jpg"> Lipponen</a>
+                        </td>
+                        <td></td>
+                        <td>
+                            <a href="https://creativecommons.org/licenses/by/2.5/dk/">CC BY 2.5 DK</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://fi.wikipedia.org/wiki/Tiedosto:Matti_Vanhanen_2017_09.jpg"> Vanhanen</a>
+                        </td>
+                        <td></td>
+                        <td>
+                            <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <a href="https://fi.m.wikipedia.org/wiki/Tiedosto:Sanna_Marin_(cropped).jpg"> Marin</a>
+                        </td>
+                        <td></td>
+                        <td>
+                            public domain
+                        </td>
+                    </tr>
+                        
+                            
+                    <p></p>
                 </tbody>
             </Table>
             <h3>Dataan tehdyt muutokset</h3>
@@ -98,6 +175,7 @@ const Tietoa = () => {
                 <li>Teemu Korhonen</li>
             </ul>
         </div>
+        
     )
 }
 
