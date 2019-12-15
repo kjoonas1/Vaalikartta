@@ -10,11 +10,11 @@ Kopion projektista saa komennolla:
 
 ### Esiasetukset
 
-Tarvitsee asentaa Git-sovelluksen, jotta ylläoleva komento toimii.
+Tarvitsee asentaa [git](https://git-scm.com/downloads), jotta ylläoleva komento toimii.
 
 ### Asentaminen
 
-Jotta sovelluksen voi ajaa, nodejs täytyy olla asennettuna. Lisäksi backend- ja frontend-kansioihin tarvitsee asentaa modulit komennolla
+Jotta sovelluksen voi ajaa, [Node.js](https://github.com/nodejs/node) täytyy olla asennettuna. Lisäksi backend- ja frontend-kansioihin tarvitsee asentaa modulit komennolla
 `npm install`
 
 ### Ajaminen
@@ -38,15 +38,15 @@ Testit voi ajaa backend- ja vaalikartta-frontend -kansioissa komennolla
 
 ## Luotu käyttäen seuraavia työkaluja
 
-* Visual Studio Code
 * JavaScript
 * React
-* d3
-* node.js
-* npm
+* Bootstrap
+* D3
+* Node.js
 * MongoDB
 * OpenStreetmap
 * Tilastokeskuksen avoin data
+* Visual Studio Code
 
 ## Tekijät
 
